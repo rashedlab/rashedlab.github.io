@@ -749,7 +749,7 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+   <!-- CONTACT -->
     <section id="contact">
       <div class="container">
         <div class="sectionTitle">
@@ -761,18 +761,38 @@
           <div class="card contactBox">
             <h3 style="margin:0 0 10px;">Lab Information</h3>
             <p style="margin:0; color:var(--muted);">
-              <strong style="color:var(--text);">Affiliation:</strong> University of Hyogo, Graduate School of Information Science<br/>
-              <strong style="color:var(--text);">Address:</strong> 7-1-28 Minatojima-minamimachi, Chuo-ku, Kobe, Hyogo 650-0047, Japan<br/>
-              <strong style="color:var(--text);">Office:</strong> Room number 601
+              <strong style="color:var(--text);">Affiliation:</strong> Your University / Department<br/>
+              <strong style="color:var(--text);">Address:</strong> Building, City, Country<br/>
+              <strong style="color:var(--text);">Email:</strong> your-email@university.ac.jp<br/>
+              <strong style="color:var(--text);">Office:</strong> Room number
             </p>
             <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
               <a class="btn" href="#" onclick="return false;">Google Scholar</a>
               <a class="btn" href="#" onclick="return false;">GitHub</a>
               <a class="btn" href="#" onclick="return false;">X / Twitter</a>
             </div>
+            <p class="note">Replace placeholders with real links. You can also embed a Google Map in an iframe.</p>
           </div>
 
-          
+          <div class="card contactBox">
+            <h3 style="margin:0 0 10px;">Quick Message (optional)</h3>
+            <!-- This form is front-end only unless you connect it to a backend service -->
+            <form onsubmit="alert('This demo form does not send messages. Connect a form backend (e.g., Formspree) to enable sending.'); return false;">
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name" autocomplete="name" />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" />
+
+              <label for="msg">Message</label>
+              <textarea id="msg" name="msg" placeholder="How can we help?"></textarea>
+
+              <div style="margin-top:12px;">
+                <button class="btn primary" type="submit">Send</button>
+              </div>
+              <p class="note">To make this form actually work on GitHub Pages, connect it to a form service.</p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -784,11 +804,11 @@
         <div class="brand" style="gap:10px;">
           <span class="logo" aria-hidden="true" style="width:34px;height:34px;border-radius:12px;"></span>
           <div>
-            <div style="font-weight:900;">RASHED LAB</div>
+            <div style="font-weight:900;">YOUR LAB NAME</div>
             <div class="small">AI for Medical Imaging • Multimodal Systems</div>
           </div>
         </div>
-        <div class="small">© <span id="year"></span> Rashed Lab. All rights reserved.</div>
+        <div class="small">© <span id="year"></span> Your Lab. All rights reserved.</div>
       </div>
     </div>
   </footer>
