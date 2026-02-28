@@ -282,30 +282,30 @@
       overflow:hidden;
     }
     .avatar{
-      width:100px;
-      aspect-ratio: 4/4;
-      border-radius: 14px;
-      background:
-        radial-gradient(120px 80px at 30% 30%, rgba(96,165,250,.25), transparent 60%),
-        radial-gradient(120px 80px at 80% 20%, rgba(52,211,153,.18), transparent 55%),
-        rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.10);
-      display:flex; align-items:center; justify-content:center;
-      color: rgba(229,231,235,.7);
-      font-weight: 900;
-      letter-spacing: .5px;
-      margin-bottom:10px;
-      position:relative;
-    }
-    .avatar img{
-      width:100px; 
-      height:100px; 
-      object-fit: cover;
-      object-position: center top;
-      background: #0b0f17;
-      border-radius: 14px;
-      display:block;
-    }
+  width:100px;
+  height:100px;
+  border-radius:14px;
+  background:
+    radial-gradient(120px 80px at 30% 30%, rgba(96,165,250,.25), transparent 60%),
+    radial-gradient(120px 80px at 80% 20%, rgba(52,211,153,.18), transparent 55%),
+    rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.10);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:10px;
+  overflow:hidden;
+}
+
+.avatar img{
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  border-radius:12px;
+  display:block;
+}
     .person h3{margin:0 0 2px; font-size:15px}
     .role{color:var(--muted); font-size:13px; margin:0 0 10px}
     .tags{display:flex; flex-wrap:wrap; gap:8px}
