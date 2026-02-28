@@ -337,11 +337,10 @@
     }
 
     /* Contact */
+ 
     .contactGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:14px;
-    }
+  display:block;
+  }
     .contactBox{padding:16px}
     label{display:block; margin:10px 0 6px; color:var(--muted); font-size:13px; font-weight:700}
     input, textarea{
@@ -750,34 +749,33 @@
     </section>
 
    <!-- CONTACT -->
-    <section id="contact">
-      <div class="container">
-        <div class="sectionTitle">
-          <h2>Contact</h2>
-          <!-- <p>For collaboration, student applications, or speaking invitations.</p> -->
-        </div>
+   <section id="contact">
+  <div class="container">
+    <div class="sectionTitle">
+      <h2>Contact</h2>
+      <p>For collaboration, student applications, or speaking invitations.</p>
+    </div>
 
-        <div class="contactGrid">
-          <div class="card contactBox">
-            <h3 style="margin:0 0 10px;">Lab Information</h3>
-            <p style="margin:0; color:var(--muted);">
-              <strong style="color:var(--text);">Affiliation:</strong> Your University / Department<br/>
-              <strong style="color:var(--text);">Address:</strong> Building, City, Country<br/>
-              <strong style="color:var(--text);">Email:</strong> your-email@university.ac.jp<br/>
-              <strong style="color:var(--text);">Office:</strong> Room number
-            </p>
-            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-              <a class="btn" href="https://maps.app.goo.gl/QEUBDmJMDA2U2yd86" onclick="return true;">Google Maps</a>
-              <!-- <a class="btn" href="#" onclick="return false;">GitHub</a> -->
-              <!-- <a class="btn" href="#" onclick="return false;">X / Twitter</a> -->
-            </div>
-            <!-- <p class="note">Replace placeholders with real links. You can also embed a Google Map in an iframe.</p> -->
-          </div>
+    <div class="contactGrid">
+      <div class="card contactBox">
+        <h3 style="margin:0 0 10px;">Lab Information</h3>
+        <p style="margin:0; color:var(--muted);">
+          <strong style="color:var(--text);">Affiliation:</strong> Your University / Department<br/>
+          <strong style="color:var(--text);">Address:</strong> Building, City, Country<br/>
+          <strong style="color:var(--text);">Email:</strong> your-email@university.ac.jp<br/>
+          <strong style="color:var(--text);">Office:</strong> Room number
+        </p>
 
-          
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="#">Google Scholar</a>
+          <a class="btn" href="#">GitHub</a>
+          <a class="btn" href="#">LinkedIn</a>
         </div>
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
   </main>
 
   <footer>
