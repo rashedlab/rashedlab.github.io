@@ -428,7 +428,7 @@
     // Filtering
     const qEl = document.getElementById("q");
     const sponsorEl = document.getElementById("sponsor");
-    const roleEl = document.getElementById("role");
+    const categoryEl = document.getElementById("category");
     const yearEl = document.getElementById("year");
     const cards = Array.from(document.querySelectorAll("#grid .card"));
 
@@ -443,27 +443,27 @@
     function applyFilters(){
       const q = (qEl.value || "").trim().toLowerCase();
       const sponsor = sponsorEl.value;
-      const role = roleEl.value;
+      const category = categoryEl.value;
       const year = yearEl.value;
 
       cards.forEach(card => {
         const hay = (
           (card.dataset.title || "") + " " +
           (card.dataset.sponsor || "") + " " +
-          (card.dataset.role || "") + " " +
+          (card.dataset.category || "") + " " +
           (card.dataset.keywords || "")
         ).toLowerCase();
 
         const okQ = !q || hay.includes(q);
         const okSponsor = !sponsor || (card.dataset.sponsor === sponsor);
-        const okRole = !role || (card.dataset.role === role);
+        const okCategory = !category || (card.dataset.category === category);
         const okYear = inYearRange(card, year);
 
-        card.style.display = (okQ && okSponsor && okRole && okYear) ? "" : "none";
+        card.style.display = (okQ && okSponsor && okCategory && okYear) ? "" : "none";
       });
     }
 
-    [qEl, sponsorEl, roleEl, yearEl].forEach(el => el.addEventListener("input", applyFilters));
+    [qEl, sponsorEl, categoryEl, yearEl].forEach(el => el.addEventListener("input", applyFilters));
   </script>
 </body>
 </html>
