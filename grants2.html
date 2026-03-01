@@ -211,12 +211,12 @@
     <section class="hero">
       <h1>Funded Projects</h1>
       <p>
-        Selected externally and internally funded research projects. Use the search and filters to quickly find projects by sponsor, role, or year.
+        Selected externally and internally funded research projects. Use the search and filters to quickly find projects by sponsor, category, or year.
       </p>
     </section>
 
     <section class="controls" aria-label="Project filters">
-      <div class="pill" title="Search by title, sponsor, role, or keywords">
+      <div class="pill" title="Search by title, sponsor, category, or keywords">
         🔎
         <input id="q" type="search" placeholder="Search projects..." />
       </div>
@@ -231,13 +231,12 @@
         </select>
       </div>
 
-      <div class="pill" title="Filter by role">
-        Role:
-        <select id="role">
+      <div class="pill" title="Filter by category">
+        Category:
+        <select id="category">
           <option value="">All</option>
-          <option value="Lead Principal Investigator">Lead PI</option>
-          <option value="Principal Investigator">PI</option>
-          <option value="Co-PI">Co-PI</option>
+          <option value="International">International</option>
+          <option value="Local">Local</option>
         </select>
       </div>
 
@@ -263,6 +262,7 @@
         data-role="Lead Principal Investigator"
         data-start="2025"
         data-end="2026"
+        data-category="International"
         data-keywords="multimodal interpretable ai breast cancer diagnosis ircc ircc-2025-633">
         <div class="topRow">
           <h3 class="title">Interpretable multimodal AI for enhanced breast cancer diagnosis</h3>
@@ -275,9 +275,9 @@
 
         <div class="kv">
           <div class="k">Sponsor</div><div class="v">Qatar University (Qatar)</div>
-          <div class="k">Role</div><div class="v">Lead Principal Investigator</div>
+          <div class="k">Role</div><div class="v">Principal Investigator</div>
           <div class="k">Period</div><div class="v">2025–2026</div>
-          <div class="k">Category</div><div class="v">International Collaboration</div>
+          <div class="k">Category</div><div class="v">International</div>
         </div>
       </article>
 
@@ -286,6 +286,7 @@
         data-title="Interactive medical image diagnosis with chatbot assistance"
         data-sponsor="JST"
         data-role="Principal Investigator"
+        data-category="Local"
         data-start="2023"
         data-end="2026"
         data-keywords="jst presto jst さきがけ chatbot interactive diagnosis medical imaging jpmjpr23p7">
@@ -303,7 +304,7 @@
           <div class="k">Grant No.</div><div class="v">JPMJPR23P7</div>
           <div class="k">Role</div><div class="v">Principal Investigator</div>
           <div class="k">Period</div><div class="v">2023–2026</div>
-          <div class="k">Note</div><div class="v">&lt;&lt;project web page&gt;&gt;</div>
+          <div class="k">Category</div><div class="v">Local</div>
         </div>
 
         <div class="links">
@@ -318,6 +319,7 @@
         data-sponsor="JST"
         data-role="Co-PI"
         data-start="2025"
+        data-category="International"
         data-end="2027"
         data-keywords="jst nexus privacy efficient multimodal model training inference edge cloud networks jpmjnx25c4">
         <div class="topRow">
@@ -334,7 +336,7 @@
           <div class="k">Grant No.</div><div class="v">JPMJNX25C4</div>
           <div class="k">Role</div><div class="v">Co-PI</div>
           <div class="k">Period</div><div class="v">2025–2027</div>
-          <div class="k">Category</div><div class="v">Edge–Cloud + Privacy</div>
+          <div class="k">Category</div><div class="v">International</div>
         </div>
       </article>
 
@@ -343,6 +345,7 @@
         data-title="Leveraging foundation models for multimodal medical image analysis"
         data-sponsor="University of Hyogo"
         data-role="Principal Investigator"
+        data-category="Local"
         data-start="2025"
         data-end="2026"
         data-keywords="foundation models multimodal medical image analysis special research project 特別研究プロジェクト マルチモダル医用画像解析に基盤モデルを活用する">
@@ -359,7 +362,7 @@
           <div class="k">Sponsor</div><div class="v">University of Hyogo</div>
           <div class="k">Role</div><div class="v">Principal Investigator</div>
           <div class="k">Period</div><div class="v">2025–2026</div>
-          <div class="k">Category</div><div class="v">Foundation Models / Multimodal Imaging</div>
+          <div class="k">Category</div><div class="v">Local</div>
         </div>
       </article>
 
@@ -382,7 +385,7 @@
     // Filtering
     const qEl = document.getElementById("q");
     const sponsorEl = document.getElementById("sponsor");
-    const roleEl = document.getElementById("role");
+    const categoryEl = document.getElementById("category");
     const yearEl = document.getElementById("year");
     const cards = Array.from(document.querySelectorAll("#grid .card"));
 
@@ -397,27 +400,27 @@
     function applyFilters(){
       const q = (qEl.value || "").trim().toLowerCase();
       const sponsor = sponsorEl.value;
-      const role = roleEl.value;
+      const category = categoryEl.value;
       const year = yearEl.value;
 
       cards.forEach(card => {
         const hay = (
           (card.dataset.title || "") + " " +
           (card.dataset.sponsor || "") + " " +
-          (card.dataset.role || "") + " " +
+          (card.dataset.category || "") + " " +
           (card.dataset.keywords || "")
         ).toLowerCase();
 
         const okQ = !q || hay.includes(q);
         const okSponsor = !sponsor || (card.dataset.sponsor === sponsor);
-        const okRole = !role || (card.dataset.role === role);
+        const okCategory = !category || (card.dataset.category === category);
         const okYear = inYearRange(card, year);
 
-        card.style.display = (okQ && okSponsor && okRole && okYear) ? "" : "none";
+        card.style.display = (okQ && okSponsor && okCategory && okYear) ? "" : "none";
       });
     }
 
-    [qEl, sponsorEl, roleEl, yearEl].forEach(el => el.addEventListener("input", applyFilters));
+    [qEl, sponsorEl, categoryEl, yearEl].forEach(el => el.addEventListener("input", applyFilters));
   </script>
 </body>
 </html>
