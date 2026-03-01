@@ -1,0 +1,458 @@
+<!-- funded-projects.html  (NEW PAGE) -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Funded Projects | Rashed Lab</title>
+
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --panel:#0f1624;
+      --panel2:#0c1320;
+      --text:#e7eaf0;
+      --muted:#a7b0c0;
+      --line:rgba(255,255,255,.10);
+      --line2:rgba(31,42,68,.9);
+      --radius:16px;
+      --max:1100px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 15% 0%, rgba(96,165,250,.10), transparent 60%),
+                  radial-gradient(900px 600px at 85% 10%, rgba(52,211,153,.08), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+
+    a{color:inherit; text-decoration:none}
+    a:hover{opacity:.92}
+
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 56px;}
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:14px 0 18px;
+      border-bottom:1px solid var(--line);
+      position:sticky; top:0; backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(11,15,23,.85), rgba(11,15,23,.55));
+      z-index:20;
+    }
+    .brand{
+      display:flex; flex-direction:column;
+      gap:2px;
+    }
+    .brand strong{font-size:16px; letter-spacing:.2px}
+    .brand span{font-size:12px; color:var(--muted)}
+
+    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .navBtn{
+      font-size:13px;
+      padding:8px 10px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:999px;
+      color:var(--text);
+      white-space:nowrap;
+    }
+    .navBtn.active{
+      border-color: rgba(96,165,250,.45);
+      background: rgba(96,165,250,.10);
+    }
+
+    .hero{
+      padding:22px 0 16px;
+    }
+    .hero h1{
+      margin:0 0 6px;
+      font-size:28px;
+      letter-spacing:.2px;
+    }
+    .hero p{
+      margin:0;
+      color:var(--muted);
+      max-width:75ch;
+    }
+
+    .controls{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin:14px 0 18px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      padding:10px 12px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .pill input, .pill select{
+      border:none; outline:none;
+      background:transparent;
+      color:var(--text);
+      font-size:13px;
+      min-width:180px;
+    }
+    .pill select{min-width:170px}
+    .pill input::placeholder{color:rgba(167,176,192,.75)}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:14px;
+    }
+    @media (max-width: 860px){
+      .grid{grid-template-columns: 1fr;}
+      .pill input{min-width:140px}
+    }
+
+    .card{
+      border:1px solid var(--line2);
+      background: rgba(16,24,39,.65);
+      border-radius: var(--radius);
+      padding:16px;
+      overflow:hidden;
+      position:relative;
+    }
+    .card:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(600px 180px at 15% 0%, rgba(96,165,250,.10), transparent 55%),
+                  radial-gradient(600px 180px at 85% 10%, rgba(52,211,153,.08), transparent 55%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    .card > *{position:relative}
+
+    .topRow{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+      margin-bottom:8px;
+    }
+    .title{
+      margin:0;
+      font-size:16px;
+      letter-spacing:.2px;
+    }
+
+    .badges{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
+    .badge{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .badge.primary{
+      border-color: rgba(96,165,250,.35);
+      background: rgba(96,165,250,.10);
+      color: rgba(226,232,255,.92);
+    }
+    .meta{
+      margin:0 0 10px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .kv{
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap:8px 10px;
+      margin:10px 0 0;
+      padding-top:10px;
+      border-top:1px solid var(--line);
+      font-size:13px;
+    }
+    .k{color:rgba(167,176,192,.9)}
+    .v{color:rgba(231,234,240,.92)}
+    .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .linkBtn{
+      font-size:13px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      color:var(--text);
+    }
+
+    footer{
+      margin-top:26px;
+      padding-top:16px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <strong>Rashed Lab</strong>
+        <span>Funded Projects</span>
+      </div>
+      <nav aria-label="Site navigation">
+        <!-- Adjust these hrefs to match your site structure -->
+        <a class="navBtn" href="index.html">Home</a>
+        <a class="navBtn active" href="funded-projects.html">Funded Projects</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Funded Projects</h1>
+      <p>
+        Selected externally and internally funded research projects. Use the search and filters to quickly find projects by sponsor, category, or year.
+      </p>
+    </section>
+
+    <section class="controls" aria-label="Project filters">
+      <div class="pill" title="Search by title, sponsor, category, or keywords">
+        🔎
+        <input id="q" type="search" placeholder="Search projects..." />
+      </div>
+
+      <div class="pill" title="Filter by sponsor">
+        Sponsor:
+        <select id="sponsor">
+          <option value="">All</option>
+          <option value="JST">JST</option>
+          <option value="JSPS">JSPS</option>
+          <option value="University of Hyogo">University of Hyogo</option>
+          <option value="Qatar University">Qatar University</option>
+        </select>
+      </div>
+
+      <div class="pill" title="Filter by category">
+        Category:
+        <select id="category">
+          <option value="">All</option>
+          <option value="International Collaboration">International Collaboration</option>
+          <option value="National Competative Grant">National Competative Grant</option>
+          <option value="Internal Fund">Internal Fund</option>
+        </select>
+      </div>
+
+      <div class="pill" title="Filter by year">
+        Year:
+        <select id="year">
+          <option value="">All</option>
+          <option value="2027">2027</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="grid" id="grid" aria-label="Funded projects list">
+
+      <!-- 1 -->
+      <article class="card"
+        data-title="Interpretable multimodal AI for enhanced breast cancer diagnosis"
+        data-sponsor="Qatar University"
+        data-role="Principal Investigator"
+        data-start="2025"
+        data-end="2026"
+        data-category="International Collaboration"
+        data-keywords="multimodal interpretable ai breast cancer diagnosis ircc ircc-2025-633">
+        <div class="topRow">
+          <h3 class="title">Interpretable multimodal AI for enhanced breast cancer diagnosis</h3>
+          <div class="badges">
+            <span class="badge primary">IRCC</span>
+            <span class="badge">2025–2026</span>
+          </div>
+        </div>
+        <p class="meta">International Research Collaboration Co-fund (IRCC-2025-633), Qatar University, Qatar</p>
+
+        <div class="kv">
+          <div class="k">Sponsor</div><div class="v">Qatar University</div>
+          <div class="k">Role</div><div class="v">Principal Investigator</div>
+          <div class="k">Period</div><div class="v">2025–2026</div>
+          <div class="k">Category</div><div class="v">International Collaboration</div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card"
+        data-title="Interactive medical image diagnosis with chatbot assistance"
+        data-sponsor="JST"
+        data-role="Principal Investigator"
+        data-category="National Competative Grant"
+        data-start="2023"
+        data-end="2026"
+        data-keywords="jst presto jst さきがけ chatbot interactive diagnosis medical imaging jpmjpr23p7">
+        <div class="topRow">
+          <h3 class="title">Interactive medical image diagnosis with chatbot assistance</h3>
+          <div class="badges">
+            <span class="badge primary">JST PRESTO</span>
+            <span class="badge">2023–2026</span>
+          </div>
+        </div>
+        <p class="meta">Japan Science and Technology Agency (JST) PRESTO, Grant No. JPMJPR23P7「JSTさきがけ」</p>
+
+        <div class="kv">
+          <div class="k">Sponsor</div><div class="v">JST</div>
+          <div class="k">Role</div><div class="v">Principal Investigator</div>
+          <div class="k">Period</div><div class="v">2023–2026</div>
+          <div class="k">Category</div><div class="v">National Competative Grant</div>
+        </div>
+
+        <div class="links">
+          <!-- Replace the # with the actual project page URL when ready -->
+          <a class="linkBtn" href="https://projectdb.jst.go.jp/grant/JST-PROJECT-23814957/">Project page</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card"
+        data-title="Efficient and Private Large Multi-Modal Model Training and Inference over Heterogeneous Edge-Cloud Networks"
+        data-sponsor="JST"
+        data-role="Co-PI"
+        data-start="2025"
+        data-category="International Collaboration"
+        data-end="2027"
+        data-keywords="jst nexus privacy efficient multimodal model training inference edge cloud networks jpmjnx25c4">
+        <div class="topRow">
+          <h3 class="title">Efficient and Private Large Multi-Modal Model Training and Inference over Heterogeneous Edge-Cloud Networks</h3>
+          <div class="badges">
+            <span class="badge primary">JST NEXUS</span>
+            <span class="badge">2025–2027</span>
+          </div>
+        </div>
+        <p class="meta">Japan Science and Technology Agency (JST) NEXUS Grant No. JPMJNX25C4</p>
+
+        <div class="kv">
+          <div class="k">Sponsor</div><div class="v">JST</div>
+          <div class="k">Role</div><div class="v">Co-PI</div>
+          <div class="k">Period</div><div class="v">2025–2027</div>
+          <div class="k">Category</div><div class="v">International Collaboration</div>
+        </div>
+
+        <div class="links">
+          <a class="linkBtn" href="https://projectdb.jst.go.jp/grant/JST-PROJECT-25126435/">Project page</a>
+        </div>
+      </article>
+
+      
+      <!-- 4 -->
+      <article class="card"
+        data-title="Leveraging foundation models for multimodal medical image analysis"
+        data-sponsor="University of Hyogo"
+        data-role="Principal Investigator"
+        data-category="Internal Fund"
+        data-start="2025"
+        data-end="2026"
+        data-keywords="foundation models multimodal medical image analysis special research project 特別研究プロジェクト マルチモダル医用画像解析に基盤モデルを活用する">
+        <div class="topRow">
+          <h3 class="title">Leveraging foundation models for multimodal medical image analysis<br><span style="color:var(--muted); font-weight:500; font-size:13px;">「マルチモダル医用画像解析に基盤モデルを活用する」</span></h3>
+          <div class="badges">
+            <span class="badge primary">Special Research Project</span>
+            <span class="badge">2025–2026</span>
+          </div>
+        </div>
+        <p class="meta">Special Research Project「特別研究プロジェクト」, University of Hyogo</p>
+
+        <div class="kv">
+          <div class="k">Sponsor</div><div class="v">University of Hyogo</div>
+          <div class="k">Role</div><div class="v">Principal Investigator</div>
+          <div class="k">Period</div><div class="v">2025–2026</div>
+          <div class="k">Category</div><div class="v">Internal Fund</div>
+        </div>
+      </article>
+
+ <!-- 5 -->
+      <article class="card"
+        data-title="Integrated deep learning model for personalized transcranial magnetic stimulation"
+        data-sponsor="JSPS"
+        data-role="Principal Investigator"
+        data-category="National Competative Grant"
+        data-start="2022"
+        data-end="2024"
+        data-keywords="Integrated deep learning model for personalized transcranial magnetic stimulation">
+        <div class="topRow">
+          <h3 class="title">Integrated deep learning model for personalized transcranial magnetic stimulation</h3>
+          <div class="badges">
+            <span class="badge primary">JSPS Kakenhi C</span>
+            <span class="badge">2022–2024</span>
+          </div>
+        </div>
+        <p class="meta">JSPS Grant-in-Aid for Scientific Research (C)</p>
+
+        <div class="kv">
+          <div class="k">Sponsor</div><div class="v">JSPS</div>
+          <div class="k">Role</div><div class="v">Principal Investigator</div>
+          <div class="k">Period</div><div class="v">2022–2024</div>
+          <div class="k">Category</div><div class="v">National Competative Grant</div>
+        </div>
+        <div class="links">
+          <a class="linkBtn" href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-22K12765/">Project page</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <span>© <span id="y"></span> Rashed Lab</span>
+      <span>Last updated: <span id="d"></span></span>
+    </footer>
+  </div>
+
+  <script>
+    // Footer date
+    (function(){
+      const now = new Date();
+      document.getElementById("y").textContent = now.getFullYear();
+      document.getElementById("d").textContent = now.toISOString().slice(0,10);
+    })();
+
+    // Filtering
+    const qEl = document.getElementById("q");
+    const sponsorEl = document.getElementById("sponsor");
+    const categoryEl = document.getElementById("category");
+    const yearEl = document.getElementById("year");
+    const cards = Array.from(document.querySelectorAll("#grid .card"));
+
+    function inYearRange(card, year){
+      if(!year) return true;
+      const s = parseInt(card.dataset.start || "0", 10);
+      const e = parseInt(card.dataset.end || "0", 10);
+      const y = parseInt(year, 10);
+      return (y >= s && y <= e);
+    }
+
+    function applyFilters(){
+      const q = (qEl.value || "").trim().toLowerCase();
+      const sponsor = sponsorEl.value;
+      const category = categoryEl.value;
+      const year = yearEl.value;
+
+      cards.forEach(card => {
+        const hay = (
+          (card.dataset.title || "") + " " +
+          (card.dataset.sponsor || "") + " " +
+          (card.dataset.category || "") + " " +
+          (card.dataset.keywords || "")
+        ).toLowerCase();
+
+        const okQ = !q || hay.includes(q);
+        const okSponsor = !sponsor || (card.dataset.sponsor === sponsor);
+        const okCategory = !category || (card.dataset.category === category);
+        const okYear = inYearRange(card, year);
+
+        card.style.display = (okQ && okSponsor && okCategory && okYear) ? "" : "none";
+      });
+    }
+
+    [qEl, sponsorEl, categoryEl, yearEl].forEach(el => el.addEventListener("input", applyFilters));
+  </script>
+</body>
+</html>
