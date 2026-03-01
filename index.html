@@ -386,6 +386,59 @@
       h1{font-size:34px}
     }
   </style>
+
+  <style>
+  /* ... keep all your existing CSS ... */
+
+  /* News / Highlights (UPDATED) */
+  .list{
+    padding:16px;
+  }
+
+  .item{
+    display:flex;               /* NEW */
+    gap:12px;                   /* NEW */
+    align-items:flex-start;     /* NEW */
+    padding:12px;
+    border-radius:14px;
+    border: 1px solid rgba(255,255,255,.10);
+    background: rgba(255,255,255,.03);
+    margin-bottom:10px;
+  }
+  .item:last-child{margin-bottom:0}
+
+  .newsThumb{                   /* NEW */
+    width:75px;
+    height:75px;
+    flex:0 0 75px;
+    border-radius:12px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.04);
+    overflow:hidden;
+    display:grid;
+    place-items:center;
+  }
+  .newsThumb img{               /* NEW */
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .newsBody{                    /* NEW */
+    min-width:0; /* prevents overflow in flex */
+    flex:1;
+  }
+
+  .item .meta{color:var(--muted); font-size:12px; margin-bottom:4px}
+  .item .title{font-weight:800; margin:0 0 4px; font-size:14px}
+  .item .desc{margin:0; color:var(--muted); font-size:13px}
+
+  /* Optional: slightly smaller thumb on phones */
+  @media (max-width: 720px){
+    .newsThumb{width:40px; height:40px; flex:0 0 40px}
+  }
+</style>
 </head>
 
 <body>
@@ -504,46 +557,111 @@
     </div>
 
     <!-- NEWS  -->
+
     <section id="news">
-      <div class="container">
-        <div class="sectionTitle">
-          <h2>News & Highlights</h2>
-        </div>
+  <div class="container">
+    <div class="sectionTitle">
+      <h2>News & Highlights</h2>
+    </div>
 
-        <div class="contactGrid">
-          <div class="card list">
+    <div class="contactGrid">
+      <div class="card list">
 
-           
-            
-            <div class="item">
-              <div class="meta">Feb 2026 • Paper</div>
-              <p class="title">A paper is accepted for the 23rd IEEE International Conference on Learning and Technology (L&S26) @ KSA</p>
-              <p class="desc">Twin Minds in Cyber-Defense: A Dual-Agent Framework for Safe Automated Assessment in Security Education</p>
-            </div>
-            <div class="item">
-              <div class="meta">Jan 2026 • Paper</div>
-              <p class="title">A <a href="https://doi.org/10.1016/j.bspc.2026.109741">paper</a> is published in Biomedical Signal Processing and Control (IF24=4.9)</p>
-               <p class="desc">Synthetic histopathology with controllable class distribution: A dual-GAN framework for melanoma segmentation</p> 
-            </div>
-            <div class="item">
-              <div class="meta">Jan 2026 • Seminar</div>
-              <p class="title">All lab members will participate in Joint Seminar with the TDSAI Lab @ Institute of Science Tokyo, 4-5 Feb. 2026</p>
-              <!-- <p class="desc">Short description and link (optional).</p> -->
-            </div>
-            <div class="item">
-              <div class="meta">Jan 2026 • Invited Talk</div>
-              <p class="title">E. Rashed is Keynote Speaker at the <a href="https://sites.google.com/view/svc-cvpr26">Second Subtle Visual Computing Workshop</a> @ <a href="https://cvpr.thecvf.com/">CVPR</a>, Denver, CO, June 2026</p>
-              <!-- <p class="desc">Short description and link (optional).</p> -->
-            </div>
+        <!-- ITEM  -->
+        <div class="item">
+          <div class="newsThumb">
+            <!-- Put your image path here -->
+            <img src="assets/news/ieee.jpg" alt="" loading="lazy" />
           </div>
+          <div class="newsBody">
+            <div class="meta">Feb 2026 • Paper</div>
+            <p class="title">A paper is accepted for the 23rd IEEE International Conference on Learning and Technology (L&amp;S26) @ KSA</p>
+            <p class="desc">Twin Minds in Cyber-Defense: A Dual-Agent Framework for Safe Automated Assessment in Security Education</p>
+          </div>
+        </div>
 
-   
+        <!-- ITEM  -->
+        <div class="item">
+          <div class="newsThumb">
+            <img src="assets/news/NTUworkshop.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="newsBody">
+            <div class="meta">Jan 2026 • Workshop</div>
+            <p class="title">E. Rashed and Y. Jia (M2) participated in the JST Nexus project workshop</p>
+            <p class="desc">@ Nanyang Technological University (Singapore), 28-29 Jan. 2026</p>
+          </div>
         </div>
-        <div style="margin-top:12px;">
-          <a class="btn" href="oldnews.html">Old news →</a>
+        
+         <!-- ITEM  -->
+        <div class="item">
+          <div class="newsThumb">
+            <img src="assets/news/aaai26.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="newsBody">
+            <div class="meta">Jan 2026 • Conference</div>
+            <p class="title">E. Rashed and Y. Jia (M2) participated in the AAAI 2026 Conference"</p>
+            <p class="desc">@ Singapore, 20-27 Jan. 2026</p>
+          </div>
         </div>
+
+         <!-- ITEM  -->
+        <div class="item">
+          <div class="newsThumb">
+            <img src="assets/news/ifmia26.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="newsBody">
+            <div class="meta">Jan 2026 • Conference</div>
+            <p class="title">E. Rashed, A. Elboardy (D1) and M. Yousef (RS) participated in the IFMIA 2026"</p>
+            <p class="desc">@  ​Kaohsiung (Taiwan), 12-14 Jan. 2026</p>
+          </div>
+        </div>
+        
+        <!-- ITEM  -->
+        <div class="item">
+          <div class="newsThumb">
+            <img src="assets/news/bspc.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="newsBody">
+            <div class="meta">Jan 2026 • Paper</div>
+            <p class="title">A <a href="https://doi.org/10.1016/j.bspc.2026.109741">paper</a> is published in Biomedical Signal Processing and Control (IF24=4.9)</p>
+            <p class="desc">Synthetic histopathology with controllable class distribution: A dual-GAN framework for melanoma segmentation</p>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="item">
+          <div class="newsThumb">
+            <img src="assets/news/isct.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="newsBody">
+            <div class="meta">Jan 2026 • Seminar</div>
+            <p class="title">All lab members will participate in Joint Seminar with the TDSAI Lab @ Institute of Science Tokyo, 4-5 Feb. 2026</p>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="item">
+          <div class="newsThumb">
+            <img src="assets/news/cvpr.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="newsBody">
+            <div class="meta">Jan 2026 • Invited Talk</div>
+            <p class="title">E. Rashed is Keynote Speaker at the <a href="https://sites.google.com/view/svc-cvpr26">Second Subtle Visual Computing Workshop</a> @ <a href="https://cvpr.thecvf.com/">CVPR</a></p>
+            <p class="desc">@ Denver, Colorado, US, 3-7 June 2026</p>
+            <!-- <a class="btn" href="https://figshare.com/s/a4d9ba6f18a6b7f7ba2c">Dataset →</a> -->
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+
+    <div style="margin-top:12px;">
+      <a class="btn" href="oldnews.html">Old news →</a>
+    </div>
+  </div>
+</section>
+
+  
     
     <!-- RESEARCH -->
     <section id="research">
