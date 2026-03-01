@@ -1,179 +1,242 @@
+<!-- ✅ news.html (UPDATED) — same header style as old-news.html -->
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Rashed Lab | Awards</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News | Rashed Lab</title>
 
-<style>
-:root{
-  --bg:#242e42;
-  --panel:#101827;
-  --text:#e5e7eb;
-  --muted:#a3aab8;
-  --brand:#60a5fa;
-  --brand2:#34d399;
-  --border:#1f2a44;
-  --shadow:0 10px 30px rgba(0,0,0,.35);
-  --radius:16px;
-  --max:1100px;
-}
+  <style>
+    :root{
+      --bg: #242e42;
+      --panel:rgba(16,24,39,.65);
+      --text:#e7eaf0;
+      --muted:#a7b0c0;
+      --line:rgba(255,255,255,.10);
+      --line2:rgba(31,42,68,.9);
+      --radius:16px;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 15% 0%, rgba(96,165,250,.10), transparent 60%),
+                  radial-gradient(900px 600px at 85% 10%, rgba(52,211,153,.08), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    a:hover{opacity:.92}
 
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
-}
-a{color:inherit;text-decoration:none}
-a:hover{color:var(--brand)}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 56px;}
 
-.container{max-width:var(--max);margin:0 auto;padding:40px 20px}
+    /* ===== Header (same as old-news.html) ===== */
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:14px 0 18px;
+      border-bottom:1px solid var(--line);
+      position:sticky; top:0; backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(11,15,23,.85), rgba(11,15,23,.55));
+      z-index:20;
+    }
+    .brand{display:flex; flex-direction:column; gap:2px;}
+    .brand strong{font-size:16px; letter-spacing:.2px}
+    .brand span{font-size:12px; color:var(--muted)}
 
-h1{margin:0 0 20px;font-size:34px}
+    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .navBtn{
+      font-size:13px;
+      padding:8px 10px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:999px;
+      color:var(--text);
+      white-space:nowrap;
+    }
+    .navBtn.active{
+      border-color: rgba(96,165,250,.45);
+      background: rgba(96,165,250,.10);
+    }
 
-/* Card */
-.card{
-  background:rgba(16,24,39,.75);
-  border:1px solid rgba(31,42,68,.9);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  padding:20px;
-}
+    /* ===== Page header/hero ===== */
+    .hero{padding:22px 0 6px;}
+    .hero h1{margin:0 0 6px; font-size:28px; letter-spacing:.2px;}
+    .hero p{margin:0; color:var(--muted); max-width:80ch;}
 
-/* Award item (same layout as News) */
-.awardItem{
-  display:flex;
-  gap:16px;
-  align-items:flex-start;
-  padding:16px;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,.10);
-  background:rgba(255,255,255,.03);
-  margin-bottom:14px;
-}
-.awardItem:last-child{margin-bottom:0}
+    /* ===== Card + list ===== */
+    .card{
+      border:1px solid var(--line2);
+      background: var(--panel);
+      border-radius: var(--radius);
+      padding:16px;
+      margin-top:14px;
+      overflow:hidden;
+      position:relative;
+    }
+    .card:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(650px 190px at 12% 0%, rgba(96,165,250,.10), transparent 55%),
+                  radial-gradient(650px 190px at 85% 10%, rgba(52,211,153,.08), transparent 55%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    .card > *{position:relative}
 
-.awardThumb{
-  width:80px;
-  height:80px;
-  flex:0 0 80px;
-  border-radius:14px;
-  overflow:hidden;
-  border:1px solid rgba(255,255,255,.12);
-  background:rgba(255,255,255,.04);
-}
-.awardThumb img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
+    /* ===== News item with LEFT image (same idea as you added) ===== */
+    .item{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      padding:12px;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      margin-bottom:10px;
+    }
+    .item:last-child{margin-bottom:0}
 
-.awardBody{
-  flex:1;
-  min-width:0;
-}
-.meta{
-  font-size:13px;
-  color:var(--muted);
-  margin-bottom:6px;
-}
-.title{
-  font-weight:800;
-  font-size:16px;
-  margin:0 0 6px;
-}
-.desc{
-  margin:0;
-  font-size:14px;
-  color:var(--muted);
-}
-.links{
-  margin-top:10px;
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
-.btn{
-  padding:8px 12px;
-  border-radius:12px;
-  border:1px solid rgba(255,255,255,.12);
-  background:rgba(255,255,255,.04);
-  font-weight:700;
-  font-size:13px;
-}
-.btn:hover{
-  border-color:rgba(96,165,250,.5);
-}
+    .newsThumb{
+      width:80px;
+      height:80px;
+      flex:0 0 80px;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+    }
+    .newsThumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .newsBody{flex:1; min-width:0;}
 
-@media (max-width:720px){
-  .awardThumb{
-    width:60px;
-    height:60px;
-    flex:0 0 60px;
-  }
-}
-</style>
+    .meta{color:var(--muted); font-size:12px; margin-bottom:4px}
+    .title{font-weight:800; margin:0 0 4px; font-size:14px}
+    .desc{margin:0; color:var(--muted); font-size:13px}
+
+    .btnRow{margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;}
+    .btn{
+      font-size:13px;
+      padding:8px 10px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:999px;
+      color:var(--text);
+      white-space:nowrap;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    @media (max-width:720px){
+      .newsThumb{width:60px; height:60px; flex:0 0 60px;}
+    }
+
+    footer{
+      margin-top:26px;
+      padding-top:16px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="wrap">
 
-<div class="container">
-  <h1>Selected Awards</h1>
-
-  <div class="card">
-
-    <!-- Award 1 -->
-    <div class="awardItem">
-      <div class="awardThumb">
-        <img src="assets/awards/kanda.jpg" alt="Motohisa Kanda Award">
+    <!-- ✅ Header same as old-news.html -->
+    <header>
+      <div class="brand">
+        <strong>Rashed Lab</strong>
+        <span>News & Highlights</span>
       </div>
-      <div class="awardBody">
-        <div class="meta">2025 • IEEE EMC Society</div>
-        <p class="title">🏆 The 2025 Motohisa Kanda Award</p>
-        <p class="desc">Awarded to Prof. Essam Rashed for outstanding contributions in electromagnetic modeling and medical applications.</p>
-        <div class="links">
-          <a class="btn" href="https://ieeexplore.ieee.org/document/9557785">DOI</a>
-          <a class="btn" href="https://u-hyogo-gsis.org/topics/%E3%83%A9%E3%82%B7%E3%83%89%E5%85%88%E7%94%9F%E5%8F%97%E8%B3%9E%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/">Announcement</a>
+      <nav aria-label="Site navigation">
+        <a class="navBtn" href="index.html">Home</a>
+        <a class="navBtn active" href="news.html">News</a>
+        <a class="navBtn" href="old-news.html">Old News</a>
+        <!-- Optional if you make awards.html -->
+        <!-- <a class="navBtn" href="awards.html">Awards</a> -->
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>News</h1>
+      <p>Latest lab news and highlights. For older items, see the archive.</p>
+    </section>
+
+    <div class="card">
+      <!-- Item 1 -->
+      <div class="item">
+        <div class="newsThumb">
+          <img src="assets/news/paper.png" alt="" loading="lazy">
         </div>
+        <div class="newsBody">
+          <div class="meta">Feb 2026 • Paper</div>
+          <p class="title">A paper is accepted for the 23rd IEEE International Conference on Learning and Technology (L&amp;S26) @ KSA</p>
+          <p class="desc">Twin Minds in Cyber-Defense: A Dual-Agent Framework for Safe Automated Assessment in Security Education</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="item">
+        <div class="newsThumb">
+          <img src="assets/news/journal.png" alt="" loading="lazy">
+        </div>
+        <div class="newsBody">
+          <div class="meta">Jan 2026 • Paper</div>
+          <p class="title">A <a href="https://doi.org/10.1016/j.bspc.2026.109741">paper</a> is published in Biomedical Signal Processing and Control (IF24=4.9)</p>
+          <p class="desc">Synthetic histopathology with controllable class distribution: A dual-GAN framework for melanoma segmentation</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="item">
+        <div class="newsThumb">
+          <img src="assets/news/seminar.png" alt="" loading="lazy">
+        </div>
+        <div class="newsBody">
+          <div class="meta">Jan 2026 • Seminar</div>
+          <p class="title">All lab members will participate in Joint Seminar with the TDSAI Lab @ Institute of Science Tokyo, 4-5 Feb. 2026</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="item">
+        <div class="newsThumb">
+          <img src="assets/news/talk.png" alt="" loading="lazy">
+        </div>
+        <div class="newsBody">
+          <div class="meta">Jan 2026 • Invited Talk</div>
+          <p class="title">E. Rashed is Keynote Speaker at the <a href="https://sites.google.com/view/svc-cvpr26">Second Subtle Visual Computing Workshop</a> @ <a href="https://cvpr.thecvf.com/">CVPR</a>, Denver, CO, June 2026</p>
+        </div>
+      </div>
+
+      <div class="btnRow">
+        <a class="btn" href="old-news.html">Old news →</a>
       </div>
     </div>
 
-    <!-- Award 2 -->
-    <div class="awardItem">
-      <div class="awardThumb">
-        <img src="assets/awards/mext.jpg" alt="MEXT Award">
-      </div>
-      <div class="awardBody">
-        <div class="meta">2024 • MEXT Japan</div>
-        <p class="title">🏆 MEXT Science and Technology Award (Development Category)</p>
-        <p class="desc">Recognized for development of innovative AI-driven biomedical modeling technologies.</p>
-        <div class="links">
-          <a class="btn" href="https://www.u-hyogo.ac.jp/news/news/202404017daijin-award.html">Link</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Award 3 -->
-    <div class="awardItem">
-      <div class="awardThumb">
-        <img src="assets/awards/poster.jpg" alt="Best Poster Award">
-      </div>
-      <div class="awardBody">
-        <div class="meta">2025 • IFMIA, Japan</div>
-        <p class="title">🏆 Best Poster Award</p>
-        <p class="desc">Ahmed Elboardy received Best Poster Award at IFMIA 2025 for research in medical image AI systems.</p>
-        <div class="links">
-          <a class="btn" href="https://u-hyogo-gsis.org/topics/%e7%a0%94%e7%a9%b6%e7%94%9f%e3%82%a8%e3%83%ab%e3%83%9c%e3%83%bc%e3%83%87%e3%82%a3%e3%81%95%e3%82%93%e5%8f%97%e8%b3%9e%e3%81%ae%e3%81%8a%e7%9f%A5%E3%82%89%E3%81%9B/">Link</a>
-        </div>
-      </div>
-    </div>
-
+    <footer>
+      <span>© <span id="yy"></span> Rashed Lab</span>
+      <span>Last updated: <span id="dd"></span></span>
+    </footer>
   </div>
-</div>
 
+  <script>
+    (function(){
+      const now = new Date();
+      document.getElementById("yy").textContent = now.getFullYear();
+      document.getElementById("dd").textContent = now.toISOString().slice(0,10);
+    })();
+  </script>
 </body>
 </html>
