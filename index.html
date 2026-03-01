@@ -268,24 +268,7 @@
     .item .title{font-weight:800; margin:0 0 4px; font-size:14px}
     .item .desc{margin:0; color:var(--muted); font-size:13px}
 
-    /* News with image */
-
-    /* News with left image */
-
-    .nitem{
-      display:flex;
-      align-items:flex-start;
-      gap:16px;
-      padding:14px 0;
-      border-bottom:1px solid rgba(255,255,255,.08);
-    }
-
-    .nitem:last-child{
-      border-bottom:none;
-    }
-
-    /* Image container */
-  .nnewsImg{
+    .newsImg{
     width:70px;
     height:70px;
     flex-shrink:0;
@@ -294,28 +277,13 @@
     border:1px solid rgba(255,255,255,.1);
     background:rgba(255,255,255,.03);
   }
-
-  .nnewsImg img{
+    .newsImg img{
     width:100%;
     height:100%;
     object-fit:cover;
     display:block;
   }
-
-  /* Text side */
-  .nnewsText{
-    flex:1;
-  }
-
-  .nnewsText .title{
-    margin:4px 0 6px;
-  }
-
-  .nnewsText .desc{
-    margin:0;
-    font-size:13px;
-    color:var(--muted);
-  }
+  
 
     
     /* People */
@@ -560,25 +528,12 @@
         <div class="contactGrid">
           <div class="card list">
 
-            <!-- news with image -->
-            <div class="nitem">
-              <div class="nnewsImg">
-                <img src="assests/people/student1.jpg" alt="BSPC Journal">
-              </div>
-
-              <div class="nnewsText">
-                <div class="meta">Jan 2026 • Paper</div>
-                <p class="title">
-                  A <a href="https://doi.org/10.1016/j.bspc.2026.109741">paper</a> is published in Biomedical Signal Processing and Control (IF24=4.9)
-                </p>
-                <p class="desc">
-                  Synthetic histopathology with controllable class distribution: A dual-GAN framework for melanoma segmentation
-                </p>
-            </div>
-            </div>
-            
+           
             
             <div class="item">
+              <div class="newsImg">
+                <img src="assets/people/student1.jpg" alt="BSPC Journal">
+              </div>
               <div class="meta">Feb 2026 • Paper</div>
               <p class="title">A paper is accepted for the 23rd IEEE International Conference on Learning and Technology (L&S26) @ KSA</p>
               <p class="desc">Twin Minds in Cyber-Defense: A Dual-Agent Framework for Safe Automated Assessment in Security Education</p>
