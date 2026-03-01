@@ -1,0 +1,17 @@
+
+@Article{app15126598,
+AUTHOR = {Jia, Yiming and Rashed, Essam A.},
+TITLE = {Automated Pneumothorax Segmentation with a Spatial Prior Contrast Adapter},
+JOURNAL = {Applied Sciences},
+VOLUME = {15},
+YEAR = {2025},
+NUMBER = {12},
+ARTICLE-NUMBER = {6598},
+URL = {https://www.mdpi.com/2076-3417/15/12/6598},
+ISSN = {2076-3417},
+ABSTRACT = {Pneumothorax is a critical condition that requires rapid and accurate diagnosis from standard chest radiographs. Identifying and segmenting the location of the pneumothorax are essential for developing an effective treatment plan. nnUNet is a self-configuring, deep learning-based framework for medical image segmentation. Despite adjusting its parameters automatically through data-driven optimization strategies and offering robust feature extraction and segmentation capabilities across diverse datasets, our initial experiments revealed that nnUNet alone struggled to achieve consistently accurate segmentation for pneumothorax, particularly in challenging scenarios where subtle intensity variations and anatomical noise obscure the target regions. This study aims to enhance the accuracy and robustness of pneumothorax segmentation in low-contrast chest radiographs by integrating spatial prior information and attention mechanism into the nnUNet framework. In this study, we introduce the spatial prior contrast adapter (SPCA)-enhanced nnUNet by implementing two modules. First, we integrate an SPCA utilizing the MedSAM foundation model to incorporate spatial prior information of the lung region, effectively guiding the segmentation network to focus on anatomically relevant areas. In the meantime, a probabilistic atlas, which shows the probability of an area prone to pneumothorax, is generated based on the ground truth masks. Both the lung segmentation results and the probabilistic atlas are used as attention maps in nnUNet. Second, we combine the two attention maps as additional input into nnUNet and integrate an attention mechanism into standard nnUNet by using a convolutional block attention module (CBAM). We validate our method by experimenting on the dataset CANDID-PTX, a benchmark dataset representing 19,237 chest radiographs. By introducing spatial awareness and intensity adjustments, the model reduces false positives and improves the precision of boundary delineations, ultimately overcoming many of the limitations associated with low-contrast radiographs. Compared with standard nnUNet, SPCA-enhanced nnUNet achieves an average Dice coefficient of 0.81, which indicates an improvement of standard nnUNet by 15%. This study provides a novel approach toward enhancing the segmentation performance of pneumothorax with low contrast in chest X-ray radiographs.},
+DOI = {10.3390/app15126598}
+}
+
+
+
