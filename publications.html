@@ -417,7 +417,7 @@
       data-keywords="synthetic histopathology controllable class distribution dual-gan melanoma segmentation biomedical signal processing and control open access">
       <div class="pubTop">
         <p class="title">Synthetic Histopathology with Controllable Class Distribution: A Dual-GAN Framework for Melanoma Segmentation</p>
-        <span class="badge">2026 • Journal • IF24=4.9</span>
+        <span class="badge">2026 • Journal • IF{{IFYear}}=4.9</span>
       </div>
       <p class="meta">Z. Elshaer, A. Jamal, E. A. Rashed. <em>Biomedical Signal Processing and Control</em>, 119, 109741.</p>
       <div class="links">
@@ -2756,6 +2756,20 @@
     </div>
   </footer>
 
+  <!-- variables -->
+  <script src="js/config.js"></script>
+
+  <!-- Impact Factor -->
+  <script>
+  document.body.innerHTML = document.body.innerHTML
+    .replaceAll("{{IFYear}}", SITE_CONFIG.IFYear)
+    .replaceAll("{{PMBIF}}", SITE_CONFIG.PMBIF)
+    .replaceAll("{{AccessIF}}", SITE_CONFIG.AccessIF);
+  </script>
+
+
+
+  
   <script>
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
