@@ -312,7 +312,7 @@
      <!-- BOOKS -->
 <section id="books">
   <div class="sectionTitle">
-    <h2>Books & Book Chapters ({{CountBK}}</h2>
+    <h2>Books & Book Chapters ({{CountBK}})</h2>
     <p class="hint">Monographs, edited volumes, and chapters.</p>
   </div>
 
@@ -414,7 +414,7 @@
       
 <section id="journals">
   <div class="sectionTitle">
-    <h2>Journal Papers</h2>
+    <h2>Journal Papers ({{CountJR}})</h2>
     <p class="hint">Peer-reviewed journal articles</p>
   </div>
 
@@ -1556,7 +1556,7 @@
 <!-- CONFERENCES (FULL LIST) -->
 <section id="conferences">
   <div class="sectionTitle">
-    <h2>Conference Papers</h2>
+    <h2>Conference Papers ({{CountCF}})</h2>
     <p class="hint">Peer-reviewed conferences, workshops, and posters (full list).</p>
   </div>
 
@@ -2442,7 +2442,7 @@
      <!-- PRESENTATIONS (FULL LIST) -->
 <section id="presentations">
   <div class="sectionTitle">
-    <h2>Presentations</h2>
+    <h2>Presentations {{CountPR}}</h2>
     <p class="hint">Invited talks, oral/poster presentations, seminars, and workshops.</p>
   </div>
 
@@ -2741,7 +2741,7 @@
       <section id="others">
         <div class="sectionTitle">
           <h2>Others</h2>
-          <p class="hint">Other publications.</p>
+          <p class="hint">Other publications ({{CountCF}})</p>
         </div>
         <div class="pubList" data-section="others">
           
@@ -2848,6 +2848,7 @@
 
     // *********
     .replaceAll("{{CountBK}}", SITE_COUNT.CountBK)
+    .replaceAll("{{CountJR}}", SITE_COUNT.CountJR)
     .replaceAll("{{CountCF}}", SITE_COUNT.CountCF)
     .replaceAll("{{CountPR}}", SITE_COUNT.CountPR)
     .replaceAll("{{CountOT}}", SITE_COUNT.CountOT);
