@@ -2951,7 +2951,14 @@
     applyFilters();
   </script>
 
-
+<script>
+function countInSection(wrapper){
+  // Count by YEAR + BULLET pattern using textContent (works even if section is hidden)
+  const t = (wrapper.textContent || "").replace(/\s+/g, " ");
+  const hits = t.match(/\b(19|20)\d{2}\s*[\u2022\u00B7•·]/g);
+  return hits ? hits.length : 0;
+}
+</script>
 
 
  <script>
@@ -2997,7 +3004,8 @@
 
     // Last fallback: count occurrences of "YYYY •" in visible text
     if (!n) {
-      const t = wrapper.innerText || "";
+      // const t = wrapper.innerText || "";
+      const t = wrapper.textContent || "";
       n = (t.match(/\b(19|20)\d{2}\s*[•·]/g) || []).length;
     }
 
@@ -3023,6 +3031,11 @@
     obs.observe(main, { childList: true, subtree: true, characterData: true });
   });
 })();
+
+   window.addEventListener("load", () => {
+  setTimeout(updateCounts, 50);   // small delay to allow rendering
+  setTimeout(updateCounts, 300);  // second pass (filters often finish here)
+});
 </script>
 
 
