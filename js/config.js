@@ -40,6 +40,7 @@ const SITE_CONFIG = {
 
 const SITE_COUNT = {
   CountBK: "5",
+  CountJR: "76",
   CountCF: "20",
   CountPR: "20",
   CountOT: "3"
