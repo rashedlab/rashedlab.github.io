@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  IFYear: "24",
+  IFYear: "26",
   
   AIRIF: "13.9",
   SCSIF: "12.0",
