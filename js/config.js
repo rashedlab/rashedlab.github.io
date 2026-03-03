@@ -42,6 +42,6 @@ const SITE_COUNT = {
   CountBK: "5",
   CountJR: "76",
   CountCF: "60",
-  CountPR: "54",
+  CountPR: "60",
   CountOT: "3"
 }
