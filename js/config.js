@@ -37,3 +37,10 @@ const SITE_CONFIG = {
   EJRNMIF: "0.5",
   PulseIF: "0.4"
 };
+
+const SITE_COUNT = {
+  CountBK: "5",
+  CountCF: "20",
+  CountPR: "20",
+  CountOT: "3"
+}
