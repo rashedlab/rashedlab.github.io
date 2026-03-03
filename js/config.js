@@ -24,7 +24,7 @@ const SITE_CONFIG = {
   VacIF: "3.4",
   PRLIF: "3.3",
   DHIF: "3.3",
-  FNeu: "3.2",
+  FNeuIF: "3.2",
   JSRIF: "3.0",
   MTAIF: "3.0",
   InfoIF: "2.9",
