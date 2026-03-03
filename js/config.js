@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  labName: "Rashed Lab",
-  university: "University of Hyogo",
-  year: "2026"
+  IFYear: "24",
+  PMBIF: "3.77",
+  AccessIF: "3.88"
 };
