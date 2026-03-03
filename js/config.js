@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  IFYear: "25",
+  IFYear: "24",
   
   AIRIF: "13.9",
   SCSIF: "12.0",
@@ -34,5 +34,6 @@ const SITE_CONFIG = {
   TEMCIF: "2.5",
   QIMSIF: "2.3",
   JGEIF: "1.7",
+  EJRNMIF: "0.5",
   PulseIF: "0.4"
 };
