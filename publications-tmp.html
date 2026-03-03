@@ -231,6 +231,31 @@
       nav{display:none}
     }
   </style>
+
+  <style>
+  /* Wrap each section so we can place a badge on the top-right */
+  .pubSection { position: relative; }
+
+  /* The badge itself */
+  .secCount {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1;
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.18);
+    color: inherit;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    user-select: none;
+    pointer-events: none;
+  }
+  </style>
+
+  
 </head>
 
 <body>
@@ -2925,5 +2950,80 @@
     // Initial
     applyFilters();
   </script>
+
+
+
+
+  <script>
+(() => {
+  // 1) Pick selectors that match ONE publication entry card/item in your DOM.
+  //    If counts look wrong, open DevTools -> inspect a single paper entry -> note its class -> put it here.
+  const ITEM_SELECTORS = [
+    ".pubCard", ".pubItem", ".publication", ".paper", ".entry", ".item",
+    "li", "article"
+  ];
+
+  // Try selectors in order; use the first one that finds any items inside a section.
+  function pickItemSelector(scopeEl) {
+    for (const sel of ITEM_SELECTORS) {
+      const n = scopeEl.querySelectorAll(sel).length;
+      if (n > 0) return sel;
+    }
+    return null;
+  }
+
+  // 2) We will wrap each H2 section into a container, then add a badge in the top-right.
+  //    Your page sections are headed by H2 labels like “Books & Book Chapters”, “Journal Papers”, etc. :contentReference[oaicite:1]{index=1}
+  const main = document.querySelector("main") || document.body;
+
+  const headings = Array.from(main.querySelectorAll("h2"));
+  headings.forEach((h2, idx) => {
+    // Create a wrapper for the section
+    const wrapper = document.createElement("div");
+    wrapper.className = "pubSection";
+
+    // Insert wrapper before h2, then move nodes until next h2 into wrapper
+    h2.parentNode.insertBefore(wrapper, h2);
+    wrapper.appendChild(h2);
+
+    let next = wrapper.nextSibling; // because h2 moved
+    while (next && !(next.nodeType === 1 && next.tagName.toLowerCase() === "h2")) {
+      const move = next;
+      next = next.nextSibling;
+      wrapper.appendChild(move);
+    }
+
+    // Add badge
+    const badge = document.createElement("span");
+    badge.className = "secCount";
+    badge.textContent = "0";
+    wrapper.appendChild(badge);
+
+    // Count items within wrapper
+    const sel = pickItemSelector(wrapper);
+
+    let count = 0;
+    if (sel) {
+      // Avoid counting the heading itself (and avoid counting nested lists unrelated to pubs if any)
+      const nodes = Array.from(wrapper.querySelectorAll(sel)).filter(el => el !== h2 && !el.classList.contains("secCount"));
+      count = nodes.length;
+    } else {
+      // Fallback: count by year-meta pattern (very conservative)
+      // Adjust if needed.
+      const text = wrapper.innerText || "";
+      count = (text.match(/\b(19|20)\d{2}\s*•/g) || []).length;
+    }
+
+    badge.textContent = String(count);
+  });
+})();
+</script>
+
+
+  
 </body>
+
+
+
+  
 </html>
