@@ -312,7 +312,7 @@
      <!-- BOOKS -->
 <section id="books">
   <div class="sectionTitle">
-    <h2>Books & Book Chapters</h2>
+    <h2>Books & Book Chapters ({{CountBK}}</h2>
     <p class="hint">Monographs, edited volumes, and chapters.</p>
   </div>
 
@@ -2844,7 +2844,13 @@
     .replaceAll("{{QIMSIF}}", SITE_CONFIG.QIMSIF)
     .replaceAll("{{JGEIF}}", SITE_CONFIG.JGEIF)
     .replaceAll("{{EJRNMIF}}", SITE_CONFIG.EJRNMIF)
-    .replaceAll("{{PulseIF}}", SITE_CONFIG.PulseIF);
+    .replaceAll("{{PulseIF}}", SITE_CONFIG.PulseIF)
+
+    // *********
+    .replaceAll("{{CountBK}}", SITE_CONFIG.CountBK)
+    .replaceAll("{{CountCF}}", SITE_CONFIG.CountCF)
+    .replaceAll("{{CountPR}}", SITE_CONFIG.CountPR)
+    .replaceAll("{{CountOT}}", SITE_CONFIG.CountOT);
     
   </script>
 
