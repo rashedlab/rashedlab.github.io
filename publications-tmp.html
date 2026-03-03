@@ -1,0 +1,2929 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Full list of publications: books, journal papers, conference papers, presentations, others." />
+  <title>Publications | RASHED LAB</title>
+
+  <!-- Reuse the same design tokens as your main page -->
+  <style>
+    :root{
+       --bg: #242e42; /*#0b0f17; */
+      --panel:#101827;
+      --panel2:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a3aab8;
+      --brand:#60a5fa;
+      --brand2:#34d399;
+      --border:#1f2a44;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(96,165,250,.20), transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(52,211,153,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    a:hover{color:var(--brand)}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+    header{
+      position:sticky; top:0;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,23,.70);
+      border-bottom: 1px solid rgba(31,42,68,.6);
+      z-index:50;
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0; gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:900; letter-spacing:.2px; white-space:nowrap;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(96,165,250,.95), rgba(52,211,153,.9));
+      box-shadow: 0 10px 24px rgba(96,165,250,.25);
+      position:relative;
+    }
+    .logo:after{
+      content:"";
+      position:absolute; inset:9px;
+      border-radius:10px;
+      background: rgba(11,15,23,.55);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    nav a{
+      padding:10px 10px;
+      border-radius:12px;
+      color:var(--muted);
+      font-weight:700;
+      font-size:14px;
+    }
+    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:800;
+      font-size:14px;
+      cursor:pointer;
+    }
+    .btn:hover{border-color:rgba(96,165,250,.5); box-shadow: 0 0 0 3px rgba(96,165,250,.18)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(96,165,250,.9), rgba(52,211,153,.85));
+      border-color: transparent;
+      color:#071018;
+    }
+
+    /* Page */
+    .hero{
+      padding:32px 0 10px;
+    }
+    .card{
+      background: rgba(16,24,39,.75);
+      border: 1px solid rgba(31,42,68,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .heroBox{
+      padding:22px;
+    }
+    h1{
+      margin:10px 0 6px;
+      font-size: 34px;
+      letter-spacing: -0.6px;
+      line-height:1.1;
+    }
+    .lead{margin:0; color:var(--muted); max-width:70ch}
+
+    /* Controls */
+    .controls{
+      margin-top:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      align-items:center;
+    }
+    .input{
+      flex:1 1 320px;
+      display:flex; align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+    }
+    .input input{
+      width:100%;
+      border:none; outline:none;
+      background: transparent;
+      color: var(--text);
+      font-size:14px;
+    }
+    .select{
+      flex:0 0 auto;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      font-weight:800;
+      font-size:14px;
+      outline:none;
+    }
+    .chips{
+      display:flex; flex-wrap:wrap; gap:8px;
+      margin-top:12px;
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-weight:800;
+      font-size:13px;
+      cursor:pointer;
+      user-select:none;
+    }
+    .chip.active{
+      color: var(--text);
+      border-color: rgba(96,165,250,.5);
+      box-shadow: 0 0 0 3px rgba(96,165,250,.15);
+    }
+
+    /* Sections */
+    main{padding:10px 0 40px}
+    section{padding:18px 0}
+    .sectionTitle{
+      color: rgba(250, 204, 21, .80);
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:12px; margin-bottom: 10px;
+    }
+    h2{margin:0; font-size:20px; letter-spacing:-.2px}
+    .hint{margin:0; color:var(--muted); font-size:13px}
+
+    .pubList{display:grid; gap:12px}
+    .pub{
+      padding:14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31,42,68,.9);
+      background: rgba(150,150,150,.12); /* gray */ */
+    }
+    .pubTop{
+      display:flex; justify-content:space-between; align-items:flex-start;
+      gap:12px; flex-wrap:wrap;
+      margin-bottom:6px;
+    }
+    .badge{
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.2px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      white-space:nowrap;
+    }
+    .title{margin:0; font-weight:900}
+    .meta{margin:6px 0 0; color:var(--muted); font-size:13px}
+    .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkBtn{
+      font-size:13px;
+      font-weight:900;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+    }
+    .empty{
+      padding:14px;
+      border-radius: var(--radius);
+      border: 1px dashed rgba(255,255,255,.18);
+      color: var(--muted);
+      background: rgba(255,255,255,.02);
+    }
+
+    footer{
+      padding:26px 0 38px;
+      border-top: 1px solid rgba(31,42,68,.6);
+      color: rgba(163,170,184,.9);
+    }
+    .footerRow{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; align-items:center}
+    .small{font-size:13px}
+
+    @media (max-width: 720px){
+      h1{font-size:28px}
+      nav{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Back to home">
+          <span class="logo" aria-hidden="true"></span>
+          <span>RASHED LAB</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a href="index.html#news">News</a>
+          <a href="index.html#research">Research</a>
+          <a href="index.html#people">People</a>
+          <a href="publications.html" style="color:var(--text); background:rgba(255,255,255,.06);">Publications</a>
+          <a href="index.html#awards">Awards</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <a class="btn" href="index.html">Home</a>
+          <a class="btn primary" href="#top">Browse</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero" id="top">
+    <div class="container">
+      <div class="card heroBox">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:flex-start;">
+          <div>
+            <h1>Publications</h1>
+            <p class="lead">
+              Full list grouped by type. Use search + filters to quickly find papers, books, and conference publications.
+            </p>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn" href="https://scholar.google.com/citations?user=ihTTcfkAAAAJ">Google Scholar</a>
+            <a class="btn" href="https://orcid.org/0000-0001-6571-9807">ORCID</a>
+            <a class="btn" href="https://researchmap.jp/erashed">Research Map</a>
+            <a class="btn" href="https://www.scopus.com/authid/detail.uri?authorId=24484116300">Scopus</a>
+          </div>
+        </div>
+
+        <div class="controls" aria-label="Search and filters">
+          <div class="input" title="Search by title, authors, venue, keywords">
+            <span aria-hidden="true">🔎</span>
+            <input id="q" type="search" placeholder="Search publications (title, authors, venue, keywords)..." />
+          </div>
+
+          <!-- <select id="year" class="select" aria-label="Filter by year">
+            <option value="">All years</option>
+            <option>2026</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+          </select> -->
+
+          <button class="btn" id="clearBtn" type="button">Clear</button>
+        </div>
+
+        <div class="chips" aria-label="Type filters">
+          <div class="chip active" data-type="all">All</div>
+          <div class="chip" data-type="book">Books & Chapters</div>
+          <div class="chip" data-type="journal">Journal Papers</div>
+          <div class="chip" data-type="conference">Conference Papers</div>
+          <div class="chip" data-type="presentation">Presentations</div>
+          <div class="chip" data-type="other">Others</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+     <!-- BOOKS -->
+<section id="books">
+  <div class="sectionTitle">
+    <h2>Books & Book Chapters</h2>
+    <p class="hint">Monographs, edited volumes, and chapters.</p>
+  </div>
+
+  <div class="pubList" data-section="book">
+
+    <!-- 2026 -->
+    <article class="pub" data-type="book" data-year="2026"
+      data-keywords="stroke care deep learning neuroinformatics elsevier">
+      <div class="pubTop">
+        <p class="title">Deep learning in stroke care</p>
+        <span class="badge">2026 • Book Chapter</span>
+      </div>
+      <p class="meta">Y. Zafari, E. A. Rashed, W. Hussain, M. Mabrok. In: <em>Deep Learning Applications in Neuroinformatics</em>. Elsevier.</p>
+      <div class="links">
+        <a class="linkBtn" href="#">In press</a>
+      <!--   <a class="linkBtn" href="#">DOI</a>  -->
+      <!--   <a class="linkBtn" href="#">Link</a>  -->
+      <!--   <a class="linkBtn" href="#">PDF</a>  -->
+       <!--  <a class="linkBtn" href="#">BibTex</a> -->
+      </div>
+    </article>
+
+    <!-- 2025 -->
+    <article class="pub" data-type="book" data-year="2025"
+      data-keywords="multimodal foundation models radiology report generation large language models healthcare crc press">
+      <div class="pubTop">
+        <p class="title">Multimodal Foundation Models for Radiological Understanding and Report Generation</p>
+        <span class="badge">2025 • Book Chapter</span>
+      </div>
+      <p class="meta">S. E. Rashed, G. Khoriba, E. A. Rashed. In: <em>Large Language Models in Healthcare: Opportunities, Applications, and Challenges</em>. CRC Press.</p>
+      <div class="links">
+        <a class="linkBtn" href="#">In press</a>
+      <!--   <a class="linkBtn" href="#">DOI</a>  -->
+      <!--   <a class="linkBtn" href="#">Link</a>  -->
+      <!--   <a class="linkBtn" href="#">PDF</a>  -->
+       <!--  <a class="linkBtn" href="#">BibTex</a> -->
+      </div>
+    </article>
+
+    <article class="pub" data-type="book" data-year="2025"
+      data-keywords="covid-19 projection variants vaccination effectiveness deep learning social simulation ai japan springer nature">
+      <div class="pubTop">
+        <p class="title">Projection of COVID-19 Positive Cases Considering New Viral Variants and Vaccination Effectiveness Models: Deep Learning Approach</p>
+        <span class="badge">2025 • Book Chapter</span>
+      </div>
+      <p class="meta">A. Hirata, S. Kodera, E. A. Rashed. In: <em>Social Simulation of COVID-19 with AI in Japan</em>. Springer Nature. ISBN: 978-981-96-8065-8.</p>
+      <div class="links">
+        <!-- Replace # with your DOI URL -->
+        <a class="linkBtn" href="https://doi.org/10.1007/978-981-96-8066-5_2">DOI</a>
+        <a class="linkBtn" href="https://link.springer.com/chapter/10.1007/978-981-96-8066-5_2">Link</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/1odlbzrutlx467jx4hhmk/Hirata2025Book.pdf?rlkey=wturadhz6ljxymup3iuynz9r7&st=q4t3i240&dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Hirata2025Book.bib">BibTex</a>
+
+      </div>
+    </article>
+
+    <article class="pub" data-type="book" data-year="2025"
+      data-keywords="large language models medical image understanding crc press artificial intelligence advances real-world applications">
+      <div class="pubTop">
+        <p class="title">Large language models in medical image understanding</p>
+        <span class="badge">2025 • Book Chapter</span>
+      </div>
+      <p class="meta">G. Khoriba, M. Nouman, E. A. Rashed. In: <em>Cutting-Edge Artificial Intelligence Advances: Implications in Real-World Applications</em>. CRC Press. ISBN: 978-1-0326-3248-3.</p>
+      <div class="links">
+        <!-- Replace # with your DOI URL -->
+        <a class="linkBtn" href="https://doi.org/10.1201/9781032632483-7">DOI</a>
+        <a class="linkBtn" href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781032632483-7/large-language-models-medical-image-understanding-ghada-khoriba-muhammad-nouman-essam-rashed">Link</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/qza6uee26picb9fy4ii4c/Khoriba2025Book.pdf?rlkey=nupwvno9p9fam5uxd2eht34h2&st=f7o5c24k&dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Khoriba2025Book.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- 2022 -->
+    <article class="pub" data-type="book" data-year="2022"
+      data-keywords="covid-19 environment impacts global pandemic mdpi open access edited volume">
+      <div class="pubTop">
+        <p class="title">COVID-19 and Environment: Impacts of a Global Pandemic</p>
+        <span class="badge">2022 • Edited volume</span>
+      </div>
+      <p class="meta">S. Kodera, E. A. Rashed (Eds.). MDPI (Basel). ISBN: 978-3-0365-5842-4 (Hbk); 978-3-0365-5841-7 (PDF).</p>
+      <div class="links">
+        <!-- Replace # with the MDPI book page URL -->
+        <a class="linkBtn" href="https://mdpi-res.com/bookfiles/book/6382/COVID19_and_Environment_Impacts_of_a_Global_Pandemic.pdf">PDF</a>
+        <a class="linkBtn" href="https://www.mdpi.com/books/reprint/6382-covid-19-and-environment-impacts-of-a-global-pandemic">Link</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2022Book.bib">BibTex</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+      <!-- JOURNALS -->
+
+
+
+
+
+
+      
+<section id="journals">
+  <div class="sectionTitle">
+    <h2>Journal Papers</h2>
+    <p class="hint">Peer-reviewed journal articles</p>
+  </div>
+
+  <div class="pubList" data-section="journal">
+
+    <!-- ===================== 2026 ===================== -->
+    <article class="pub" data-type="journal" data-year="2026"
+      data-keywords="synthetic histopathology controllable class distribution dual-gan melanoma segmentation biomedical signal processing and control open access">
+      <div class="pubTop">
+        <p class="title">Synthetic Histopathology with Controllable Class Distribution: A Dual-GAN Framework for Melanoma Segmentation</p>
+        <span class="badge">2026 • Journal • IF{{IFYear}}={{BSPCIF}}</span>
+      </div>
+      <p class="meta">Z. Elshaer, A. Jamal, E. A. Rashed. <em>Biomedical Signal Processing and Control</em>, 119, 109741.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.bspc.2026.109741">DOI</a>
+        <a class="linkBtn" href="https://authors.elsevier.com/a/1mar76DBR3KyGE">Open access</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/l19tvxfw0iua1ui85hd02/Ziad_BSPC2026.pdf?rlkey=zpee0thl32a14y0m425utfrhv&st=fdk6an6l&dl=0">PDF</a>
+        <a class="linkBtn" href="https://puma.grand-challenge.org/dataset/">Dataset</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Ziad2026PSBC.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2026"
+      data-keywords="contextual transformer brain stroke segmentation mri computers and electrical engineering open access">
+      <div class="pubTop">
+        <p class="title">Contextual transformer for brain stroke segmentation in MRI</p>
+        <span class="badge">2026 • Journal • IF{{IFYear}}={{CEEIF}}</span>
+      </div>
+      <p class="meta">M. Nouman, M. Mabrok, M. al-Shatouri, E. A. Rashed. <em>Computers and Electrical Engineering</em>, 126, 110795.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.compeleceng.2025.110795">DOI</a>
+        <!-- <a class="linkBtn" href="https://authors.elsevier.com/a/1m3IXAQLry0SO">Open access</a> -->
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/lig5slo686cp0hbk54xq1/Nouman_CEE.pdf?rlkey=khy56pzgfp1ppwxb77y9vjdq7&st=qz3e1glm&dl=0">PDF</a>
+        <a class="linkBtn" href="https://github.com/npnl/atlas">Dataset</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Nouman2026CEE.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2025 ===================== -->
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="cure confidence-driven unified reasoning ensemble medical question answering big data cognitive computing open access">
+      <div class="pubTop">
+        <p class="title">CURE: Confidence-driven Unified Reasoning Ensemble Framework for Medical Question Answering</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{BDCCIF}}</span>
+      </div>
+      <p class="meta">Z. Elshaer, E. A. Rashed. <em>Big Data and Cognitive Computing</em>, 9, 299.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/bdcc9120299">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/2504-2289/9/12/299">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Ziad2025BDCC.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="medical image segmentation comprehensive review lumbar spine computers in biology and medicine arxiv pubmed full access">
+      <div class="pubTop">
+        <p class="title">Advances in Medical Image Segmentation: A Comprehensive Review with a Focus on Lumbar Spine Applications</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{NNIF}}</span>
+      </div>
+      <p class="meta">A. Kabil, G. Khoriba, M. Yousef, E. A. Rashed. <em>Computers in Biology and Medicine</em>, 198(A), 111171.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.compbiomed.2025.111171">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/k4da6i463a9ffdfezpepp/Kabil_CBM2025.pdf?rlkey=sfumo81kioxx4m5421p3a41lm&st=1l97krf3&dl=0">PDF</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/41056615/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kabil2025CBM.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="benchmarking vision-language models brain cancer diagnosis multisequence mri informatics in medicine unlocked open access citescore">
+      <div class="pubTop">
+        <p class="title">Benchmarking Vision-Language Models for Brain Cancer Diagnosis Using Multisequence MRI</p>
+        <span class="badge">2025 • Journal</span>
+      </div>
+      <p class="meta">A. T. Elboardy, G. Khoriba, M. al-Shatouri, M. Mousa, E. A. Rashed. <em>Informatics in Medicine Unlocked</em>, 58, 101692.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.imu.2025.101692">DOI</a>
+        <a class="linkBtn" href="https://www.sciencedirect.com/science/article/pii/S2352914825000814">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Ahmed2025IMU.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="lightweight deep learning architecture multi-lead ecg arrhythmia detection sensors open access pubmed">
+      <div class="pubTop">
+        <p class="title">Lightweight Deep Learning Architecture for Multi-Lead ECG Arrhythmia Detection</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{SenIF}}</span>
+      </div>
+      <p class="meta">D. H. Elsheikhy, A. S. Hassan, N. M. Yhiea, A. M. Fareed, E. A. Rashed. <em>Sensors</em>, 25, 5542.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/s25175542">DOI</a>
+        <a class="linkBtn" href="#https://www.mdpi.com/1424-8220/25/17/5542">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/40942969/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Donia2025Sensors.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="retinal arteries veins segmentation deep learning conditional random fields biomedical signal processing and control pdf">
+      <div class="pubTop">
+        <p class="title">Enhanced retinal arteries and veins segmentation through deep learning with conditional random fields</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{BSPCIF}}</span>
+      </div>
+      <p class="meta">M. Mahmoud, M. Mansour, H. M. Elrefai, A. J. Hamed, E. A. Rashed. <em>Biomedical Signal Processing and Control</em>, 106, 107747.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.bspc.2025.107747">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/q3njdhky7zzais2b04kxw/Mahmoud_BSPC_2025.pdf?rlkey=mdsftgrjmq79pgbl0h4sjqh2y&st=3x8ykayi&dl=0">PDF</a>
+        <a class="linkBtn" href="https://ravirdataset.github.io/data/">Dataset</a>  
+        <a class="linkBtn" href="assets/publications/bibtex/Menna2025BSPC.bib">BibTex</a>     
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="power absorption temperature rise deep learning head models radiofrequency exposures physics in medicine and biology pubmed pdf">
+      <div class="pubTop">
+        <p class="title">Power absorption and temperature rise in deep learning based head models for local radiofrequency exposures</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{PMBIF}})</span>
+      </div>
+      <p class="meta">S. Kodera, R. Yoshida, E. A. Rashed, Y. Diao, H. Takizawa, A. Hirata. <em>Physics in Medicine and Biology</em>, 70, 065013.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1088/1361-6560/adb935">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/lnlfnloz9v369tmsssahf/Kodera_PMB2025.pdf?rlkey=1sdq4zg6lbmt7vvhtdt4azej6&st=qd0m2y0h&dl=0">PDF</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/39983315/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2025PMB.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="compressed sensing image reconstruction discrete tomography sparse view limited angle plos one open access pubmed">
+      <div class="pubTop">
+        <p class="title">Compressed sensing-based image reconstruction for discrete tomography with sparse view and limited angle geometries</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{PlosIF}}</span>
+      </div>
+      <p class="meta">H. A. Ali, E. A. Rashed, H. Kudo. <em>PLOS One</em>, 20, e0327666.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1371/journal.pone.0327666">DOI</a>
+        <a class="linkBtn" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0327666">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/40644514/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Haytham2025Plos.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="radiology report generation comprehensive analysis bioengineering open access pubmed">
+      <div class="pubTop">
+        <p class="title">Advancements in Radiology Report Generation: A Comprehensive Analysis</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{BioEIF}}</span>
+      </div>
+      <p class="meta">D. Mamdouh, M. Attia, M. Osama, N. Mohamed, A. Lotfy, T. Arafa, E. A. Rashed, G. Khoriba. <em>Bioengineering</em>, 12, 693.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/bioengineering12070693">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/2306-5354/12/7/693">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/40722385/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Dima2025BE.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="mitigating llm hallucinations multi-agent framework information open access">
+      <div class="pubTop">
+        <p class="title">Mitigating LLM hallucinations using a multi-agent framework</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{InfoIF}}</span>
+      </div>
+      <p class="meta">A. M. Darwish, E. A. Rashed, G. Khoriba. <em>Information</em>, 16, 517.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/info16070517">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/2078-2489/16/7/517">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Darwish2025Info.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="pneumothorax segmentation spatial prior contrast adapter applied sciences open access">
+      <div class="pubTop">
+        <p class="title">Automated pneumothorax segmentation with a spatial prior contrast adapter</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{ASIF}}</span>
+      </div>
+      <p class="meta">Y. Jia, E. A. Rashed. <em>Applied Sciences</em>, 15, 6598.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/app15126598">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/2076-3417/15/12/6598">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Jia2025AS.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="misc hybrid multimodal deep learning skin cancer detection multimedia tools and applications open access">
+      <div class="pubTop">
+        <p class="title">MiSC: A hybrid multi-modal deep learning approach for accurate skin cancer detection</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{MTAIF}}</span>
+      </div>
+      <p class="meta">E. H. Mohamed, N. Abdu, M. Khalil, H. Kamal, E. A. Rashed. <em>Multimedia Tools and Applications</em>, 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1007/s11042-025-20951-7">DOI</a>
+        <a class="linkBtn" href="https://link.springer.com/article/10.1007/s11042-025-20951-7">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Ensaf2026MTA.bib">BibTex</a> 
+
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="sensitivity-aware differential privacy federated medical imaging sensors open access pubmed">
+      <div class="pubTop">
+        <p class="title">Sensitivity-Aware Differential Privacy for Federated Medical Imaging</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{SenIF}}</span>
+      </div>
+      <p class="meta">L. Zheng, Y. Cao, M. Yoshikawa, Y. Shen, E. A. Rashed, K. Taura, S. Hanaoka, T. Zhang. <em>Sensors</em>, 25, 2847.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/s25092847">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/1424-8220/25/9/2847">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/40363282/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Zheng2025Sensors.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2025"
+      data-keywords="sharm segmented head anatomical reference models biomedical signal processing and control pdf">
+      <div class="pubTop">
+        <p class="title">SHARM: Segmented Head Anatomical Reference Models</p>
+        <span class="badge">2025 • Journal • IF{{IFYear}}={{BSPCIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, M. al-Shatouri, I. Laakso, S. Kodera, A. Hirata. <em>Biomedical Signal Processing and Control</em>, 104, 107481.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.bspc.2024.107481">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/3tjvxpyboa1a2o5yldddm/sharm2025.pdf?rlkey=i2lsg53zuyhcklfcrxwt8g8mg&st=c8va6fq0&dl=0">PDF</a>
+        <a class="linkBtn" href="https://figshare.com/s/a4d9ba6f18a6b7f7ba2c">Dataset</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2025BSPC.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <!-- ===================== 2024 ===================== -->
+    <article class="pub" data-type="journal" data-year="2024"
+      data-keywords="stroke segmentation complex architectures ieee access open access">
+      <div class="pubTop">
+        <p class="title">Deep models for stroke segmentation: do complex architectures always perform better?</p>
+        <span class="badge">2024 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">A. Soliman, Y. Zafari-Ghadim, Y. Yousif, A. Ibrahim, A. Mohamed, E. A. Rashed, M. Mabrok. <em>IEEE Access</em>, 12, 198262–198276.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2024.3522214">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/10813166">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Soliman2024Access.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2024"
+      data-keywords="conductivity variations computed electric field learning-based models ieee access open access">
+      <div class="pubTop">
+        <p class="title">Effect of the conductivity variations on computed electric field induced in learning-based models</p>
+        <span class="badge">2024 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">Y. Diao, E. A. Rashed, K. Sasaki, L. Giaccone, I. Laakso, C. Li, R. Scorretti, A. Hirata. <em>IEEE Access</em>, 12, 188454–188464.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2024.3514710">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/10788714">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Diao2024Access.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2024"
+      data-keywords="segmentation low-grade brain tumors mutual attention multimodal mri sensors open access pubmed editors choice">
+      <div class="pubTop">
+        <p class="title">Segmentation of low-grade brain tumors using mutual attention multimodal MRI</p>
+        <span class="badge">2024 • Journal • IF{{IFYear}}={{SenIF}} • Editor’s Choice Award 🏆</span>
+      </div>
+      <p class="meta">H. Seshimo, E. A. Rashed. <em>Sensors</em>, 24, 7576.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/s24237576">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/1424-8220/24/23/7576">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/39686112/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Seshimo2024Sensors.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2024"
+      data-keywords="transformer-based architectures stroke segmentation review artificial intelligence review open access">
+      <div class="pubTop">
+        <p class="title">Transformer-based architectures for stroke segmentation: a review</p>
+        <span class="badge">2024 • Journal • IF{{IFYear}}={{AIRIF}}</span>
+      </div>
+      <p class="meta">Y. Zafari-Ghadim, E. A. Rashed, A. Mohamed, M. Mabrok. <em>Artificial Intelligence Review</em>, 57, Article 307.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1007/s10462-024-10900-5">DOI</a>
+        <a class="linkBtn" href="https://link.springer.com/article/10.1007/s10462-024-10900-5">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Yalda2024AIR.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2024"
+      data-keywords="revolutionising healthcare artificial intelligence bibliometric analysis digital health open access pubmed">
+      <div class="pubTop">
+        <p class="title">Revolutionising healthcare with artificial intelligence: a bibliometric analysis of 40 years of progress in health systems</p>
+        <span class="badge">2024 • Journal • IF{{IFYear}}={{DHIF}}</span>
+      </div>
+      <p class="meta">W. Hussain, M. Mabrok, H. Gao, F. A. Rabhi, E. A. Rashed. <em>Digital Health</em>, 10.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1177/20552076241258757">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/38817839/">Open access</a>
+        <a class="linkBtn" href="https://journals.sagepub.com/doi/10.1177/20552076241258757">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Walayat2024DH.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2024"
+      data-keywords="ecg electrode-pair locations wearable devices computational analysis biosensors open access pubmed">
+      <div class="pubTop">
+        <p class="title">Sensitivity of Electrocardiogram on Electrode-Pair Locations for Wearable Devices: Computational Analysis of Amplitude and Waveform Distortion</p>
+        <span class="badge">2024 • Journal • IF{{IFYear}}={{BioSIF}}</span>
+      </div>
+      <p class="meta">K. Sanjo, K. Hebiguchi, C. Tang, E. A. Rashed, S. Kodera, H. Togo, A. Hirata. <em>Biosensors</em>, 14, 153.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/bios14030153">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/38534260/">Open access</a>
+        <a class="linkBtn" href="https://www.mdpi.com/2079-6374/14/3/153">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Sanjo2024BS.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2024"
+      data-keywords="high-resolution eeg source localization personalized segmentation-free head model multi-dipole fitting physics in medicine and biology open access pubmed">
+      <div class="pubTop">
+        <p class="title">High-resolution EEG source localization in personalized segmentation-free head model with multi-dipole fitting</p>
+        <span class="badge">2024 • Journal • IF{{IFYear}}={{PMBIF}}</span>
+      </div>
+      <p class="meta">A. Hirata, M. Niitsu, C. R. Phang, S. Kodera, T. Kida, E. A. Rashed, M. Fukunaga, N. Sadato, T. Wasaka. <em>Physics in Medicine and Biology</em>, 69, 055013.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1088/1361-6560/ad25c3">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/38306964/">Open access</a>
+        <a class="linkBtn" href="https://iopscience.iop.org/article/10.1088/1361-6560/ad25c3/pdf">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Hirata2024PMB.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <!-- ===================== 2023 ===================== -->
+    <article class="pub" data-type="journal" data-year="2023"
+      data-keywords="ai-aided computed tomography lung cancer screening egyptian journal of radiology and nuclear medicine open access">
+      <div class="pubTop">
+        <p class="title">Assessment of artificial intelligence-aided computed tomography in lung cancer screening</p>
+        <span class="badge">2023 • Journal • IF{{IFYear}}={{EJRNMIF}}</span>
+      </div>
+      <p class="meta">N. A. Aboelenin, A. Elserafi, N. Zaki, E. A. Rashed, M. al-Shatouri. <em>Egyptian Journal of Radiology and Nuclear Medicine</em>, 54, Article 74.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1186/s43055-023-01014-z">DOI</a>
+        <a class="linkBtn" href="https://ejrnm.springeropen.com/articles/10.1186/s43055-023-01014-z">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Noha2023EJRNM.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2023"
+      data-keywords="inter-comparison averaged induced electric field learning-based head models low-frequency magnetic field ieee access open access">
+      <div class="pubTop">
+        <p class="title">Inter-comparison of the averaged induced electric field in learning-based human head models exposed to low-frequency magnetic field</p>
+        <span class="badge">2023 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">Y. Diao, E. A. Rashed, L. Giaccone, I. Laakso, C. Li, R. Scorretti, Y. Sekiba, K. Yamazaki, A. Hirata. <em>IEEE Access</em>, 11, 38739–38752.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2023.3268133">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/10103878">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Diao2023Access.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2023"
+      data-keywords="covid-19 hybrid immunity tokyo vaccines pubmed open access">
+      <div class="pubTop">
+        <p class="title">Projection of COVID-19 Positive Cases Considering Hybrid Immunity: Case Study in Tokyo</p>
+        <span class="badge">2023 • Journal • IF{{IFYear}}={{VacIF}}</span>
+      </div>
+      <p class="meta">S. Kodera, A. Takada, E. A. Rashed, A. Hirata. <em>Vaccines</em>, 11, 633.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/vaccines11030633">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/36992217/">Open access</a>
+        <a class="linkBtn" href="https://www.mdpi.com/2076-393X/11/3/633">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2023Vac.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2023"
+      data-keywords="mobility time window averaged effective reproduction number covid-19 variants urban cities journal of urban health pubmed open access">
+      <div class="pubTop">
+        <p class="title">The effects of time window averaged mobility on effective reproduction number of COVID-19 viral variants in urban cities</p>
+        <span class="badge">2023 • Journal • IF{{IFYear}}={{JUHIF}}</span>
+      </div>
+      <p class="meta">S. Kodera, K. Hikita, E. A. Rashed, A. Hirata. <em>Journal of Urban Health</em>, 100, 29–39.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1007/s11524-022-00697-5">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/36445638/">Open access</a>
+        <a class="linkBtn" href="https://link.springer.com/article/10.1007/s11524-022-00697-5">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2023JUH.bib">BibTex</a> 
+      </div>
+    </article>
+
+    <!-- ===================== 2022 ===================== -->
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="mRNA covid-19 vaccination effectiveness tokyo omicron ba.2 ba.5 vaccines pubmed open access preprint">
+      <div class="pubTop">
+        <p class="title">Estimation of mRNA COVID-19 vaccination effectiveness in Tokyo for Omicron variants BA.2 and BA.5 — Effect of social behavior</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{VacIF}}</span>
+      </div>
+      <p class="meta">S. Kodera, Y. Niimi, E. A. Rashed, N. Yoshinaga, M. Toyoda, A. Hirata. <em>Vaccines</em>, 10, 1820.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/vaccines10111820">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/36366329/">Open access</a>
+        <a class="linkBtn" href="https://www.mdpi.com/2076-393X/10/11/1820/htm">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2022Vac.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="cnn pooling layer breast cancer segmentation classification thermograms plos one pubmed open access">
+      <div class="pubTop">
+        <p class="title">A novel CNN pooling layer for breast cancer segmentation and classification from thermograms</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{PlosIF}}</span>
+      </div>
+      <p class="meta">E. A. Mohamed, T. Gaber, O. Karam, E. A. Rashed. <em>PLOS One</em>, 17, e0276523.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1371/journal.pone.0276523">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/36269756/">Open access</a>
+        <a class="linkBtn" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276523">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Esraa2022Plos.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="induced electric field learning-based head models smooth conductivity ieee transactions on electromagnetic compatibility pdf">
+      <div class="pubTop">
+        <p class="title">Induced electric field in learning-based head models with smooth conductivity for exposure to uniform low-frequency magnetic fields</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{TEMCIF}}</span>
+      </div>
+      <p class="meta">Y. Diao, E. A. Rashed, A. Hirata. <em>IEEE Transactions on Electromagnetic Compatibility</em>, 64, 1969–1977.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/TEMC.2022.3212860">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/ogcvw72gxw6ehj5/Diao2022TEMC.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Diao2022TEMC.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="covid-19 forecasting viral variants vaccination effectiveness models computers in biology and medicine pubmed arxiv pdf">
+      <div class="pubTop">
+        <p class="title">COVID-19 forecasting using new viral variants and vaccination effectiveness models</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{CBMIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, S. Kodera, A. Hirata. <em>Computers in Biology and Medicine</em>, 149, 105986.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.compbiomed.2022.105986">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/36030722/">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/j8a7bmpihvbywdh/Rashed2022PMB.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2022CBM.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="dielectric properties biological tissues measurement image-based estimation physics in medicine and biology pubmed open access">
+      <div class="pubTop">
+        <p class="title">Measurement and image-based estimation of dielectric properties of biological tissues — past, present, and future</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{PMBIF}}</span>
+      </div>
+      <p class="meta">K. Sasaki, E. Porter, E. A. Rashed, L. Farrugia, G. Schmid. <em>Physics in Medicine and Biology</em>, 67, 14TR01.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1088/1361-6560/ac7b64">DOI</a>
+        <a class="linkBtn" href="https://iopscience.iop.org/article/10.1088/1361-6560/ac7b64">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/35732164/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Sasaki2022PMB.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="ring artifact elimination computed tomography sparsity-based method plos one pubmed open access">
+      <div class="pubTop">
+        <p class="title">Sparsity-based method for ring artifact elimination in computed tomography</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{PlosIF}}</span>
+      </div>
+      <p class="meta">M. Selim, E. A. Rashed, M. A. Atiea, H. Kudo. <em>PLOS One</em>, 17, e0268410.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1371/journal.pone.0268410">DOI</a>
+        <a class="linkBtn" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0268410">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/35763462/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Mona2022Plos.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="tokyo olympic games transmission covid-19 interpretation machine learning computers in biology and medicine pubmed pdf">
+      <div class="pubTop">
+        <p class="title">Did the Tokyo Olympic games enhance the transmission of COVID-19? Interpretation with machine learning</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{CBMIF}}</span>
+      </div>
+      <p class="meta">A. Hirata, S. Kodera, Y. Diao, E. A. Rashed. <em>Computers in Biology and Medicine</em>, 146, 105548.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.compbiomed.2022.105548">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/35537221/">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/htwp13d3lohcxs5/Hirata2022CBM.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Hirata2022CBM.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="real-world vaccination effectiveness mRNA vaccines delta omicron japan vaccines pubmed open access">
+      <div class="pubTop">
+        <p class="title">Estimation of Real-World Vaccination Effectiveness of mRNA COVID-19 Vaccines against Delta and Omicron Variants in Japan</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{VacIF}}</span>
+      </div>
+      <p class="meta">S. Kodera, E. A. Rashed, A. Hirata. <em>Vaccines</em>, 10, 430.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/vaccines10030430">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/2076-393X/10/3/430">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/35335062/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2022vac2.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="binhoa binary horse herd optimization feature selection ieee access open access">
+      <div class="pubTop">
+        <p class="title">BinHOA: Efficient Binary Horse Herd optimization method for feature selection: analysis and validations</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">D. A. Elmanakhly, M. Saleh, E. A. Rashed, M. Abdel-basset. <em>IEEE Access</em>, 10, 26795–26816.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2022.3156593">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/9727175">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Dina2022Access.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="breast cancer detection thermograms fully automated deep learning plos one pubmed open access">
+      <div class="pubTop">
+        <p class="title">Deep learning model for fully automated breast cancer detection system from thermograms</p>
+        <span class="badge">2022 • Journal • IF{{IFYear}}={{PlosIF}}</span>
+      </div>
+      <p class="meta">E. A. Mohamed, E. A. Rashed, T. Gaber, O. Karam. <em>PLOS One</em>, 17, e0262349.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1371/journal.pone.0262349">DOI</a>
+        <a class="linkBtn" href="https://journals.plos.org/plosone/article/metrics?id=10.1371/journal.pone.0262349">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/35030211/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Esraa2022Plos2.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2022"
+      data-keywords="multi-objective test suite reduction intelligent automation soft computing open access">
+      <div class="pubTop">
+        <p class="title">Multi-objective test suite reduction</p>
+        <span class="badge">2022 • Journal</span>
+      </div>
+      <p class="meta">N. Reda, A. Hamdy, E. A. Rashed. <em>Intelligent Automation &amp; Soft Computing</em>, 31, 781–797.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://doi.org/10.32604/iasc.2022.019669">DOI</a>
+        <a class="linkBtn" href="https://www.techscience.com/iasc/v31n2/44527">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Nagwa2022IASC.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2021 ===================== -->
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="assessment human exposure electromagnetic fields review future directions ieee transactions on electromagnetic compatibility pdf award">
+      <div class="pubTop">
+        <p class="title">Assessment of human exposure to electromagnetic fields: review and future directions</p>
+        <span class="badge">2021 • Journal • IF{{IFYear}}={{TEMCIF}} • The 2025 Motohisa Kanda Award 🏆</span>
+      </div>
+      <p class="meta">A. Hirata, Y. Diao, T. Onishi, K. Sasaki, S. Ahn, D. Colombi, V. De Santis, I. Laakso, L. Giaccone, W. Joseph, E. A. Rashed, W. Kainz, J. Chen. <em>IEEE Transactions on Electromagnetic Compatibility</em>, 63, 1619–1630.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/TEMC.2021.3109249">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/vlybafhfigm0hhm/Hirata2021TEMC.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Hirata2021TEMC.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="equilibrium optimizer feature selection ieee access open access">
+      <div class="pubTop">
+        <p class="title">An improved equilibrium optimizer algorithm for features selection: methods and analysis</p>
+        <span class="badge">2021 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">D. A. Elmanakhly, M. Saleh, E. A. Rashed. <em>IEEE Access</em>, 9, 120309–120327.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2021.3108097">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/9523539">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Dina2021Access.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="heat-related morbidity weather data nagoya city sustainable cities and society pdf">
+      <div class="pubTop">
+        <p class="title">Social implementation and intervention with estimated morbidity of heat-related illnesses from weather data: A case study from Nagoya City, Japan</p>
+        <span class="badge">2021 • Journal • IF{{IFYear}}={{SCSIF}}</span>
+      </div>
+      <p class="meta">T. Nishimura, E. A. Rashed, S. Kodera, H. Shirakami, R. Kawaguchi, K. Watanabe, M. Nemoto, A. Hirata. <em>Sustainable Cities and Society</em>, 47, 103203.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.scs.2021.103203">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/2t9bpvgts6w1qj3/Nishimura2021.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Nishimura2021scs.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="Infectivity upsurge by COVID-19 viral variants in Japan: evidence from a deep learning modeling">
+      <div class="pubTop">
+        <p class="title">Infectivity upsurge by COVID-19 viral variants in Japan: evidence from a deep learning modeling</p>
+        <span class="badge">2021 • Journal</span>
+      </div>
+      <p class="meta">E. A. Rashed and A. Hirata. <em>International Journal of Environmental Research and Public Health</em>, 18, 7799.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/ijerph18157799">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/1660-4601/18/15/7799">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/34360092/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2021JERPH1.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="One-year lesson: Machine learning prediction of COVID-19 positive cases with meteorological data and mobility estimate in Japan">
+      <div class="pubTop">
+        <p class="title">One-year lesson: Machine learning prediction of COVID-19 positive cases with meteorological data and mobility estimate in Japan</p>
+        <span class="badge">2021 • Journal • Editor’s Choice Award 🏆</span>
+      </div>
+      <p class="meta">E. A. Rashed and A. Hirata. <em>International Journal of Environmental Research and Public Health</em>, 18, 5736.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/ijerph18115736">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/34071801/">PubMed</a>
+        <a class="linkBtn" href="https://www.mdpi.com/1660-4601/18/11/5736">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2021JERPH2.bib">BibTex</a>
+      </div>
+    </article>
+    
+     <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="ECG localization method based on volume conductor model and Kalman filtering">
+      <div class="pubTop">
+        <p class="title">ECG localization method based on volume conductor model and Kalman filtering</p>
+        <span class="badge">2021 • Journal • IF{{IFYear}}={{SenIF}}</span>
+      </div>
+      <p class="meta">Y. Nakano, E. A. Rashed, T. Nakane, I. Laakso and A. Hirata. <em>Sensors</em>, 21, 4275.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/s21134275">DOI</a>
+        <a class="linkBtn" href="https://www.mdpi.com/1424-8220/21/13/4275">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/34206512/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Nakano2021Sen.bib">BibTex</a>
+      </div>
+    </article>
+    
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="emergency ambulance dispatch covid-19 knowledge discovery journal of biomedical informatics pubmed arxiv pdf">
+      <div class="pubTop">
+        <p class="title">Knowledge discovery from emergency ambulance dispatch during COVID-19: A case study of Nagoya City, Japan</p>
+        <span class="badge">2021 • Journal • IF{{IFYear}}={{JBIIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, S. Kodera, H. Shirakami, R. Kawaguchi, K. Watanabe, A. Hirata. <em>Journal of Biomedical Informatics</em>, 117, 103743.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.jbi.2021.103743">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/33753268/">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/6tma0gj1ionbhw7/Rashed2021JBE.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2021JBI.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="high-resolution eeg source localization segmentation-free head models finite-difference matching pursuit frontiers in neuroscience pubmed open access">
+      <div class="pubTop">
+        <p class="title">High-resolution EEG source localization in segmentation-free head models based on finite-difference method and matching pursuit algorithm</p>
+        <span class="badge">2021 • Journal • IF{{IFYear}}={{FNeuIF}}</span>
+      </div>
+      <p class="meta">T. Moridera, E. A. Rashed, S. Mizutani, A. Hirata. <em>Frontiers in Neuroscience</em>, 15, 695668.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3389/fnins.2021.695668">DOI</a>
+        <a class="linkBtn" href="https://www.frontiersin.org/articles/10.3389/fnins.2021.695668">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/34262433/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Moridera2021fnis.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="segmentation accuracy structural mr head scans electric field computation tms tes physics in medicine and biology pubmed arxiv pdf">
+      <div class="pubTop">
+        <p class="title">Influence of segmentation accuracy in structural MR head scans on electric field computation for TMS and tES</p>
+        <span class="badge">2021 • Journal • IF{{IFYear}}={{PMBIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>Physics in Medicine and Biology</em>, 66, 064002.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1088/1361-6560/abe223">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/33524957/">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/t3ylufn057dnz1n/Rashed2021PMB.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2021PMB.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="population density temperature absolute humidity covid-19 spread decay durations comparative study one health pubmed open access highly cited">
+      <div class="pubTop">
+        <p class="title">Influence of population density, temperature, and absolute humidity on spread and decay durations of COVID-19: A comparative study of scenarios in China, England, Germany, and Japan</p>
+        <span class="badge">2021 • Journal • IF{{IFYear}}={{OneHIF}} • Highly cited Paper 🏆</span>
+      </div>
+      <p class="meta">Y. Diao, S. Kodera, D. Anzai, J. Gomez-Tames, E. A. Rashed, A. Hirata. <em>One Health</em>, 12, 100203</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.onehlt.2020.100203">DOI</a>
+        <a class="linkBtn" href="https://www.sciencedirect.com/science/article/pii/S2352771420303049">Open access</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/33344745/">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Diao2021OH.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2021"
+      data-keywords="search-based regression testing optimization international journal of open source software and processes pdf">
+      <div class="pubTop">
+        <p class="title">Search-based regression testing optimization</p>
+        <span class="badge">2021 • Journal</span>
+      </div>
+      <p class="meta">N. Faisal, A. Hamdy, E. A. Rashed. <em>International Journal of Open Source Software and Processes</em>, 12(2), Article 1.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.4018/IJOSSP.2021040101">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/54agf09vswxcl8o/Reda2021IJOSSP.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Nagwa2021oss.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2020 ===================== -->
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="sar temperature rise human hand contact current ieee access open access">
+      <div class="pubTop">
+        <p class="title">Evaluation of SAR and temperature rise in human hand due to contact current from 100 kHz to 100 MHz</p>
+        <span class="badge">2020 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">T. Murakawa, Y. Diao, E. A. Rashed, S. Kodera, Y. Tanaka, Y. Kamimura, S. Kitamura, S. Uehara, Y. Otaka, A. Hirata. <em>IEEE Access</em>, 8, 200995–201004.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2020.3035815">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/9247983">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Diao2020Access.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="absorbed power density temperature rise nonplanar body model above 6 ghz physics in medicine and biology pubmed arxiv pdf">
+      <div class="pubTop">
+        <p class="title">Assessment of absorbed power density and temperature rise for nonplanar body model under electromagnetic exposure above 6 GHz</p>
+        <span class="badge">2020 • Journal • IF{{IFYear}}={{PMBIF}}</span>
+      </div>
+      <p class="meta">Y. Diao, E. A. Rashed, A. Hirata. <em>Physics in Medicine and Biology</em>, 65, 224001.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1088/1361-6560/abbdb7">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/33007761/">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/8doww08glyt12m3/Diao2020PMB.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Diao2020PMB.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="skin-to-skin contact stimulation threshold dosimetry ieee transactions on electromagnetic compatibility arxiv pdf">
+      <div class="pubTop">
+        <p class="title">Effect of skin-to-skin contact on stimulation threshold and dosimetry</p>
+        <span class="badge">2020 • Journal • IF{{IFYear}}={{TEMCIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, Y. Diao, S. Tanaka, T. Sakai, J. Gomez-Tames, A. Hirata. <em>IEEE Transactions on Electromagnetic Compatibility</em>, 62, 2704–2713. </p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/TEMC.2020.2985404">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/kom7tcyd1mi6tlh/Rashed2020TEMC.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2020TEMC.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="nuclear cataracts prevalence elderly residents model-based approach computers in biology and medicine pubmed pdf">
+      <div class="pubTop">
+        <p class="title">Model-based approach for analyzing prevalence of nuclear cataracts in elderly residents</p>
+        <span class="badge">2020 • Journal • IF{{IFYear}}={{CBMIF}}</span>
+      </div>
+      <p class="meta">S. Kodera, A. Hirata, F. Miura, E. A. Rashed, N. Hatsusaka, N. Yamamoto, E. Kubo, H. Sasaki. <em>Computers in Biology and Medicine</em>, 126, 104009.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.compbiomed.2020.104009">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/33011577/">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/8jw2gvak5y0bmm3/Kodera2020CBM.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2020CBM.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="absolute humidity temperature population density covid-19 spread decay durations japan international journal of environmental research and public health pubmed open access">
+      <div class="pubTop">
+        <p class="title">Influence of absolute humidity, temperature and population density on COVID-19 spread and decay durations: multi-prefecture study in Japan</p>
+        <span class="badge">2020 • Journal</span>
+      </div>
+      <p class="meta">E. A. Rashed, S. Kodera, J. Gomez-Tames, A. Hirata. <em>International Journal of Environmental Research and Public Health</em>, 17, 5354.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/ijerph17155354">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/32722294/">PubMed</a>
+        <a class="linkBtn" href="https://www.mdpi.com/1660-4601/17/15/5354/pdf">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2020IJERPH.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="head proximity effects antenna performance machine learning models ieee access open access">
+      <div class="pubTop">
+        <p class="title">Large-scale analysis of the head proximity effects on antenna performance using machine learning based models</p>
+        <span class="badge">2020 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">Y. Diao, E. A. Rashed, A. Hirata. <em>IEEE Access</em>, 8, 154060–154071.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2020.3017773">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/9171235">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Diao2020Access2.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="semantic segmentation personalized deep brain structures non-invasive brain stimulation neural networks pubmed arxiv pdf">
+      <div class="pubTop">
+        <p class="title">End-to-end semantic segmentation of personalized deep brain structures for non-invasive brain stimulation</p>
+        <span class="badge">2020 • Journal • IF{{IFYear}}={{NNIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>Neural Networks</em>, 125, 233–244.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.neunet.2020.02.006">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/32151914/">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/8e34pb3t6uxnmx0/Rashed2020NN.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2020NN.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="covid-19 morbidity mortality population density temperature absolute humidity japan international journal of environmental research and public health pubmed open access">
+      <div class="pubTop">
+        <p class="title">Correlation between COVID-19 morbidity and mortality rates in Japan and local population density, temperature, and absolute humidity</p>
+        <span class="badge">2020 • Journal</span>
+      </div>
+      <p class="meta">S. Kodera, E. A. Rashed, A. Hirata. <em>International Journal of Environmental Research and Public Health</em>, 17, 5477.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3390/ijerph17155477">DOI</a>
+        <a class="linkBtn" href="https://pubmed.ncbi.nlm.nih.gov/32751311/">PubMed</a>
+        <a class="linkBtn" href="https://www.mdpi.com/1660-4601/17/15/5477">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2020IJERPH.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="dielectric properties tissue density learning-based estimation personalized radio-frequency dosimetry physics in medicine and biology pubmed arxiv pdf">
+      <div class="pubTop">
+        <p class="title">Learning-based estimation of dielectric properties and tissue density in head models for personalized radio-frequency dosimetry</p>
+        <span class="badge">2020 • Journal • IF{{IFYear}}={{PMBIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, Y. Diao, A. Hirata. <em>Physics in Medicine and Biology</em>, 65, 065001.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1088/1361-6560/ab7308">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/32023556">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/tbckels1w4c0w92/Rashed2020PMB.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2020PMB.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2020"
+      data-keywords="personalized human head model non-uniform conductivity brain stimulation ieee transactions on medical imaging pubmed arxiv pdf">
+      <div class="pubTop">
+        <p class="title">Deep learning-based development of personalized human head model with non-uniform conductivity for brain stimulation</p>
+        <span class="badge">2020 • Journal • IF{{IFYear}}={{TMIIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>IEEE Transactions on Medical Imaging</em>, 39, 2351–2362.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/TMI.2020.2969682">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/31995479">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/q0r2pjudx7f9svz/Rashed2020TMI.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2020TMI.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2019 ===================== -->
+    <article class="pub" data-type="journal" data-year="2019"
+      data-keywords="spatial averaging schemes in situ electric field low-frequency magnetic field exposures ieee access open access">
+      <div class="pubTop">
+        <p class="title">Spatial averaging schemes of in situ electric field for low-frequency magnetic field exposures</p>
+        <span class="badge">2019 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">Y. Diao, J. Gomez-Tames, E. A. Rashed, R. Kavet, A. Hirata. <em>IEEE Access</em>, 7, 184320–184331.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2019.2960394">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/8936363">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Diao2019Access.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2019"
+      data-keywords="dielectric properties tissue density personalized electromagnetic dosimetry using deep learning neuroimage pubmed arxiv pdf">
+      <div class="pubTop">
+        <p class="title">Development of accurate human head models for personalized electromagnetic dosimetry using deep learning</p>
+        <span class="badge">2019 • Journal • IF{{IFYear}}={{NeuroImgIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>NeuroImage</em>, 202, 116132.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.neuroimage.2019.116132">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/31472248">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/j3yh5gkdvbc7as8/Rashed2019NI.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2019NI.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2019"
+      data-keywords="brain ai deep learning for brain stimulation ieee pulse cover story pubmed open access">
+      <div class="pubTop">
+        <p class="title">Brain AI: Deep Learning for Brain Stimulation</p>
+        <span class="badge">2019 • Journal • IF{{IFYear}}={{PulseIF}} • Cover Story 🏆</span>
+      </div>
+      <p class="meta">E. A. Rashed, T. Sakai, J. Gomez-Tames, A. Hirata. <em>IEEE Pulse</em>, 10, 3–5.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/MPULS.2019.2923888">DOI</a>
+        <a class="linkBtn" href="https://www.embs.org/pulse/articles/brain-ai-deep-learning-for-brain-stimulation/">Open access</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/31395528">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2019Pulse.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2019"
+      data-keywords="Estimation of heat-related morbidity from weather data: A computational study in three prefectures of Japan from 2013-2018">
+      <div class="pubTop">
+        <p class="title">Estimation of heat-related morbidity from weather data: A computational study in three prefectures of Japan from 2013-2018</p>
+        <span class="badge">2019 • Journal • IF{{IFYear}}={{EnvIntIF}}</span>
+      </div>
+      <p class="meta">S. Kodera, T. Nishimura, E. A. Rashed, K. Hasegawa, I. Takeuchi, R. Egawa and A. Hirata <em>Environment International</em> 130, 104907.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1016/j.envint.2019.104907">DOI</a>
+        <a class="linkBtn" href="https://www.sciencedirect.com/science/article/pii/S0160412019308360">Open access</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/31203028">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Kodera2019EI.bib">BibTex</a>
+      </div>
+    </article>
+    
+
+    <article class="pub" data-type="journal" data-year="2019"
+      data-keywords="human head skin thickness modeling electromagnetic dosimetry ieee access open access">
+      <div class="pubTop">
+        <p class="title">Human head skin thickness modeling for electromagnetic dosimetry</p>
+        <span class="badge">2019 • Journal • IF{{IFYear}}={{AccessIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>IEEE Access</em>, 7, 46176–46186.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACCESS.2019.2904743">DOI</a>
+        <a class="linkBtn" href="https://ieeexplore.ieee.org/document/8667003">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2019Access.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2019"
+      data-keywords="qRT-PCR miRNA assay glioblastoma epigenomics pubmed pdf">
+      <div class="pubTop">
+        <p class="title">Comprehensive data analysis for development of custom qRT-PCR miRNA assay for glioblastoma: a prevalidation study</p>
+        <span class="badge">2019 • Journal • IF{{IFYear}}={{EpiGenIF}}</span>
+      </div>
+      <p class="meta">E. A. Toraih, H. Y. Abdallah, E. A. Rashed, A. El-Wazir, M. A. Tantawy, M. S. Fawzy. <em>Epigenomics</em>, 11, 367–380.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.2217/epi-2018-0134">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/30793921">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/81cbyewm9fiyyj8/Torieh2019EG.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Torieh2019EG.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2019"
+      data-keywords="mixed reality ray tracing rendering mobile application minimally invasive surgeries interactive mobile technologies open access">
+      <div class="pubTop">
+        <p class="title">An interactive mixed reality ray tracing rendering mobile application of medical data in minimally invasive surgeries</p>
+        <span class="badge">2019 • Journal</span>
+      </div>
+      <p class="meta">S. A. El-Seoud, A. S. Mady, E. A. Rashed. <em>International Journal of Interactive Mobile Technologies</em>, 13, 29–39.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.3991/ijim.v13i03.9893">DOI</a>
+        <a class="linkBtn" href="https://online-journals.org/index.php/i-jim/article/download/9893/5546">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Samir2019mob.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2017 ===================== -->
+    <article class="pub" data-type="journal" data-year="2017"
+      data-keywords="double-sided sliding-paraboloid dssp preprocessing gpr data computers and geosciences pdf">
+      <div class="pubTop">
+        <p class="title">Double-sided sliding-paraboloid (DSSP): a new tool for preprocessing GPR data</p>
+        <span class="badge">2017 • Journal • IF{{IFYear}}={{CompGeoIF}}</span>
+      </div>
+      <p class="meta">M. Rashed, E. A. Rashed. <em>Computers &amp; Geosciences</em>, 102, 12–21.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1016/j.cageo.2017.02.005">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/ln41o6xgr9zu983/Rashed2017CG.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2017CG.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2016 ===================== -->
+    <article class="pub" data-type="journal" data-year="2016"
+      data-keywords="probabilistic atlas prior ct image reconstruction computer methods and programs in biomedicine pubmed pdf">
+      <div class="pubTop">
+        <p class="title">Probabilistic atlas prior for CT image reconstruction</p>
+        <span class="badge">2016 • Journal • IF{{IFYear}}={{CMPBIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. <em>Computer Methods and Programs in Biomedicine</em>, 128, 119–136.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1016/j.cmpb.2016.02.017">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/27040837">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/zdao13cydz3we2u/Rashed2016CMPB.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2016CMPB.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2015 ===================== -->
+    <article class="pub" data-type="journal" data-year="2015"
+      data-keywords="gpr background removal directional total variation minimisation journal of geophysics and engineering open access">
+      <div class="pubTop">
+        <p class="title">GPR background removal using directional total variation minimisation approach</p>
+        <span class="badge">2015 • Journal • IF{{IFYear}}={{JGEIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed. <em>Journal of Geophysics and Engineering</em>, 12, 897–908.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1088/1742-2132/12/6/897">DOI</a>
+        <a class="linkBtn" href="https://academic.oup.com/jge/article/12/6/897/5110778">Open access</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2015JGE.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2015"
+      data-keywords="sparsity-constrained three-dimensional image reconstruction c-arm angiography computers in biology and medicine pubmed pdf">
+      <div class="pubTop">
+        <p class="title">Sparsity-constrained three-dimensional image reconstruction for C-arm angiography</p>
+        <span class="badge">2015 • Journal • IF{{IFYear}}={{CBMIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, M. al-Shatouri, H. Kudo. <em>Computers in Biology and Medicine</em>, 62, 141–154.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1016/j.compbiomed.2015.04.014">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/25932971">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/2b2gtdmqqde8wka/Rashed2015CBM.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2015CBM.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2013 ===================== -->
+    <article class="pub" data-type="journal" data-year="2013"
+      data-keywords="image reconstruction sparse-view ct interior ct compressed sensing differentiated backprojection quantitative imaging in medicine and surgery pubmed open access cover story">
+      <div class="pubTop">
+        <p class="title">Image reconstruction for sparse-view CT and interior CT — introduction to compressed sensing and differentiated backprojection</p>
+        <span class="badge">2013 • Journal • IF{{IFYear}}={{QIMSIF}} • Cover Story 🏆</span>
+      </div>
+      <p class="meta">H. Kudo, T. Suzuki, E. A. Rashed. <em>Quantitative Imaging in Medicine and Surgery</em>, 3, 147–161.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.3978/j.issn.2223-4292.2013.06.01">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3701091/">Open access</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/23833728">PubMed</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2013QIMS.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2013"
+      data-keywords="synchrotron radiation imaging high-resolution statistical iterative reconstruction journal of synchrotron radiation pubmed pdf">
+      <div class="pubTop">
+        <p class="title">Towards high-resolution synchrotron radiation imaging with statistical iterative reconstruction</p>
+        <span class="badge">2013 • Journal • IF{{IFYear}}={{JSRIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. <em>Journal of Synchrotron Radiation</em>, 20, 116–124.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1107/S0909049512041301">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/23254664">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/z6ppp9099qizpod/Rashed2013JSR.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2013JSR.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2013"
+      data-keywords="compressed sensing ct image reconstruction overview medical imaging technology pdf">
+      <div class="pubTop">
+        <p class="title">Overview of compressed sensing approach to CT image reconstruction</p>
+        <span class="badge">2013 • Journal</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. <em>Medical Imaging Technology</em>, 31, 9–14.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.11409/mit.31.9">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/8gn1sfsvtmqesko/Rashed2013MIT.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2013MIT.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2012 ===================== -->
+    <article class="pub" data-type="journal" data-year="2012"
+      data-keywords="statistical image reconstruction limited projection data intensity priors physics in medicine and biology pubmed pdf">
+      <div class="pubTop">
+        <p class="title">Statistical image reconstruction from limited projection data with intensity priors</p>
+        <span class="badge">2012 • Journal • IF{{IFYear}}={{PMBIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. <em>Physics in Medicine and Biology</em>, 57, 2039–2061.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1088/0031-9155/57/7/2039">DOI</a>
+        <a class="linkBtn" href="https://www.ncbi.nlm.nih.gov/pubmed/22430037">PubMed</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/zo3legb0e1mxodv/Rashed2012PMB.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2012PMB.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2009 ===================== -->
+    <article class="pub" data-type="journal" data-year="2009"
+      data-keywords="roi reconstruction truncated ct projection data blind object support medical imaging technology pdf">
+      <div class="pubTop">
+        <p class="title">Iterative region-of-interest reconstruction from truncated CT projection data under blind object support</p>
+        <span class="badge">2009 • Journal</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo, F. Noo. <em>Medical Imaging Technology</em>, 27, 321–331.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.11409/mit.27.321">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/aio2h7egfgpxsl7/Rashed2009MITb.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2009MIT1.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="journal" data-year="2009"
+      data-keywords="bayesian framework image reconstruction sparse projection data medical imaging technology pdf">
+      <div class="pubTop">
+        <p class="title">Intensity-based Bayesian framework for image reconstruction from sparse projection data</p>
+        <span class="badge">2009 • Journal</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. <em>Medical Imaging Technology</em>, 27, 243–251.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.11409/mit.27.243">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/u6k8opf3rioye52/Rashed2009MITa.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2009MIT2.bib">BibTex</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2007 ===================== -->
+    <article class="pub" data-type="journal" data-year="2007"
+      data-keywords="multiresolution mammogram analysis multilevel decomposition pattern recognition letters pdf">
+      <div class="pubTop">
+        <p class="title">Multiresolution mammogram analysis in multilevel decomposition</p>
+        <span class="badge">2007 • Journal • IF{{IFYear}}={{PRLIF}}</span>
+      </div>
+      <p class="meta">E. A. Rashed, I. A. Ismail, S. I. Zaki. <em>Pattern Recognition Letters</em>, 28, 286–292.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1016/j.patrec.2006.07.010">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/lsqxnyeufqglwwt/Rashed2007PRL.pdf?dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Rashed2007PRL.bib">BibTex</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CONFERENCES (FULL LIST) -->
+<section id="conferences">
+  <div class="sectionTitle">
+    <h2>Conference Papers</h2>
+    <p class="hint">Peer-reviewed conferences, workshops, and posters (full list).</p>
+  </div>
+
+  <div class="pubList" data-section="conference">
+
+    <!-- ===================== 2026 ===================== -->
+    <article class="pub" data-type="conference" data-year="2026" data-keywords="cyber-defense dual-agent security education ieee learning technology ls26">
+      <div class="pubTop">
+        <p class="title">Twin Minds in Cyber-Defense: A Dual-Agent Framework for Safe Automated Assessment in Security Education</p>
+        <span class="badge">2026 • IEEE L&amp;S26 • Scheduled</span>
+      </div>
+      <p class="meta">M. Bekhit, E. A. Rashed, W. Othman, W. Hussain. The 23rd IEEE International Conference on Learning and Technology (L&amp;S26), Jeddah, KSA, 22–23 Apr. 2026.</p>
+   <div class="links">
+        <a class="linkBtn" href="#" onclick="return false;">Scheduled</a>
+        <!-- <a class="linkBtn" href="#" onclick="return false;">PDF</a> -->
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2026" data-keywords="aaai radiology report generation pneumothorax chest x-ray segmentation-guided">
+      <div class="pubTop">
+        <p class="title">Segmentation-Guided Radiology Report Generation for Pneumothorax Detection in Chest X-Rays</p>
+        <span class="badge">2026 • AAAI Bridge Program</span>
+      </div>
+      <p class="meta">Y. Jia, A. T. Elboardy, E. A. Rashed. Proceedings of the AAAI Conference on Artificial Intelligence, Singapore, 20–21 Jan. 2026.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://proceedings.mlr.press/v317/jia26a.html">Link</a>
+        <a class="linkBtn" href="https://raw.githubusercontent.com/mlresearch/v317/main/assets/jia26a/jia26a.pdf">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2026" data-keywords="aaai chain-of-thought reasoning explainability mammography">
+      <div class="pubTop">
+        <p class="title">The Need to Move Beyond Explainability Toward Chain-of-Thought Reasoning: A Focus on AI for Mammography</p>
+        <span class="badge">2026 • AAAI Bridge Program</span>
+      </div>
+      <p class="meta">Y. Zafari, S. Soliman, E. A. Rahed, M. Mabrok. Proceedings of the AAAI Conference on Artificial Intelligence, Singapore, 20–21 Jan. 2026.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://proceedings.mlr.press/v317/zafari26a.html">Link</a>
+        <a class="linkBtn" href="https://raw.githubusercontent.com/mlresearch/v317/main/assets/zafari26a/zafari26a.pdf">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2026" data-keywords="iwait histopathology class-controlled image synthesis til segmentation">
+      <div class="pubTop">
+        <p class="title">Class-Controlled Histopathology Image Synthesis for Robust Tumor-Infiltrating Lymphocyte Segmentation</p>
+        <span class="badge">2026 • IWAIT</span>
+      </div>
+      <p class="meta">Z. Elshaer, E. A. Rashed. The 2026 International Workshop on Advanced Image Technology (IWAIT2026), Kaohsiung, Taiwan, 12–14 Jan. 2026.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1117/12.3102296">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/c4ux0crvaokd1hsy002zv/IWAIT2026.pdf?rlkey=7w2wa5oq42np27uz1e3s3jhgd&st=o8ty4n6b&dl=0">PDF</a>
+        <a class="linkBtn" href="assets/publications/bibtex/Ziad2026iwait.bib">BibTex</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2026" data-keywords="ifmia vision-language context optimization prompting radiology">
+      <div class="pubTop">
+        <p class="title">Vision-Language Models in Radiology: Impact of Context Optimization Prompting Strategies on Model Performance</p>
+        <span class="badge">2026 • IFMIA</span>
+      </div>
+      <p class="meta">A. T. Elboardy, G. Khoriba, E. A. Rashed. The International Forum on Medical Imaging in Asia (IFMIA 2026), Kaohsiung, Taiwan, 13–14 Jan. 2026.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2026" data-keywords="ifmia pneumothorax diagnosis generation segmentation-driven large language models">
+      <div class="pubTop">
+        <p class="title">Enhanced Segmentation-Driven Approaches for Pneumothorax Diagnosis Generation Using Large-Language Models</p>
+        <span class="badge">2026 • IFMIA</span>
+      </div>
+      <p class="meta">Y. Jia, E. A. Rashed. The International Forum on Medical Imaging in Asia (IFMIA 2026), Kaohsiung, Taiwan, 13–14 Jan. 2026.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2026" data-keywords="ifmia multimodal vision-language models radiology achievements challenges future directions">
+      <div class="pubTop">
+        <p class="title">Multimodal Vision-Language Models in Radiology: Achievements, Challenges, and Future Directions</p>
+        <span class="badge">2026 • IFMIA</span>
+      </div>
+      <p class="meta">E. A. Rashed, A. T. Elboardy, Y. Jia, G. Khoriba. The International Forum on Medical Imaging in Asia (IFMIA 2026), Kaohsiung, Taiwan, 13–14 Jan. 2026.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2026" data-keywords="ifmia spine mri segmentation cross-slice fusion domain generalization">
+      <div class="pubTop">
+        <p class="title">SliceInsightNet++: Learnable Cross-Slice Fusion and Domain Generalization for Robust Spine MRI Segmentation</p>
+        <span class="badge">2026 • IFMIA</span>
+      </div>
+      <p class="meta">M. Yousef, E. A. Rashed. The International Forum on Medical Imaging in Asia (IFMIA 2026), Kaohsiung, Taiwan, 13–14 Jan. 2026.</p>
+    </article>
+
+
+
+    
+
+    <!-- ===================== 2025 ===================== -->
+   
+
+
+<article class="pub" data-type="conference" data-year="2025" data-keywords="Medical AI Consensus: A Multi-Agent Framework for Radiology Report Generation and Evaluation">
+      <div class="pubTop">
+        <p class="title">Medical AI Consensus: A Multi-Agent Framework for Radiology Report Generation and Evaluation</p>
+        <span class="badge">2025 • NeurIPS Workshop</span>
+      </div>
+      <p class="meta">A. T. Elboardy, G. Khoriba, E. A. Rashed. NeurIPS Workshop on Evaluating the Evolving LLM Lifecycle, San Diego, USA, 7 Dec. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://arxiv.org/abs/2509.17353">DOI</a>
+      </div>
+    </article>
+
+          <article class="pub" data-type="conference" data-year="2025" data-keywords="fmlds mitotic figure classification glioma hybrid vision transformer">
+      <div class="pubTop">
+        <p class="title">A Hybrid Vision Transformer and Feature-Based Model for Mitotic Figure Classification in Glioma</p>
+        <span class="badge">2025 • IEEE FMLDS</span>
+      </div>
+      <p class="meta">S. Zakzouk, E. A. Rashed. 2025 IEEE International Conference on Future Machine Learning and Data Science (FMLDS), Los Angeles, USA, 2–5 Nov. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/rahqb84fcjk1mct53bvvt/FMLDS2025_Salma.pdf?rlkey=8s76dfroyhowb49o7l668i5fp&st=a3jhsphg&dl=0">PDF</a>
+      </div>
+    </article>
+
+
+
+          
+
+
+
+          
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="niles missing mri modalities synthesis gan unet patch discrimination">
+      <div class="pubTop">
+        <p class="title">ModaNet: A Generative Adversarial Network Approach for Synthesizing Missing MRI Modalities Using U-Net Architecture and Patch-Based Discrimination</p>
+        <span class="badge">2025 • IEEE NILES</span>
+      </div>
+      <p class="meta">A. Sharaawy, G. Khoriba, E. A. Rashed. IEEE Novel Intelligent and Leading Emerging Sciences Conference (NILES2025), Giza, Egypt, 25–27 Oct. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NILES68063.2025.11231872">DOI</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="nss mic rtsd knowledge distillation medical image segmentation multiplanar annotation uncertainty">
+      <div class="pubTop">
+        <p class="title">Knowledge distillation for robust medical image segmentation with multiplanar annotation uncertainty</p>
+        <span class="badge">2025 • IEEE NSS/MIC/RTSD</span>
+      </div>
+      <p class="meta">E. A. Rashed, Y. Cao. EEE Nuclear Science Symposium (NSS), Medical Imaging Conference (MIC) and Room Temperature Semiconductor Detector Conference (RTSD), Yokohama, Japan, 1–8 Nov. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="#" onclick="return false;">DOI</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="nss mic rtsd 4d-ct iterative reconstruction deep learning deblurring multiple x-ray sources">
+      <div class="pubTop">
+        <p class="title">Development of Iterative Reconstruction and Deep Learning-Based Deblurring for a 4D-CT System using Multiple X-ray Sources</p>
+        <span class="badge">2025 • IEEE NSS/MIC/RTSD</span>
+      </div>
+      <p class="meta">N. Morimoto, Z. Xie, T. Kobayashi, E. A. Rashed. EEE Nuclear Science Symposium (NSS), Medical Imaging Conference (MIC) and Room Temperature Semiconductor Detector Conference (RTSD), Yokohama, Japan, 1–8 Nov. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="#" onclick="return false;">DOI</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="jamit mammographic breast cancer diagnosis bilateral attention fusion network multi-view">
+      <div class="pubTop">
+        <p class="title">Bilateral attention fusion network for multi-view mammographic breast cancer diagnosis</p>
+        <span class="badge">2025 • JAMIT</span>
+      </div>
+      <p class="meta">M. Nouman, Y. Zafari, M. Mabork, E. A. Rashed. The 44th Annual Conference of the Japan Society of Medical Imaging Technology, Paper No. P1-19, Tokyo, Japan, 28–30 Aug. 2025.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="jamit pneumothorax report generation vision-language models chest x-ray">
+      <div class="pubTop">
+        <p class="title">Segmentation-Enhanced Chest X-ray Interpretation Using Vision-Language Models for Pneumothorax Report Generation</p>
+        <span class="badge">2025 • JAMIT</span>
+      </div>
+      <p class="meta">Y. Jia, E. A. Rashed. JAMIT 44th Annual Conference, Paper No. P3-22, Tokyo, Japan, 28–30 Aug. 2025.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="jamit federated learning mri survey">
+      <div class="pubTop">
+        <p class="title">A survey on federated learning methods in MRI analysis</p>
+        <span class="badge">2025 • JAMIT</span>
+      </div>
+      <p class="meta">M. Kanehira, E. A. Rashed. JAMIT 44th Annual Conference, Paper No. P2-19, Tokyo, Japan, 28–30 Aug. 2025.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="acdsA multimodal deep learning breast cancer review">
+      <div class="pubTop">
+        <p class="title">Multi-modal deep learning in breast cancer diagnosis: A review of recent advances</p>
+        <span class="badge">2025 • IEEE ACDSA</span>
+      </div>
+      <p class="meta">Y. Zafari, R. Elalfy, M. Nouman, S. Al-Maadeed, T. Khattab, E. A. Rashed, M. Mabrok. IEEE International Conference on Artificial Intelligence Computer, Data Sciences and Applications (ACDSA 2025), Antalya, Turkiye, 7–9 Aug. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ACDSA65407.2025.11166434">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/0skd6hpw5lwbuaj6rspwl/Yalda_ACDSA2025.pdf?rlkey=nfntxt2sof2fpweii31pnsull&st=2rc6fwls&dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="bioem thermal dosimetry head models segmentation-based segmentation-free poster">
+      <div class="pubTop">
+        <p class="title">Deep Learning-Based Head Models for Thermal Dosimetry: Comparison Between Segmentation-Based and Segmentation-Free Approaches</p>
+        <span class="badge">2025 • BioEM • Poster</span>
+      </div>
+      <p class="meta">S. Kodera, R. Yoshida, E. A. Rashed, Y. Diao, H. Takizawa, A. Hirata. BioEM2025, Rennes, France, 22–27 Jun. 2025. (Poster presentation)</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="jsmbe medsam guider prompt sensitivity segmentation foundation models">
+      <div class="pubTop">
+        <p class="title">MedSAM Guider: A lightweight guidance module to mitigate prompt sensitivity in segmentation foundation models</p>
+        <span class="badge">2025 • JSMBE64</span>
+      </div>
+      <p class="meta">M. Nouman, G. Khoriba, E. A. Rashed. The 64th Annual Conference of Japanese Society for Medical and Biological Engineering (JSMBE64), Fukui, Japan, 5–7 Jun. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.11239/jsmbe.Annual63.454">DOI</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="jsmbe pneumothorax diagnosis comparative analysis deep learning">
+      <div class="pubTop">
+        <p class="title">Comparative analysis of deep learning methods for accurate pneumothorax diagnosis</p>
+        <span class="badge">2025 • JSMBE64</span>
+      </div>
+      <p class="meta">Y. Jia, E. A. Rashed. JSMBE64, Fukui, Japan, 5–7 Jun. 2025.</p>
+      <div class="links"><a class="linkBtn" href="#https://doi.org/10.11239/jsmbe.Annual63.445">DOI</a></div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="isbi brain tumor diagnostic reports multimodality mri large language models">
+      <div class="pubTop">
+        <p class="title">Automatic Generation of Brain Tumor Diagnostic Reports From Multimodality MRI Using Large Language Models</p>
+        <span class="badge">2025 • ISBI</span>
+      </div>
+      <p class="meta">E. A. Rashed, W. Hussain, M. Mousa, M. al-Shatouri. IEEE International Symposium on Biomedical Imaging (ISBI 2025), Houston, TX, USA, 14–17 Apr. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ISBI60581.2025.10981080">DOI</a>
+        <a class="linkBtn" href="https://drive.google.com/file/d/1AYqpeRnUOhaDuLkJz3ZF6dWS5pvGZrjT/view?usp=sharing">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="isbi medsam prompt strategies segmentation accuracy evaluation">
+      <div class="pubTop">
+        <p class="title">Evaluating Segmentation Accuracy With Diverse Prompt Strategies in MedSAM</p>
+        <span class="badge">2025 • ISBI</span>
+      </div>
+      <p class="meta">M. Nouman, G. Khoriba, E. A. Rashed. ISBI 2025, Houston, TX, USA, 14–17 Apr. 2025.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ISBI60581.2025.10980865">DOI</a>
+        <a class="linkBtn" href="https://drive.google.com/file/d/10BKZWloXZkB7naYfct8NHNPIxfe8NSXy/view?usp=sharing">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="ifmia pneumothorax segmentation nnunet medsam spatial prior contrast adapter">
+      <div class="pubTop">
+        <p class="title">Pneumothorax Segmentation Using nnUNet with MedSAM Spatial Prior Contrast Adapter</p>
+        <span class="badge">2025 • IFMIA</span>
+      </div>
+      <p class="meta">Y. Jia, E. A. Rashed. IFMIA 2025, Takamatsu, Kagawa, Japan, 20–21 Mar. 2025.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="ifmia open-source llm brain cancer radiology report generation best poster award">
+      <div class="pubTop">
+        <p class="title">Performance Assessment of Open-Source Large Language Models in Brain Cancer Radiology Report Generation from MRI Screenings</p>
+        <span class="badge">2025 • IFMIA • 🏆 Best Poster Award</span>
+      </div>
+      <p class="meta">A. Elboardy, M. al-Shatouri, M. Mousa, E. A. Rashed. IFMIA 2025, Takamatsu, Kagawa, Japan, 20–21 Mar. 2025.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="ifmia low-grade brain tumors cross-view segmentation mutual attention multimodal mri">
+      <div class="pubTop">
+        <p class="title">Cross-view segmentation of low-grade brain tumors with mutual attention in multimodal MRI</p>
+        <span class="badge">2025 • IFMIA</span>
+      </div>
+      <p class="meta">H. Seshimo, E. A. Rashed. IFMIA 2025, Takamatsu, Kagawa, Japan, 20–21 Mar. 2025.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="ls25 bilingual large language model multilingual therapeutic chatbots mental health gender disparities">
+      <div class="pubTop">
+        <p class="title">Bridging Gender Disparities in Mental Health: A Bilingual Large Language Model for Multilingual Therapeutic Chatbots</p>
+        <span class="badge">2025 • IEEE L&amp;S25</span>
+      </div>
+      <p class="meta">A. T. Elboardy, Z. Elshaer, G. Khoriba, T. Arafa, E. A. Rashed. The 22nd IEEE International Conference on Learning and Technology (L&amp;S25), Jeddah, KSA, 15–16 Jan. 2025.</p>
+      <div class="links"><a class="linkBtn" href="https://doi.org/10.1109/LT64002.2025.10941308">DOI</a></div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2025" data-keywords="brain stimulation conference tdcs volume conductor modeling individualized population-level electric field">
+      <div class="pubTop">
+        <p class="title">tDCS volume conductor modeling: individualized and population-level electric field analysis</p>
+        <span class="badge">2025 • Brain Stimulation Conf.</span>
+      </div>
+      <p class="meta">A. Hirata, S. Kodera, Y. Kubota, E. A. Rashed, I. Laakso. 6th International Brain Stimulation Conference, Kobe, Japan, 23–26 Feb. 2025.</p>
+      <div class="links"><a class="linkBtn" href="https://doi.org/10.1016/j.brs.2024.12.221">DOI</a></div>
+    </article>
+
+    <!-- ===================== 2024 ===================== -->
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="fmlds medsam performance discrepancies clinical applications">
+      <div class="pubTop">
+        <p class="title">Rethinking MedSAM: Performance Discrepancies in Clinical Applications</p>
+        <span class="badge">2024 • IEEE FMLDS</span>
+      </div>
+      <p class="meta">M. Nouman, G. Khoriba, E. A. Rashed. 2024 IEEE International Conference on Future Machine Learning and Data Science (FMLDS), Sydney, Australia, 20–23 Nov. 2024.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/FMLDS63805.2024.00061">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/3njpeeydv4i2yu6wvvf2l/FMLDS24_Nouman.pdf?rlkey=vn22p3dnmjalqx7z1girmzpa2&st=pilx5x1k&dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="fmlds retinal arteries veins segmentation modified unet">
+      <div class="pubTop">
+        <p class="title">Retinal Arteries and Veins Semantic Segmentation Using Modified U-Net Architecture</p>
+        <span class="badge">2024 • IEEE FMLDS</span>
+      </div>
+      <p class="meta">H. Holiel, A. El-Beheiry, E. A. Rashed. IEEE FMLDS 2024, Sydney, Australia, 20–23 Nov. 2024.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/FMLDS63805.2024.00083">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/ggo6o0632go5cgd9fow2f/FMLDS25_Heidi.pdf?rlkey=xw18fqjobrw7f2t5cp0c5api5&st=j8q1t7bj&dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="fmlds stroke segmentation challenges perspectives best technical paper award">
+      <div class="pubTop">
+        <p class="title">On the Challenges and Perspectives of Stroke Segmentation using AI</p>
+        <span class="badge">2024 • IEEE FMLDS • 🏆 Best Technical Paper Award</span>
+      </div>
+      <p class="meta">M. Mabrok, Y. Zafari-Ghadim, M. Mabrok, E. A. Rashed. IEEE FMLDS 2024, Sydney, Australia, 20–23 Nov. 2024.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/FMLDS63805.2024.00034">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/s0mnpf6oth0orzbqxu3dm/FMLDS25_Mabrok.pdf?rlkey=x72d1fjwgc0c58mmuzys2z78n&st=wo0lni12&dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="fmlds foundation models medical image analysis overview prospects">
+      <div class="pubTop">
+        <p class="title">Foundation Models in Medical Image Analysis: Overview and Prospects</p>
+        <span class="badge">2024 • IEEE FMLDS</span>
+      </div>
+      <p class="meta">E. A. Rashed, M. Bekhit. IEEE FMLDS 2024, Sydney, Australia, 20–23 Nov. 2024.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/FMLDS63805.2024.00011">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/nbnffur19rly835f55tol/FMLDS25_Rashed.pdf?rlkey=pmvh6x5rjx15ea5irvqvzcucu&st=3mj250dd&dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="fmlds spine annotation mri sliceinsightnet hybrid image segmentation">
+      <div class="pubTop">
+        <p class="title">SliceInsightNet: Advanced Hybrid Image Segmentation for Spine Annotation in MRI</p>
+        <span class="badge">2024 • IEEE FMLDS</span>
+      </div>
+      <p class="meta">M. A. Yousef, E. A. Rashed. IEEE FMLDS 2024, Sydney, Australia, 20–23 Nov. 2024.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/FMLDS63805.2024.00018">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/scl/fi/02eugoai9i286u3qdj5os/FMLDS25_Mina.pdf?rlkey=v06x7llc0kuqz8txvrnfnllq2&st=52runqgg&dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="miru personalized mri synthesis binary anatomical maps binsyn">
+      <div class="pubTop">
+        <p class="title">BinSyn: Personalized MRI synthesis from binary anatomical maps</p>
+        <span class="badge">2024 • MIRU</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Seshimo, M. Nouman, M. al-Shatouri. 27th Meeting on Image Recognition and Understanding (MIRU2024), Kumamoto, Japan, 6–9 Aug. 2024.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="icmip neuro-transunet transformer stroke lesions 3d mri segmentation">
+      <div class="pubTop">
+        <p class="title">Neuro-TransUNet: A comprehensive transformer-based architecture for precise segmentation of stroke lesions in 3D MRI</p>
+        <span class="badge">2024 • ICMIP</span>
+      </div>
+      <p class="meta">M. Nouman, M. Mabrok, E. A. Rashed. 9th International Conference on Multimedia and Image Processing (ICMIP 2024), Osaka, Japan, 20–22 Apr. 2024.</p>
+      <div class="links"><a class="linkBtn" href="https://doi.org/10.1145/3665026.3665049">DOI</a></div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="icmip retinal arteries veins segmentation limited training data">
+      <div class="pubTop">
+        <p class="title">Segmentation of retinal arteries and veins using deep learning with limited training data</p>
+        <span class="badge">2024 • ICMIP</span>
+      </div>
+      <p class="meta">A. T. Salah, G. Khoriba, E. A. Rashed. ICMIP 2024, Osaka, Japan, 20–22 Apr. 2024.</p>
+      <div class="links"><a class="linkBtn" href="https://doi.org/10.1145/3665026.3665048">DOI</a></div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="icmip efficient attention-guided transformer brain stroke segmentation best paper award">
+      <div class="pubTop">
+        <p class="title">Efficient attention-guided transformer for brain stroke segmentation</p>
+        <span class="badge">2024 • ICMIP • 🏆 Best Paper Award</span>
+      </div>
+      <p class="meta">A. Soliman, Y. Zafari-Ghadim, E. A. Rashed, M. Mabrok. ICMIP 2024, Osaka, Japan, 20–22 Apr. 2024.</p>
+      <div class="links"><a class="linkBtn" href="https://doi.org/10.1145/3665026.3665045">DOI</a></div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="jsmbe transformer-based precision 3d mri stroke lesion segmentation">
+      <div class="pubTop">
+        <p class="title">Transformer-based precision in 3D MRI stroke lesion segmentation</p>
+        <span class="badge">2024 • JSMBE63</span>
+      </div>
+      <p class="meta">M. Nouman, M. Mabrok, E. A. Rashed. 63rd Annual Conference of Japanese Society for Medical and Biological Engineering, Kagoshima, Japan, 23–25 May 2024.</p>
+      <div class="links"><a class="linkBtn" href="https://doi.org/10.11239/jsmbe.Annual62.400">DOI</a></div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2024" data-keywords="jsmbe astrocytoma mutual-attention multimodal mri segmentation">
+      <div class="pubTop">
+        <p class="title">Segmentation of astrocytoma using mutual-attention multimodal MRI</p>
+        <span class="badge">2024 • JSMBE63</span>
+      </div>
+      <p class="meta">H. Seshimo, M. al-Shatouri, E. A. Rashed. JSMBE63, Kagoshima, Japan, 23–25 May 2024.</p>
+      <div class="links"><a class="linkBtn" href="https://doi.org/10.11239/jsmbe.Annual62.403">DOI</a></div>
+    </article>
+
+    <!-- ===================== 2023 ===================== -->
+    <article class="pub" data-type="conference" data-year="2023" data-keywords="lecture notes networks systems regression testing optimization bi-objective bat rev2022">
+      <div class="pubTop">
+        <p class="title">Adaptive Weighted Sum Bi-Objective Bat for Regression Testing Optimization</p>
+        <span class="badge">2023 • LNNS</span>
+      </div>
+      <p class="meta">N. Fisal, A. Hamdy, E. A. Rashed. Lecture Notes in Networks and Systems, Vol. 524, pp. 486–495, 2023 (REV2022, Cairo, Egypt, Mar. 2022).</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1007/978-3-031-17091-1_49">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/36kihms5h36cwp2/Fisal2022Rev.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2022 ===================== -->
+    <article class="pub" data-type="conference" data-year="2022" data-keywords="bioem cardiac potential electric field analysis poster">
+      <div class="pubTop">
+        <p class="title">Individual variation of cardiac potential based on electric field analysis</p>
+        <span class="badge">2022 • BioEM</span>
+      </div>
+      <p class="meta">K. Sanjo, E. A. Rashed, A. Hirata. BioEM2022, Nagoya, Japan, 19–24 Jun. 2022. (Poster presentation)</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2022" data-keywords="bioem temperature rise human models non-uniform thermal parameters poster">
+      <div class="pubTop">
+        <p class="title">Evaluation of temperature rise using the human models with non-uniform thermal parameters</p>
+        <span class="badge">2022 • BioEM</span>
+      </div>
+      <p class="meta">S. Kodera, E. A. Rashed, A. Hirata. BioEM2022, Nagoya, Japan, 19–24 Jun. 2022. (Poster presentation)</p>
+    </article>
+
+    <!-- ===================== 2021 ===================== -->
+    <article class="pub" data-type="conference" data-year="2021" data-keywords="nss mic ring artifacts elimination sparsity-induced norms">
+      <div class="pubTop">
+        <p class="title">Ring artifacts elimination method in computed tomography using sparsity-induced norms</p>
+        <span class="badge">2021 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">M. Selim, E. A. Rashed, M. Atiea, H. Kudo. 2021 IEEE Nuclear Science Symposium and Medical Imaging Conference (NSS/MIC 2021), Yokohama, Japan, 2021.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSS/MIC44867.2021.9875897">DOI</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2021" data-keywords="bioem cardiac source localization lead field matrix filtering">
+      <div class="pubTop">
+        <p class="title">Localization of cardiac source based on lead field matrix and filtering</p>
+        <span class="badge">2021 • BioEM</span>
+      </div>
+      <p class="meta">Y. Nakano, E. A. Rashed, I. Laakso, A. Hirata. BioEM2021, Ghent, Belgium, 29 Sept. 2021.</p>
+    </article>
+
+    <!-- ===================== 2019 ===================== -->
+    <article class="pub" data-type="conference" data-year="2019" data-keywords="icip head models brain stimulation deep convolution networks">
+      <div class="pubTop">
+        <p class="title">Generation of head models for brain stimulation using deep convolution networks</p>
+        <span class="badge">2019 • ICIP</span>
+      </div>
+      <p class="meta">E. A. Rashed, J. Gomez-Tames, A. Hirata. IEEE International Conference on Image Processing (ICIP2019), Taipei, Taiwan, Sept. 2019.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/ICIP.2019.8803334">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/umt61obfzslwox4/Rashed_2019_ICIP.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2019" data-keywords="emc heat stroke patients physical simulation machine learning">
+      <div class="pubTop">
+        <p class="title">Estimation of Heat Stroke Patients Based on Quantities Computed with Physical Simulation and Machine Learning</p>
+        <span class="badge">2019 • EMC</span>
+      </div>
+      <p class="meta">T. Kamiya, Y. Murata, T. Nishimura, S. Kodera, T. Ito, E. A. Rashed, A. Hirata. International Symposium on Electromagnetic Compatibility (EMC2019), Sapporo, Japan, Jun. 2019.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2019" data-keywords="emc reference level human safety guidelines nerve activation excellent paper award">
+      <div class="pubTop">
+        <p class="title">Setting Reference Level in Human Safety Guidelines via Nerve Activation Intercomparison at IF</p>
+        <span class="badge">2019 • EMC • 🏆 Excellent Paper Award</span>
+      </div>
+      <p class="meta">J. Gomez-Tames, E. A. Rashed, A. Hirata, T. Tarnaud, E. Tanghe, T. V. de Steene, L. Martens, W. Joseph. EMC2019, Sapporo, Japan, Jun. 2019, pp. 162–165.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.23919/EMCTokyo.2019.8893702">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/vuubger18tsbcwv/Gomez_2019_EMC.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2019" data-keywords="cibec breast cancer diagnosis deep learning">
+      <div class="pubTop">
+        <p class="title">Deep Learning approach for breast cancer diagnosis</p>
+        <span class="badge">2019 • CIBEC</span>
+      </div>
+      <p class="meta">E. A. Rashed, S. El-Seoud. Cairo International Biomedical Engineering Conference 2018 (CIBEC'18), Cairo, Egypt, Apr. 2019.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1145/3328833.3328867">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/r14ziu2k9sw03v2/Rashed_2019_ICSIE.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2018 ===================== -->
+    <article class="pub" data-type="conference" data-year="2018" data-keywords="cibec sparse-view ct reconstruction self prior information best student paper award">
+      <div class="pubTop">
+        <p class="title">Image Reconstruction using Self Prior Information for Sparse-View Computed Tomography</p>
+        <span class="badge">2018 • CIBEC • 🏆 Best Student Paper Award</span>
+      </div>
+      <p class="meta">M. Selim, E. A. Rashed, M. A. Atiea, H. Kudo. CIBEC'18, Cairo, Egypt, Dec. 2018.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/CIBEC.2018.8641789">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/lvx384xs10kar53/Mona_CIBEC2018.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2018" data-keywords="nss mic variational networks synchrotron radiation imaging">
+      <div class="pubTop">
+        <p class="title">Image Reconstruction with Variational Networks: Application to Synchrotron Radiation Imaging</p>
+        <span class="badge">2018 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo, A. Maier. IEEE NSS/MIC 2018, Sydney, Australia, Nov. 2018.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2018.8824367">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/r4vo91sp8rnykll/Rashed_MIC2018.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2018" data-keywords="icsie mixed reality imaging system minimally invasive surgeries">
+      <div class="pubTop">
+        <p class="title">An interactive mixed reality imaging system for minimally invasive surgeries</p>
+        <span class="badge">2018 • IEEE ICSIE</span>
+      </div>
+      <p class="meta">S. El-Seoud, A. S. Mady, E. A. Rashed. 7th IEEE International Conference on Software and Information Engineering (ICSIE 2018), Cairo, Egypt, May 2018.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://doi.org/10.1145/3220267.3220290">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/onzg4qp3jo0qf0t/Amr_ICSIE2018.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2018" data-keywords="icsie liver cirrhosis ultrasound cad system">
+      <div class="pubTop">
+        <p class="title">Computer Aided Diagnosis System for Liver Cirrhosis Based on Ultrasound images</p>
+        <span class="badge">2018 • IEEE ICSIE</span>
+      </div>
+      <p class="meta">R. Rabie, M. M. Eltoukhy, M. al-Shatouri, E. A. Rashed. IEEE ICSIE 2018, Cairo, Egypt, May 2018.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://doi.org/10.1145/3220267.3220283">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/v3869guxc859tp4/Reham_ICSIE2018.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2018" data-keywords="icsie image denoising ct dose modulation">
+      <div class="pubTop">
+        <p class="title">Image denoising technique for CT dose modulation</p>
+        <span class="badge">2018 • IEEE ICSIE</span>
+      </div>
+      <p class="meta">H. A. Elyamani, S. El-Seoud, E. A. Rashed. IEEE ICSIE 2018, Cairo, Egypt, May 2018.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://doi.org/10.1145/3220267.3220288">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/6pf7xpo4h27uazh/Hanin_ICSIE2018.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2017 ===================== -->
+    <article class="pub" data-type="conference" data-year="2017" data-keywords="icces adaptive image denoising low-dose ct">
+      <div class="pubTop">
+        <p class="title">Adaptive image denoising approach for low-dose CT</p>
+        <span class="badge">2017 • IEEE ICCES</span>
+      </div>
+      <p class="meta">H. A. Elyamani, S. A. El-Seoud, H. Kudo, E. A. Rashed. 12th IEEE International Conference on Computer Engineering and Systems (ICCES 2017), Cairo, Egypt, Dec. 2017.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1109/ICCES.2017.8275279">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/pht9o8038g0qehv/Hanin_ICCES2017.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2017" data-keywords="ickea augmented reality orthopedic surgery">
+      <div class="pubTop">
+        <p class="title">An interactive augmented reality imaging system for minimally invasive orthopedic surgery</p>
+        <span class="badge">2017 • ICKEA</span>
+      </div>
+      <p class="meta">E. A. Rashed, S. A. El-Seoud. International Conference on Knowledge Engineering and Applications (ICKEA2017), Imperial College London, London, UK, Oct. 2017.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1109/ICKEA.2017.8169917">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/t3t0rvqmw2ho562/Rashed_ICKEA2017.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2017" data-keywords="spie medical imaging compressed sensing tv minimization ct image reconstruction">
+      <div class="pubTop">
+        <p class="title">Compressed Sensing of Sparsity-constrained Total Variation Minimization for CT Image Reconstruction</p>
+        <span class="badge">2017 • SPIE Medical Imaging</span>
+      </div>
+      <p class="meta">J. Dong, H. Kudo, E. A. Rashed, R. Ueda. SPIE Medical Imaging 2017, Paper No. 10132-111, Orlando, FL, USA, 2017.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1117/12.2255084">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/ff9l3c80kgxbp9f/Dong_SPIE2017.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2016 ===================== -->
+    <article class="pub" data-type="conference" data-year="2016" data-keywords="cibec blood vessels reconstruction ct shape prior">
+      <div class="pubTop">
+        <p class="title">Blood vessels reconstruction in CT with shape prior approach</p>
+        <span class="badge">2016 • CIBEC</span>
+      </div>
+      <p class="meta">E. A. Mohamed, E. A. Rashed. Cairo International Biomedical Engineering Conference (CIBEC2016), Cairo, Egypt, Dec. 2016.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1109/CIBEC.2016.7836128">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/cug7b39qyb3wfi8/Esraa_CIBEC2016.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2016" data-keywords="nss mic breast ct non-isocenteric c-arm scanner atlas-based image reconstruction">
+      <div class="pubTop">
+        <p class="title">Atlas-based image reconstruction for breast CT using non-isocenteric C-arm scanner</p>
+        <span class="badge">2016 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. IEEE NSS/MIC 2016, Strasbourg, France, 2016.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2016.8069449">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/vmc1r2dat90qwme/Rashed_MIC2016.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2016" data-keywords="nss mic needle detection interventional pain management 3d image reconstruction">
+      <div class="pubTop">
+        <p class="title">Needle Detection in Interventional Pain Management With 3D Image Reconstruction</p>
+        <span class="badge">2016 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, M. al-Shatouri, M. Selim, H. Kudo. IEEE NSS/MIC 2016, Strasbourg, France, 2016.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2016.8069481">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/3jm4otnavtlpjqb/Rashed_MIC2016_b.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2016" data-keywords="nss mic atlas based interior tomography">
+      <div class="pubTop">
+        <p class="title">Atlas Based Interior Tomography</p>
+        <span class="badge">2016 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">M. Selim, E. A. Rashed, H. Kudo. IEEE NSS/MIC 2016, Strasbourg, France, 2016.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2016.8069598">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/a7meddfo6wptxah/Mona_MIC2016.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2016" data-keywords="nss mic three-dimensional blood vessels detection small number of views ct reconstruction">
+      <div class="pubTop">
+        <p class="title">Three-Dimensional Blood Vessels Detection from Small Number of Views CT Reconstruction</p>
+        <span class="badge">2016 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Mohamed, E. A. Rashed. IEEE NSS/MIC 2016, Strasbourg, France, 2016.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2016.8069562">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/hvvp11ikvo3989c/Esraa_MIC2016.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2016" data-keywords="spie low-dose multiphase abdominal ct reconstruction phase-induced swap prior outstanding poster award">
+      <div class="pubTop">
+        <p class="title">Low-dose multiphase abdominal CT reconstruction with phase-induced swap prior</p>
+        <span class="badge">2016 • SPIE • 🏆 Outstanding Poster Award</span>
+      </div>
+      <p class="meta">M. Selim, E. A. Rashed, H. Kudo. SPIE Optical Engineering + Applications (Development in X-ray Tomography), Paper No. 9967-60, San Diego, USA, 2016.</p>
+      <div class="links"><a class="linkBtn" href="http://dx.doi.org/10.1117/12.2237110">DOI</a></div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2016" data-keywords="hci international interactive gestures liver angiography operation lncs 9745">
+      <div class="pubTop">
+        <p class="title">Interactive gestures for liver angiography operation</p>
+        <span class="badge">2016 • HCI International (LNCS)</span>
+      </div>
+      <p class="meta">D. A. Elmanakhly, A. Atia, E. A. Rashed, M.-S. M. Mostafa. HCI International 2016, Toronto, Canada, Paper No. 1304, LNCS 9745, pp. 409–421.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1007/978-3-319-40247-5_41">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/w8cakl5pyyra3yq/Dina_HCI2016.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2015 ===================== -->
+    <article class="pub" data-type="conference" data-year="2015" data-keywords="nss mic low-dose ct reconstruction probabilistic atlas prior">
+      <div class="pubTop">
+        <p class="title">Low-Dose CT Image Reconstruction Method With Probabilistic Atlas Prior</p>
+        <span class="badge">2015 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">M. Selim, H. Kudo, E. A. Rashed. IEEE NSS/MIC 2015, Paper No. M3B2-8, San Diego, USA, 2015.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2015.7582014">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/ikfekqu62sk4e7t/Mona_MIC2015.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2015" data-keywords="nss mic three-dimensional angiography mobile c-arm imu sensor initial study">
+      <div class="pubTop">
+        <p class="title">Three-Dimensional Angiography Using Mobile C-Arm with IMU Sensor Attached: Initial Study</p>
+        <span class="badge">2015 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">A. Moataz, A. Soliman, A. M. Ghanem, M. al-Shatouri, A. Atia, E. A. Rashed. IEEE NSS/MIC 2015, Paper No. M5BP-123, San Diego, USA, 2015.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2015.7582155">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/msn7hmq96ns9jlw/Amr_MIC2015.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2014 ===================== -->
+    <article class="pub" data-type="conference" data-year="2014" data-keywords="cibec compressed-sensing 3d image reconstruction c-arm vascular imaging">
+      <div class="pubTop">
+        <p class="title">Compressed-sensing-based three-dimensional image reconstruction algorithm for C-arm vascular imaging</p>
+        <span class="badge">2014 • CIBEC</span>
+      </div>
+      <p class="meta">M. Selim, M. al-Shatouri, H. Kudo, E. A. Rashed. Cairo International Biomedical Engineering Conference (CIBEC2014), Cairo, Egypt, Dec. 2014.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1109/CIBEC.2014.7020930">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/8zgnequmkh3ofka/Mona_CIBEC2014.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2014 (Poster) ===================== -->
+    <article class="pub" data-type="conference" data-year="2014" data-keywords="computational anatomy highly advanced medical imaging progress overview poster">
+      <div class="pubTop">
+        <p class="title">Highly advanced medical imaging based on computational anatomy model: Progress Overview</p>
+        <span class="badge">2014 • ISCA</span>
+      </div>
+      <p class="meta">H. Kudo, E. A. Rashed, H. Oomori, T. Kodera, T. Tayama. The Fifth International Symposium on Computational Anatomy, Univ. of Tokyo, Japan, Paper No. A01-KB1, 8–9 Mar. 2014. (Poster)</p>
+    </article>
+
+    <!-- ===================== 2013 ===================== -->
+    <article class="pub" data-type="conference" data-year="2013" data-keywords="nss mic interactive 3d imaging system hepatic angiography">
+      <div class="pubTop">
+        <p class="title">Development of interactive 3D imaging system for hepatic angiography</p>
+        <span class="badge">2013 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, A. M. Ghanem, A. Amin, A. Atia, M. al-Shatouri, H. Kudo. IEEE NSS/MIC 2013, Paper No. M05-7, Seoul, South Korea, 2013.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2013.6829039">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/bvawgs0qkywd9iu/Rashed_MIC2013.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <!-- ===================== 2012 ===================== -->
+    <article class="pub" data-type="conference" data-year="2012" data-keywords="jamit compressed sensing multiphase abdominal ct imaging best presentation award">
+      <div class="pubTop">
+        <p class="title">Compressed sensing model for multiphase abdominal CT imaging</p>
+        <span class="badge">2012 • JAMIT • 🏆 Best Presentation Award</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. Proceedings of the 31st JAMIT Annual Meeting, Paper No. OP2-9, Sapporo, Japan, 2012.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2012" data-keywords="x-ray ct image formation limited views probabilistic atlas prior">
+      <div class="pubTop">
+        <p class="title">Statistical CT reconstruction from limited views with probabilistic atlas prior</p>
+        <span class="badge">2012 • CT Meeting</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. 2nd International Conference on Image Formation in X-ray Computed Tomography, Salt Lake City, Utah, USA, 2012, pp. 352–355.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2012" data-keywords="spie medical imaging analytical fan-beam reconstruction free-form trajectory plus-minus weighting">
+      <div class="pubTop">
+        <p class="title">Analytical fan-beam reconstruction algorithm for free-form trajectory with plus-minus weighting scheme</p>
+        <span class="badge">2012 • SPIE Medical Imaging</span>
+      </div>
+      <p class="meta">Z. Wang, E. A. Rashed, H. Kudo. Proceedings of SPIE Medical Imaging 2012, Paper No. 8313-121, San Diego, USA, 2012.</p>
+      <div class="links"><a class="linkBtn" href="http://dx.doi.org/10.1117/12.911205">DOI</a></div>
+    </article>
+
+    <!-- ===================== 2011 ===================== -->
+    <article class="pub" data-type="conference" data-year="2011" data-keywords="nss mic row-action image reconstruction lp-norm distance reference image">
+      <div class="pubTop">
+        <p class="title">Row-action image reconstruction algorithm using Lp-norm distance to a reference image</p>
+        <span class="badge">2011 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. IEEE NSS/MIC 2011, Valencia, Spain, 2011, pp. 3966–3970.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1109/NSSMIC.2011.6153754">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/h0esjebbgcdya1g/Rashed_MIC2011_a.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2011" data-keywords="nss mic adaptive thresholding robust iterative image reconstruction limited views projection">
+      <div class="pubTop">
+        <p class="title">Adaptive thresholding for robust iterative image reconstruction from limited views projection</p>
+        <span class="badge">2011 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, Z. Wang, H. Kudo. IEEE NSS/MIC 2011, Valencia, Spain, 2011, pp. 4249–4252.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1109/NSSMIC.2011.6153815">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/5kawnr6rum6nvn2/Rashed_MIC2011_b.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2011" data-keywords="nss mic high-resolution local tomography statistical iterative reconstruction">
+      <div class="pubTop">
+        <p class="title">Towards a High-Resolution Local Tomography using Statistical Iterative Reconstruction</p>
+        <span class="badge">2011 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Toda, T. Sera, A. Tsuchiyama, T. Nakano, K. Uesugi, H. Kudo. IEEE NSS/MIC 2011, Valencia, Spain, 2011, pp. 4253–4256.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1109/NSSMIC.2011.6153816">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/6bvjqx6cnykp879/Rashed_MIC2011_c.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2011" data-keywords="nss mic iterative thresholding framework row-action reconstruction sparse projection data">
+      <div class="pubTop">
+        <p class="title">Iterative thresholding framework for row-action reconstruction from sparse projection data</p>
+        <span class="badge">2011 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. IEEE NSS/MIC 2011, Valencia, Spain, 2011, pp. 4257–4259.</p>
+      <div class="links">
+        <a class="linkBtn" href="http://dx.doi.org/10.1109/NSSMIC.2011.6153817">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/46riou9odrtqn59/Rashed_MIC2011_d.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2011" data-keywords="jamit row-action reconstruction algorithms minimization l1 l0 distance reference image">
+      <div class="pubTop">
+        <p class="title">Row-action reconstruction algorithms for the minimization of the L1/L0 distance from a reference image in CT</p>
+        <span class="badge">2011 • JAMIT</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. Proceedings of the 30th JAMIT Annual Meeting, Paper No. OP3-4, Odawara, Japan, 2011.</p>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2011" data-keywords="jamit general fan-beam reconstruction algorithm free-form trajectory plus-minus weighting scheme">
+      <div class="pubTop">
+        <p class="title">General Fan-beam reconstruction algorithm for free-form trajectory with plus-minus weighting scheme</p>
+        <span class="badge">2011 • JAMIT</span>
+      </div>
+      <p class="meta">Z. Wang, E. A. Rashed, H. Kudo. Proceedings of the 30th JAMIT Annual Meeting, Paper No. OP11-1, Odawara, Japan, 2011.</p>
+    </article>
+
+    <!-- ===================== 2008 ===================== -->
+    <article class="pub" data-type="conference" data-year="2008" data-keywords="nss mic roi reconstruction truncated projection data blind object support">
+      <div class="pubTop">
+        <p class="title">Region-of-Interest reconstruction from truncated projection data under blind object support</p>
+        <span class="badge">2008 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. IEEE NSS/MIC 2008, Dresden, Germany, 2008, pp. 3632–3636.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2008.4774105">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/20mds89kdh9lc0i/Rashed_MIC2008.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2008" data-keywords="jamit artifacts reduction roi tomographic reconstruction truncated projection data best presentation award">
+      <div class="pubTop">
+        <p class="title">Iterative algorithms for artifacts reduction in region-of-interest tomographic reconstruction from truncated projection data</p>
+        <span class="badge">2008 • JAMIT • 🏆 Best Presentation Award</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo. Proceedings of the 27th JAMIT Annual Meeting, Paper No. B3-01, Tokyo, Japan, 2008.</p>
+    </article>
+
+    <!-- ===================== 2007 ===================== -->
+    <article class="pub" data-type="conference" data-year="2007" data-keywords="nss mic practical statistical models roi reconstruction long object problem">
+      <div class="pubTop">
+        <p class="title">Practical statistical models for region-of-interest tomographic reconstruction and long object problem</p>
+        <span class="badge">2007 • IEEE NSS/MIC</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo, T. Zeniya, H. Iida. IEEE NSS/MIC, Honolulu, HI, USA, 2007, pp. 3505–3511.</p>
+      <div class="links">
+        <a class="linkBtn" href="https://doi.org/10.1109/NSSMIC.2007.4436885">DOI</a>
+        <a class="linkBtn" href="https://www.dropbox.com/s/q3dvnagqixmaaba/Rashed_MIC2007.pdf?dl=0">PDF</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="conference" data-year="2007" data-keywords="jamit fast statistical reconstruction methods roi ct imaging">
+      <div class="pubTop">
+        <p class="title">Fast statistical reconstruction methods for region-of interest CT imaging</p>
+        <span class="badge">2007 • JAMIT</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Kudo, T. Zeniya, H. Iida. Proceedings of the 27th JAMIT Annual Meeting, Paper No. A3-03, Tsukuba, Japan, 2007.</p>
+    </article>
+
+    <!-- ===================== 2006 ===================== -->
+    <article class="pub" data-type="conference" data-year="2006" data-keywords="mammography diagnosis wavelets features neural networks arxiv cscbc">
+      <div class="pubTop">
+        <p class="title">Neural networks approach for mammography diagnosis using wavelets features</p>
+        <span class="badge">2006 • CSCBC</span>
+      </div>
+      <p class="meta">E. A. Rashed, M. G. Awad. First Canadian Student Conference on Biomedical Computing (CSCBC06), Paper No. 105, Ontario, Canada, 2006.</p>
+      <div class="links"><a class="linkBtn" href="https://arxiv.org/abs/2003.03000">arXiv</a></div>
+    </article>
+
+  </div>
+</section>
+
+     <!-- PRESENTATIONS (FULL LIST) -->
+<section id="presentations">
+  <div class="sectionTitle">
+    <h2>Presentations</h2>
+    <p class="hint">Invited talks, oral/poster presentations, seminars, and workshops.</p>
+  </div>
+
+  <div class="pubList" data-section="presentation">
+
+    <!-- ===================== 2026 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2026" data-keywords="ieice est temperature rise radio-frequency exposure anatomical head models okinawa">
+      <div class="pubTop">
+        <p class="title">Large-Scale Numerical Analysis of Temperature Rise During Localized Radio-Frequency Exposure Using Anatomical Head Models</p>
+        <span class="badge">2026 • IEICE EST</span>
+      </div>
+      <p class="meta">I. Komine, S. Kodera, E. A. Rashed, A. Hirata. 2026 IEICE Workshop on Electronics Simulation Technology (EST), Okinawa, Japan, 22–23 Jan. 2026.</p>
+    </article>
+
+    
+
+    <!-- ===================== 2025 ===================== -->
+
+
+    <!-- ===================== 2024 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2024" data-keywords="mi medical imaging study group reinforcement learning large language models medical image analysis osaka">
+      <div class="pubTop">
+        <p class="title">Improving Large Language Models with Reinforcement Learning for Enhanced Medical Image Analysis</p>
+        <span class="badge">2024 • 医用画像研究会 (MI)</span>
+      </div>
+      <p class="meta">A. T. Elboardy, M. Nouman, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 5 Dec. 2024.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2024" data-keywords="mi medsAM evaluating clinical performance segmentation challenges osaka">
+      <div class="pubTop">
+        <p class="title">Evaluating MedSAM: Addressing Clinical Performance and Segmentation Challenges</p>
+        <span class="badge">2024 • 医用画像研究会 (MI)</span>
+      </div>
+      <p class="meta">M. Nouman, A. T. Elboardy, G. Khoriba, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 5 Dec. 2024.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2024" data-keywords="ieice general conference electric field estimation personalized brain stimulation machine learning invited talk">
+      <div class="pubTop">
+        <p class="title">Electric Field Estimation in Personalized Bain Stimulation with Machine Learning</p>
+        <span class="badge">2024 • IEICE General Conf.</span>
+      </div>
+      <p class="meta">A. Hirata, S. Kodera, E. A. Rashed, M. Tamura, H. Hontani. IEICE General Conference, Hiroshima, Japan, 4–8 Mar. 2024. (Invited Talk: A. Hirata)</p>
+    </article>
+
+    <!-- ===================== 2023 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2023" data-keywords="jsmbe segmented human head dataset deep learning nagoya">
+      <div class="pubTop">
+        <p class="title">Deep learning-based segmented human head dataset</p>
+        <span class="badge">2023 • JSMBE</span>
+      </div>
+      <p class="meta">E. A. Rashed. The 62nd Annual Conference of Japanese Society for Medical and Biological Engineering (第62回日本生体医工学会大会), Nagoya, Japan, 18–20 May 2023.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2023" data-keywords="egypt-japan forum deep learning medical imaging invited talk cairo">
+      <div class="pubTop">
+        <p class="title">Deep learning in medical imaging</p>
+        <span class="badge">2023 • Invited Talk</span>
+      </div>
+      <p class="meta">E. A. Rashed. Egypt-Japan Multidisciplinary Science Forum, Cairo, Egypt, 18 Feb. 2023. (Invited Talk)</p>
+    </article>
+
+    <!-- ===================== 2022 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2022" data-keywords="mist human head models anatomical medical images deep learning invited talk">
+      <div class="pubTop">
+        <p class="title">Development of human head models from anatomical medical images using deep learning</p>
+        <span class="badge">2022 • MIST • Invited</span>
+      </div>
+      <p class="meta">E. A. Rashed. 2nd International Conference on Medical Imaging Science and Technology (MIST 2022), 15–18 Nov. 2022. (Invited Talk)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2022" data-keywords="hyogo symposium electromagnetic neuromodulation deep learning poster himeji">
+      <div class="pubTop">
+        <p class="title">Deep learning models for efficient electromagnetic neuromodulation</p>
+        <span class="badge">2022 • 兵庫県立大学 知の交流シンポジウム</span>
+      </div>
+      <p class="meta">E. A. Rashed. 兵庫県立大学 知の交流シンポジウム, 姫路市文化コンベンションセンター, 姫路市, 27 Sept. 2022. (Poster presentation)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2022" data-keywords="ieice est collagen fibers human finger anatomical model electromagnetic analysis okinawa">
+      <div class="pubTop">
+        <p class="title">Modeling collagen fibers in human finger anatomical model towards realistic electromagnetic analysis</p>
+        <span class="badge">2022 • IEICE EST</span>
+      </div>
+      <p class="meta">E. A. Rashed, A. Hirata. 2022 IEICE Workshop on Electronics Simulation Technology (EST), Okinawa, Japan, 27–28 Jan. 2022.</p>
+    </article>
+
+    <!-- ===================== 2021 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2021" data-keywords="ieice annual meeting heat stroke ambulance dispatch nagoya neural networks non-linear regression">
+      <div class="pubTop">
+        <p class="title">Predicting ambulance dispatches due to the heat stroke in Nagoya City - application with neural networks and non-linear regression modeling -</p>
+        <span class="badge">2021 • IEICE Annual Meeting</span>
+      </div>
+      <p class="meta">A. Hirata, S. Kodera, E. A. Rashed. 2021 Annual IEICE Meeting, 11 Mar. 2021. (Presenter: Prof. A. Hirata)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2021" data-keywords="fau seminar dielectric properties deep learning head models invited talk video">
+      <div class="pubTop">
+        <p class="title">Human head models with deep learning enabled dielectric properties</p>
+        <span class="badge">2021 • Invited Talk</span>
+      </div>
+      <p class="meta">E. A. Rashed. Online seminar at Pattern Recognition Lab, University of Erlangen-Nuremberg, 25 Feb. 2021. (Invited Talk)</p>
+      <div class="links">
+        <a class="linkBtn" href="https://www.fau.tv/clip/id/29967" target="_blank" rel="noopener">Video</a>
+      </div>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2021" data-keywords="jsps webinar covid-19 deep learning forecasting one-year lesson online">
+      <div class="pubTop">
+        <p class="title">The role of deep learning in better understanding of COVID-19: A one-year lesson</p>
+        <span class="badge">2021 • JSPS Webinar</span>
+      </div>
+      <p class="meta">E. A. Rashed. The 2nd International JSPS Webinars: Preparedness for the next COVID-19 wave (Online), 13 Feb. 2021.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2021" data-keywords="ieice est local sar temperature rise hand model contact current">
+      <div class="pubTop">
+        <p class="title">Computation of the Local SAR and Temperature Rise in Anatomically-based Hand Model due to Contact Current</p>
+        <span class="badge">2021 • IEICE EST</span>
+      </div>
+      <p class="meta">T. Murakawa, Y. Diao, E. A. Rashed, Y. Kamimura, A. Hirata. 2021 IEICE Workshop on Electronics Simulation Technology (EST), Online, 21–22 Jan. 2021.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2021" data-keywords="ieice est eeg source localization lead field matrix performance evaluation">
+      <div class="pubTop">
+        <p class="title">Performance Evaluation of EEG Source Localization Based on Lead Field Matrix</p>
+        <span class="badge">2021 • IEICE EST</span>
+      </div>
+      <p class="meta">T. Moridera, E. A. Rashed, A. Hirata. 2021 IEICE Workshop on Electronics Simulation Technology (EST), Online, 21–22 Jan. 2021.</p>
+    </article>
+
+    <!-- ===================== 2020 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2020" data-keywords="ieice est electromagnetic absorption temperature rise curved body models above 6 ghz">
+      <div class="pubTop">
+        <p class="title">Evaluation of the electromagnetic absorption and temperature rise in curved body models above 6 GHz</p>
+        <span class="badge">2020 • IEICE EST</span>
+      </div>
+      <p class="meta">Y. Diao, E. A. Rashed, A. Hirata. 2020 IEICE Workshop on Electronics Simulation Technology (EST), Online, 22–23 Oct. 2020.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2020" data-keywords="covid-19 population density meteorological factors japan online event">
+      <div class="pubTop">
+        <p class="title">Correlation of COVID-19 transmission with population density and meteorological factors in Japan</p>
+        <span class="badge">2020 • Online</span>
+      </div>
+      <p class="meta">A. Hirata, S. Kodera, J. Gomez-Tames, E. A. Rashed. Climatological, Meteorological and Environmental factors in the COVID-19 pandemic (Online), 4–6 Aug. 2020.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2020" data-keywords="ieice est induced field hand model contact current intermediate frequencies technical report est2020-11">
+      <div class="pubTop">
+        <p class="title">Numerical investigation of induced field in anatomically-based hand model for contact current at intermediate frequencies</p>
+        <span class="badge">2020 • IEICE EST</span>
+      </div>
+      <p class="meta">T. Murakawa, Y. Diao, E. A. Rashed, Y. Tanaka, S. Kitamura, S. Uehara, Y. Otaka, A. Hirata. 2020 IEICE Workshop on Electronics Stimulation Technology (EST), Online, 16–17 Jul. 2020. (IEICE Technical Report, vol. EST2020-11, pp. 27–32, 2020)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2020" data-keywords="nyc neuromodulation semantic segmentation deep brain structures non-invasive brain stimulation video">
+      <div class="pubTop">
+        <p class="title">End-to-end semantic segmentation of personalized deep brain structures for non-invasive brain stimulation</p>
+        <span class="badge">2020 • NYC Neuromodulation</span>
+      </div>
+      <p class="meta">E. A. Rashed, J. Gomez-Tames, A. Hirata. NYC Neuromodulation 2020, Apr. 22, 2020. (Session video record available)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2020" data-keywords="ieice est condnet conductivity estimation human head models best presentation award technical report">
+      <div class="pubTop">
+        <p class="title">CondNet: Deep learning architecture for electrical conductivity estimation of human head models</p>
+        <span class="badge">2020 • IEICE EST • 🏆 Best Presentation</span>
+      </div>
+      <p class="meta">E. A. Rashed, A. Hirata. 2020 IEICE Workshop on Electronics Simulation Technology (EST), Beppu International Convention Center, Beppu, Japan, 30–31 Jan. 2020. (IEICE Technical Report, vol. 119, no. 407, pp. 13–17, 2020)</p>
+      
+    </article>
+
+    <!-- ===================== 2019 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2019" data-keywords="ieice est personalized head models mri convolutional neural networks technical report">
+      <div class="pubTop">
+        <p class="title">Personalized head models from MRI using convolutional neural networks</p>
+        <span class="badge">2019 • IEICE EST</span>
+      </div>
+      <p class="meta">E. A. Rashed, J. Gomez-Tames, A. Hirata. 2019 IEICE Workshop on Electronics Simulation Technology (EST), Nagoya Institute of Technology, Nagoya, Japan, 17 May 2019. (IEICE Technical Report, vol. 119, no. 42, pp. 9–12, 2019)</p>
+      
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2019" data-keywords="cancer bioinformatics machine learning cancer research invited talk icgeb course">
+      <div class="pubTop">
+        <p class="title">Machine Learning in Cancer Research</p>
+        <span class="badge">2019 • Invited Talk</span>
+      </div>
+      <p class="meta">E. A. Rashed, M. G. Awad. Cancer Bioinformatics: Genomics and Transcriptomics Approach (ICGEB Course), Suez Canal University, Ismailia, Egypt, 5–7 Mar. 2019. (Invited Talk)</p>
+    </article>
+
+    <!-- ===================== 2018 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2018" data-keywords="acci2018 thermograms breast cancer deep learning detection">
+      <div class="pubTop">
+        <p class="title">Deep learning approach for detecting breast cancer from thermograms</p>
+        <span class="badge">2018 • ACCI</span>
+      </div>
+      <p class="meta">E. Ahmed, T. Gaber, E. A. Rashed. International Conference on Advanced Computer Communication and Informatics (ACCI2018), Ismailia, Egypt, May 2018.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2018" data-keywords="acci2018 tomography analytical methods machine learning invited talk">
+      <div class="pubTop">
+        <p class="title">Tomography: from analytical methods to machine learning</p>
+        <span class="badge">2018 • ACCI • Invited Talk</span>
+      </div>
+      <p class="meta">E. A. Rashed. ACCI2018, Ismailia, Egypt, May 2018. (Invited Talk)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2018" data-keywords="keynote egyptian precision medicine era young researchers conference invited talk">
+      <div class="pubTop">
+        <p class="title">Egyptian Precision Medicine Era</p>
+        <span class="badge">2018 • Keynote</span>
+      </div>
+      <p class="meta">E. A. Rashed, H. Yousry. Keynote Lecture, Fifth Young Researchers Conference @ Suez Canal University, 7–8 Apr. 2018. (Invited Talk)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2018" data-keywords="urc2018 fluorotech denoising fluoroscopic imaging dubai">
+      <div class="pubTop">
+        <p class="title">FluoroTech: Denoising Algorithm for Fluoroscopic Imaging</p>
+        <span class="badge">2018 • URC</span>
+      </div>
+      <p class="meta">O. Abdelfattah, E. A. Rashed, W. Hussein. 10th Annual Undergraduate Research Conference on Applied Computing (URC2018), Dubai, UAE, Apr. 2018.</p>
+    </article>
+
+    <!-- ===================== 2016 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2016" data-keywords="icmis2016 three-dimensional blood vessel detection low-dose ct shape prior">
+      <div class="pubTop">
+        <p class="title">Three-dimensional blood vessel detection from low-dose CT imaging using shape prior approach</p>
+        <span class="badge">2016 • ICMIS</span>
+      </div>
+      <p class="meta">E. A. Mohamed, E. A. Rashed, H. M. Hewedi. 5th International Conference on Mathematics and Information Sciences (ICMIS2016), Paper No. 217, Cairo, Egypt, Feb. 2016.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2016" data-keywords="keynote low-dose tomographic imaging system zagazig university invited talk">
+      <div class="pubTop">
+        <p class="title">Towards efficient low-dose tomographic imaging system</p>
+        <span class="badge">2016 • Keynote</span>
+      </div>
+      <p class="meta">E. A. Rashed. Keynote Lecture, Workshop in Computer Science Approaches and Their Applications, Zagazig University, 16 Jul. 2016. (Invited Talk)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2016" data-keywords="keynote multidisciplinary collaborative research example from scu invited talk">
+      <div class="pubTop">
+        <p class="title">Multidisciplinary Collaborative Research: an example from SCU</p>
+        <span class="badge">2016 • Keynote</span>
+      </div>
+      <p class="meta">E. A. Rashed. Keynote Lecture, Third Young Researchers Conference @ Suez Canal University, 7–8 May 2016. (Invited Talk)</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2016" data-keywords="iccta 2016 low-dose ct denoising incremental learning ant colony optimization">
+      <div class="pubTop">
+        <p class="title">Low-dose CT denoising by incremental learning and ant colony optimization</p>
+        <span class="badge">2016 • ICCTA</span>
+      </div>
+      <p class="meta">M. Hashem, E. A. Rashed, F. Harby. 26th International Conference on Computer Theory and Applications (ICCTA 2016), Alexandria, Egypt, 2016.</p>
+    </article>
+
+    <!-- ===================== 2015 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2015" data-keywords="iccta 2015 elliptical basis function network non-blind deconvolution">
+      <div class="pubTop">
+        <p class="title">An elliptical basis function network for non-blind deconvolution</p>
+        <span class="badge">2015 • ICCTA</span>
+      </div>
+      <p class="meta">M. Hashem, E. A. Rashed, F. Harby. 25th International Conference on Computer Theory and Applications (ICCTA 2015), Alexandria, Egypt, 2015, pp. 197–201.</p>
+    </article>
+
+    <!-- ===================== 2013 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2013" data-keywords="young researchers conference image reconstruction low-dose computed tomography best presentation award">
+      <div class="pubTop">
+        <p class="title">Image reconstruction method for low-dose computed tomography</p>
+        <span class="badge">2013 • 🏆 Best Presentation Award</span>
+      </div>
+      <p class="meta">E. A. Rashed. First Young Researchers Conference @ Suez Canal University, 6–7 Mar. 2013. (Best Presentation Award)</p>
+    </article>
+
+    <!-- ===================== 2009 ===================== -->
+    <article class="pub" data-type="presentation" data-year="2009" data-keywords="pet society new developments image reconstruction current research">
+      <div class="pubTop">
+        <p class="title">New developments in image reconstruction - current research</p>
+        <span class="badge">2009 • PET Society</span>
+      </div>
+      <p class="meta">T. Kobayashi, E. A. Rashed, H. Kudo. Next Generation PET Society, Paper No. 7, Chiba, Japan, 2009.</p>
+    </article>
+
+    <article class="pub" data-type="presentation" data-year="2009" data-keywords="spect workshop uniqueness results image reconstruction roi interior tomography">
+      <div class="pubTop">
+        <p class="title">Uniqueness results and image reconstruction for region-of-interest and interior tomography</p>
+        <span class="badge">2009 • Workshop</span>
+      </div>
+      <p class="meta">H. Kudo, E. A. Rashed. International workshop: Brain storming on quantification in Single Photon Emission Computed Tomography (SPECT), National Cardiovascular Center, Osaka, Japan, 2009.</p>
+    </article>
+
+  </div>
+</section>
+
+      <!-- OTHERSS -->
+      <section id="others">
+        <div class="sectionTitle">
+          <h2>Others</h2>
+          <p class="hint">Other publications.</p>
+        </div>
+        <div class="pubList" data-section="others">
+          
+          <article class="pub" data-type="other" data-year="2022" data-keywords="patent medical imaging software">
+            <div class="pubTop">
+              <p class="title">深層学習(AI)に基づく新型コロナウイルス感染症流行の予測</p>
+              <span class="badge">2022</span>
+            </div>
+            <p class="meta">平田 晃正、小寺 紗千子、ラシド イサム、臨床と微生物 49巻3号 2022-5 (近代出版、ISBN: 978-4874022818)</p>
+            <div class="links">
+              <a class="linkBtn" href="https://www.amazon.co.jp/s?k=%E8%87%A8%E5%BA%8A%E3%81%A8%E5%BE%AE%E7%94%9F%E7%89%A9+49%E5%B7%BB3%E5%8F%B7&crid=10Z3AUEGBVSCU&sprefix=%E8%87%A8%E5%BA%8A%E3%81%A8%E5%BE%AE%E7%94%9F%E7%89%A9+49%E5%B7%BB3%E5%8F%B7%2Caps%2C158&ref=nb_sb_noss">Link</a>
+            </div>
+          </article>
+
+          <article class="pub" data-type="other" data-year="2011" data-keywords="patent medical imaging software">
+            <div class="pubTop">
+              <p class="title">圧縮センシングを用いた少数方向投影データからのCT画像再構成</p>
+              <span class="badge">2011</span>
+            </div>
+            <p class="meta">工藤 博幸、ラシド イサム、映像情報メディカル 43(13) (通号 831) 12、1093-1099</p>
+            <div class="links">
+              <a class="linkBtn" href="https://iss.ndl.go.jp/books/R000000004-I023355762-00">Link</a>
+            </div>
+          </article>
+
+          <article class="pub" data-type="other" data-year="2009" data-keywords="patent medical imaging software">
+            <div class="pubTop">
+              <p class="title">インテリアCTにおける画像再構成法の提案</p>
+              <span class="badge">2011</span>
+            </div>
+            <p class="meta">工藤 博幸、ラシド イサム、映像情報メディカル 41(13) (通号 803) 12、 1341-1347</p>
+            <div class="links">
+              <a class="linkBtn" href="https://iss.ndl.go.jp/books/R000000004-I10508487-00">Link</a>
+            </div>
+          </article>
+
+          <!-- Add more patents here -->
+        </div>
+      </section>
+
+      <div id="noResults" class="empty" style="display:none; margin-top:10px;">
+        No publications match your current filters.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footerRow">
+        <div class="brand" style="gap:10px;">
+          <span class="logo" aria-hidden="true" style="width:34px;height:34px;border-radius:12px;"></span>
+          <div>
+            <div style="font-weight:900;">RASHED LAB</div>
+            <div class="small">Publications • Updated regularly</div>
+          </div>
+        </div>
+        <div class="small">© <span id="year"></span> Rashed Lab.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- variables -->
+  <script src="js/config.js"></script>
+
+  <!-- Impact Factor -->
+  <script>
+  document.body.innerHTML = document.body.innerHTML
+    .replaceAll("{{IFYear}}", SITE_CONFIG.IFYear)
+    .replaceAll("{{PMBIF}}", SITE_CONFIG.PMBIF)
+    .replaceAll("{{BSPCIF}}", SITE_CONFIG.BSPCIF)
+    .replaceAll("{{AccessIF}}", SITE_CONFIG.AccessIF)
+    .replaceAll("{{AIRIF}}", SITE_CONFIG.AIRIF)
+    .replaceAll("{{SCSIF}}", SITE_CONFIG.SCSIF)
+    .replaceAll("{{TMIIF}}", SITE_CONFIG.TMIIF)
+    .replaceAll("{{EnvIntIF}}", SITE_CONFIG.EnvIntIF)
+    .replaceAll("{{NNIF}}", SITE_CONFIG.NNIF)
+    .replaceAll("{{CBMIF}}", SITE_CONFIG.CBMIF)
+    .replaceAll("{{BioSIF}}", SITE_CONFIG.BioSIF)
+    .replaceAll("{{CEEIF}}", SITE_CONFIG.CEEIF)
+    .replaceAll("{{CMPBIF}}", SITE_CONFIG.CMPBIF)
+    .replaceAll("{{OneHIF}}", SITE_CONFIG.OneHIF)
+    .replaceAll("{{NeuroImgIF}}", SITE_CONFIG.NeuroImgIF)
+    .replaceAll("{{BDCCIF}}", SITE_CONFIG.BDCCIF)
+    .replaceAll("{{CompGeoIF}}", SITE_CONFIG.CompGeoIF)    
+    .replaceAll("{{JUHIF}}", SITE_CONFIG.JUHIF)
+    .replaceAll("{{BioEIF}}", SITE_CONFIG.BioEIF)
+    .replaceAll("{{SenIF}}", SITE_CONFIG.SenIF)
+    .replaceAll("{{JBIIF}}", SITE_CONFIG.JBIIF)
+    .replaceAll("{{VacIF}}", SITE_CONFIG.VacIF)
+    .replaceAll("{{PRLIF}}", SITE_CONFIG.PRLIF)
+    .replaceAll("{{DHIF}}", SITE_CONFIG.DHIF)
+    .replaceAll("{{FNeuIF}}", SITE_CONFIG.FNeuIF)
+    .replaceAll("{{JSRIF}}", SITE_CONFIG.JSRIF)    
+    .replaceAll("{{MTAIF}}", SITE_CONFIG.MTAIF)
+    .replaceAll("{{InfoIF}}", SITE_CONFIG.InfoIF)
+    .replaceAll("{{PlosIF}}", SITE_CONFIG.PlosIF)
+    .replaceAll("{{EpiGenIF}}", SITE_CONFIG.EpiGenIF)
+    .replaceAll("{{ASIF}}", SITE_CONFIG.ASIF) 
+    .replaceAll("{{TEMCIF}}", SITE_CONFIG.TEMCIF)
+    .replaceAll("{{QIMSIF}}", SITE_CONFIG.QIMSIF)
+    .replaceAll("{{JGEIF}}", SITE_CONFIG.JGEIF)
+    .replaceAll("{{EJRNMIF}}", SITE_CONFIG.EJRNMIF)
+    .replaceAll("{{PulseIF}}", SITE_CONFIG.PulseIF);
+    
+  </script>
+
+
+  
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Filter logic
+    const q = document.getElementById('q');
+    const yearSel = document.getElementById('year');
+    const chips = Array.from(document.querySelectorAll('.chip'));
+    const pubs = Array.from(document.querySelectorAll('.pub'));
+    const noResults = document.getElementById('noResults');
+    const clearBtn = document.getElementById('clearBtn');
+
+    let activeType = "all";
+
+    function normalize(s){ return (s || "").toLowerCase().trim(); }
+
+    function applyFilters(){
+      const query = normalize(q.value);
+      const year = yearSel.value;
+
+      let shown = 0;
+
+      pubs.forEach(p => {
+        const type = p.dataset.type || "";
+        const pubYear = p.dataset.year || "";
+        const hay = normalize(
+          p.querySelector('.title')?.textContent + " " +
+          (p.querySelector('.meta')?.textContent || "") + " " +
+          (p.dataset.keywords || "")
+        );
+
+        const typeOk = (activeType === "all") || (type === activeType);
+        const yearOk = (!year) || (pubYear === year);
+        const qOk = (!query) || hay.includes(query);
+
+        const ok = typeOk && yearOk && qOk;
+        p.style.display = ok ? "block" : "none";
+        if (ok) shown++;
+      });
+
+      // Hide whole sections that have no visible pubs
+      const lists = Array.from(document.querySelectorAll('.pubList'));
+      lists.forEach(list => {
+        const items = Array.from(list.querySelectorAll('.pub'));
+        const anyVisible = items.some(it => it.style.display !== "none");
+        list.parentElement.style.display = anyVisible ? "block" : "none";
+      });
+
+      noResults.style.display = shown === 0 ? "block" : "none";
+    }
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeType = chip.dataset.type;
+        applyFilters();
+      });
+    });
+
+    q.addEventListener('input', applyFilters);
+    yearSel.addEventListener('change', applyFilters);
+
+    clearBtn.addEventListener('click', () => {
+      q.value = "";
+      yearSel.value = "";
+      activeType = "all";
+      chips.forEach(c => c.classList.remove('active'));
+      chips.find(c => c.dataset.type === "all")?.classList.add('active');
+      applyFilters();
+    });
+
+    // Initial
+    applyFilters();
+  </script>
+</body>
+</html>
