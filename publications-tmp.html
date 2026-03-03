@@ -2954,67 +2954,73 @@
 
 
 
-  <script>
+ <script>
 (() => {
-  // 1) Pick selectors that match ONE publication entry card/item in your DOM.
-  //    If counts look wrong, open DevTools -> inspect a single paper entry -> note its class -> put it here.
-  const ITEM_SELECTORS = [
-    ".pubCard", ".pubItem", ".publication", ".paper", ".entry", ".item",
-    "li", "article"
-  ];
+  function ensureWrappedSections() {
+    const main = document.querySelector("main") || document.body;
+    const headings = Array.from(main.querySelectorAll("h2"));
 
-  // Try selectors in order; use the first one that finds any items inside a section.
-  function pickItemSelector(scopeEl) {
-    for (const sel of ITEM_SELECTORS) {
-      const n = scopeEl.querySelectorAll(sel).length;
-      if (n > 0) return sel;
-    }
-    return null;
+    headings.forEach((h2) => {
+      // If already wrapped, skip
+      if (h2.closest(".pubSection")) return;
+
+      const wrapper = document.createElement("div");
+      wrapper.className = "pubSection";
+
+      h2.parentNode.insertBefore(wrapper, h2);
+      wrapper.appendChild(h2);
+
+      // Move everything until next H2 into this wrapper
+      let next = wrapper.nextSibling;
+      while (next && !(next.nodeType === 1 && next.tagName.toLowerCase() === "h2")) {
+        const move = next;
+        next = next.nextSibling;
+        wrapper.appendChild(move);
+      }
+
+      // Add badge if not exists
+      if (!wrapper.querySelector(".secCount")) {
+        const badge = document.createElement("span");
+        badge.className = "secCount";
+        badge.textContent = "0";
+        wrapper.appendChild(badge);
+      }
+    });
   }
 
-  // 2) We will wrap each H2 section into a container, then add a badge in the top-right.
-  //    Your page sections are headed by H2 labels like “Books & Book Chapters”, “Journal Papers”, etc. :contentReference[oaicite:1]{index=1}
-  const main = document.querySelector("main") || document.body;
+  function countInSection(wrapper) {
+    // Best: each publication usually has ONE ".meta" line like "2026 • Journal"
+    let n = wrapper.querySelectorAll(".meta").length;
 
-  const headings = Array.from(main.querySelectorAll("h2"));
-  headings.forEach((h2, idx) => {
-    // Create a wrapper for the section
-    const wrapper = document.createElement("div");
-    wrapper.className = "pubSection";
+    // Fallbacks (in case your template differs)
+    if (!n) n = wrapper.querySelectorAll(".pubItem, .publication, .paper, .entry").length;
 
-    // Insert wrapper before h2, then move nodes until next h2 into wrapper
-    h2.parentNode.insertBefore(wrapper, h2);
-    wrapper.appendChild(h2);
-
-    let next = wrapper.nextSibling; // because h2 moved
-    while (next && !(next.nodeType === 1 && next.tagName.toLowerCase() === "h2")) {
-      const move = next;
-      next = next.nextSibling;
-      wrapper.appendChild(move);
+    // Last fallback: count occurrences of "YYYY •" in visible text
+    if (!n) {
+      const t = wrapper.innerText || "";
+      n = (t.match(/\b(19|20)\d{2}\s*[•·]/g) || []).length;
     }
 
-    // Add badge
-    const badge = document.createElement("span");
-    badge.className = "secCount";
-    badge.textContent = "0";
-    wrapper.appendChild(badge);
+    return n;
+  }
 
-    // Count items within wrapper
-    const sel = pickItemSelector(wrapper);
+  function updateCounts() {
+    ensureWrappedSections();
+    document.querySelectorAll(".pubSection").forEach((sec) => {
+      const badge = sec.querySelector(".secCount");
+      if (!badge) return;
+      badge.textContent = String(countInSection(sec));
+    });
+  }
 
-    let count = 0;
-    if (sel) {
-      // Avoid counting the heading itself (and avoid counting nested lists unrelated to pubs if any)
-      const nodes = Array.from(wrapper.querySelectorAll(sel)).filter(el => el !== h2 && !el.classList.contains("secCount"));
-      count = nodes.length;
-    } else {
-      // Fallback: count by year-meta pattern (very conservative)
-      // Adjust if needed.
-      const text = wrapper.innerText || "";
-      count = (text.match(/\b(19|20)\d{2}\s*•/g) || []).length;
-    }
+  // Run after everything loads (important if publications are rendered by JS)
+  window.addEventListener("load", () => {
+    updateCounts();
 
-    badge.textContent = String(count);
+    // Recount when filters/search update the DOM
+    const main = document.querySelector("main") || document.body;
+    const obs = new MutationObserver(() => updateCounts());
+    obs.observe(main, { childList: true, subtree: true, characterData: true });
   });
 })();
 </script>
