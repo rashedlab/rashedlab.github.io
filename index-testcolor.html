@@ -922,31 +922,43 @@
     </div>
   </footer>
 
-  <script>
-    // footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
+ <script>
+  // footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-    // mobile menu toggle
-    const btn = document.getElementById('menuBtn');
-    const mobileNav = document.getElementById('mobileNav');
-    if (btn) {
-      btn.addEventListener('click', () => {
-        const isOpen = mobileNav.style.display === 'block';
-        mobileNav.style.display = isOpen ? 'none' : 'block';
-        btn.setAttribute('aria-expanded', String(!isOpen));
-      });
-    }
-  </script>
+  // mobile menu toggle
+  const btn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const isOpen = mobileNav.style.display === 'block';
+      mobileNav.style.display = isOpen ? 'none' : 'block';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
 
+  // theme toggle
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = localStorage.getItem('theme');
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSP2C209C6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  if (savedTheme === 'light') {
+    document.body.classList.add('light');
+    if (themeToggle) themeToggle.textContent = '🌙 Dark Mode';
+  }
 
-  gtag('config', 'G-TSP2C209C6');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isLight = document.body.classList.toggle('light');
+
+      if (isLight) {
+        themeToggle.textContent = '🌙 Dark Mode';
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeToggle.textContent = '☀ Light Mode';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  }
 </script>
 </body>
 </html>
