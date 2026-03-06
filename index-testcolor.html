@@ -440,6 +440,138 @@
     .newsThumb{width:40px; height:40px; flex:0 0 40px}
   }
 </style>
+
+  <style>
+  :root{
+    --bg: #242e42;
+    --panel:#101827;
+    --panel2:#0f172a;
+    --text:#e5e7eb;
+    --muted:#a3aab8;
+    --brand:#60a5fa;
+    --brand2:#34d399;
+    --border:#1f2a44;
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+    --radius: 16px;
+    --max: 1100px;
+  }
+
+  /* ... keep your existing CSS ... */
+
+  /* Theme toggle button */
+  #themeToggle{
+    min-width: 120px;
+  }
+
+  /* LIGHT THEME */
+  body.light{
+    --bg: #f5f7fb;
+    --panel: #ffffff;
+    --panel2: #eef3f9;
+    --text: #162033;
+    --muted: #5f6b7a;
+    --brand: #2563eb;
+    --brand2: #10b981;
+    --border: #d7e0ea;
+    --shadow: 0 10px 30px rgba(15,23,42,.08);
+
+    background:
+      radial-gradient(1200px 600px at 20% -10%, rgba(37,99,235,.12), transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, rgba(16,185,129,.10), transparent 55%),
+      var(--bg);
+    color: var(--text);
+  }
+
+  body.light header{
+    background: rgba(255,255,255,.82);
+    border-bottom: 1px solid rgba(215,224,234,.95);
+  }
+
+  body.light .card,
+  body.light .person,
+  body.light .pub,
+  body.light .feature{
+    background: rgba(255,255,255,.88);
+    border-color: var(--border);
+    box-shadow: var(--shadow);
+  }
+
+  body.light .feature{
+    background: rgba(255,255,255,.92);
+  }
+
+  body.light .sideItem,
+  body.light .item,
+  body.light .pill,
+  body.light .tag,
+  body.light .chip,
+  body.light input,
+  body.light textarea,
+  body.light .newsThumb,
+  body.light .avatar,
+  body.light .kicker,
+  body.light #mobileNav .card{
+    background: rgba(239,244,250,.85);
+    border-color: rgba(215,224,234,1);
+    color: var(--text);
+  }
+
+  body.light nav a{
+    color: var(--muted);
+  }
+
+  body.light nav a:hover{
+    background: rgba(37,99,235,.08);
+    color: var(--text);
+  }
+
+  body.light .btn{
+    background: rgba(255,255,255,.9);
+    border: 1px solid rgba(215,224,234,1);
+    color: var(--text);
+  }
+
+  body.light .btn:hover{
+    border-color: rgba(37,99,235,.45);
+    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+  }
+
+  body.light .btn.primary{
+    background: linear-gradient(135deg, rgba(37,99,235,.95), rgba(16,185,129,.85));
+    color: #ffffff;
+    border-color: transparent;
+  }
+
+  body.light .logo:after{
+    background: rgba(255,255,255,.65);
+    border: 1px solid rgba(22,32,51,.08);
+  }
+
+  body.light .lead,
+  body.light .role,
+  body.light .authors,
+  body.light .item .meta,
+  body.light .item .desc,
+  body.light .note,
+  body.light label,
+  body.light .sectionTitle p,
+  body.light footer,
+  body.light .small,
+  body.light .sideItem p{
+    color: var(--muted);
+  }
+
+  body.light input:focus,
+  body.light textarea:focus{
+    border-color: rgba(37,99,235,.55);
+    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+  }
+
+  body.light footer{
+    border-top: 1px solid rgba(215,224,234,.95);
+  }
+</style>
+  
 </head>
 
 <body>
@@ -465,10 +597,10 @@
         </nav>
 
         <div class="cta">
-          <!-- <a class="btn" href="#join">Join Us</a> -->
+          <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
           <a class="btn primary" href="#join">Join Us</a>
           <button class="btn menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
-        </div>
+      </div>
       </div>
 
       <!-- Mobile nav (hidden by default) -->
