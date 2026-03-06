@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Full list of publications: books, journal papers, conference papers, presentations, others." />
-  <title>Publications | RASHED LAB</title>
+  <meta name="description" content="Full list of Awards." />
+  <title>Awards | RASHED LAB</title>
 
   <!-- Reuse the same design tokens as your main page -->
   <style>
@@ -3092,7 +3092,7 @@
           <span class="logo" aria-hidden="true" style="width:34px;height:34px;border-radius:12px;"></span>
           <div>
             <div style="font-weight:900;">RASHED LAB</div>
-            <div class="small">Publications • Updated regularly</div>
+            <div class="small">Awards • Updated regularly</div>
           </div>
         </div>
         <div class="small">© <span id="year"></span> Rashed Lab.</div>
@@ -3100,56 +3100,7 @@
     </div>
   </footer>
 
-  <!-- variables -->
-  <script src="js/config.js"></script>
-
-  <!-- Impact Factor -->
-  <script>
-  document.body.innerHTML = document.body.innerHTML
-    .replaceAll("{{IFYear}}", SITE_CONFIG.IFYear)
-    .replaceAll("{{PMBIF}}", SITE_CONFIG.PMBIF)
-    .replaceAll("{{BSPCIF}}", SITE_CONFIG.BSPCIF)
-    .replaceAll("{{AccessIF}}", SITE_CONFIG.AccessIF)
-    .replaceAll("{{AIRIF}}", SITE_CONFIG.AIRIF)
-    .replaceAll("{{SCSIF}}", SITE_CONFIG.SCSIF)
-    .replaceAll("{{TMIIF}}", SITE_CONFIG.TMIIF)
-    .replaceAll("{{EnvIntIF}}", SITE_CONFIG.EnvIntIF)
-    .replaceAll("{{NNIF}}", SITE_CONFIG.NNIF)
-    .replaceAll("{{CBMIF}}", SITE_CONFIG.CBMIF)
-    .replaceAll("{{BioSIF}}", SITE_CONFIG.BioSIF)
-    .replaceAll("{{CEEIF}}", SITE_CONFIG.CEEIF)
-    .replaceAll("{{CMPBIF}}", SITE_CONFIG.CMPBIF)
-    .replaceAll("{{OneHIF}}", SITE_CONFIG.OneHIF)
-    .replaceAll("{{NeuroImgIF}}", SITE_CONFIG.NeuroImgIF)
-    .replaceAll("{{BDCCIF}}", SITE_CONFIG.BDCCIF)
-    .replaceAll("{{CompGeoIF}}", SITE_CONFIG.CompGeoIF)    
-    .replaceAll("{{JUHIF}}", SITE_CONFIG.JUHIF)
-    .replaceAll("{{BioEIF}}", SITE_CONFIG.BioEIF)
-    .replaceAll("{{SenIF}}", SITE_CONFIG.SenIF)
-    .replaceAll("{{JBIIF}}", SITE_CONFIG.JBIIF)
-    .replaceAll("{{VacIF}}", SITE_CONFIG.VacIF)
-    .replaceAll("{{PRLIF}}", SITE_CONFIG.PRLIF)
-    .replaceAll("{{DHIF}}", SITE_CONFIG.DHIF)
-    .replaceAll("{{FNeuIF}}", SITE_CONFIG.FNeuIF)
-    .replaceAll("{{JSRIF}}", SITE_CONFIG.JSRIF)    
-    .replaceAll("{{MTAIF}}", SITE_CONFIG.MTAIF)
-    .replaceAll("{{InfoIF}}", SITE_CONFIG.InfoIF)
-    .replaceAll("{{PlosIF}}", SITE_CONFIG.PlosIF)
-    .replaceAll("{{EpiGenIF}}", SITE_CONFIG.EpiGenIF)
-    .replaceAll("{{ASIF}}", SITE_CONFIG.ASIF) 
-    .replaceAll("{{TEMCIF}}", SITE_CONFIG.TEMCIF)
-    .replaceAll("{{QIMSIF}}", SITE_CONFIG.QIMSIF)
-    .replaceAll("{{JGEIF}}", SITE_CONFIG.JGEIF)
-    .replaceAll("{{EJRNMIF}}", SITE_CONFIG.EJRNMIF)
-    .replaceAll("{{PulseIF}}", SITE_CONFIG.PulseIF)
-
-    .replaceAll("{{CountBK}}", SITE_COUNT.CountBK)
-    .replaceAll("{{CountJR}}", SITE_COUNT.CountJR)
-    .replaceAll("{{CountCF}}", SITE_COUNT.CountCF)
-    .replaceAll("{{CountPR}}", SITE_COUNT.CountPR)
-    .replaceAll("{{CountOT}}", SITE_COUNT.CountOT);
-    
-  </script>
+  
 
 
   <script>
@@ -3191,80 +3142,6 @@
   }
 </script>
   
-  <script>
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Filter logic
-    const q = document.getElementById('q');
-    const yearSel = document.getElementById('year');
-    const chips = Array.from(document.querySelectorAll('.chip'));
-    const pubs = Array.from(document.querySelectorAll('.pub'));
-    const noResults = document.getElementById('noResults');
-    const clearBtn = document.getElementById('clearBtn');
-
-    let activeType = "all";
-
-    function normalize(s){ return (s || "").toLowerCase().trim(); }
-
-    function applyFilters(){
-      const query = normalize(q.value);
-      const year = yearSel.value;
-
-      let shown = 0;
-
-      pubs.forEach(p => {
-        const type = p.dataset.type || "";
-        const pubYear = p.dataset.year || "";
-        const hay = normalize(
-          p.querySelector('.title')?.textContent + " " +
-          (p.querySelector('.meta')?.textContent || "") + " " +
-          (p.dataset.keywords || "")
-        );
-
-        const typeOk = (activeType === "all") || (type === activeType);
-        const yearOk = (!year) || (pubYear === year);
-        const qOk = (!query) || hay.includes(query);
-
-        const ok = typeOk && yearOk && qOk;
-        p.style.display = ok ? "block" : "none";
-        if (ok) shown++;
-      });
-
-      // Hide whole sections that have no visible pubs
-      const lists = Array.from(document.querySelectorAll('.pubList'));
-      lists.forEach(list => {
-        const items = Array.from(list.querySelectorAll('.pub'));
-        const anyVisible = items.some(it => it.style.display !== "none");
-        list.parentElement.style.display = anyVisible ? "block" : "none";
-      });
-
-      noResults.style.display = shown === 0 ? "block" : "none";
-    }
-
-    chips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        chips.forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        activeType = chip.dataset.type;
-        applyFilters();
-      });
-    });
-
-    q.addEventListener('input', applyFilters);
-    yearSel.addEventListener('change', applyFilters);
-
-    clearBtn.addEventListener('click', () => {
-      q.value = "";
-      yearSel.value = "";
-      activeType = "all";
-      chips.forEach(c => c.classList.remove('active'));
-      chips.find(c => c.dataset.type === "all")?.classList.add('active');
-      applyFilters();
-    });
-
-    // Initial
-    applyFilters();
-  </script>
+  
 </body>
 </html>
