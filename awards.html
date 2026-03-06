@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Full list of Awards." />
+  <title>Awards | RASHED LAB</title>
+
+  <!-- Reuse the same design tokens as your main page -->
+  <style>
+    :root{
+       --bg: #242e42; /*#0b0f17; */
+      --panel:#101827;
+      --panel2:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a3aab8;
+      --brand:#60a5fa;
+      --brand2:#34d399;
+      --border:#1f2a44;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(96,165,250,.20), transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(52,211,153,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    a:hover{color:var(--brand)}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+    header{
+      position:sticky; top:0;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,23,.70);
+      border-bottom: 1px solid rgba(31,42,68,.6);
+      z-index:50;
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0; gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:900; letter-spacing:.2px; white-space:nowrap;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(96,165,250,.95), rgba(52,211,153,.9));
+      box-shadow: 0 10px 24px rgba(96,165,250,.25);
+      position:relative;
+    }
+    .logo:after{
+      content:"";
+      position:absolute; inset:9px;
+      border-radius:10px;
+      background: rgba(11,15,23,.55);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    nav a{
+      padding:10px 10px;
+      border-radius:12px;
+      color:var(--muted);
+      font-weight:700;
+      font-size:14px;
+    }
+    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:800;
+      font-size:14px;
+      cursor:pointer;
+    }
+    .btn:hover{border-color:rgba(96,165,250,.5); box-shadow: 0 0 0 3px rgba(96,165,250,.18)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(96,165,250,.9), rgba(52,211,153,.85));
+      border-color: transparent;
+      color:#071018;
+    }
+
+    /* Page */
+    .hero{
+      padding:32px 0 10px;
+    }
+    .card{
+      background: rgba(16,24,39,.75);
+      border: 1px solid rgba(31,42,68,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .heroBox{
+      padding:22px;
+    }
+    h1{
+      margin:10px 0 6px;
+      font-size: 34px;
+      letter-spacing: -0.6px;
+      line-height:1.1;
+    }
+    .lead{margin:0; color:var(--muted); max-width:70ch}
+
+    /* Controls */
+    .controls{
+      margin-top:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      align-items:center;
+    }
+    .input{
+      flex:1 1 320px;
+      display:flex; align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+    }
+    .input input{
+      width:100%;
+      border:none; outline:none;
+      background: transparent;
+      color: var(--text);
+      font-size:14px;
+    }
+    .select{
+      flex:0 0 auto;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      font-weight:800;
+      font-size:14px;
+      outline:none;
+    }
+    .chips{
+      display:flex; flex-wrap:wrap; gap:8px;
+      margin-top:12px;
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-weight:800;
+      font-size:13px;
+      cursor:pointer;
+      user-select:none;
+    }
+    .chip.active{
+      color: var(--text);
+      border-color: rgba(96,165,250,.5);
+      box-shadow: 0 0 0 3px rgba(96,165,250,.15);
+    }
+
+    /* Sections */
+    main{padding:10px 0 40px}
+    section{padding:18px 0}
+    .sectionTitle{
+      /* color: rgba(250, 204, 21, .80); */
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:12px; margin-bottom: 10px;
+    }
+    h2{margin:0; font-size:20px; letter-spacing:-.2px}
+    .hint{margin:0; color:var(--muted); font-size:13px}
+
+    .pubList{display:grid; gap:12px}
+    .pub{
+      padding:14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31,42,68,.9);
+      background: rgba(150,150,150,.12); /* gray */ */
+    }
+    .pubTop{
+      display:flex; justify-content:space-between; align-items:flex-start;
+      gap:12px; flex-wrap:wrap;
+      margin-bottom:6px;
+    }
+    .badge{
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.2px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      white-space:nowrap;
+    }
+    .title{margin:0; font-weight:900}
+    .meta{margin:6px 0 0; color:var(--muted); font-size:13px}
+    .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .linkBtn{
+      font-size:13px;
+      font-weight:900;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+    }
+    .empty{
+      padding:14px;
+      border-radius: var(--radius);
+      border: 1px dashed rgba(255,255,255,.18);
+      color: var(--muted);
+      background: rgba(255,255,255,.02);
+    }
+
+    footer{
+      padding:26px 0 38px;
+      border-top: 1px solid rgba(31,42,68,.6);
+      color: rgba(163,170,184,.9);
+    }
+    .footerRow{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; align-items:center}
+    .small{font-size:13px}
+
+    @media (max-width: 720px){
+      h1{font-size:28px}
+      nav{display:none}
+    }
+  </style>
+
+  <style>
+  /* ===== Award items (same layout idea as News with left image) ===== */
+    .awardItem{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      padding:12px;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      margin-bottom:10px;
+    }
+    .awardItem:last-child{margin-bottom:0}
+
+    .awardThumb{
+      width:120px;
+      height:120px;
+      flex:0 0 120px;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+    }
+    .awardThumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .awardBody{flex:1; min-width:0;}
+    .meta{color:var(--muted); font-size:12px; margin-bottom:4px}
+    .title{font-weight:800; margin:0 0 4px; font-size:14px}
+    .desc{margin:0; color:var(--muted); font-size:13px}
+
+    .tagRow{margin-top:8px; display:flex; gap:8px; flex-wrap:wrap}
+    .tag{
+      font-size:12px;
+      color:var(--muted);
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.02);
+      padding:6px 8px;
+      border-radius:999px;
+    }
+
+    .btnRow{margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;}
+    .btn{
+      font-size:13px;
+      padding:8px 10px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:999px;
+      color:var(--text);
+      white-space:nowrap;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    @media (max-width:720px){
+      .awardThumb{width:60px; height:60px; flex:0 0 60px;}
+    }
+
+    /* footer{
+      margin-top:26px;
+      padding-top:16px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+    } */
+  </style>
+  
+  <style>
+  :root{
+    --bg: #242e42;
+    --panel:#101827;
+    --panel2:#0f172a;
+    --text:#e5e7eb;
+    --muted:#a3aab8;
+    --brand:#60a5fa;
+    --brand2:#34d399;
+    --border:#1f2a44;
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+    --radius: 16px;
+    --max: 1100px;
+  }
+
+  /* ... keep your existing CSS ... */
+
+  /* Theme toggle button */
+  #themeToggle{
+    min-width: 120px;
+  }
+
+  /* LIGHT THEME */
+  body.light{
+    --bg: #f5f7fb;
+    --panel: #ffffff;
+    --panel2: #eef3f9;
+    --text: #162033;
+    --muted: #5f6b7a;
+    --brand: #2563eb;
+    --brand2: #10b981;
+    --border: #d7e0ea;
+    --shadow: 0 10px 30px rgba(15,23,42,.08);
+
+    background:
+      radial-gradient(1200px 600px at 20% -10%, rgba(37,99,235,.12), transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, rgba(16,185,129,.10), transparent 55%),
+      var(--bg);
+    color: var(--text);
+  }
+
+  body.light header{
+    background: rgba(255,255,255,.82);
+    border-bottom: 1px solid rgba(215,224,234,.95);
+  }
+
+  body.light .card,
+  body.light .person,
+  body.light .pub,
+  body.light .feature{
+    background: rgba(255,255,255,.88);
+    border-color: var(--border);
+    box-shadow: var(--shadow);
+  }
+
+  body.light .feature{
+    background: rgba(255,255,255,.92);
+  }
+
+  body.light .sideItem,
+  body.light .item,
+  body.light .pill,
+  body.light .tag,
+  body.light .chip,
+  body.light input,
+  body.light textarea,
+  body.light .newsThumb,
+  body.light .avatar,
+  body.light .kicker,
+  body.light #mobileNav .card{
+    background: rgba(239,244,250,.85);
+    border-color: rgba(215,224,234,1);
+    color: var(--text);
+  }
+
+  body.light nav a{
+    color: var(--muted);
+  }
+
+  body.light nav a:hover{
+    background: rgba(37,99,235,.08);
+    color: var(--text);
+  }
+
+  body.light .btn{
+    background: rgba(255,255,255,.9);
+    border: 1px solid rgba(215,224,234,1);
+    color: var(--text);
+  }
+
+  body.light .btn:hover{
+    border-color: rgba(37,99,235,.45);
+    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+  }
+
+  body.light .btn.primary{
+    background: linear-gradient(135deg, rgba(37,99,235,.95), rgba(16,185,129,.85));
+    color: #ffffff;
+    border-color: transparent;
+  }
+
+  body.light .logo:after{
+    background: rgba(255,255,255,.65);
+    border: 1px solid rgba(22,32,51,.08);
+  }
+
+  body.light .lead,
+  body.light .role,
+  body.light .authors,
+  body.light .item .meta,
+  body.light .item .desc,
+  body.light .note,
+  body.light label,
+  body.light .sectionTitle p,
+  body.light footer,
+  body.light .small,
+  body.light .sideItem p{
+    color: var(--muted);
+  }
+
+  body.light input:focus,
+  body.light textarea:focus{
+    border-color: rgba(37,99,235,.55);
+    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+  }
+
+  body.light footer{
+    border-top: 1px solid rgba(215,224,234,.95);
+  }
+</style>
+  
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Back to home">
+          <span class="logo" aria-hidden="true"></span>
+          <span>RASHED LAB</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a href="index.html#news">News</a>
+          <a href="index.html#research">Research</a>
+          <a href="index.html#people">People</a>
+          <a href="publications.html" style="color:var(--text); background:rgba(255,255,255,.06);">Publications</a>
+          <a href="index.html#awards">Awards</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+
+
+        <div class="cta">
+        <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
+        <!-- <a class="btn primary" href="#top">Browse</a> -->
+        <!-- <button class="btn menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button> -->
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <div class="hero" id="top">
+    <div class="container">
+      <div class="card heroBox">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:flex-start;">
+          <div>
+            <h1>Awards & Recognitions</h1>
+            <p class="lead">
+              Highlights of awards and recognitions for the lab members and collaborators.
+            </p>
+          </div>
+        </div>
+
+        
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- ************* -->
+<!-- ************* -->
+
+<main>
+  <div class="container">
+    <section class="hero">
+      <h2>Awards</h2>
+    </section>
+
+<div class="card">
+
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/kanda.jpg" alt="Motohisa Kanda Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2025 • IEEE EMC Society</div>
+          <p class="title">🏆 The 2025 Motohisa Kanda Award</p>
+          <p class="desc">E. A. Rashed (and co-authors) received the 2025 Motohisa Kanda Award from IEEE EMC Society</p>
+          <div class="btnRow">
+            <a class="btn" href="https://ieeexplore.ieee.org/document/9557785">DOI</a>
+            <a class="btn" href="https://u-hyogo-gsis.org/topics/%E3%83%A9%E3%82%B7%E3%83%89%E5%85%88%E7%94%9F%E5%8F%97%E8%B3%9E%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/">Announcement</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/ifmia2025.jpg" alt="Best Poster Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2025 • IFMIA 2025</div>
+          <p class="title">🏆 Best Poster Award</p>
+          <p class="desc">A. Elboardy (and co-authors) received the Best Poster Award at IFMIA 2025, Takamatsu, Japan</p>
+          <div class="btnRow">
+            <a class="btn" href="https://u-hyogo-gsis.org/topics/%e7%a0%94%e7%a9%b6%e7%94%9f%e3%82%a8%e3%83%ab%e3%83%9c%e3%83%bc%e3%83%87%e3%82%a3%e3%81%95%e3%82%93%e5%8f%97%e8%b3%9e%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/">Link</a>
+          </div>
+        </div>
+      </div>
+   
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/Sensors2025.jpg" alt="Editor's Choice Paper Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2025 • Sensors</div>
+          <p class="title">🏆 Editor’s Choice Paper Award</p>
+          <p class="desc">H. Seshimo and E. Rashed received the Editor's Choice Paper Award from Sensors journal</p>
+          <div class="btnRow">
+           <a class="btn" href=" https://doi.org/10.3390/s24237576">DOI</a>
+            <a class="btn" href="https://www.mdpi.com/1424-8220/24/23/7576">Link</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/mextER6.jpg" alt="MEXT Science and Technology Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2024 • MEXT</div>
+          <p class="title">🏆 MEXT Science and Technology Award (Development Category)</p>
+          <p class="desc">E. Rashed (and collaborators) awarded by the Minister of Education, Culture, Sports, Science and Technology (MEXT), Japan</p>
+          <div class="btnRow">
+            <a class="btn" href="https://www.u-hyogo.ac.jp/news/news/202404017daijin-award.html">Link</a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/fmlds2024.jpg" alt="Best Technical Paper Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2024 • IEEE FMLDS2024</div>
+          <p class="title">🏆 Best Technical Paper Award</p>
+          <p class="desc">M. Mabrok and E. Rashed received the Best Technical Paper Award at FMLDS2024, Sydney, Australia</p>
+          <div class="btnRow">
+            <a class="btn" href="https://fmlds.org/2024/">Link</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/UH2024.jpg" alt="University of Hyogo Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2024 • University of Hyogo</div>
+          <p class="title">🏆 Outstanding Research Activity Award 最優秀研究活動賞</p>
+          <p class="desc">E. Rashed awarded by the University of Hyogo</p>
+          <!-- <div class="btnRow"> -->
+            <!-- <a class="btn" href="https://www.u-hyogo.ac.jp/news/news/202404017daijin-award.html">Link</a> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/icmip2024.jpg" alt="Best Paper Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2024 • ICMIP2024</div>
+          <p class="title">🏆 Best Paper Award</p>
+          <p class="desc">M. Mabrok and E. Rashed received the Best Paper Award at ICMIP2024, Osaka, Japan</p>
+          <div class="btnRow">
+            <a class="btn" href="https://www.icmip.org/icmip2024.html">Link</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/IJERPH2022a.jpg" alt="Editor's Choice Paper Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2022 • IJERPH</div>
+          <p class="title">🏆 Editor’s Choice Paper Award</p>
+          <p class="desc">E. Rashed and A. Hirata received the Editor's Choice Paper Award from IJERPH journal</p>
+          <div class="btnRow">
+            <a class="btn" href="https://doi.org/10.3390/ijerph18115736">DOI</a>
+            <a class="btn" href="https://www.mdpi.com/1660-4601/18/11/5736">Link</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/nitech2020.jpg" alt="Faculty Award of Excellence" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2020 • Nagoya Institute of Technology</div>
+          <p class="title">🏆 Faculty Award of Excellence 優秀賞 </p>
+          <p class="desc">E. Rashed (and collaborators) received the Faculty Award of Excellence</p>
+        </div>
+      </div>
+
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/EST2020.jpg" alt="Best Presentation Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2020 • IEICE EST研究会</div>
+          <p class="title">🏆 Best Presentation Award 令和元年EST研究会優秀論文発表賞 </p>
+          <p class="desc">E. Rashed received the Best Presentation Award</p>
+          <div class="btnRow">
+            <a class="btn" href="https://www.ieice.org/es/est/award/index.html">Link</a>
+          </div> 
+        </div>
+      </div>
+  
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/EMC2019.jpg" alt="Excellent Paper Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2019 • EMC</div>
+          <p class="title">🏆 Excellent Paper Award </p>
+          <p class="desc">E. Rashed (and co-authors) received the Excellent Paper Award from EMC2019, Sapporo, Japan</p>
+          <!-- <div class="btnRow">
+            <a class="btn" href="https://doi.org/10.1109/CIBEC.2018.8641789">Link</a>
+          </div>  -->
+        </div>
+      </div>
+      
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/cibec2018.jpg" alt="Best Student Paper Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2018 • IEEE CIBEC</div>
+          <p class="title">🏆 Best Student Paper Award </p>
+          <p class="desc">M. Selim (and co-authors) received the Best Student Paper Award from CIBEC2018, Cairo, Egypt</p>
+          <div class="btnRow">
+            <a class="btn" href="https://doi.org/10.1109/CIBEC.2018.8641789">Link</a>
+          </div> 
+        </div>
+      </div>
+
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/SPIE2016.jpg" alt="Outstanding Poster Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2016 • SPIE</div>
+          <p class="title">🏆 Outstanding Poster Award</p>
+          <p class="desc">M. Selim (and co-authors) received the Outstanding Poster Award at SPIE Dev. in X-ray Tomography X Conf., San Diego, USA</p>
+          <!-- <div class="btnRow">
+            <a class="btn" href="https://u-hyogo-gsis.org/topics/%e7%a0%94%e7%a9%b6%e7%94%9f%e3%82%a8%e3%83%ab%e3%83%9c%e3%83%bc%e3%83%87%e3%82%a3%e3%81%95%e3%82%93%e5%8f%97%e8%b3%9e%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/">Link</a>
+          </div> -->
+        </div>
+      </div>
+      
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/JAMIT2012.jpg" alt="Best Student Paper Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2012 • JAMIT</div>
+          <p class="title">🏆 Best Presentation Award 奨励賞 </p>
+          <p class="desc">E. Rashed received the Best Presentation Award from JAMIT2012, Sapporo, Japan</p>
+          <div class="btnRow">
+            <a class="btn" href="http://www.jamit.jp/outline/history/shoreisho-list.html">Link</a>
+          </div> 
+        </div>
+      </div>
+
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/project2010tsukuba.jpg" alt="Best Project Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2010 • University of Tsukuba</div>
+          <p class="title">🏆 Best Project Award 表彰状 </p>
+          <p class="desc">E. Rashed received the Best Research Project, Program for Development of ICT Solution Architect</p>
+        </div>
+      </div>
+
+      <!-- Award -->
+      <div class="awardItem">
+        <div class="awardThumb">
+          <img src="assets/awards/JAMIT2008.jpg" alt="Best Student Paper Award" loading="lazy">
+        </div>
+        <div class="awardBody">
+          <div class="meta">2008 • JAMIT</div>
+          <p class="title">🏆 Best Presentation Award 奨励賞 </p>
+          <p class="desc">E. Rashed received the Best Presentation Award from JAMIT2008, Tsukuba, Japan</p>
+          <div class="btnRow">
+            <a class="btn" href="http://www.jamit.jp/outline/history/shoreisho-list.html">Link</a>
+          </div> 
+        </div>
+      </div>
+
+    
+    
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+    <section class="hero">
+      <h2>Recognitions</h2>
+    </section>
+
+  <div class="card">
+
+      <!-- Recog -->
+    <div class="awardItem">
+      <div class="awardThumb">
+        <img src="assets/awards/fmlds2026c.jpg" alt="Best Paper Award" loading="lazy">
+      </div>
+      <div class="awardBody">
+        <div class="meta">2026 • IEEE FMLDS</div>
+        <p class="title">🏅 General Chair of 2026 IEEE FMLDS</p>
+        <p class="desc">E. Rashed & M. Mabork are Co-Chairs of the 2026 IEEE International Conference on Future Machine Learning and Data Science</p>
+        <div class="btnRow">
+          <a class="btn" href="https://www.fmlds.org/2026/">Link</a>
+        </div>
+      </div>
+    </div>
+
+<!-- Recog -->
+    <div class="awardItem">
+      <div class="awardThumb">
+        <img src="assets/awards/pmb.jpg" alt="Editorial Borad Member" loading="lazy">
+      </div>
+      <div class="awardBody">
+        <div class="meta">2025 • Physics in Medicine and Biology </div>
+        <p class="title">🏅 Editorial Borad Member</p>
+        <p class="desc">E. Rashed is Editorial Borad Member of IoP Journal (Physics in Medicine and Biology) for term 2025-2027</p>
+        <div class="btnRow">
+          <a class="btn" href="https://publishingsupport.iopscience.iop.org/journals/physics-in-medicine-biology/editorial-board/">Journal page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recog -->
+    <div class="awardItem">
+      <div class="awardThumb">
+        <img src="assets/awards/TMI2022.jpg" alt="Best Paper Award" loading="lazy">
+      </div>
+      <div class="awardBody">
+        <div class="meta">2022 • IEEE Transactions on Medical Imaging </div>
+        <p class="title">🏅 Distinguished Reviewer - Silver Level</p>
+        <p class="desc">E. Rashed is recognized by IEEE TMI as distigushed reviewer</p>
+        <div class="btnRow">
+          <a class="btn" href="https://ieeexplore.ieee.org/document/4307759">Journal page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recog -->
+    <div class="awardItem">
+      <div class="awardThumb">
+        <img src="assets/awards/ieeeaccess.jpg" alt="Associate Editor" loading="lazy">
+      </div>
+      <div class="awardBody">
+        <div class="meta">2020 • IEEE Access </div>
+        <p class="title">🏅 Associate Editor</p>
+        <p class="desc">E. Rashed is Associate Editor of IEEE Access for term 2020- </p>
+        <div class="btnRow">
+          <a class="btn" href="https://ieeeaccess.ieee.org/editorial-leadership/associate-editors/">Journal page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recog -->
+    <div class="awardItem">
+      <div class="awardThumb">
+        <img src="assets/awards/ieeesm2019.jpg" alt="Best Paper Award" loading="lazy">
+      </div>
+      <div class="awardBody">
+        <div class="meta">2019 • IEEE</div>
+        <p class="title">🏅 IEEE Senior Member</p>
+        <p class="desc">E. Rashed is promoted to IEEE Senior Member</p>
+        <div class="btnRow">
+          <a class="btn" href="https://www.ieee-jp.org/section/tokyo/adm/info/newsm/NewSM_2019.pdf">Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recog -->
+    <div class="awardItem">
+      <div class="awardThumb">
+        <img src="assets/awards/pulse2019cover.jpg" alt="Journal Cover" loading="lazy">
+      </div>
+      <div class="awardBody">
+        <div class="meta">2019 • Journal Cover</div>
+        <p class="title">🏅 Journal Cover</p>
+        <p class="desc">Our paper appear as the Front Cover of IEEE Pulse Journal (vol. 10, issue 4)</p>
+        <div class="btnRow">
+          <a class="btn" href="https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=8784299&punumber=5454060">Link</a>
+          <a class="btn" href="https://doi.org/10.1109/MPULS.2019.2923888">DOI</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recog -->
+    <div class="awardItem">
+      <div class="awardThumb">
+        <img src="assets/awards/BSPC2018r.jpg" alt="Outstanding Reviewer" loading="lazy">
+      </div>
+      <div class="awardBody">
+        <div class="meta">2018 • Biomedical Signal Processing and Control </div>
+        <p class="title">🏅 Certificate of Outstanding Contribution in Reviewing</p>
+        <p class="desc">E. Rashed is recognized by BSPC as Outstanding Reviewer</p>
+        <div class="btnRow">
+          <a class="btn" href="https://www.sciencedirect.com/journal/biomedical-signal-processing-and-control">Journal page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recog -->
+    <div class="awardItem">
+      <div class="awardThumb">
+        <img src="assets/awards/QIMS2013cover.jpg" alt="Journal Cover" loading="lazy">
+      </div>
+      <div class="awardBody">
+        <div class="meta">2013 • Journal Cover</div>
+        <p class="title">🏅 Journal Cover</p>
+        <p class="desc">A figure from our paper appears as the front cover of QIMS Journal (vol. 3, No. 3)</p>
+        <div class="btnRow">
+          <a class="btn" href="https://qims.amegroups.org/issue/view/114">Link</a>
+            <a class="btn" href="http://dx.doi.org/10.3978/j.issn.2223-4292.2013.06.01">DOI</a>
+        </div>
+      </div>
+    </div>
+
+
+    
+    
+   </div>
+</main>
+  
+<!-- ************* -->
+<!-- ************* -->
+
+  <footer>
+    <div class="container">
+      <div class="footerRow">
+        <div class="brand" style="gap:10px;">
+          <span class="logo" aria-hidden="true" style="width:34px;height:34px;border-radius:12px;"></span>
+          <div>
+            <div style="font-weight:900;">RASHED LAB</div>
+            <div class="small">Awards • Updated regularly</div>
+          </div>
+        </div>
+        <div class="small">© <span id="year"></span> Rashed Lab.</div>
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+  <script>
+  // footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // mobile menu toggle
+  const btn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const isOpen = mobileNav.style.display === 'block';
+      mobileNav.style.display = isOpen ? 'none' : 'block';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  }
+
+  // theme toggle
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'light') {
+    document.body.classList.add('light');
+    if (themeToggle) themeToggle.textContent = '🌙 Dark Mode';
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isLight = document.body.classList.toggle('light');
+
+      if (isLight) {
+        themeToggle.textContent = '🌙 Dark Mode';
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeToggle.textContent = '☀ Light Mode';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  }
+</script>
+  
+  
+</body>
+</html>
