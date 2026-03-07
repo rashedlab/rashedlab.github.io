@@ -258,6 +258,9 @@
       padding:16px;
     }
     .item{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
       padding:12px;
       border-radius:14px;
       border: 1px solid rgba(255,255,255,.10);
@@ -265,13 +268,31 @@
       margin-bottom:10px;
     }
     .item:last-child{margin-bottom:0}
+    .newsThumb{
+      width:75px;
+      height:75px;
+      flex:0 0 75px;
+      border-radius:12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+    }
+    .newsThumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .newsBody{
+      min-width:0;
+      flex:1;
+    }
     .item .meta{color:var(--muted); font-size:12px; margin-bottom:4px}
     .item .title{font-weight:800; margin:0 0 4px; font-size:14px}
     .item .desc{margin:0; color:var(--muted); font-size:13px}
 
-  
-
-    
     /* People */
     .peopleGrid{
       display:grid;
@@ -285,30 +306,24 @@
       background: rgba(16,24,39,.65);
       overflow:hidden;
     }
-.avatar{
-  width:auto;
-  height:auto;
-  border-radius:14px;
-  border: 1px solid rgba(255,255,255,.10);
-  background: rgba(255,255,255,.04);
-  overflow:hidden;
-
-  display:grid;
-  place-items:center;
-}
-
-.avatar img{
-  /* Override common global rules */
-  width:100% !important;
-  height:100% !important;
-
-  object-fit: contain;
-  object-position: center;
-  display:block;
-
-  /* prevent weird baseline spacing */
-  line-height:0;
-}
+    .avatar{
+      width:auto;
+      height:auto;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+    }
+    .avatar img{
+      width:100% !important;
+      height:100% !important;
+      object-fit: contain;
+      object-position: center;
+      display:block;
+      line-height:0;
+    }
     .person h3{margin:0 0 2px; font-size:15px}
     .role{color:var(--muted); font-size:13px; margin:0 0 10px}
     .tags{display:flex; flex-wrap:wrap; gap:8px}
@@ -341,10 +356,9 @@
     }
 
     /* Contact */
- 
     .contactGrid{
-  display:block;
-  }
+      display:block;
+    }
     .contactBox{padding:16px}
     label{display:block; margin:10px 0 6px; color:var(--muted); font-size:13px; font-weight:700}
     input, textarea{
@@ -385,192 +399,137 @@
       .menuBtn{display:inline-flex}
       .peopleGrid{grid-template-columns:1fr}
       h1{font-size:34px}
+      .newsThumb{width:40px; height:40px; flex:0 0 40px}
     }
   </style>
 
   <style>
-  /* ... keep all your existing CSS ... */
+    :root{
+      --bg: #242e42;
+      --panel:#101827;
+      --panel2:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a3aab8;
+      --brand:#60a5fa;
+      --brand2:#34d399;
+      --border:#1f2a44;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 1100px;
+    }
 
-  /* News / Highlights (UPDATED) */
-  .list{
-    padding:16px;
-  }
+    #themeToggle{
+      min-width: 120px;
+    }
 
-  .item{
-    display:flex;               /* NEW */
-    gap:12px;                   /* NEW */
-    align-items:flex-start;     /* NEW */
-    padding:12px;
-    border-radius:14px;
-    border: 1px solid rgba(255,255,255,.10);
-    background: rgba(255,255,255,.03);
-    margin-bottom:10px;
-  }
-  .item:last-child{margin-bottom:0}
+    /* LIGHT THEME */
+    body.light{
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --panel2: #eef3f9;
+      --text: #162033;
+      --muted: #5f6b7a;
+      --brand: #2563eb;
+      --brand2: #10b981;
+      --border: #d7e0ea;
+      --shadow: 0 10px 30px rgba(15,23,42,.08);
 
-  .newsThumb{                   /* NEW */
-    width:75px;
-    height:75px;
-    flex:0 0 75px;
-    border-radius:12px;
-    border: 1px solid rgba(255,255,255,.12);
-    background: rgba(255,255,255,.04);
-    overflow:hidden;
-    display:grid;
-    place-items:center;
-  }
-  .newsThumb img{               /* NEW */
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-  }
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(37,99,235,.12), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(16,185,129,.10), transparent 55%),
+        var(--bg);
+      color: var(--text);
+    }
 
-  .newsBody{                    /* NEW */
-    min-width:0; /* prevents overflow in flex */
-    flex:1;
-  }
+    body.light header{
+      background: rgba(255,255,255,.82);
+      border-bottom: 1px solid rgba(215,224,234,.95);
+    }
 
-  .item .meta{color:var(--muted); font-size:12px; margin-bottom:4px}
-  .item .title{font-weight:800; margin:0 0 4px; font-size:14px}
-  .item .desc{margin:0; color:var(--muted); font-size:13px}
+    body.light .card,
+    body.light .person,
+    body.light .pub,
+    body.light .feature{
+      background: rgba(255,255,255,.88);
+      border-color: var(--border);
+      box-shadow: var(--shadow);
+    }
 
-  /* Optional: slightly smaller thumb on phones */
-  @media (max-width: 720px){
-    .newsThumb{width:40px; height:40px; flex:0 0 40px}
-  }
-</style>
+    body.light .feature{
+      background: rgba(255,255,255,.92);
+    }
 
-<style>
-  :root{
-    --bg: #242e42;
-    --panel:#101827;
-    --panel2:#0f172a;
-    --text:#e5e7eb;
-    --muted:#a3aab8;
-    --brand:#60a5fa;
-    --brand2:#34d399;
-    --border:#1f2a44;
-    --shadow: 0 10px 30px rgba(0,0,0,.35);
-    --radius: 16px;
-    --max: 1100px;
-  }
+    body.light .sideItem,
+    body.light .item,
+    body.light .pill,
+    body.light .tag,
+    body.light .chip,
+    body.light input,
+    body.light textarea,
+    body.light .newsThumb,
+    body.light .avatar,
+    body.light .kicker,
+    body.light #mobileNav .card{
+      background: rgba(239,244,250,.85);
+      border-color: rgba(215,224,234,1);
+      color: var(--text);
+    }
 
-  /* ... keep your existing CSS ... */
+    body.light nav a{
+      color: var(--muted);
+    }
 
-  /* Theme toggle button */
-  #themeToggle{
-    min-width: 120px;
-  }
+    body.light nav a:hover{
+      background: rgba(37,99,235,.08);
+      color: var(--text);
+    }
 
-  /* LIGHT THEME */
-  body.light{
-    --bg: #f5f7fb;
-    --panel: #ffffff;
-    --panel2: #eef3f9;
-    --text: #162033;
-    --muted: #5f6b7a;
-    --brand: #2563eb;
-    --brand2: #10b981;
-    --border: #d7e0ea;
-    --shadow: 0 10px 30px rgba(15,23,42,.08);
+    body.light .btn{
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(215,224,234,1);
+      color: var(--text);
+    }
 
-    background:
-      radial-gradient(1200px 600px at 20% -10%, rgba(37,99,235,.12), transparent 60%),
-      radial-gradient(900px 500px at 90% 0%, rgba(16,185,129,.10), transparent 55%),
-      var(--bg);
-    color: var(--text);
-  }
+    body.light .btn:hover{
+      border-color: rgba(37,99,235,.45);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+    }
 
-  body.light header{
-    background: rgba(255,255,255,.82);
-    border-bottom: 1px solid rgba(215,224,234,.95);
-  }
+    body.light .btn.primary{
+      background: linear-gradient(135deg, rgba(37,99,235,.95), rgba(16,185,129,.85));
+      color: #ffffff;
+      border-color: transparent;
+    }
 
-  body.light .card,
-  body.light .person,
-  body.light .pub,
-  body.light .feature{
-    background: rgba(255,255,255,.88);
-    border-color: var(--border);
-    box-shadow: var(--shadow);
-  }
+    body.light .logo:after{
+      background: rgba(255,255,255,.65);
+      border: 1px solid rgba(22,32,51,.08);
+    }
 
-  body.light .feature{
-    background: rgba(255,255,255,.92);
-  }
+    body.light .lead,
+    body.light .role,
+    body.light .authors,
+    body.light .item .meta,
+    body.light .item .desc,
+    body.light .note,
+    body.light label,
+    body.light .sectionTitle p,
+    body.light footer,
+    body.light .small,
+    body.light .sideItem p{
+      color: var(--muted);
+    }
 
-  body.light .sideItem,
-  body.light .item,
-  body.light .pill,
-  body.light .tag,
-  body.light .chip,
-  body.light input,
-  body.light textarea,
-  body.light .newsThumb,
-  body.light .avatar,
-  body.light .kicker,
-  body.light #mobileNav .card{
-    background: rgba(239,244,250,.85);
-    border-color: rgba(215,224,234,1);
-    color: var(--text);
-  }
+    body.light input:focus,
+    body.light textarea:focus{
+      border-color: rgba(37,99,235,.55);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+    }
 
-  body.light nav a{
-    color: var(--muted);
-  }
-
-  body.light nav a:hover{
-    background: rgba(37,99,235,.08);
-    color: var(--text);
-  }
-
-  body.light .btn{
-    background: rgba(255,255,255,.9);
-    border: 1px solid rgba(215,224,234,1);
-    color: var(--text);
-  }
-
-  body.light .btn:hover{
-    border-color: rgba(37,99,235,.45);
-    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
-  }
-
-  body.light .btn.primary{
-    background: linear-gradient(135deg, rgba(37,99,235,.95), rgba(16,185,129,.85));
-    color: #ffffff;
-    border-color: transparent;
-  }
-
-  body.light .logo:after{
-    background: rgba(255,255,255,.65);
-    border: 1px solid rgba(22,32,51,.08);
-  }
-
-  body.light .lead,
-  body.light .role,
-  body.light .authors,
-  body.light .item .meta,
-  body.light .item .desc,
-  body.light .note,
-  body.light label,
-  body.light .sectionTitle p,
-  body.light footer,
-  body.light .small,
-  body.light .sideItem p{
-    color: var(--muted);
-  }
-
-  body.light input:focus,
-  body.light textarea:focus{
-    border-color: rgba(37,99,235,.55);
-    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
-  }
-
-  body.light footer{
-    border-top: 1px solid rgba(215,224,234,.95);
-  }
-</style>  
+    body.light footer{
+      border-top: 1px solid rgba(215,224,234,.95);
+    }
+  </style>
 </head>
 
 <body>
@@ -595,12 +554,11 @@
           </ul>
         </nav>
 
-      <div class="cta">
-        <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
-        <a class="btn primary" href="#join">Join Us</a>
-        <button class="btn menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
-      </div>
-        
+        <div class="cta">
+          <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
+          <a class="btn primary" href="#join">Join Us</a>
+          <button class="btn menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+        </div>
       </div>
 
       <!-- Mobile nav (hidden by default) -->
@@ -616,7 +574,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </header>
 
@@ -651,25 +608,12 @@
 
           <aside class="card heroSide" aria-label="Highlights">
             <div class="sideItem">
-              <!-- <h3>Call: Open Positions</h3> -->
               <span class="kicker"><span class="dot"></span> Call: Open Positions</span>
               <p>PhD / MSc / Visiting scholars — see topics and how to apply.</p>
               <p style="margin-top:8px;"><a class="btn" href="#join">Application info →</a></p>
             </div>
 
-            <!-- <div class="miniGrid"> -->
-              <!-- <div class="sideItem"> -->
-                <!-- <h3>Focus</h3> -->
-                <!-- <p>Robust, interpretable AI in high-stakes clinical settings.</p> -->
-              <!-- </div> -->
-              <!-- <div class="sideItem"> -->
-                <!-- <h3>Collaboration</h3> -->
-                <!-- <p>Hospitals + academia + industry partnerships.</p> -->
-              <!-- </div> -->
-            <!-- </div> -->
-
             <div class="sideItem">
-              <!-- <h3>Latest Release: Software</h3> -->
               <span class="kicker"><span class="dot"></span> Latest Release: Software</span>
               <p>CondNet (Dielectric property estimation in human head models).</p>
               <p style="margin-top:8px;">
@@ -680,7 +624,6 @@
             </div>
             
             <div class="sideItem">
-              <!-- <h3>Latest Release: Dataset</h3> -->
               <span class="kicker"><span class="dot"></span> Latest Release: Dataset</span>
               <p>SHARM (Segmented Head Anatomical Reference Models).</p>
               <p style="margin-top:8px;">
@@ -694,127 +637,30 @@
       </div>
     </div>
 
-    <!-- NEWS  -->
-
+    <!-- NEWS -->
     <section id="news">
-  <div class="container">
-    <div class="sectionTitle">
-      <h2>News & Highlights</h2>
-    </div>
-
-    <div class="contactGrid">
-      <div class="card list">
-
-        <!-- ITEM  -->
-        <div class="item">
-          <div class="newsThumb">
-            <!-- Put your image path here -->
-            <img src="assets/awards/fmlds2026c.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="newsBody">
-            <div class="meta">Feb 2026 • Conference</div>
-            <p class="title">E. Rashed & M. Mabork are Co-Chairs of the 2026 IEEE International Conference on Future Machine Learning and Data Science</p>
-            <p class="desc">@ Kobe, Japan, 20-23 Nov. 2026</p>
-          </div>
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>News & Highlights</h2>
         </div>
-        
-        <!-- ITEM  -->
-        <div class="item">
-          <div class="newsThumb">
-            <!-- Put your image path here -->
-            <img src="assets/news/ieee.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="newsBody">
-            <div class="meta">Feb 2026 • Paper</div>
-            <p class="title">A paper is accepted for the 23rd IEEE International Conference on Learning and Technology (L&amp;S26) @ KSA</p>
-            <p class="desc">Twin Minds in Cyber-Defense: A Dual-Agent Framework for Safe Automated Assessment in Security Education</p>
+
+        <div class="contactGrid">
+          <div class="card list" id="newsList">
+            <div class="item">
+              <div class="newsBody">
+                <div class="meta">Loading news...</div>
+                <p class="title">Please wait while the news items are loaded.</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- ITEM  -->
-        <div class="item">
-          <div class="newsThumb">
-            <img src="assets/news/NTUworkshop.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="newsBody">
-            <div class="meta">Jan 2026 • Workshop</div>
-            <p class="title">E. Rashed and Y. Jia (M2) participated in the JST Nexus project workshop</p>
-            <p class="desc">@ Nanyang Technological University, Singapore, 28-29 Jan. 2026</p>
-          </div>
+        <div style="margin-top:12px;">
+          <a class="btn" href="oldnews.html">News archive→</a>
         </div>
-        
-         <!-- ITEM  -->
-        <div class="item">
-          <div class="newsThumb">
-            <img src="assets/news/aaai26.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="newsBody">
-            <div class="meta">Jan 2026 • Conference</div>
-            <p class="title">E. Rashed and Y. Jia (M2) participated in the AAAI 2026 Conference</p>
-            <p class="desc">@ Singapore, 20-27 Jan. 2026</p>
-          </div>
-        </div>
-
-         <!-- ITEM  -->
-        <div class="item">
-          <div class="newsThumb">
-            <img src="assets/news/ifmia26.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="newsBody">
-            <div class="meta">Jan 2026 • Conference</div>
-            <p class="title">E. Rashed, A. Elboardy (D1) and M. Yousef (RS) participated in the IFMIA 2026</p>
-            <p class="desc">@  ​Kaohsiung, Taiwan, 12-14 Jan. 2026</p>
-          </div>
-        </div>
-        
-        <!-- ITEM  -->
-        <div class="item">
-          <div class="newsThumb">
-            <img src="assets/news/bspc.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="newsBody">
-            <div class="meta">Jan 2026 • Paper</div>
-            <p class="title">A <a href="https://doi.org/10.1016/j.bspc.2026.109741">paper</a> is published in Biomedical Signal Processing and Control (IF24=4.9)</p>
-            <p class="desc">Synthetic histopathology with controllable class distribution: A dual-GAN framework for melanoma segmentation</p>
-          </div>
-        </div>
-
-        <!-- ITEM 3 -->
-        <div class="item">
-          <div class="newsThumb">
-            <img src="assets/news/isct.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="newsBody">
-            <div class="meta">Jan 2026 • Seminar</div>
-            <p class="title">All lab members will participate in Joint Seminar with the TDSAI Lab @ Institute of Science Tokyo</p>
-            <p class="desc">@ Tokyo, 4-5 Feb. 2026</p>
-          </div>
-        </div>
-
-        <!-- ITEM 4 -->
-        <div class="item">
-          <div class="newsThumb">
-            <img src="assets/news/cvpr.jpg" alt="" loading="lazy" />
-          </div>
-          <div class="newsBody">
-            <div class="meta">Jan 2026 • Invited Talk</div>
-            <p class="title">E. Rashed is Keynote Speaker at the <a href="https://sites.google.com/view/svc-cvpr26">Second Subtle Visual Computing Workshop</a> @ <a href="https://cvpr.thecvf.com/">CVPR</a></p>
-            <p class="desc">@ Denver, Colorado, USA, 3-7 June 2026</p>
-            <!-- <a class="btn" href="https://figshare.com/s/a4d9ba6f18a6b7f7ba2c">Dataset →</a> -->
-          </div>
-        </div>
-
       </div>
-    </div>
+    </section>
 
-    <div style="margin-top:12px;">
-      <a class="btn" href="oldnews.html">News archive→</a>
-    </div>
-  </div>
-</section>
-
-  
-    
     <!-- RESEARCH -->
     <section id="research">
       <div class="container">
@@ -869,19 +715,14 @@
       </div>
     </section>
 
-    
-
     <!-- PEOPLE -->
     <section id="people">
       <div class="container">
         <div class="sectionTitle">
           <h2>People</h2>
-          <!-- <p>Replace placeholders with real photos, names, roles, and research tags...</p> -->
         </div>
 
         <div class="peopleGrid">
-          <!-- PERSON CARD -->
-
           <article class="person">
             <div class="avatar">
               <img src="assets/people/pi.jpg" alt="Prof. Essam Rashed" loading="lazy">
@@ -927,7 +768,6 @@
             <div class="tags">
               <span class="tag">MEXT Scholarship</span>
             </div>
-            
           </article>
 
           <article class="person">
@@ -936,7 +776,7 @@
             </div>
             <h3>Yiming Jia</h3>
             <p class="role">PhD Student (D1)</p>
-           <div class="tags">
+            <div class="tags">
               <span class="tag">Senshu Scholarship</span>
             </div>
           </article>
@@ -967,19 +807,6 @@
             <h3>Joining soon...</h3>
             <p class="role">Research Student</p>
           </article>
-          
-        
-          
-
-          <!-- <article class="person">
-            <div class="avatar">RA</div>
-            <h3>Researcher Name</h3>
-            <p class="role">Research Associate</p>
-            <div class="tags">
-              <span class="tag">Federated Learning</span>
-              <span class="tag">Deployment</span>
-            </div>
-          </article> -->
         </div>
 
         <div style="height:14px"></div>
@@ -998,7 +825,6 @@
       <div class="container">
         <div class="sectionTitle">
           <h2>Selected Publications</h2>
-          <!-- <p>Use BibTeX links / PDF links / DOI links. Keep it short and updated.</p> -->
         </div>
 
         <div class="grid3">
@@ -1041,13 +867,11 @@
       </div>
     </section>
 
-
     <!-- AWARDS -->
     <section id="awards">
       <div class="container">
         <div class="sectionTitle">
           <h2>Selected Awards</h2>
-          <!-- <p>Use BibTeX links / PDF links / DOI links. Keep it short and updated.</p> -->
         </div>
 
         <div class="grid3">
@@ -1067,7 +891,6 @@
             <p class="authors">Minister of Education, Culture, Sports, Science and Technology (MEXT), Japan</p>
             <div class="links">
               <a class="chip" href="https://www.u-hyogo.ac.jp/news/news/202404017daijin-award.html">Link</a>
-              
             </div>
           </div>
 
@@ -1092,14 +915,12 @@
       <div class="container">
         <div class="sectionTitle">
           <h2>Join the Lab</h2>
-          <!-- <p>Clear instructions increase strong applications. Customize for your university/program.</p> -->
         </div>
 
         <div class="twoCol">
           <div class="card" style="padding:16px;">
             <h3 style="margin:0 0 8px;">We’re looking for</h3>
             <ul style="margin:0; padding-left:18px; color:var(--muted);">
-      
               <li>We are seeking highly motivated and intellectually curious students with a strong foundation in mathematics, programming (e.g., Python), and machine learning, who are passionate about advancing AI-driven medical imaging research and are eager to engage in rigorous, collaborative, and publication-oriented research within an international environment.</li>
             </ul>
           </div>
@@ -1117,33 +938,32 @@
       </div>
     </section>
 
-   <!-- CONTACT -->
-   <section id="contact">
-  <div class="container">
-    <div class="sectionTitle">
-      <h2>Contact</h2>
-    </div>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Contact</h2>
+        </div>
 
-    <div class="contactGrid">
-      <div class="card contactBox">
-        <h3 style="margin:0 0 10px;">Lab Information</h3>
-        <p style="margin:0; color:var(--muted);">
-          <strong style="color:var(--text);">Affiliation:</strong> Graduate School of Information Science, University of Hyogo<br/>
-          <strong style="color:var(--text);">Address:</strong> 7-1-28 Minatojima-minamimachi, Chuo-ku, Kobe, Hyogo 650-0047, Japan<br/>
-          <strong style="color:var(--text);">Room:</strong> Lab. number 601 (6th floor)
-        </p>
+        <div class="contactGrid">
+          <div class="card contactBox">
+            <h3 style="margin:0 0 10px;">Lab Information</h3>
+            <p style="margin:0; color:var(--muted);">
+              <strong style="color:var(--text);">Affiliation:</strong> Graduate School of Information Science, University of Hyogo<br/>
+              <strong style="color:var(--text);">Address:</strong> 7-1-28 Minatojima-minamimachi, Chuo-ku, Kobe, Hyogo 650-0047, Japan<br/>
+              <strong style="color:var(--text);">Room:</strong> Lab. number 601 (6th floor)
+            </p>
 
-        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-          <a class="btn" href="https://maps.app.goo.gl/xYMS379Z2mtMxjoo7">Google Maps</a>
-          <a class="btn" href="https://www.u-hyogo.ac.jp/about/access/">Access</a>
-          <a class="btn" href="https://github.com/erashed">GitHub</a>
-          <a class="btn" href="mailto: rashed@gsis.u-hyogo.ac.jp">Email PI</a>
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn" href="https://maps.app.goo.gl/xYMS379Z2mtMxjoo7">Google Maps</a>
+              <a class="btn" href="https://www.u-hyogo.ac.jp/about/access/">Access</a>
+              <a class="btn" href="https://github.com/erashed">GitHub</a>
+              <a class="btn" href="mailto: rashed@gsis.u-hyogo.ac.jp">Email PI</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-  </div>
-</section>
+    </section>
   </main>
 
   <footer>
@@ -1158,47 +978,112 @@
         </div>
         <div class="small">© <span id="year"></span> Rashed Lab. All rights reserved.</div>
       </div>
-      <!-- <div class="small">Disclaimer: This website is developed using Generative AI. ​Google Analytics is used to track website performance and collect visitor insights.</div> -->
     </div>
   </footer>
 
-<script>
-  // footer year
-  document.getElementById('year').textContent = new Date().getFullYear();
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-  // mobile menu toggle
-  const btn = document.getElementById('menuBtn');
-  const mobileNav = document.getElementById('mobileNav');
-  if (btn) {
-    btn.addEventListener('click', () => {
-      const isOpen = mobileNav.style.display === 'block';
-      mobileNav.style.display = isOpen ? 'none' : 'block';
-      btn.setAttribute('aria-expanded', String(!isOpen));
-    });
-  }
+    // mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const isOpen = mobileNav.style.display === 'block';
+        mobileNav.style.display = isOpen ? 'none' : 'block';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    }
 
-  // theme toggle
-  const themeToggle = document.getElementById('themeToggle');
-  const savedTheme = localStorage.getItem('theme');
+    // theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
 
-  if (savedTheme === 'light') {
-    document.body.classList.add('light');
-    if (themeToggle) themeToggle.textContent = '🌙 Dark Mode';
-  }
+    if (savedTheme === 'light') {
+      document.body.classList.add('light');
+      if (themeToggle) themeToggle.textContent = '🌙 Dark Mode';
+    }
 
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const isLight = document.body.classList.toggle('light');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const isLight = document.body.classList.toggle('light');
 
-      if (isLight) {
-        themeToggle.textContent = '🌙 Dark Mode';
-        localStorage.setItem('theme', 'light');
-      } else {
-        themeToggle.textContent = '☀ Light Mode';
-        localStorage.setItem('theme', 'dark');
+        if (isLight) {
+          themeToggle.textContent = '🌙 Dark Mode';
+          localStorage.setItem('theme', 'light');
+        } else {
+          themeToggle.textContent = '☀ Light Mode';
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    }
+  </script>
+
+  <script>
+    async function loadNews() {
+      const newsList = document.getElementById('newsList');
+      if (!newsList) return;
+
+      try {
+        const response = await fetch('data/news.json');
+        if (!response.ok) throw new Error('Failed to load news...');
+
+        const newsItems = await response.json();
+
+        if (!Array.isArray(newsItems) || newsItems.length === 0) {
+          newsList.innerHTML = `
+            <div class="item">
+              <div class="newsBody">
+                <div class="meta">No news available</div>
+                <p class="title">No news items were found in the JSON file.</p>
+              </div>
+            </div>
+          `;
+          return;
+        }
+
+        newsList.innerHTML = newsItems.map(item => {
+          const imageHtml = item.image
+            ? `
+              <div class="newsThumb">
+                <img src="${item.image}" alt="${item.imageAlt || item.title || 'News image'}" loading="lazy" />
+              </div>
+            `
+            : '';
+
+          const titleHtml = item.url && item.url.trim() !== ''
+            ? `<p class="title"><a href="${item.url}">${item.title || ''}</a></p>`
+            : `<p class="title">${item.title || ''}</p>`;
+
+          const descHtml = item.desc ? `<p class="desc">${item.desc}</p>` : '';
+
+          return `
+            <div class="item">
+              ${imageHtml}
+              <div class="newsBody">
+                <div class="meta">${item.meta || ''}</div>
+                ${titleHtml}
+                ${descHtml}
+              </div>
+            </div>
+          `;
+        }).join('');
+      } catch (error) {
+        newsList.innerHTML = `
+          <div class="item">
+            <div class="newsBody">
+              <div class="meta">Error</div>
+              <p class="title">Could not load news items...</p>
+              <p class="desc">${error.message}</p>
+            </div>
+          </div>
+        `;
+        console.error('News loading error:', error);
       }
-    });
-  }
-</script>
+    }
+
+    loadNews();
+  </script>
 </body>
 </html>
