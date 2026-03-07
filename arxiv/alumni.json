@@ -5,6 +5,11 @@
     "desc": "A deep learning–driven framework for pneumothorax detection and automated reporting in chest X-rays",
     "image": "assets/people/yiming.jpg",
     "imageAlt": "",
+    "links": [
+        {
+          "label": "DOI",
+          "url": "https://ieeexplore.ieee.org/document/9557785"
+        },
     "url": ""
   },
   {
@@ -13,6 +18,11 @@
     "desc": "Segmentation of low-grade brain tumors using mutual attention multimodal MRI",
     "image": "assets/people/seshimo.jpg",
     "imageAlt": "",
+    "links": [
+        {
+          "label": "DOI",
+          "url": "https://ieeexplore.ieee.org/document/9557785"
+        },
     "url": ""
   }
 ]
