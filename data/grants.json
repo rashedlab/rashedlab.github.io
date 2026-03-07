@@ -217,5 +217,21 @@
         "url": "https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-10F00052/"
       }
     ]
+  },
+  {
+    "title": "Development of Bayesian image reconstruction software for CT",
+    "badge": "ICT",
+    "sponsor": "University of Tsukuba",
+    "role": "Principal Investigator",
+    "category": "Internal Fund",
+    "start": 2009,
+    "end": 2009,
+    "year_range": "2009",
+    "meta": "Program for Development of ICT Solutions",
+    "keywords": [
+      "image reconstruction",
+      "CT",
+      "software"
+    ]
   }
 ]
