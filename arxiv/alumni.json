@@ -17,11 +17,27 @@
   },
   {
     "meta": "2023 • Doctor Course (Suez Canal University)",
+    "title": "Noha Aboelenin",
+    "desc": "",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Noha Aboelenin",
+    "url": "https://www.scopus.com/authid/detail.uri?authorId=58205192900"
+  },  
+  {
+    "meta": "2023 • Doctor Course (Suez Canal University)",
     "title": "Esraa Ahmed",
     "desc": "Deep Learning Approach for Detecting Breast Cancer from Thermograms",
     "image": "assets/people/student2.jpg",
     "imageAlt": "Esraa Ahmed",
     "url": "https://www.scopus.com/authid/detail.uri?authorId=57193629004"
+  },
+  {
+    "meta": "2023 • Master Course (Suez Canal University)",
+    "title": "Nagwa Faisal",
+    "desc": "Evolutionary Algorithms for Software Testing Optimization",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Fatma Harby",
+    "url": ""
   },
   {
     "meta": "2022 • Doctor Course (Suez Canal University)",
@@ -40,12 +56,12 @@
     "url": "https://www.scopus.com/authid/detail.uri?authorId=57190286451"
   },
   {
-    "meta": "2022 • Master Course (Suez Canal University)",
-    "title": "Nagwa Faisal",
-    "desc": "Evolutionary Algorithms for Software Testing Optimization",
+    "meta": "2020 • Master Course (Suez Canal University)",
+    "title": "Reham Rabie",
+    "desc": "",
     "image": "assets/people/student2.jpg",
-    "imageAlt": "Fatma Harby",
-    "url": ""
+    "imageAlt": "Reham Rabie",
+    "url": "https://www.scopus.com/authid/detail.uri?authorId=57204418145"
   },
   {
     "meta": "2018 • Master Course (Suez Canal University)",
@@ -72,7 +88,7 @@
     "url": "https://www.scopus.com/authid/detail.uri?authorId=57193629004"
   },
     {
-    "meta": "2016 • Master Course (Suez Canal University)",
+    "meta": "2017 • Master Course (Suez Canal University)",
     "title": "Mona Selim",
     "desc": "Development of image reconstruction algorithms for low-dose computed",
     "image": "assets/people/student2.jpg",
