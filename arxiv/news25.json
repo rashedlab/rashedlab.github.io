@@ -50,10 +50,90 @@
   {
     "meta": "Nov 2025 • Special Issue",
     "title": "Call for papers: E. Rashed is Guest Editor of a Special Issue in Sensors",
-    "desc": "https://www.mdpi.com/journal/sensors/special_issues/25H48P0OIK",
+    "desc": "Artificial Intelligence and Foundation Models in Biomedical Sensing and Medical Imaging Applications",
     "image": "assets/news/newslogo.jpg",
     "imageAlt": "",
     "url": ""
-  }
+  },
+  {
+    "meta": "Nov 2025 • Book Chapter",
+    "title": "A book chapter has been accepted to be published by CRC Press",
+    "desc": "Large language models in medical image understanding",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },  
+  {
+    "meta": "Nov 2025 • Preprint",
+    "title": "A pre-print [open access] is now available on arXiv",
+    "desc": "MammoClean: Toward Reproducible and Bias-Aware AI in Mammography through Dataset Harmonization",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://arxiv.org/abs/2511.02400"
+  },    
+  {
+    "meta": "Oct 2025 • Invited talk",
+    "title": "E. Rashed will give an invited talk at the MICT-MI Special Session",
+    "desc": "@ the EAI BodyNets 2025, Okayama, Japan (4 Dec. 2025)",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },  
+  {
+    "meta": "Oct 2025 • Travel Grant",
+    "title": "A. Elboardy (D1) awarded the Marubun Research Promotion Foundation's International Exchange Grant",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }, 
+  {
+    "meta": "Oct 2025 • Paper",
+    "title": "A paper [open access] is accepted for Computers and Electrical Engineering (IF24=4.9)",
+    "desc": "Contextual transformer for brain stroke segmentation in MRI",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },
+  {
+    "meta": "Oct 2025 • Preprint",
+    "title": "A pre-print [open access] is now available on arXiv",
+    "desc": "CURE: Confidence-driven Unified Reasoning Ensemble Framework for Medical Question Answering",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://arxiv.org/abs/2510.14353"
+  },
+  {
+    "meta": "Oct 2025 • Visit",
+    "title": "E. Rashed will visit MINDS Lab @ Qatar University (Doha, Qatar) in November 2025",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },
+  {
+    "meta": "Oct 2025 • Presentations",
+    "title": "Three papers by A. Elboardy (D1), Y. Jia (M2) and M. Yousef (RS) will be presented at IFMIA 2026",
+    "desc": "@ Kaohsiung, Taiwan",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },  
+  {
+    "meta": "Oct 2025 • Paper",
+    "title": "A paper is accepted for an oral presentation at IWAIT2026",
+    "desc": "@ Kaohsiung, Taiwan",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },  
+  {
+    "meta": "Oct 2025 • Paper",
+    "title": "E. Rashed will give an invited technical talk at Nagoya Institute of Technology",
+    "desc": "@ Nagoya (13 Nov. 2025)",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  } 
   
 ]
