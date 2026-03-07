@@ -1,14 +1,2407 @@
-{
-  "items": [
-    {
-      "year": "2026",
-      "title": "Deep learning in stroke care",
-      "badge": "2026 • Book Chapter",
-      "meta": "Y. Zafari, E. A. Rashed, W. Hussain, M. Mabrok. In: <em>Deep Learning Applications in Neuroinformatics</em>. Elsevier.",
-      "keywords": ["stroke care", "deep learning", "neuroinformatics"],
-      "links": [
-        { "label": "In press", "url": "#" }
-      ]
-    }
-  ]
-}
+[
+  {
+    "type": "journal",
+    "year": "2026",
+    "title": "Synthetic Histopathology with Controllable Class Distribution: A Dual-GAN Framework for Melanoma Segmentation",
+    "badge": "2026 • Journal • IF{{IFYear}}={{BSPCIF}}",
+    "meta": "Z. Elshaer, A. Jamal, E. A. Rashed. <em>Biomedical Signal Processing and Control</em>, 119, 109741.",
+    "keywords": [
+      "synthetic histopathology",
+      "controllable class distribution",
+      "dual-gan",
+      "melanoma segmentation",
+      "biomedical signal processing and control",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.bspc.2026.109741"
+      },
+      {
+        "label": "Open access",
+        "url": "https://authors.elsevier.com/a/1mar76DBR3KyGE"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/l19tvxfw0iua1ui85hd02/Ziad_BSPC2026.pdf?rlkey=zpee0thl32a14y0m425utfrhv&st=fdk6an6l&dl=0"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://puma.grand-challenge.org/dataset/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Ziad2026PSBC.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2026",
+    "title": "Contextual transformer for brain stroke segmentation in MRI",
+    "badge": "2026 • Journal • IF{{IFYear}}={{CEEIF}}",
+    "meta": "M. Nouman, M. Mabrok, M. al-Shatouri, E. A. Rashed. <em>Computers and Electrical Engineering</em>, 126, 110795.",
+    "keywords": [
+      "contextual transformer",
+      "brain stroke segmentation",
+      "mri",
+      "computers and electrical engineering",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.compeleceng.2025.110795"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/lig5slo686cp0hbk54xq1/Nouman_CEE.pdf?rlkey=khy56pzgfp1ppwxb77y9vjdq7&st=qz3e1glm&dl=0"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://github.com/npnl/atlas"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Nouman2026CEE.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "CURE: Confidence-driven Unified Reasoning Ensemble Framework for Medical Question Answering",
+    "badge": "2025 • Journal • IF{{IFYear}}={{BDCCIF}}",
+    "meta": "Z. Elshaer, E. A. Rashed. <em>Big Data and Cognitive Computing</em>, 9, 299.",
+    "keywords": [
+      "cure",
+      "confidence-driven unified reasoning ensemble",
+      "medical question answering",
+      "big data and cognitive computing",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/bdcc9120299"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/2504-2289/9/12/299"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Ziad2025BDCC.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Advances in Medical Image Segmentation: A Comprehensive Review with a Focus on Lumbar Spine Applications",
+    "badge": "2025 • Journal • IF{{IFYear}}={{NNIF}}",
+    "meta": "A. Kabil, G. Khoriba, M. Yousef, E. A. Rashed. <em>Computers in Biology and Medicine</em>, 198(A), 111171.",
+    "keywords": [
+      "medical image segmentation",
+      "comprehensive review",
+      "lumbar spine",
+      "computers in biology and medicine",
+      "arxiv",
+      "pubmed",
+      "full access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.compbiomed.2025.111171"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/k4da6i463a9ffdfezpepp/Kabil_CBM2025.pdf?rlkey=sfumo81kioxx4m5421p3a41lm&st=1l97krf3&dl=0"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41056615/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kabil2025CBM.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Benchmarking Vision-Language Models for Brain Cancer Diagnosis Using Multisequence MRI",
+    "badge": "2025 • Journal",
+    "meta": "A. T. Elboardy, G. Khoriba, M. al-Shatouri, M. Mousa, E. A. Rashed. <em>Informatics in Medicine Unlocked</em>, 58, 101692.",
+    "keywords": [
+      "benchmarking vision-language models",
+      "brain cancer diagnosis",
+      "multisequence mri",
+      "informatics in medicine unlocked",
+      "open access",
+      "citescore"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.imu.2025.101692"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2352914825000814"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://www.cancerimagingarchive.net/collection/rhuh-gbm/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Ahmed2025IMU.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Lightweight Deep Learning Architecture for Multi-Lead ECG Arrhythmia Detection",
+    "badge": "2025 • Journal • IF{{IFYear}}={{SenIF}}",
+    "meta": "D. H. Elsheikhy, A. S. Hassan, N. M. Yhiea, A. M. Fareed, E. A. Rashed. <em>Sensors</em>, 25, 5542.",
+    "keywords": [
+      "lightweight deep learning architecture",
+      "multi-lead ecg",
+      "arrhythmia detection",
+      "sensors",
+      "open access",
+      "pubmed"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/s25175542"
+      },
+      {
+        "label": "Open access",
+        "url": "#https://www.mdpi.com/1424-8220/25/17/5542"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40942969/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Donia2025Sensors.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Enhanced retinal arteries and veins segmentation through deep learning with conditional random fields",
+    "badge": "2025 • Journal • IF{{IFYear}}={{BSPCIF}}",
+    "meta": "M. Mahmoud, M. Mansour, H. M. Elrefai, A. J. Hamed, E. A. Rashed. <em>Biomedical Signal Processing and Control</em>, 106, 107747.",
+    "keywords": [
+      "retinal arteries veins segmentation",
+      "deep learning",
+      "conditional random fields",
+      "biomedical signal processing and control",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.bspc.2025.107747"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/q3njdhky7zzais2b04kxw/Mahmoud_BSPC_2025.pdf?rlkey=mdsftgrjmq79pgbl0h4sjqh2y&st=3x8ykayi&dl=0"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://ravirdataset.github.io/data/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Menna2025BSPC.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Power absorption and temperature rise in deep learning based head models for local radiofrequency exposures",
+    "badge": "2025 • Journal • IF{{IFYear}}={{PMBIF}})",
+    "meta": "S. Kodera, R. Yoshida, E. A. Rashed, Y. Diao, H. Takizawa, A. Hirata. <em>Physics in Medicine and Biology</em>, 70, 065013.",
+    "keywords": [
+      "power absorption",
+      "temperature rise",
+      "deep learning",
+      "head models",
+      "radiofrequency exposures",
+      "physics in medicine and biology",
+      "pubmed",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1088/1361-6560/adb935"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/lnlfnloz9v369tmsssahf/Kodera_PMB2025.pdf?rlkey=1sdq4zg6lbmt7vvhtdt4azej6&st=qd0m2y0h&dl=0"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39983315/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kodera2025PMB.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Compressed sensing-based image reconstruction for discrete tomography with sparse view and limited angle geometries",
+    "badge": "2025 • Journal • IF{{IFYear}}={{PlosIF}}",
+    "meta": "H. A. Ali, E. A. Rashed, H. Kudo. <em>PLOS One</em>, 20, e0327666.",
+    "keywords": [
+      "compressed sensing-based image reconstruction",
+      "discrete tomography",
+      "sparse view",
+      "limited angle",
+      "plos one",
+      "open access",
+      "pubmed"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1371/journal.pone.0327666"
+      },
+      {
+        "label": "Open access",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0327666"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40644514/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Haytham2025Plos.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Advancements in Radiology Report Generation: A Comprehensive Analysis",
+    "badge": "2025 • Journal • IF{{IFYear}}={{BioEIF}}",
+    "meta": "D. Mamdouh, M. Attia, M. Osama, N. Mohamed, A. Lotfy, T. Arafa, E. A. Rashed, G. Khoriba. <em>Bioengineering</em>, 12, 693.",
+    "keywords": [
+      "radiology report generation",
+      "comprehensive analysis",
+      "bioengineering",
+      "open access",
+      "pubmed"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/bioengineering12070693"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/2306-5354/12/7/693"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40722385/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Dima2025BE.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Mitigating LLM hallucinations using a multi-agent framework",
+    "badge": "2025 • Journal • IF{{IFYear}}={{InfoIF}}",
+    "meta": "A. M. Darwish, E. A. Rashed, G. Khoriba. <em>Information</em>, 16, 517.",
+    "keywords": [
+      "mitigating llm hallucinations",
+      "multi-agent framework",
+      "information",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/info16070517"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/2078-2489/16/7/517"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Darwish2025Info.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Automated pneumothorax segmentation with a spatial prior contrast adapter",
+    "badge": "2025 • Journal • IF{{IFYear}}={{ASIF}}",
+    "meta": "Y. Jia, E. A. Rashed. <em>Applied Sciences</em>, 15, 6598.",
+    "keywords": [
+      "pneumothorax segmentation",
+      "spatial prior contrast adapter",
+      "applied sciences",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/app15126598"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/2076-3417/15/12/6598"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://figshare.com/articles/dataset/CANDID-PTX/14173982"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Jia2025AS.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "MiSC: A hybrid multi-modal deep learning approach for accurate skin cancer detection",
+    "badge": "2025 • Journal • IF{{IFYear}}={{MTAIF}}",
+    "meta": "E. H. Mohamed, N. Abdu, M. Khalil, H. Kamal, E. A. Rashed. <em>Multimedia Tools and Applications</em>, 2025.",
+    "keywords": [
+      "misc",
+      "hybrid multimodal deep learning",
+      "skin cancer detection",
+      "multimedia tools and applications",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s11042-025-20951-7"
+      },
+      {
+        "label": "Open access",
+        "url": "https://link.springer.com/article/10.1007/s11042-025-20951-7"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Ensaf2026MTA.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "Sensitivity-Aware Differential Privacy for Federated Medical Imaging",
+    "badge": "2025 • Journal • IF{{IFYear}}={{SenIF}}",
+    "meta": "L. Zheng, Y. Cao, M. Yoshikawa, Y. Shen, E. A. Rashed, K. Taura, S. Hanaoka, T. Zhang. <em>Sensors</em>, 25, 2847.",
+    "keywords": [
+      "sensitivity-aware differential privacy",
+      "federated medical imaging",
+      "sensors",
+      "open access",
+      "pubmed"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/s25092847"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/1424-8220/25/9/2847"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40363282/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Zheng2025Sensors.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2025",
+    "title": "SHARM: Segmented Head Anatomical Reference Models",
+    "badge": "2025 • Journal • IF{{IFYear}}={{BSPCIF}}",
+    "meta": "E. A. Rashed, M. al-Shatouri, I. Laakso, S. Kodera, A. Hirata. <em>Biomedical Signal Processing and Control</em>, 104, 107481.",
+    "keywords": [
+      "sharm",
+      "segmented head anatomical reference models",
+      "biomedical signal processing and control",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.bspc.2024.107481"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/scl/fi/3tjvxpyboa1a2o5yldddm/sharm2025.pdf?rlkey=i2lsg53zuyhcklfcrxwt8g8mg&st=c8va6fq0&dl=0"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://figshare.com/s/a4d9ba6f18a6b7f7ba2c"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2025BSPC.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2024",
+    "title": "Deep models for stroke segmentation: do complex architectures always perform better?",
+    "badge": "2024 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "A. Soliman, Y. Zafari-Ghadim, Y. Yousif, A. Ibrahim, A. Mohamed, E. A. Rashed, M. Mabrok. <em>IEEE Access</em>, 12, 198262–198276.",
+    "keywords": [
+      "stroke segmentation",
+      "complex architectures",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2024.3522214"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/10813166"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Soliman2024Access.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2024",
+    "title": "Effect of the conductivity variations on computed electric field induced in learning-based models",
+    "badge": "2024 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "Y. Diao, E. A. Rashed, K. Sasaki, L. Giaccone, I. Laakso, C. Li, R. Scorretti, A. Hirata. <em>IEEE Access</em>, 12, 188454–188464.",
+    "keywords": [
+      "conductivity variations",
+      "computed electric field",
+      "learning-based models",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2024.3514710"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/10788714"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Diao2024Access.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2024",
+    "title": "Segmentation of low-grade brain tumors using mutual attention multimodal MRI",
+    "badge": "2024 • Journal • IF{{IFYear}}={{SenIF}} • Editor’s Choice Award 🏆",
+    "meta": "H. Seshimo, E. A. Rashed. <em>Sensors</em>, 24, 7576.",
+    "keywords": [
+      "segmentation",
+      "low-grade brain tumors",
+      "mutual attention",
+      "multimodal mri",
+      "sensors",
+      "open access",
+      "pubmed",
+      "editors choice"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/s24237576"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/1424-8220/24/23/7576"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39686112/"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://www.cancerimagingarchive.net/collection/ucsf-pdgm/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Seshimo2024Sensors.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2024",
+    "title": "Transformer-based architectures for stroke segmentation: a review",
+    "badge": "2024 • Journal • IF{{IFYear}}={{AIRIF}}",
+    "meta": "Y. Zafari-Ghadim, E. A. Rashed, A. Mohamed, M. Mabrok. <em>Artificial Intelligence Review</em>, 57, Article 307.",
+    "keywords": [
+      "transformer-based architectures",
+      "stroke segmentation",
+      "review",
+      "artificial intelligence review",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s10462-024-10900-5"
+      },
+      {
+        "label": "Open access",
+        "url": "https://link.springer.com/article/10.1007/s10462-024-10900-5"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Yalda2024AIR.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2024",
+    "title": "Revolutionising healthcare with artificial intelligence: a bibliometric analysis of 40 years of progress in health systems",
+    "badge": "2024 • Journal • IF{{IFYear}}={{DHIF}}",
+    "meta": "W. Hussain, M. Mabrok, H. Gao, F. A. Rabhi, E. A. Rashed. <em>Digital Health</em>, 10.",
+    "keywords": [
+      "revolutionising healthcare",
+      "artificial intelligence",
+      "bibliometric analysis",
+      "digital health",
+      "open access",
+      "pubmed"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1177/20552076241258757"
+      },
+      {
+        "label": "Open access",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38817839/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://journals.sagepub.com/doi/10.1177/20552076241258757"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Walayat2024DH.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2024",
+    "title": "Sensitivity of Electrocardiogram on Electrode-Pair Locations for Wearable Devices: Computational Analysis of Amplitude and Waveform Distortion",
+    "badge": "2024 • Journal • IF{{IFYear}}={{BioSIF}}",
+    "meta": "K. Sanjo, K. Hebiguchi, C. Tang, E. A. Rashed, S. Kodera, H. Togo, A. Hirata. <em>Biosensors</em>, 14, 153.",
+    "keywords": [
+      "ecg",
+      "electrode-pair locations",
+      "wearable devices",
+      "computational analysis",
+      "biosensors",
+      "open access",
+      "pubmed"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/bios14030153"
+      },
+      {
+        "label": "Open access",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38534260/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.mdpi.com/2079-6374/14/3/153"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Sanjo2024BS.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2024",
+    "title": "High-resolution EEG source localization in personalized segmentation-free head model with multi-dipole fitting",
+    "badge": "2024 • Journal • IF{{IFYear}}={{PMBIF}}",
+    "meta": "A. Hirata, M. Niitsu, C. R. Phang, S. Kodera, T. Kida, E. A. Rashed, M. Fukunaga, N. Sadato, T. Wasaka. <em>Physics in Medicine and Biology</em>, 69, 055013.",
+    "keywords": [
+      "high-resolution eeg source localization",
+      "personalized segmentation-free head model",
+      "multi-dipole fitting",
+      "physics in medicine and biology",
+      "open access",
+      "pubmed"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1088/1361-6560/ad25c3"
+      },
+      {
+        "label": "Open access",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38306964/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://iopscience.iop.org/article/10.1088/1361-6560/ad25c3/pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Hirata2024PMB.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2023",
+    "title": "Assessment of artificial intelligence-aided computed tomography in lung cancer screening",
+    "badge": "2023 • Journal • IF{{IFYear}}={{EJRNMIF}}",
+    "meta": "N. A. Aboelenin, A. Elserafi, N. Zaki, E. A. Rashed, M. al-Shatouri. <em>Egyptian Journal of Radiology and Nuclear Medicine</em>, 54, Article 74.",
+    "keywords": [
+      "ai-aided computed tomography",
+      "lung cancer screening",
+      "egyptian journal of radiology and nuclear medicine",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1186/s43055-023-01014-z"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ejrnm.springeropen.com/articles/10.1186/s43055-023-01014-z"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Noha2023EJRNM.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2023",
+    "title": "Inter-comparison of the averaged induced electric field in learning-based human head models exposed to low-frequency magnetic field",
+    "badge": "2023 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "Y. Diao, E. A. Rashed, L. Giaccone, I. Laakso, C. Li, R. Scorretti, Y. Sekiba, K. Yamazaki, A. Hirata. <em>IEEE Access</em>, 11, 38739–38752.",
+    "keywords": [
+      "inter-comparison",
+      "averaged induced electric field",
+      "learning-based head models",
+      "low-frequency magnetic field",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2023.3268133"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/10103878"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Diao2023Access.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2023",
+    "title": "Projection of COVID-19 Positive Cases Considering Hybrid Immunity: Case Study in Tokyo",
+    "badge": "2023 • Journal • IF{{IFYear}}={{VacIF}}",
+    "meta": "S. Kodera, A. Takada, E. A. Rashed, A. Hirata. <em>Vaccines</em>, 11, 633.",
+    "keywords": [
+      "covid-19",
+      "hybrid immunity",
+      "tokyo",
+      "vaccines",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/vaccines11030633"
+      },
+      {
+        "label": "Open access",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36992217/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.mdpi.com/2076-393X/11/3/633"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kodera2023Vac.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2023",
+    "title": "The effects of time window averaged mobility on effective reproduction number of COVID-19 viral variants in urban cities",
+    "badge": "2023 • Journal • IF{{IFYear}}={{JUHIF}}",
+    "meta": "S. Kodera, K. Hikita, E. A. Rashed, A. Hirata. <em>Journal of Urban Health</em>, 100, 29–39.",
+    "keywords": [
+      "mobility",
+      "time window averaged",
+      "effective reproduction number",
+      "covid-19 variants",
+      "urban cities",
+      "journal of urban health",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s11524-022-00697-5"
+      },
+      {
+        "label": "Open access",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36445638/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://link.springer.com/article/10.1007/s11524-022-00697-5"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kodera2023JUH.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "Estimation of mRNA COVID-19 vaccination effectiveness in Tokyo for Omicron variants BA.2 and BA.5 — Effect of social behavior",
+    "badge": "2022 • Journal • IF{{IFYear}}={{VacIF}}",
+    "meta": "S. Kodera, Y. Niimi, E. A. Rashed, N. Yoshinaga, M. Toyoda, A. Hirata. <em>Vaccines</em>, 10, 1820.",
+    "keywords": [
+      "mRNA covid-19 vaccination effectiveness",
+      "tokyo",
+      "omicron",
+      "ba.2",
+      "ba.5",
+      "vaccines",
+      "pubmed",
+      "open access",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/vaccines10111820"
+      },
+      {
+        "label": "Open access",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36366329/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.mdpi.com/2076-393X/10/11/1820/htm"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kodera2022Vac.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "A novel CNN pooling layer for breast cancer segmentation and classification from thermograms",
+    "badge": "2022 • Journal • IF{{IFYear}}={{PlosIF}}",
+    "meta": "E. A. Mohamed, T. Gaber, O. Karam, E. A. Rashed. <em>PLOS One</em>, 17, e0276523.",
+    "keywords": [
+      "cnn pooling layer",
+      "breast cancer segmentation",
+      "classification",
+      "thermograms",
+      "plos one",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1371/journal.pone.0276523"
+      },
+      {
+        "label": "Open access",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36269756/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276523"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Esraa2022Plos.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "Induced electric field in learning-based head models with smooth conductivity for exposure to uniform low-frequency magnetic fields",
+    "badge": "2022 • Journal • IF{{IFYear}}={{TEMCIF}}",
+    "meta": "Y. Diao, E. A. Rashed, A. Hirata. <em>IEEE Transactions on Electromagnetic Compatibility</em>, 64, 1969–1977.",
+    "keywords": [
+      "induced electric field",
+      "learning-based head models",
+      "smooth conductivity",
+      "ieee transactions on electromagnetic compatibility",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/TEMC.2022.3212860"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/ogcvw72gxw6ehj5/Diao2022TEMC.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Diao2022TEMC.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "COVID-19 forecasting using new viral variants and vaccination effectiveness models",
+    "badge": "2022 • Journal • IF{{IFYear}}={{CBMIF}}",
+    "meta": "E. A. Rashed, S. Kodera, A. Hirata. <em>Computers in Biology and Medicine</em>, 149, 105986.",
+    "keywords": [
+      "covid-19 forecasting",
+      "viral variants",
+      "vaccination effectiveness models",
+      "computers in biology and medicine",
+      "pubmed",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.compbiomed.2022.105986"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36030722/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/j8a7bmpihvbywdh/Rashed2022PMB.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2022CBM.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "Measurement and image-based estimation of dielectric properties of biological tissues — past, present, and future",
+    "badge": "2022 • Journal • IF{{IFYear}}={{PMBIF}}",
+    "meta": "K. Sasaki, E. Porter, E. A. Rashed, L. Farrugia, G. Schmid. <em>Physics in Medicine and Biology</em>, 67, 14TR01.",
+    "keywords": [
+      "dielectric properties",
+      "biological tissues",
+      "measurement",
+      "image-based estimation",
+      "physics in medicine and biology",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1088/1361-6560/ac7b64"
+      },
+      {
+        "label": "Open access",
+        "url": "https://iopscience.iop.org/article/10.1088/1361-6560/ac7b64"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35732164/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Sasaki2022PMB.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "Sparsity-based method for ring artifact elimination in computed tomography",
+    "badge": "2022 • Journal • IF{{IFYear}}={{PlosIF}}",
+    "meta": "M. Selim, E. A. Rashed, M. A. Atiea, H. Kudo. <em>PLOS One</em>, 17, e0268410.",
+    "keywords": [
+      "ring artifact elimination",
+      "computed tomography",
+      "sparsity-based method",
+      "plos one",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1371/journal.pone.0268410"
+      },
+      {
+        "label": "Open access",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0268410"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35763462/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mona2022Plos.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "Did the Tokyo Olympic games enhance the transmission of COVID-19? Interpretation with machine learning",
+    "badge": "2022 • Journal • IF{{IFYear}}={{CBMIF}}",
+    "meta": "A. Hirata, S. Kodera, Y. Diao, E. A. Rashed. <em>Computers in Biology and Medicine</em>, 146, 105548.",
+    "keywords": [
+      "tokyo olympic games",
+      "transmission",
+      "covid-19",
+      "interpretation with machine learning",
+      "computers in biology and medicine",
+      "pubmed",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.compbiomed.2022.105548"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35537221/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/htwp13d3lohcxs5/Hirata2022CBM.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Hirata2022CBM.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "Estimation of Real-World Vaccination Effectiveness of mRNA COVID-19 Vaccines against Delta and Omicron Variants in Japan",
+    "badge": "2022 • Journal • IF{{IFYear}}={{VacIF}}",
+    "meta": "S. Kodera, E. A. Rashed, A. Hirata. <em>Vaccines</em>, 10, 430.",
+    "keywords": [
+      "real-world vaccination effectiveness",
+      "mRNA vaccines",
+      "delta",
+      "omicron",
+      "japan",
+      "vaccines",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/vaccines10030430"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/2076-393X/10/3/430"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35335062/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kodera2022vac2.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "BinHOA: Efficient Binary Horse Herd optimization method for feature selection: analysis and validations",
+    "badge": "2022 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "D. A. Elmanakhly, M. Saleh, E. A. Rashed, M. Abdel-basset. <em>IEEE Access</em>, 10, 26795–26816.",
+    "keywords": [
+      "binhoa",
+      "binary horse herd optimization",
+      "feature selection",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2022.3156593"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/9727175"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Dina2022Access.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "Deep learning model for fully automated breast cancer detection system from thermograms",
+    "badge": "2022 • Journal • IF{{IFYear}}={{PlosIF}}",
+    "meta": "E. A. Mohamed, E. A. Rashed, T. Gaber, O. Karam. <em>PLOS One</em>, 17, e0262349.",
+    "keywords": [
+      "breast cancer detection",
+      "thermograms",
+      "fully automated deep learning",
+      "plos one",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1371/journal.pone.0262349"
+      },
+      {
+        "label": "Open access",
+        "url": "https://journals.plos.org/plosone/article/metrics?id=10.1371/journal.pone.0262349"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35030211/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Esraa2022Plos2.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2022",
+    "title": "Multi-objective test suite reduction",
+    "badge": "2022 • Journal",
+    "meta": "N. Reda, A. Hamdy, E. A. Rashed. <em>Intelligent Automation &amp; Soft Computing</em>, 31, 781–797.",
+    "keywords": [
+      "multi-objective test suite reduction",
+      "intelligent automation soft computing",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://doi.org/10.32604/iasc.2022.019669"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.techscience.com/iasc/v31n2/44527"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Nagwa2022IASC.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "Assessment of human exposure to electromagnetic fields: review and future directions",
+    "badge": "2021 • Journal • IF{{IFYear}}={{TEMCIF}} • The 2025 Motohisa Kanda Award 🏆",
+    "meta": "A. Hirata, Y. Diao, T. Onishi, K. Sasaki, S. Ahn, D. Colombi, V. De Santis, I. Laakso, L. Giaccone, W. Joseph, E. A. Rashed, W. Kainz, J. Chen. <em>IEEE Transactions on Electromagnetic Compatibility</em>, 63, 1619–1630.",
+    "keywords": [
+      "assessment human exposure to electromagnetic fields",
+      "review",
+      "future directions",
+      "ieee transactions on electromagnetic compatibility",
+      "pdf",
+      "award"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/TEMC.2021.3109249"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/vlybafhfigm0hhm/Hirata2021TEMC.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Hirata2021TEMC.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "An improved equilibrium optimizer algorithm for features selection: methods and analysis",
+    "badge": "2021 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "D. A. Elmanakhly, M. Saleh, E. A. Rashed. <em>IEEE Access</em>, 9, 120309–120327.",
+    "keywords": [
+      "equilibrium optimizer",
+      "feature selection",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2021.3108097"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/9523539"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Dina2021Access.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "Social implementation and intervention with estimated morbidity of heat-related illnesses from weather data: A case study from Nagoya City, Japan",
+    "badge": "2021 • Journal • IF{{IFYear}}={{SCSIF}}",
+    "meta": "T. Nishimura, E. A. Rashed, S. Kodera, H. Shirakami, R. Kawaguchi, K. Watanabe, M. Nemoto, A. Hirata. <em>Sustainable Cities and Society</em>, 47, 103203.",
+    "keywords": [
+      "heat-related morbidity",
+      "weather data",
+      "nagoya city",
+      "sustainable cities and society",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.scs.2021.103203"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/2t9bpvgts6w1qj3/Nishimura2021.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Nishimura2021scs.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "Infectivity upsurge by COVID-19 viral variants in Japan: evidence from a deep learning modeling",
+    "badge": "2021 • Journal",
+    "meta": "E. A. Rashed and A. Hirata. <em>International Journal of Environmental Research and Public Health</em>, 18, 7799.",
+    "keywords": [
+      "infectivity upsurge by covid-19 viral variants in japan",
+      "evidence from a deep learning modeling"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/ijerph18157799"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/1660-4601/18/15/7799"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34360092/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2021JERPH1.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "One-year lesson: Machine learning prediction of COVID-19 positive cases with meteorological data and mobility estimate in Japan",
+    "badge": "2021 • Journal • Editor’s Choice Award 🏆",
+    "meta": "E. A. Rashed and A. Hirata. <em>International Journal of Environmental Research and Public Health</em>, 18, 5736.",
+    "keywords": [
+      "one-year lesson",
+      "machine learning prediction",
+      "covid-19 positive cases",
+      "meteorological data",
+      "mobility estimate",
+      "japan"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/ijerph18115736"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34071801/"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/1660-4601/18/11/5736"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2021JERPH2.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "ECG localization method based on volume conductor model and Kalman filtering",
+    "badge": "2021 • Journal • IF{{IFYear}}={{SenIF}}",
+    "meta": "Y. Nakano, E. A. Rashed, T. Nakane, I. Laakso and A. Hirata. <em>Sensors</em>, 21, 4275.",
+    "keywords": [
+      "ECG localization method based on volume conductor model and Kalman filtering"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/s21134275"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/1424-8220/21/13/4275"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34206512/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Nakano2021Sen.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "Knowledge discovery from emergency ambulance dispatch during COVID-19: A case study of Nagoya City, Japan",
+    "badge": "2021 • Journal • IF{{IFYear}}={{JBIIF}}",
+    "meta": "E. A. Rashed, S. Kodera, H. Shirakami, R. Kawaguchi, K. Watanabe, A. Hirata. <em>Journal of Biomedical Informatics</em>, 117, 103743.",
+    "keywords": [
+      "emergency ambulance dispatch",
+      "covid-19",
+      "knowledge discovery",
+      "journal of biomedical informatics",
+      "pubmed",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.jbi.2021.103743"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33753268/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/6tma0gj1ionbhw7/Rashed2021JBE.pdf?dl=0"
+      },
+      {
+        "label": "Software",
+        "url": "https://github.com/erashed/EADnet"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2021JBI.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "High-resolution EEG source localization in segmentation-free head models based on finite-difference method and matching pursuit algorithm",
+    "badge": "2021 • Journal • IF{{IFYear}}={{FNeuIF}}",
+    "meta": "T. Moridera, E. A. Rashed, S. Mizutani, A. Hirata. <em>Frontiers in Neuroscience</em>, 15, 695668.",
+    "keywords": [
+      "high-resolution eeg source localization",
+      "segmentation-free head models",
+      "finite-difference",
+      "matching pursuit",
+      "frontiers in neuroscience",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3389/fnins.2021.695668"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.frontiersin.org/articles/10.3389/fnins.2021.695668"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34262433/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Moridera2021fnis.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "Influence of segmentation accuracy in structural MR head scans on electric field computation for TMS and tES",
+    "badge": "2021 • Journal • IF{{IFYear}}={{PMBIF}}",
+    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>Physics in Medicine and Biology</em>, 66, 064002.",
+    "keywords": [
+      "segmentation accuracy",
+      "structural mr head scans",
+      "electric field computation",
+      "tms",
+      "tes",
+      "physics in medicine and biology",
+      "pubmed",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1088/1361-6560/abe223"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33524957/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/t3ylufn057dnz1n/Rashed2021PMB.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2021PMB.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "Influence of population density, temperature, and absolute humidity on spread and decay durations of COVID-19: A comparative study of scenarios in China, England, Germany, and Japan",
+    "badge": "2021 • Journal • IF{{IFYear}}={{OneHIF}} • Highly cited Paper 🏆",
+    "meta": "Y. Diao, S. Kodera, D. Anzai, J. Gomez-Tames, E. A. Rashed, A. Hirata. <em>One Health</em>, 12, 100203",
+    "keywords": [
+      "population density",
+      "temperature",
+      "absolute humidity",
+      "covid-19",
+      "spread",
+      "decay durations",
+      "comparative study",
+      "one health",
+      "pubmed",
+      "open access",
+      "highly cited"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.onehlt.2020.100203"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2352771420303049"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33344745/"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Diao2021OH.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2021",
+    "title": "Search-based regression testing optimization",
+    "badge": "2021 • Journal",
+    "meta": "N. Faisal, A. Hamdy, E. A. Rashed. <em>International Journal of Open Source Software and Processes</em>, 12(2), Article 1.",
+    "keywords": [
+      "search-based regression testing optimization",
+      "international journal of open source software and processes",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.4018/IJOSSP.2021040101"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/54agf09vswxcl8o/Reda2021IJOSSP.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Nagwa2021oss.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Evaluation of SAR and temperature rise in human hand due to contact current from 100 kHz to 100 MHz",
+    "badge": "2020 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "T. Murakawa, Y. Diao, E. A. Rashed, S. Kodera, Y. Tanaka, Y. Kamimura, S. Kitamura, S. Uehara, Y. Otaka, A. Hirata. <em>IEEE Access</em>, 8, 200995–201004.",
+    "keywords": [
+      "sar",
+      "temperature rise",
+      "human hand",
+      "contact current",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2020.3035815"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/9247983"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Diao2020Access.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Assessment of absorbed power density and temperature rise for nonplanar body model under electromagnetic exposure above 6 GHz",
+    "badge": "2020 • Journal • IF{{IFYear}}={{PMBIF}}",
+    "meta": "Y. Diao, E. A. Rashed, A. Hirata. <em>Physics in Medicine and Biology</em>, 65, 224001.",
+    "keywords": [
+      "absorbed power density",
+      "temperature rise",
+      "nonplanar body model",
+      "above 6 ghz",
+      "physics in medicine and biology",
+      "pubmed",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1088/1361-6560/abbdb7"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33007761/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/8doww08glyt12m3/Diao2020PMB.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Diao2020PMB.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Effect of skin-to-skin contact on stimulation threshold and dosimetry",
+    "badge": "2020 • Journal • IF{{IFYear}}={{TEMCIF}}",
+    "meta": "E. A. Rashed, Y. Diao, S. Tanaka, T. Sakai, J. Gomez-Tames, A. Hirata. <em>IEEE Transactions on Electromagnetic Compatibility</em>, 62, 2704–2713.",
+    "keywords": [
+      "skin-to-skin contact",
+      "stimulation threshold",
+      "dosimetry",
+      "ieee transactions on electromagnetic compatibility",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/TEMC.2020.2985404"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/kom7tcyd1mi6tlh/Rashed2020TEMC.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2020TEMC.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Model-based approach for analyzing prevalence of nuclear cataracts in elderly residents",
+    "badge": "2020 • Journal • IF{{IFYear}}={{CBMIF}}",
+    "meta": "S. Kodera, A. Hirata, F. Miura, E. A. Rashed, N. Hatsusaka, N. Yamamoto, E. Kubo, H. Sasaki. <em>Computers in Biology and Medicine</em>, 126, 104009.",
+    "keywords": [
+      "nuclear cataracts",
+      "prevalence",
+      "elderly residents",
+      "model-based approach",
+      "computers in biology and medicine",
+      "pubmed",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.compbiomed.2020.104009"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33011577/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/8jw2gvak5y0bmm3/Kodera2020CBM.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kodera2020CBM.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Influence of absolute humidity, temperature and population density on COVID-19 spread and decay durations: multi-prefecture study in Japan",
+    "badge": "2020 • Journal",
+    "meta": "E. A. Rashed, S. Kodera, J. Gomez-Tames, A. Hirata. <em>International Journal of Environmental Research and Public Health</em>, 17, 5354.",
+    "keywords": [
+      "absolute humidity",
+      "temperature",
+      "population density",
+      "covid-19",
+      "spread",
+      "decay durations",
+      "japan",
+      "international journal of environmental research and public health",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/ijerph17155354"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32722294/"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/1660-4601/17/15/5354/pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2020IJERPH.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Large-scale analysis of the head proximity effects on antenna performance using machine learning based models",
+    "badge": "2020 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "Y. Diao, E. A. Rashed, A. Hirata. <em>IEEE Access</em>, 8, 154060–154071.",
+    "keywords": [
+      "head proximity effects",
+      "antenna performance",
+      "machine learning models",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2020.3017773"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/9171235"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Diao2020Access2.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "End-to-end semantic segmentation of personalized deep brain structures for non-invasive brain stimulation",
+    "badge": "2020 • Journal • IF{{IFYear}}={{NNIF}}",
+    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>Neural Networks</em>, 125, 233–244.",
+    "keywords": [
+      "semantic segmentation",
+      "personalized deep brain structures",
+      "non-invasive brain stimulation",
+      "neural networks",
+      "pubmed",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.neunet.2020.02.006"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32151914/"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/8e34pb3t6uxnmx0/Rashed2020NN.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2020NN.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Correlation between COVID-19 morbidity and mortality rates in Japan and local population density, temperature, and absolute humidity",
+    "badge": "2020 • Journal",
+    "meta": "S. Kodera, E. A. Rashed, A. Hirata. <em>International Journal of Environmental Research and Public Health</em>, 17, 5477.",
+    "keywords": [
+      "covid-19 morbidity",
+      "mortality",
+      "population density",
+      "temperature",
+      "absolute humidity",
+      "japan",
+      "international journal of environmental research and public health",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/ijerph17155477"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32751311/"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.mdpi.com/1660-4601/17/15/5477"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kodera2020IJERPH.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Learning-based estimation of dielectric properties and tissue density in head models for personalized radio-frequency dosimetry",
+    "badge": "2020 • Journal • IF{{IFYear}}={{PMBIF}}",
+    "meta": "E. A. Rashed, Y. Diao, A. Hirata. <em>Physics in Medicine and Biology</em>, 65, 065001.",
+    "keywords": [
+      "dielectric properties",
+      "tissue density",
+      "learning-based estimation",
+      "personalized radio-frequency dosimetry",
+      "physics in medicine and biology",
+      "pubmed",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1088/1361-6560/ab7308"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/32023556"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/tbckels1w4c0w92/Rashed2020PMB.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2020PMB.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2020",
+    "title": "Deep learning-based development of personalized human head model with non-uniform conductivity for brain stimulation",
+    "badge": "2020 • Journal • IF{{IFYear}}={{TMIIF}}",
+    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>IEEE Transactions on Medical Imaging</em>, 39, 2351–2362.",
+    "keywords": [
+      "personalized human head model",
+      "non-uniform conductivity",
+      "brain stimulation",
+      "ieee transactions on medical imaging",
+      "pubmed",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/TMI.2020.2969682"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/31995479"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/q0r2pjudx7f9svz/Rashed2020TMI.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2020TMI.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2019",
+    "title": "Spatial averaging schemes of in situ electric field for low-frequency magnetic field exposures",
+    "badge": "2019 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "Y. Diao, J. Gomez-Tames, E. A. Rashed, R. Kavet, A. Hirata. <em>IEEE Access</em>, 7, 184320–184331.",
+    "keywords": [
+      "spatial averaging schemes",
+      "in situ electric field",
+      "low-frequency magnetic field exposures",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2019.2960394"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/8936363"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Diao2019Access.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2019",
+    "title": "Development of accurate human head models for personalized electromagnetic dosimetry using deep learning",
+    "badge": "2019 • Journal • IF{{IFYear}}={{NeuroImgIF}}",
+    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>NeuroImage</em>, 202, 116132.",
+    "keywords": [
+      "dielectric properties",
+      "tissue density",
+      "personalized electromagnetic dosimetry",
+      "using deep learning",
+      "neuroimage",
+      "pubmed",
+      "arxiv",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.neuroimage.2019.116132"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/31472248"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/j3yh5gkdvbc7as8/Rashed2019NI.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2019NI.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2019",
+    "title": "Brain AI: Deep Learning for Brain Stimulation",
+    "badge": "2019 • Journal • IF{{IFYear}}={{PulseIF}} • Cover Story 🏆",
+    "meta": "E. A. Rashed, T. Sakai, J. Gomez-Tames, A. Hirata. <em>IEEE Pulse</em>, 10, 3–5.",
+    "keywords": [
+      "brain ai",
+      "deep learning for brain stimulation",
+      "ieee pulse",
+      "cover story",
+      "pubmed",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/MPULS.2019.2923888"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.embs.org/pulse/articles/brain-ai-deep-learning-for-brain-stimulation/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/31395528"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2019Pulse.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2019",
+    "title": "Estimation of heat-related morbidity from weather data: A computational study in three prefectures of Japan from 2013-2018",
+    "badge": "2019 • Journal • IF{{IFYear}}={{EnvIntIF}}",
+    "meta": "S. Kodera, T. Nishimura, E. A. Rashed, K. Hasegawa, I. Takeuchi, R. Egawa and A. Hirata <em>Environment International</em> 130, 104907.",
+    "keywords": [
+      "Estimation of heat-related morbidity from weather data",
+      "A computational study in three prefectures of Japan from 2013-2018"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.envint.2019.104907"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0160412019308360"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/31203028"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Kodera2019EI.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2019",
+    "title": "Human head skin thickness modeling for electromagnetic dosimetry",
+    "badge": "2019 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. <em>IEEE Access</em>, 7, 46176–46186.",
+    "keywords": [
+      "human head skin thickness modeling",
+      "electromagnetic dosimetry",
+      "ieee access",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/ACCESS.2019.2904743"
+      },
+      {
+        "label": "Open access",
+        "url": "https://ieeexplore.ieee.org/document/8667003"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2019Access.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2019",
+    "title": "Comprehensive data analysis for development of custom qRT-PCR miRNA assay for glioblastoma: a prevalidation study",
+    "badge": "2019 • Journal • IF{{IFYear}}={{EpiGenIF}}",
+    "meta": "E. A. Toraih, H. Y. Abdallah, E. A. Rashed, A. El-Wazir, M. A. Tantawy, M. S. Fawzy. <em>Epigenomics</em>, 11, 367–380.",
+    "keywords": [
+      "qRT-PCR",
+      "miRNA assay",
+      "glioblastoma",
+      "epigenomics",
+      "pubmed",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.2217/epi-2018-0134"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/30793921"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/81cbyewm9fiyyj8/Torieh2019EG.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Torieh2019EG.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2019",
+    "title": "An interactive mixed reality ray tracing rendering mobile application of medical data in minimally invasive surgeries",
+    "badge": "2019 • Journal",
+    "meta": "S. A. El-Seoud, A. S. Mady, E. A. Rashed. <em>International Journal of Interactive Mobile Technologies</em>, 13, 29–39.",
+    "keywords": [
+      "mixed reality",
+      "ray tracing rendering",
+      "mobile application",
+      "minimally invasive surgeries",
+      "interactive mobile technologies",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3991/ijim.v13i03.9893"
+      },
+      {
+        "label": "Open access",
+        "url": "https://online-journals.org/index.php/i-jim/article/download/9893/5546"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Samir2019mob.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2017",
+    "title": "Double-sided sliding-paraboloid (DSSP): a new tool for preprocessing GPR data",
+    "badge": "2017 • Journal • IF{{IFYear}}={{CompGeoIF}}",
+    "meta": "M. Rashed, E. A. Rashed. <em>Computers &amp; Geosciences</em>, 102, 12–21.",
+    "keywords": [
+      "double-sided sliding-paraboloid",
+      "dssp",
+      "preprocessing",
+      "gpr data",
+      "computers and geosciences",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.1016/j.cageo.2017.02.005"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/ln41o6xgr9zu983/Rashed2017CG.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2017CG.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2016",
+    "title": "Probabilistic atlas prior for CT image reconstruction",
+    "badge": "2016 • Journal • IF{{IFYear}}={{CMPBIF}}",
+    "meta": "E. A. Rashed, H. Kudo. <em>Computer Methods and Programs in Biomedicine</em>, 128, 119–136.",
+    "keywords": [
+      "probabilistic atlas prior",
+      "ct image reconstruction",
+      "computer methods and programs in biomedicine",
+      "pubmed",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.1016/j.cmpb.2016.02.017"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/27040837"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/zdao13cydz3we2u/Rashed2016CMPB.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2016CMPB.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2015",
+    "title": "GPR background removal using directional total variation minimisation approach",
+    "badge": "2015 • Journal • IF{{IFYear}}={{JGEIF}}",
+    "meta": "E. A. Rashed. <em>Journal of Geophysics and Engineering</em>, 12, 897–908.",
+    "keywords": [
+      "gpr background removal",
+      "directional total variation minimisation",
+      "journal of geophysics and engineering",
+      "open access"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.1088/1742-2132/12/6/897"
+      },
+      {
+        "label": "Open access",
+        "url": "https://academic.oup.com/jge/article/12/6/897/5110778"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2015JGE.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2015",
+    "title": "Sparsity-constrained three-dimensional image reconstruction for C-arm angiography",
+    "badge": "2015 • Journal • IF{{IFYear}}={{CBMIF}}",
+    "meta": "E. A. Rashed, M. al-Shatouri, H. Kudo. <em>Computers in Biology and Medicine</em>, 62, 141–154.",
+    "keywords": [
+      "sparsity-constrained",
+      "three-dimensional image reconstruction",
+      "c-arm angiography",
+      "computers in biology and medicine",
+      "pubmed",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.1016/j.compbiomed.2015.04.014"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/25932971"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/2b2gtdmqqde8wka/Rashed2015CBM.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2015CBM.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2013",
+    "title": "Image reconstruction for sparse-view CT and interior CT — introduction to compressed sensing and differentiated backprojection",
+    "badge": "2013 • Journal • IF{{IFYear}}={{QIMSIF}} • Cover Story 🏆",
+    "meta": "H. Kudo, T. Suzuki, E. A. Rashed. <em>Quantitative Imaging in Medicine and Surgery</em>, 3, 147–161.",
+    "keywords": [
+      "image reconstruction",
+      "sparse-view ct",
+      "interior ct",
+      "compressed sensing",
+      "differentiated backprojection",
+      "quantitative imaging in medicine and surgery",
+      "pubmed",
+      "open access",
+      "cover story"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.3978/j.issn.2223-4292.2013.06.01"
+      },
+      {
+        "label": "Open access",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3701091/"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/23833728"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2013QIMS.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2013",
+    "title": "Towards high-resolution synchrotron radiation imaging with statistical iterative reconstruction",
+    "badge": "2013 • Journal • IF{{IFYear}}={{JSRIF}}",
+    "meta": "E. A. Rashed, H. Kudo. <em>Journal of Synchrotron Radiation</em>, 20, 116–124.",
+    "keywords": [
+      "synchrotron radiation imaging",
+      "high-resolution",
+      "statistical iterative reconstruction",
+      "journal of synchrotron radiation",
+      "pubmed",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.1107/S0909049512041301"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/23254664"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/z6ppp9099qizpod/Rashed2013JSR.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2013JSR.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2013",
+    "title": "Overview of compressed sensing approach to CT image reconstruction",
+    "badge": "2013 • Journal",
+    "meta": "E. A. Rashed, H. Kudo. <em>Medical Imaging Technology</em>, 31, 9–14.",
+    "keywords": [
+      "compressed sensing",
+      "ct image reconstruction",
+      "overview",
+      "medical imaging technology",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.11409/mit.31.9"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/8gn1sfsvtmqesko/Rashed2013MIT.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2013MIT.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2012",
+    "title": "Statistical image reconstruction from limited projection data with intensity priors",
+    "badge": "2012 • Journal • IF{{IFYear}}={{PMBIF}}",
+    "meta": "E. A. Rashed, H. Kudo. <em>Physics in Medicine and Biology</em>, 57, 2039–2061.",
+    "keywords": [
+      "statistical image reconstruction",
+      "limited projection data",
+      "intensity priors",
+      "physics in medicine and biology",
+      "pubmed",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.1088/0031-9155/57/7/2039"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/22430037"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/zo3legb0e1mxodv/Rashed2012PMB.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2012PMB.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2009",
+    "title": "Iterative region-of-interest reconstruction from truncated CT projection data under blind object support",
+    "badge": "2009 • Journal",
+    "meta": "E. A. Rashed, H. Kudo, F. Noo. <em>Medical Imaging Technology</em>, 27, 321–331.",
+    "keywords": [
+      "roi reconstruction",
+      "truncated ct projection data",
+      "blind object support",
+      "medical imaging technology",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.11409/mit.27.321"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/aio2h7egfgpxsl7/Rashed2009MITb.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2009MIT1.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2009",
+    "title": "Intensity-based Bayesian framework for image reconstruction from sparse projection data",
+    "badge": "2009 • Journal",
+    "meta": "E. A. Rashed, H. Kudo. <em>Medical Imaging Technology</em>, 27, 243–251.",
+    "keywords": [
+      "bayesian framework",
+      "image reconstruction",
+      "sparse projection data",
+      "medical imaging technology",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.11409/mit.27.243"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/u6k8opf3rioye52/Rashed2009MITa.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2009MIT2.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2007",
+    "title": "Multiresolution mammogram analysis in multilevel decomposition",
+    "badge": "2007 • Journal • IF{{IFYear}}={{PRLIF}}",
+    "meta": "E. A. Rashed, I. A. Ismail, S. I. Zaki. <em>Pattern Recognition Letters</em>, 28, 286–292.",
+    "keywords": [
+      "multiresolution mammogram analysis",
+      "multilevel decomposition",
+      "pattern recognition letters",
+      "pdf"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "http://dx.doi.org/10.1016/j.patrec.2006.07.010"
+      },
+      {
+        "label": "PDF",
+        "url": "https://www.dropbox.com/s/lsqxnyeufqglwwt/Rashed2007PRL.pdf?dl=0"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2007PRL.bib"
+      }
+    ]
+  }
+]
