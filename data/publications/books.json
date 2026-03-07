@@ -1,12 +1,14 @@
-[
-  {
-    "year": "2026",
-    "title": "Deep learning in stroke care",
-    "badge": "2026 • Book Chapter",
-    "meta": "Y. Zafari, E. A. Rashed, W. Hussain, M. Mabrok. In: <em>Deep Learning Applications in Neuroinformatics</em>. Elsevier.",
-    "keywords": ["stroke care", "deep learning", "neuroinformatics"],
-    "links": [
-      { "label": "In press", "url": "#" }
-    ]
-  }
-]
+{
+  "items": [
+    {
+      "year": "2026",
+      "title": "Deep learning in stroke care",
+      "badge": "2026 • Book Chapter",
+      "meta": "Y. Zafari, E. A. Rashed, W. Hussain, M. Mabrok. In: <em>Deep Learning Applications in Neuroinformatics</em>. Elsevier.",
+      "keywords": ["stroke care", "deep learning", "neuroinformatics"],
+      "links": [
+        { "label": "In press", "url": "#" }
+      ]
+    }
+  ]
+}
