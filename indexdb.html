@@ -1026,8 +1026,8 @@
       if (!newsList) return;
 
       try {
-        const response = await fetch('assets/data/news.json');
-        if (!response.ok) throw new Error('Failed to load news.json');
+        const response = await fetch('data/news.json');
+        if (!response.ok) throw new Error('Failed to load news...');
 
         const newsItems = await response.json();
 
