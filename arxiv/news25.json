@@ -134,6 +134,62 @@
     "image": "assets/news/newslogo.jpg",
     "imageAlt": "",
     "url": ""
-  } 
+  }, 
+  {
+    "meta": "Sept 2025 • Paper",
+    "title": "A paper (full access) is published in Computers in Biology and Medicine (IF24=6.3)",
+    "desc": "Advances in Medical Image Segmentation: A Comprehensive Review with a Focus on Lumbar Spine Applications",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },
+  {
+    "meta": "Sept 2025 • Invited Talk",
+    "title": "E. Rashed will give a talk at Elsewedy University of Technology during a campus visit in October",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },
+  {
+    "meta": "Sept 2025 • Paper",
+    "title": "A paper [open access] by A. Elboardy (D1) is accepted for NeurIPS2025 Workshop",
+    "desc": "@  San Diego, US, 7 Dec. 2025",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },
+  {
+    "meta": "Sept 2025 • Invited Talk",
+    "title": "E. Rashed will give an invited talk at a special session at IFMIA2026 @ Kaohsiung, Taiwan",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },
+  {
+    "meta": "Sept 2025 • Workshop",
+    "title": "We will organize Kobe International Workshop on Trustworthy Foundation Models (KTFM2025)",
+    "desc": "@ Kobe, 20–21 Oct",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },
+  {
+    "meta": "Sept 2025 • Paper",
+    "title": "A paper [open access] by A. Elboardy (D1) is published in Informatics in Medicine Unlocked (CiteScore24=8.7)",
+    "desc": "Benchmarking Vision-Language Models for Brain Cancer Diagnosis Using Multisequence MRI",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  },
+  {
+    "meta": "Sept 2025 • Paper",
+    "title": "A paper [open access] is published in Sensors (IF24=3.5)",
+    "desc": "Lightweight Deep Learning Architecture for Multi-Lead ECG Arrhythmia Detection",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }
   
 ]
