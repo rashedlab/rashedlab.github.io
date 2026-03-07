@@ -17,5 +17,205 @@
       "ircc-2025-633"
     ],
     "links": []
+  },
+  {
+    "title": "Interactive medical image diagnosis with chatbot assistance",
+    "badge": "JST PRESTO",
+    "sponsor": "JST",
+    "role": "Principal Investigator",
+    "category": "National Competative Grant",
+    "start": 2023,
+    "end": 2026,
+    "year_range": "2023–2026",
+    "meta": "Japan Science and Technology Agency (JST) PRESTO, Grant No. JPMJPR23P7「JSTさきがけ」",
+    "keywords": [
+      "jst presto",
+      "jst",
+      "chatbot",
+      "interactive diagnosis",
+      "medical imaging",
+      "jpmjpr23p7"
+    ],
+    "links": [
+      {
+        "label": "Project page",
+        "url": "https://projectdb.jst.go.jp/grant/JST-PROJECT-23814957/"
+      }
+    ]
+  },
+  {
+    "title": "Efficient and Private Large Multi-Modal Model Training and Inference over Heterogeneous Edge-Cloud Networks",
+    "badge": "JST NEXUS",
+    "sponsor": "JST",
+    "role": "Co-PI",
+    "category": "International Collaboration",
+    "start": 2025,
+    "end": 2027,
+    "year_range": "2025–2027",
+    "meta": "Japan Science and Technology Agency (JST) NEXUS Grant No. JPMJNX25C4",
+    "keywords": [
+      "jst nexus",
+      "privacy",
+      "efficient",
+      "multimodal",
+      "edge cloud networks",
+      "jpmjnx25c4"
+    ],
+    "links": [
+      {
+        "label": "Project page",
+        "url": "https://projectdb.jst.go.jp/grant/JST-PROJECT-25126435/"
+      }
+    ]
+  },
+  {
+    "title": "Leveraging foundation models for multimodal medical image analysis",
+    "title_note": "「マルチモダル医用画像解析に基盤モデルを活用する」",
+    "badge": "Special Research Project",
+    "sponsor": "University of Hyogo",
+    "role": "Principal Investigator",
+    "category": "Internal Fund",
+    "start": 2024,
+    "end": 2025,
+    "year_range": "2024–2025",
+    "meta": "Special Research Project「特別研究プロジェクト」, University of Hyogo",
+    "keywords": [
+      "foundation models",
+      "multimodal medical image analysis",
+      "special research project",
+      "特別研究プロジェクト",
+      "マルチモダル医用画像解析に基盤モデルを活用する"
+    ],
+    "links": []
+  },
+  {
+    "title": "Integrated deep learning model for personalized transcranial magnetic stimulation",
+    "badge": "JSPS Kakenhi C",
+    "sponsor": "JSPS",
+    "role": "Principal Investigator",
+    "category": "National Competative Grant",
+    "start": 2022,
+    "end": 2024,
+    "year_range": "2022–2024",
+    "meta": "JSPS Grant-in-Aid for Scientific Research (C) No. 22K12765",
+    "keywords": [
+      "integrated deep learning model",
+      "personalized transcranial magnetic stimulation"
+    ],
+    "links": [
+      {
+        "label": "Project page",
+        "url": "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-22K12765/"
+      }
+    ]
+  },
+  {
+    "title": "Transformer‐based Deep Learning for Rapid Stroke Diagnosis",
+    "badge": "QJRC",
+    "sponsor": "Qatar University",
+    "role": "Principal Investigator",
+    "category": "International Collaboration",
+    "start": 2023,
+    "end": 2024,
+    "year_range": "2023–2024",
+    "meta": "Qatar-Japan Research Collaboration program (QJRC-2023-313), Qatar University, Qatar",
+    "keywords": [
+      "transformer-based deep learning",
+      "rapid stroke diagnosis"
+    ],
+    "links": []
+  },
+  {
+    "title": "Effect of Micrometeorology on Human Thermoreguatory Response and its Modeling​",
+    "badge": "JSPS Transformative B",
+    "sponsor": "JSPS",
+    "role": "Co-PI",
+    "category": "National Competative Grant",
+    "start": 2020,
+    "end": 2022,
+    "year_range": "2020–2022",
+    "meta": "JSPS Grant-in-Aid for Transformative Research Areas (B) No. 20H05753",
+    "keywords": [
+      "micrometeorology",
+      "human thermoreguatory response",
+      "modeling"
+    ],
+    "links": [
+      {
+        "label": "Project page",
+        "url": "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-20H05753/"
+      }
+    ]
+  },
+  {
+    "title": "Three-dimensional imaging system for interventional radiology with mobile C-arm scanner",
+    "badge": "STDF-YRG",
+    "sponsor": "STDF",
+    "role": "Principal Investigator",
+    "category": "National Competative Grant",
+    "start": 2018,
+    "end": 2019,
+    "year_range": "2018–2019",
+    "meta": "Science and Technology Development Fund, Young Researchers Grant ID 25614, Egypt",
+    "keywords": [
+      "three-dimensional imaging system",
+      "interventional radiology",
+      "mobile c-arm scanner"
+    ],
+    "links": []
+  },
+  {
+    "title": "Image reconstruction method for low-dose computed tomography",
+    "badge": "STDF-RG",
+    "sponsor": "STDF",
+    "role": "Principal Investigator",
+    "category": "National Competative Grant",
+    "start": 2014,
+    "end": 2016,
+    "year_range": "2014–2016",
+    "meta": "Science and Technology Development Fund, Reintegration Grant ID 6104, Egypt",
+    "keywords": [
+      "image reconstruction",
+      "low-dose computed tomography"
+    ],
+    "links": []
+  },
+  {
+    "title": "Development of interactive 3D imaging system for hepatic angiography",
+    "badge": "ASRP",
+    "sponsor": "ASRP",
+    "role": "Principal Investigator",
+    "category": "National Competative Grant",
+    "start": 2013,
+    "end": 2015,
+    "year_range": "2013–2015",
+    "meta": "Applied Scientific Research Project (ASRP), Ministry of Higher Education, Egypt",
+    "keywords": [
+      "interactive 3d imaging system",
+      "hepatic angiography"
+    ],
+    "links": []
+  },
+  {
+    "title": "A new approach to cardiac CT imaging with ultra low patient dose and high image quality",
+    "badge": "JSPS",
+    "sponsor": "JSPS",
+    "role": "Co-PI",
+    "category": "National Competative Grant",
+    "start": 2010,
+    "end": 2011,
+    "year_range": "2010–2011",
+    "meta": "JSPS Grant-in-Aid for JSPS Fellows",
+    "keywords": [
+      "cardiac ct imaging",
+      "ultra low patient dose",
+      "high image quality"
+    ],
+    "links": [
+      {
+        "label": "Project page",
+        "url": "https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-10F00052/"
+      }
+    ]
   }
 ]
