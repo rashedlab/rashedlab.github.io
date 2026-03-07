@@ -233,5 +233,21 @@
       "CT",
       "software"
     ]
+  },
+  {
+    "title": "Development of an integrated simulation system for tomographic image reconstruction",
+    "badge": "ICT",
+    "sponsor": "University of Tsukuba",
+    "role": "Co-PI",
+    "category": "Internal Fund",
+    "start": 2008,
+    "end": 2008,
+    "year_range": "2008",
+    "meta": "Advanced System Development Research Projec",
+    "keywords": [
+      "image reconstruction",
+      "CT",
+      "software"
+    ]
   }
 ]
