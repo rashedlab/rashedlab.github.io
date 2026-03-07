@@ -40,6 +40,30 @@
     "url": ""
   },
   {
+    "meta": "2022 • Master Course (Suez Canal University)",
+    "title": "Nagwa Faisal",
+    "desc": "Evolutionary Algorithms for Software Testing Optimization",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Fatma Harby",
+    "url": ""
+  },
+  {
+    "meta": "2018 • Master Course (Suez Canal University)",
+    "title": "Hanin Elyamany",
+    "desc": "",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Fatma Harby",
+    "url": ""
+  }, 
+  {
+    "meta": "2017 • Doctor Course (Suez Canal University)",
+    "title": "Fatma Harby",
+    "desc": "Development of intelligent medical image restoration system",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Fatma Harby",
+    "url": ""
+  }, 
+    {
     "meta": "2016 • Master Course (Suez Canal University)",
     "title": "Mona Selim",
     "desc": "Development of image reconstruction algorithms for low-dose computed",
