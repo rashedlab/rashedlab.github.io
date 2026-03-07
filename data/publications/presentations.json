@@ -1,16 +1,5 @@
 [
-  {
-    "type": "presentation",
-    "year": 2026,
-    "title": "Trustworthy brain cancer diagnosis with multi-agent foundation models",
-    "badge": "2026 • Invited Talk • 日本メディカルAI学会",
-    "meta": "E. A. Rashed. Symposium on Next-Generation Clinical Reporting Enabled by Vision–Language Models and Medical AI Agents, Tokyo, Japan, 5-6 June 2026.",
-    "keywords": "ieice est temperature rise radio-frequency exposure anatomical head models okinawa",
-    "links": [
-      { "label": "Link", "url": "https://www.jmai2026.jp/index.html" },
-      { "label": "Scheduled", "url": "#" }
-    ]
-  },
+  
   {
     "type": "presentation",
     "year": 2026,
