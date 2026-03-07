@@ -359,11 +359,11 @@
           <a href="grants.html" style="color:var(--text); background:rgba(255,255,255,.06);">Grants</a>
           <a href="awards.html">Awards</a>
           <a href="index.html#contact">Contact</a>
-        </nav> 
+        </nav>
 
         <div class="cta" style="display:flex; gap:10px; align-items:center;">
           <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
-          <!-- <a class="btn primary" href="#top">Browse</a> -->
+          <a class="btn primary" href="#top">Browse</a>
         </div>
       </div>
     </div>
@@ -376,10 +376,10 @@
           <div>
             <h1>Grants</h1>
             <p class="lead">
-              Funded research projects and grants. Use the same sponsor, category, and year filters as the original grants page.
+              Funded research projects and grants. Use the same sponsor, category, and year filters as the original grants page, now powered by a JSON data source.
             </p>
           </div>
-          <!-- <div class="badge" style="font-size:13px;">Total projects: <span id="totalCount">0</span></div> -->
+          <div class="badge" style="font-size:13px;">Total projects: <span id="totalCount">0</span></div>
         </div>
 
         <div class="controls" aria-label="Search and filters">
@@ -425,9 +425,8 @@
     <div class="container">
       <section>
         <div class="sectionTitle">
-          <h2>Funded Projects (<span id="visibleCount">0</span>)</h2> 
-          <!-- <h2>Funded Projects</h2> -->
-          <!-- <p class="hint">Filtered dynamically from <code>data/grants.json</code>.</p> -->
+          <h2>Funded Projects (<span id="visibleCount">0</span>)</h2>
+          <p class="hint">Filtered dynamically from <code>data/grants/grants.json</code>.</p>
         </div>
         <div id="grantsList" class="pubList">
           <div class="empty">Loading grants...</div>
@@ -580,7 +579,7 @@
 
     async function loadGrants() {
       try {
-        const response = await fetch('data/grants.json', { cache: 'no-store' });
+        const response = await fetch('data/grants/grants.json', { cache: 'no-store' });
         if (!response.ok) throw new Error(`Failed to load grants.json (${response.status})`);
         const data = await response.json();
         allGrants = Array.isArray(data) ? data : (Array.isArray(data.items) ? data.items : []);
