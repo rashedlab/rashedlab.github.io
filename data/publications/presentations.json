@@ -1,14 +1,567 @@
-{
-  "items": [
-    {
-      "year": "2026",
-      "title": "Deep learning in stroke care",
-      "badge": "2026 • Book Chapter",
-      "meta": "Y. Zafari, E. A. Rashed, W. Hussain, M. Mabrok. In: <em>Deep Learning Applications in Neuroinformatics</em>. Elsevier.",
-      "keywords": ["stroke care", "deep learning", "neuroinformatics"],
-      "links": [
-        { "label": "In press", "url": "#" }
-      ]
-    }
-  ]
-}
+[
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Trustworthy brain cancer diagnosis with multi-agent foundation models",
+    "badge": "2026 • Invited Talk • 日本メディカルAI学会",
+    "meta": "E. A. Rashed. Symposium on Next-Generation Clinical Reporting Enabled by Vision–Language Models and Medical AI Agents, Tokyo, Japan, 5-6 June 2026.",
+    "keywords": "ieice est temperature rise radio-frequency exposure anatomical head models okinawa",
+    "links": [
+      { "label": "Link", "url": "https://www.jmai2026.jp/index.html" },
+      { "label": "Scheduled", "url": "#" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Subtle to Significant: Advancing Medical Image Analysis with Large Language Models",
+    "badge": "2026 • Invited Talk • CVPR",
+    "meta": "E. A. Rashed. Subtle Visual Computing Workshop, Colorado, USA, 3-7 June 2026.",
+    "keywords": "ieice est temperature rise radio-frequency exposure anatomical head models okinawa",
+    "links": [
+      { "label": "Link", "url": "https://sites.google.com/view/svc-cvpr26" },
+      { "label": "Scheduled", "url": "#" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Large-Scale Numerical Analysis of Temperature Rise During Localized Radio-Frequency Exposure Using Anatomical Head Models",
+    "badge": "2026 • IEICE EST",
+    "meta": "I. Komine, S. Kodera, E. A. Rashed, A. Hirata. 2026 IEICE Workshop on Electronics Simulation Technology (EST), Okinawa, Japan, 22–23 Jan. 2026.",
+    "keywords": "ieice est temperature rise radio-frequency exposure anatomical head models okinawa",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://ken.ieice.org/ken/program/index.php?tgs_regid=a7773f3987607894f9ff1182225dda19036545b468f352d6cc4ca3b29e72fdfd&tgid=IEICE-EST&lang=eng"
+      }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Multimodal Vision-Language Models in Radiology: Achievements, Challenges, and Future Directions",
+    "badge": "2026 • IFMIA",
+    "meta": "E. A. Rashed, A. T. Elboardy, Y. Jia, G. Khoriba. The International Forum on Medical Imaging in Asia (IFMIA 2026), Kaohsiung, Taiwan, 13–14 Jan. 2026.",
+    "keywords": "ifmia multimodal vision-language models radiology achievements challenges future directions",
+    "links": [
+      { "label": "Link", "url": "https://iwait.online/program-2026/" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Enhanced Segmentation-Driven Approaches for Pneumothorax Diagnosis Generation Using Large-Language Models",
+    "badge": "2026 • IFMIA",
+    "meta": "Y. Jia, E. A. Rashed. The International Forum on Medical Imaging in Asia (IFMIA 2026), Kaohsiung, Taiwan, 13–14 Jan. 2026.",
+    "keywords": "ifmia pneumothorax diagnosis generation segmentation-driven large language models",
+    "links": [
+      { "label": "Link", "url": "https://iwait.online/program-2026/" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "SliceInsightNet++: Learnable Cross-Slice Fusion and Domain Generalization for Robust Spine MRI Segmentation",
+    "badge": "2026 • IFMIA",
+    "meta": "M. Yousef, E. A. Rashed. The International Forum on Medical Imaging in Asia (IFMIA 2026), Kaohsiung, Taiwan, 13–14 Jan. 2026.",
+    "keywords": "ifmia spine mri segmentation cross-slice fusion domain generalization",
+    "links": [
+      { "label": "Link", "url": "https://iwait.online/program-2026/" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Vision-Language Models in Radiology: Impact of Context Optimization Prompting Strategies on Model Performance",
+    "badge": "2026 • IFMIA",
+    "meta": "A. T. Elboardy, G. Khoriba, E. A. Rashed. The International Forum on Medical Imaging in Asia (IFMIA 2026), Kaohsiung, Taiwan, 13–14 Jan. 2026.",
+    "keywords": "ifmia vision-language context optimization prompting radiology",
+    "links": [
+      { "label": "Link", "url": "https://iwait.online/program-2026/" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Foundation Models in Medical Image Analysis",
+    "badge": "2025 • Invited Talk • EAI BodyNets",
+    "meta": "E. A. Rashed. EAI International Conference on Body Area Networks, Okayama, Japan, 2-4 Dec. 2025.",
+    "keywords": "ieice est temperature rise radio-frequency exposure anatomical head models okinawa",
+    "links": [
+      { "label": "Link", "url": "https://bodynets.eai-conferences.org/2025/index.html" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Brain stimulation in the era of deep learning",
+    "badge": "2025 • Invited Talk • BPIT",
+    "meta": "E. A. Rashed. Center of Biomedical Physics and Information Technology, Nagoya Institute of Technology, Nagoya, 13 Nov. 2025.",
+    "keywords": "ieice est temperature rise radio-frequency exposure anatomical head models okinawa",
+    "links": [
+      { "label": "Link", "url": "https://bpit.web.nitech.ac.jp/en/" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "AI and Liver Diseases: Recent advances",
+    "badge": "2025 • Invited Talk • EACR",
+    "meta": "E. A. Rashed. Annual Conf. of the Egyptian Assoc. of Cancer Research, SRTA city, Alex., Egypt, 8-9 Sept. 2025.",
+    "keywords": "ieice est temperature rise radio-frequency exposure anatomical head models okinawa",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Advancing radiology with AI: The rise of vision-language models for report generation",
+    "badge": "2025 • Plenary Talk • FMLDS",
+    "meta": "E. A. Rashed. IEEE International Conference on Future Machine Learning and Data Science, Loa Angeles, USA, 2-5 Nov. 2025.",
+    "keywords": "ieice est temperature rise radio-frequency exposure anatomical head models okinawa",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2025,
+    "title": "Bilateral attention fusion network for multi-view mammographic breast cancer diagnosis",
+    "badge": "2025 • JAMIT",
+    "meta": "M. Nouman, Y. Zafari, M. Mabork, E. A. Rashed. The 44th Annual Conference of the Japan Society of Medical Imaging Technology, Paper No. P1-19, Tokyo, Japan, 28–30 Aug. 2025.",
+    "keywords": "jamit mammographic breast cancer diagnosis bilateral attention fusion network multi-view",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2025,
+    "title": "Segmentation-Enhanced Chest X-ray Interpretation Using Vision-Language Models for Pneumothorax Report Generation",
+    "badge": "2025 • JAMIT",
+    "meta": "Y. Jia, E. A. Rashed. JAMIT 44th Annual Conference, Paper No. P3-22, Tokyo, Japan, 28–30 Aug. 2025.",
+    "keywords": "jamit pneumothorax report generation vision-language models chest x-ray",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2025,
+    "title": "A survey on federated learning methods in MRI analysis",
+    "badge": "2025 • JAMIT",
+    "meta": "M. Kanehira, E. A. Rashed. JAMIT 44th Annual Conference, Paper No. P2-19, Tokyo, Japan, 28–30 Aug. 2025.",
+    "keywords": "jamit federated learning mri survey",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2025,
+    "title": "Deep Learning-Based Head Models for Thermal Dosimetry: Comparison Between Segmentation-Based and Segmentation-Free Approaches",
+    "badge": "2025 • BioEM • Poster",
+    "meta": "S. Kodera, R. Yoshida, E. A. Rashed, Y. Diao, H. Takizawa, A. Hirata. BioEM2025, Rennes, France, 22–27 Jun. 2025. (Poster presentation)",
+    "keywords": "bioem thermal dosimetry head models segmentation-based segmentation-free poster",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2025,
+    "title": "Pneumothorax Segmentation Using nnUNet with MedSAM Spatial Prior Contrast Adapter",
+    "badge": "2025 • IFMIA",
+    "meta": "Y. Jia, E. A. Rashed. IFMIA 2025, Takamatsu, Kagawa, Japan, 20–21 Mar. 2025.",
+    "keywords": "ifmia pneumothorax segmentation nnunet medsam spatial prior contrast adapter",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2025,
+    "title": "Performance Assessment of Open-Source Large Language Models in Brain Cancer Radiology Report Generation from MRI Screenings",
+    "badge": "2025 • IFMIA • 🏆 Best Poster Award",
+    "meta": "A. Elboardy, M. al-Shatouri, M. Mousa, E. A. Rashed. IFMIA 2025, Takamatsu, Kagawa, Japan, 20–21 Mar. 2025.",
+    "keywords": "ifmia open-source llm brain cancer radiology report generation best poster award",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2025,
+    "title": "Cross-view segmentation of low-grade brain tumors with mutual attention in multimodal MRI",
+    "badge": "2025 • IFMIA",
+    "meta": "H. Seshimo, E. A. Rashed. IFMIA 2025, Takamatsu, Kagawa, Japan, 20–21 Mar. 2025.",
+    "keywords": "ifmia low-grade brain tumors cross-view segmentation mutual attention multimodal mri",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2024,
+    "title": "Improving Large Language Models with Reinforcement Learning for Enhanced Medical Image Analysis",
+    "badge": "2024 • 医用画像研究会 (MI)",
+    "meta": "A. T. Elboardy, M. Nouman, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 5 Dec. 2024.",
+    "keywords": "mi medical imaging study group reinforcement learning large language models medical image analysis osaka",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2024,
+    "title": "Evaluating MedSAM: Addressing Clinical Performance and Segmentation Challenges",
+    "badge": "2024 • 医用画像研究会 (MI)",
+    "meta": "M. Nouman, A. T. Elboardy, G. Khoriba, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 5 Dec. 2024.",
+    "keywords": "mi medsAM evaluating clinical performance segmentation challenges osaka",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2024,
+    "title": "Electric Field Estimation in Personalized Bain Stimulation with Machine Learning",
+    "badge": "2024 • IEICE General Conf.",
+    "meta": "A. Hirata, S. Kodera, E. A. Rashed, M. Tamura, H. Hontani. IEICE General Conference, Hiroshima, Japan, 4–8 Mar. 2024. (Invited Talk: A. Hirata)",
+    "keywords": "ieice general conference electric field estimation personalized brain stimulation machine learning invited talk",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2023,
+    "title": "Deep learning-based segmented human head dataset",
+    "badge": "2023 • JSMBE",
+    "meta": "E. A. Rashed. The 62nd Annual Conference of Japanese Society for Medical and Biological Engineering (第62回日本生体医工学会大会), Nagoya, Japan, 18–20 May 2023.",
+    "keywords": "jsmbe segmented human head dataset deep learning nagoya",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2023,
+    "title": "Deep learning in medical imaging",
+    "badge": "2023 • Invited Talk",
+    "meta": "E. A. Rashed. Egypt-Japan Multidisciplinary Science Forum, Cairo, Egypt, 18 Feb. 2023. (Invited Talk)",
+    "keywords": "egypt-japan forum deep learning medical imaging invited talk cairo",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2022,
+    "title": "Development of human head models from anatomical medical images using deep learning",
+    "badge": "2022 • MIST • Invited",
+    "meta": "E. A. Rashed. 2nd International Conference on Medical Imaging Science and Technology (MIST 2022), 15–18 Nov. 2022. (Invited Talk)",
+    "keywords": "mist human head models anatomical medical images deep learning invited talk",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2022,
+    "title": "Deep learning models for efficient electromagnetic neuromodulation",
+    "badge": "2022 • 兵庫県立大学 知の交流シンポジウム",
+    "meta": "E. A. Rashed. 兵庫県立大学 知の交流シンポジウム, 姫路市文化コンベンションセンター, 姫路市, 27 Sept. 2022. (Poster presentation)",
+    "keywords": "hyogo symposium electromagnetic neuromodulation deep learning poster himeji",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2022,
+    "title": "Modeling collagen fibers in human finger anatomical model towards realistic electromagnetic analysis",
+    "badge": "2022 • IEICE EST",
+    "meta": "E. A. Rashed, A. Hirata. 2022 IEICE Workshop on Electronics Simulation Technology (EST), Okinawa, Japan, 27–28 Jan. 2022.",
+    "keywords": "ieice est collagen fibers human finger anatomical model electromagnetic analysis okinawa",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2022,
+    "title": "Individual variation of cardiac potential based on electric field analysis",
+    "badge": "2022 • BioEM",
+    "meta": "K. Sanjo, E. A. Rashed, A. Hirata. BioEM2022, Nagoya, Japan, 19–24 Jun. 2022. (Poster presentation)",
+    "keywords": "bioem cardiac potential electric field analysis poster",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2022,
+    "title": "Evaluation of temperature rise using the human models with non-uniform thermal parameters",
+    "badge": "2022 • BioEM",
+    "meta": "S. Kodera, E. A. Rashed, A. Hirata. BioEM2022, Nagoya, Japan, 19–24 Jun. 2022. (Poster presentation)",
+    "keywords": "bioem temperature rise human models non-uniform thermal parameters poster",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2021,
+    "title": "Predicting ambulance dispatches due to the heat stroke in Nagoya City - application with neural networks and non-linear regression modeling -",
+    "badge": "2021 • IEICE Annual Meeting",
+    "meta": "A. Hirata, S. Kodera, E. A. Rashed. 2021 Annual IEICE Meeting, 11 Mar. 2021. (Presenter: Prof. A. Hirata)",
+    "keywords": "ieice annual meeting heat stroke ambulance dispatch nagoya neural networks non-linear regression",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2021,
+    "title": "Human head models with deep learning enabled dielectric properties",
+    "badge": "2021 • Invited Talk",
+    "meta": "E. A. Rashed. Online seminar at Pattern Recognition Lab, University of Erlangen-Nuremberg, 25 Feb. 2021. (Invited Talk)",
+    "keywords": "fau seminar dielectric properties deep learning head models invited talk video",
+    "links": [
+      { "label": "Video", "url": "https://www.fau.tv/clip/id/29967" }
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2021,
+    "title": "The role of deep learning in better understanding of COVID-19: A one-year lesson",
+    "badge": "2021 • JSPS Webinar",
+    "meta": "E. A. Rashed. The 2nd International JSPS Webinars: Preparedness for the next COVID-19 wave (Online), 13 Feb. 2021.",
+    "keywords": "jsps webinar covid-19 deep learning forecasting one-year lesson online",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2021,
+    "title": "Computation of the Local SAR and Temperature Rise in Anatomically-based Hand Model due to Contact Current",
+    "badge": "2021 • IEICE EST",
+    "meta": "T. Murakawa, Y. Diao, E. A. Rashed, Y. Kamimura, A. Hirata. 2021 IEICE Workshop on Electronics Simulation Technology (EST), Online, 21–22 Jan. 2021.",
+    "keywords": "ieice est local sar temperature rise hand model contact current",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2021,
+    "title": "Performance Evaluation of EEG Source Localization Based on Lead Field Matrix",
+    "badge": "2021 • IEICE EST",
+    "meta": "T. Moridera, E. A. Rashed, A. Hirata. 2021 IEICE Workshop on Electronics Simulation Technology (EST), Online, 21–22 Jan. 2021.",
+    "keywords": "ieice est eeg source localization lead field matrix performance evaluation",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2021,
+    "title": "Localization of cardiac source based on lead field matrix and filtering",
+    "badge": "2021 • BioEM",
+    "meta": "Y. Nakano, E. A. Rashed, I. Laakso, A. Hirata. BioEM2021, Ghent, Belgium, 29 Sept. 2021.",
+    "keywords": "bioem cardiac source localization lead field matrix filtering",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2020,
+    "title": "Evaluation of the electromagnetic absorption and temperature rise in curved body models above 6 GHz",
+    "badge": "2020 • IEICE EST",
+    "meta": "Y. Diao, E. A. Rashed, A. Hirata. 2020 IEICE Workshop on Electronics Simulation Technology (EST), Online, 22–23 Oct. 2020.",
+    "keywords": "ieice est electromagnetic absorption temperature rise curved body models above 6 ghz",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2020,
+    "title": "Correlation of COVID-19 transmission with population density and meteorological factors in Japan",
+    "badge": "2020 • Online",
+    "meta": "A. Hirata, S. Kodera, J. Gomez-Tames, E. A. Rashed. Climatological, Meteorological and Environmental factors in the COVID-19 pandemic (Online), 4–6 Aug. 2020.",
+    "keywords": "covid-19 population density meteorological factors japan online event",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2020,
+    "title": "Numerical investigation of induced field in anatomically-based hand model for contact current at intermediate frequencies",
+    "badge": "2020 • IEICE EST",
+    "meta": "T. Murakawa, Y. Diao, E. A. Rashed, Y. Tanaka, S. Kitamura, S. Uehara, Y. Otaka, A. Hirata. 2020 IEICE Workshop on Electronics Stimulation Technology (EST), Online, 16–17 Jul. 2020. (IEICE Technical Report, vol. EST2020-11, pp. 27–32, 2020)",
+    "keywords": "ieice est induced field hand model contact current intermediate frequencies technical report est2020-11",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2020,
+    "title": "End-to-end semantic segmentation of personalized deep brain structures for non-invasive brain stimulation",
+    "badge": "2020 • NYC Neuromodulation",
+    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. NYC Neuromodulation 2020, Apr. 22, 2020. (Session video record available)",
+    "keywords": "nyc neuromodulation semantic segmentation deep brain structures non-invasive brain stimulation video",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2020,
+    "title": "CondNet: Deep learning architecture for electrical conductivity estimation of human head models",
+    "badge": "2020 • IEICE EST • 🏆 Best Presentation",
+    "meta": "E. A. Rashed, A. Hirata. 2020 IEICE Workshop on Electronics Simulation Technology (EST), Beppu International Convention Center, Beppu, Japan, 30–31 Jan. 2020. (IEICE Technical Report, vol. 119, no. 407, pp. 13–17, 2020)",
+    "keywords": "ieice est condnet conductivity estimation human head models best presentation award technical report",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2019,
+    "title": "Personalized head models from MRI using convolutional neural networks",
+    "badge": "2019 • IEICE EST",
+    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. 2019 IEICE Workshop on Electronics Simulation Technology (EST), Nagoya Institute of Technology, Nagoya, Japan, 17 May 2019. (IEICE Technical Report, vol. 119, no. 42, pp. 9–12, 2019)",
+    "keywords": "ieice est personalized head models mri convolutional neural networks technical report",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2019,
+    "title": "Machine Learning in Cancer Research",
+    "badge": "2019 • Invited Talk",
+    "meta": "E. A. Rashed, M. G. Awad. Cancer Bioinformatics: Genomics and Transcriptomics Approach (ICGEB Course), Suez Canal University, Ismailia, Egypt, 5–7 Mar. 2019. (Invited Talk)",
+    "keywords": "cancer bioinformatics machine learning cancer research invited talk icgeb course",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2019,
+    "title": "Estimation of Heat Stroke Patients Based on Quantities Computed with Physical Simulation and Machine Learning",
+    "badge": "2019 • EMC",
+    "meta": "T. Kamiya, Y. Murata, T. Nishimura, S. Kodera, T. Ito, E. A. Rashed, A. Hirata. International Symposium on Electromagnetic Compatibility (EMC2019), Sapporo, Japan, Jun. 2019.",
+    "keywords": "emc heat stroke patients physical simulation machine learning",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2018,
+    "title": "Deep learning approach for detecting breast cancer from thermograms",
+    "badge": "2018 • ACCI",
+    "meta": "E. Ahmed, T. Gaber, E. A. Rashed. International Conference on Advanced Computer Communication and Informatics (ACCI2018), Ismailia, Egypt, May 2018.",
+    "keywords": "acci2018 thermograms breast cancer deep learning detection",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2018,
+    "title": "Tomography: from analytical methods to machine learning",
+    "badge": "2018 • ACCI • Invited Talk",
+    "meta": "E. A. Rashed. ACCI2018, Ismailia, Egypt, May 2018. (Invited Talk)",
+    "keywords": "acci2018 tomography analytical methods machine learning invited talk",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2018,
+    "title": "Egyptian Precision Medicine Era",
+    "badge": "2018 • Keynote",
+    "meta": "E. A. Rashed, H. Yousry. Keynote Lecture, Fifth Young Researchers Conference @ Suez Canal University, 7–8 Apr. 2018. (Invited Talk)",
+    "keywords": "keynote egyptian precision medicine era young researchers conference invited talk",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2018,
+    "title": "FluoroTech: Denoising Algorithm for Fluoroscopic Imaging",
+    "badge": "2018 • URC",
+    "meta": "O. Abdelfattah, E. A. Rashed, W. Hussein. 10th Annual Undergraduate Research Conference on Applied Computing (URC2018), Dubai, UAE, Apr. 2018.",
+    "keywords": "urc2018 fluorotech denoising fluoroscopic imaging dubai",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2016,
+    "title": "Three-dimensional blood vessel detection from low-dose CT imaging using shape prior approach",
+    "badge": "2016 • ICMIS",
+    "meta": "E. A. Mohamed, E. A. Rashed, H. M. Hewedi. 5th International Conference on Mathematics and Information Sciences (ICMIS2016), Paper No. 217, Cairo, Egypt, Feb. 2016.",
+    "keywords": "icmis2016 three-dimensional blood vessel detection low-dose ct shape prior",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2016,
+    "title": "Towards efficient low-dose tomographic imaging system",
+    "badge": "2016 • Keynote",
+    "meta": "E. A. Rashed. Keynote Lecture, Workshop in Computer Science Approaches and Their Applications, Zagazig University, 16 Jul. 2016. (Invited Talk)",
+    "keywords": "keynote low-dose tomographic imaging system zagazig university invited talk",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2016,
+    "title": "Multidisciplinary Collaborative Research: an example from SCU",
+    "badge": "2016 • Keynote",
+    "meta": "E. A. Rashed. Keynote Lecture, Third Young Researchers Conference @ Suez Canal University, 7–8 May 2016. (Invited Talk)",
+    "keywords": "keynote multidisciplinary collaborative research example from scu invited talk",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2016,
+    "title": "Low-dose CT denoising by incremental learning and ant colony optimization",
+    "badge": "2016 • ICCTA",
+    "meta": "M. Hashem, E. A. Rashed, F. Harby. 26th International Conference on Computer Theory and Applications (ICCTA 2016), Alexandria, Egypt, 2016.",
+    "keywords": "iccta 2016 low-dose ct denoising incremental learning ant colony optimization",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2015,
+    "title": "An elliptical basis function network for non-blind deconvolution",
+    "badge": "2015 • ICCTA",
+    "meta": "M. Hashem, E. A. Rashed, F. Harby. 25th International Conference on Computer Theory and Applications (ICCTA 2015), Alexandria, Egypt, 2015, pp. 197–201.",
+    "keywords": "iccta 2015 elliptical basis function network non-blind deconvolution",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2014,
+    "title": "Highly advanced medical imaging based on computational anatomy model: Progress Overview",
+    "badge": "2014 • ISCA",
+    "meta": "H. Kudo, E. A. Rashed, H. Oomori, T. Kodera, T. Tayama. The Fifth International Symposium on Computational Anatomy, Univ. of Tokyo, Japan, Paper No. A01-KB1, 8–9 Mar. 2014. (Poster)",
+    "keywords": "computational anatomy highly advanced medical imaging progress overview poster",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2013,
+    "title": "Image reconstruction method for low-dose computed tomography",
+    "badge": "2013 • 🏆 Best Presentation Award",
+    "meta": "E. A. Rashed. First Young Researchers Conference @ Suez Canal University, 6–7 Mar. 2013. (Best Presentation Award)",
+    "keywords": "young researchers conference image reconstruction low-dose computed tomography best presentation award",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2012,
+    "title": "Compressed sensing model for multiphase abdominal CT imaging",
+    "badge": "2012 • JAMIT • 🏆 Best Presentation Award",
+    "meta": "E. A. Rashed, H. Kudo. Proceedings of the 31st JAMIT Annual Meeting, Paper No. OP2-9, Sapporo, Japan, 2012.",
+    "keywords": "jamit compressed sensing multiphase abdominal ct imaging best presentation award",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2011,
+    "title": "Row-action reconstruction algorithms for the minimization of the L1/L0 distance from a reference image in CT",
+    "badge": "2011 • JAMIT",
+    "meta": "E. A. Rashed, H. Kudo. Proceedings of the 30th JAMIT Annual Meeting, Paper No. OP3-4, Odawara, Japan, 2011.",
+    "keywords": "jamit row-action reconstruction algorithms minimization l1 l0 distance reference image",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2011,
+    "title": "General Fan-beam reconstruction algorithm for free-form trajectory with plus-minus weighting scheme",
+    "badge": "2011 • JAMIT",
+    "meta": "Z. Wang, E. A. Rashed, H. Kudo. Proceedings of the 30th JAMIT Annual Meeting, Paper No. OP11-1, Odawara, Japan, 2011.",
+    "keywords": "jamit general fan-beam reconstruction algorithm free-form trajectory plus-minus weighting scheme",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2009,
+    "title": "New developments in image reconstruction - current research",
+    "badge": "2009 • PET Society",
+    "meta": "T. Kobayashi, E. A. Rashed, H. Kudo. Next Generation PET Society, Paper No. 7, Chiba, Japan, 2009.",
+    "keywords": "pet society new developments image reconstruction current research",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2009,
+    "title": "Uniqueness results and image reconstruction for region-of-interest and interior tomography",
+    "badge": "2009 • Workshop",
+    "meta": "H. Kudo, E. A. Rashed. International workshop: Brain storming on quantification in Single Photon Emission Computed Tomography (SPECT), National Cardiovascular Center, Osaka, Japan, 2009.",
+    "keywords": "spect workshop uniqueness results image reconstruction roi interior tomography",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2008,
+    "title": "Iterative algorithms for artifacts reduction in region-of-interest tomographic reconstruction from truncated projection data",
+    "badge": "2008 • JAMIT • 🏆 Best Presentation Award",
+    "meta": "E. A. Rashed, H. Kudo. Proceedings of the 27th JAMIT Annual Meeting, Paper No. B3-01, Tokyo, Japan, 2008.",
+    "keywords": "jamit artifacts reduction roi tomographic reconstruction truncated projection data best presentation award",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2007,
+    "title": "Fast statistical reconstruction methods for region-of interest CT imaging",
+    "badge": "2007 • JAMIT",
+    "meta": "E. A. Rashed, H. Kudo, T. Zeniya, H. Iida. Proceedings of the 27th JAMIT Annual Meeting, Paper No. A3-03, Tsukuba, Japan, 2007.",
+    "keywords": "jamit fast statistical reconstruction methods roi ct imaging",
+    "links": []
+  }
+]
