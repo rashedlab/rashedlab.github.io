@@ -588,14 +588,36 @@
     </section>
     -->
 
-    <!-- NEWS before 2026-->
+    <!-- NEWS 2025-->
     <section id="news">
       <div class="container">
         <div class="sectionTitle">
-          <h2>News Archive (2025~2021)</h2>
+          <h2>News Archive (2025)</h2>
         </div>
         <div class="contactGrid">
-          <div class="card list" id="newsListold">
+          <div class="card list" id="newsList2025">
+            <div class="item">
+              <div class="newsBody">
+                <div class="meta">Loading news...</div>
+                <p class="title">Please wait while the news items are loaded.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div style="margin-top:12px;">
+          <a class="btn" href="oldnews.html">News archive→</a>
+        </div> -->
+      </div>
+    </section>
+
+        <!-- NEWS 2024-->
+    <section id="news">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>News Archive (2024)</h2>
+        </div>
+        <div class="contactGrid">
+          <div class="card list" id="newsList2024">
             <div class="item">
               <div class="newsBody">
                 <div class="meta">Loading news...</div>
@@ -733,11 +755,10 @@
   </script>
 
 
-
   <script>
     async function loadNews() {
-      const newsListold = document.getElementById('newsListold');
-      if (!newsListold) return;
+      const newsList2025 = document.getElementById('newsList2025');
+      if (!newsList2025) return;
 
       try {
         const response = await fetch('arxiv/news25.json');
@@ -746,7 +767,7 @@
         const newsItems = await response.json();
 
         if (!Array.isArray(newsItems) || newsItems.length === 0) {
-          newsListold.innerHTML = `
+          newsList2025.innerHTML = `
             <div class="item">
               <div class="newsBody">
                 <div class="meta">No news available</div>
@@ -757,7 +778,7 @@
           return;
         }
 
-        newsListold.innerHTML = newsItems.map(item => {
+        newsList2025.innerHTML = newsItems.map(item => {
           const imageHtml = item.image
             ? `
               <div class="newsThumb">
@@ -784,7 +805,73 @@
           `;
         }).join('');
       } catch (error) {
-        newsListold.innerHTML = `
+        newsList2025.innerHTML = `
+          <div class="item">
+            <div class="newsBody">
+              <div class="meta">Error</div>
+              <p class="title">Could not load news items...</p>
+              <p class="desc">${error.message}</p>
+            </div>
+          </div>
+        `;
+        console.error('News loading error:', error);
+      }
+    }
+
+    loadNews();
+  </script>
+  
+  <script>
+    async function loadNews() {
+      const newsList2024 = document.getElementById('newsList2024');
+      if (!newsList2024) return;
+
+      try {
+        const response = await fetch('arxiv/news24.json');
+        if (!response.ok) throw new Error('Failed to load news...');
+
+        const newsItems = await response.json();
+
+        if (!Array.isArray(newsItems) || newsItems.length === 0) {
+          newsList2024.innerHTML = `
+            <div class="item">
+              <div class="newsBody">
+                <div class="meta">No news available</div>
+                <p class="title">No news items were found ...</p>
+              </div>
+            </div>
+          `;
+          return;
+        }
+
+        newsList2024.innerHTML = newsItems.map(item => {
+          const imageHtml = item.image
+            ? `
+              <div class="newsThumb">
+                <img src="${item.image}" alt="${item.imageAlt || item.title || 'News image'}" loading="lazy" />
+              </div>
+            `
+            : '';
+
+          const titleHtml = item.url && item.url.trim() !== ''
+            ? `<p class="title"><a href="${item.url}">${item.title || ''}</a></p>`
+            : `<p class="title">${item.title || ''}</p>`;
+
+          const descHtml = item.desc ? `<p class="desc">${item.desc}</p>` : '';
+
+          return `
+            <div class="item">
+              ${imageHtml}
+              <div class="newsBody">
+                <div class="meta">${item.meta || ''}</div>
+                ${titleHtml}
+                ${descHtml}
+              </div>
+            </div>
+          `;
+        }).join('');
+      } catch (error) {
+        newsList2024.innerHTML = `
           <div class="item">
             <div class="newsBody">
               <div class="meta">Error</div>
