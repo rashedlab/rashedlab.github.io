@@ -1,0 +1,66 @@
+[
+  {
+    "meta": "Feb 2026 • Conference",
+    "title": "E. Rashed & M. Mabork are Co-Chairs of the 2026 IEEE International Conference on Future Machine Learning and Data Science",
+    "desc": "@ Kobe, Japan, 20-23 Nov. 2026",
+    "image": "assets/awards/fmlds2026c.jpg",
+    "imageAlt": "FMLDS 2026",
+    "url": "https://www.fmlds.org/2026/"
+  },
+  {
+    "meta": "Feb 2026 • Paper",
+    "title": "A paper is accepted for the 23rd IEEE International Conference on Learning and Technology (L&S26) @ KSA",
+    "desc": "Twin Minds in Cyber-Defense: A Dual-Agent Framework for Safe Automated Assessment in Security Education",
+    "image": "assets/news/ieee.jpg",
+    "imageAlt": "IEEE",
+    "url": ""
+  },
+  {
+    "meta": "Jan 2026 • Workshop",
+    "title": "E. Rashed and Y. Jia (M2) participated in the JST Nexus project workshop",
+    "desc": "@ Nanyang Technological University, Singapore, 28-29 Jan. 2026",
+    "image": "assets/news/NTUworkshop.jpg",
+    "imageAlt": "NTU Workshop",
+    "url": ""
+  },
+  {
+    "meta": "Jan 2026 • Conference",
+    "title": "E. Rashed and Y. Jia (M2) participated in the AAAI 2026 Conference",
+    "desc": "@ Singapore, 20-27 Jan. 2026",
+    "image": "assets/news/aaai26.jpg",
+    "imageAlt": "AAAI 2026",
+    "url": ""
+  },
+  {
+    "meta": "Jan 2026 • Conference",
+    "title": "E. Rashed, A. Elboardy (D1) and M. Yousef (RS) participated in the IFMIA 2026",
+    "desc": "@ Kaohsiung, Taiwan, 12-14 Jan. 2026",
+    "image": "assets/news/ifmia26.jpg",
+    "imageAlt": "IFMIA 2026",
+    "url": ""
+  },
+  {
+    "meta": "Jan 2026 • Paper",
+    "title": "A paper is published in Biomedical Signal Processing and Control (IF24=4.9)",
+    "desc": "Synthetic histopathology with controllable class distribution: A dual-GAN framework for melanoma segmentation",
+    "image": "assets/news/bspc.jpg",
+    "imageAlt": "BSPC Journal",
+    "url": "https://doi.org/10.1016/j.bspc.2026.109741"
+  },
+  {
+    "meta": "Jan 2026 • Seminar",
+    "title": "All lab members will participate in Joint Seminar with the TDSAI Lab @ Institute of Science Tokyo",
+    "desc": "@ Tokyo, 4-5 Feb. 2026",
+    "image": "assets/news/isct.jpg",
+    "imageAlt": "Institute of Science Tokyo",
+    "url": ""
+  },
+  {
+    "meta": "Jan 2026 • Invited Talk",
+    "title": "E. Rashed is Keynote Speaker at the Second Subtle Visual Computing Workshop @ CVPR",
+    "desc": "@ Denver, Colorado, USA, 3-7 June 2026",
+    "image": "assets/news/cvpr.jpg",
+    "imageAlt": "CVPR Workshop",
+    "url": "https://sites.google.com/view/svc-cvpr26"
+  }
+]
