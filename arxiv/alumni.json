@@ -16,11 +16,19 @@
     "url": ""
   },
   {
-    "meta": "Mar 2025 • Doctor Course (Suez Canal University)",
+    "meta": "2023 • Doctor Course (Suez Canal University)",
     "title": "Esraa Ahmed",
     "desc": "Deep Learning Approach for Detecting Breast Cancer from Thermograms",
     "image": "assets/people/student2.jpg",
     "imageAlt": "Esraa Ahmed",
+    "url": ""
+  },
+    {
+    "meta": "2022 • Doctor Course (Suez Canal University)",
+    "title": "Mona Selim",
+    "desc": "Development of Algorithms and Software for Reconstruction of the Images of Computed Tomography",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Mona Selim",
     "url": ""
   }
 ]
