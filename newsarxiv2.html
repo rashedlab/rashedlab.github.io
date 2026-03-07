@@ -969,7 +969,7 @@
       if (!newsList) return;
 
       try {
-        const response = await fetch('data/news.json');
+        const response = await fetch('arxiv/news26.json');
         if (!response.ok) throw new Error('Failed to load news...');
 
         const newsItems = await response.json();
