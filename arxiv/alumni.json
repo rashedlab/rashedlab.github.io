@@ -23,12 +23,45 @@
     "imageAlt": "Esraa Ahmed",
     "url": ""
   },
-    {
+  {
     "meta": "2022 • Doctor Course (Suez Canal University)",
     "title": "Mona Selim",
     "desc": "Development of Algorithms and Software for Reconstruction of the Images of Computed Tomography",
     "image": "assets/people/student2.jpg",
     "imageAlt": "Mona Selim",
     "url": ""
-  }
+  },
+  {
+    "meta": "2022 • Doctor Course (Suez Canal University)",
+    "title": "Dina Elmanakhly",
+    "desc": "Development of Algorithms and Software for Reconstruction of the Images of Computed Tomography",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Dina Elmanakhly",
+    "url": ""
+  },
+  {
+    "meta": "2016 • Master Course (Suez Canal University)",
+    "title": "Mona Selim",
+    "desc": "Development of image reconstruction algorithms for low-dose computed",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Mona Selim",
+    "url": ""
+  },
+  {
+    "meta": "2016 • Master Course (Suez Canal University)",
+    "title": "Dina Elmanakhly",
+    "desc": "Multimodal interactive system in ubiquitous environment",
+    "image": "assets/people/student2.jpg",
+    "imageAlt": "Mona Selim",
+    "url": ""
+  }, 
+  {
+    "meta": "2015 • Doctor Course (Suez Canal University)",
+    "title": "Mohamed Awad",
+    "desc": "Implementation of an incremental automatic theorem prover",
+    "image": "assets/people/student1.jpg",
+    "imageAlt": "Mohamed Awad",
+    "url": ""
+  }, 
+  
 ]
