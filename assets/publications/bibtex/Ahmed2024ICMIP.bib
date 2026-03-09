@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3665026.3665048,
+author = {Salah, Ahmed Tamer and Khoriba, Ghada and Rashed, Essam A.},
+title = {Segmentation of retinal arteries and veins using deep learning with limited training data},
+year = {2024},
+isbn = {9798400716164},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3665026.3665048},
+doi = {10.1145/3665026.3665048},
+abstract = {This paper presents a novel image segmentation model specifically designed for the semantic segmentation of retinal arteries and veins in infrared reflection (RAVIR) imaging. The main challenge of this problem is the limitation of the dataset (RAVIR) used in this study with only 23 subjects. To overcome this problem, we introduce a unique augmentation pipeline, enhancing the dataset through rotations and various image processing techniques. This approach includes three training rounds with different dataset compositions to strengthen the model foundation and fine-tune the performance. We propose the Res-UNet model, an advanced variant of UNet with residual blocks tailored for precise localization in medical image segmentation. Experimental studies reveal that traditional loss functions like Tversky and dice coefficients pose challenges in multi-class segmentation. However, the sparse categorical cross-entropy loss function combined with the Res-UNet architecture leads to remarkable performance improvement. The model achieves a dice coefficient accuracy of 80.52\% on the augmented dataset, demonstrating its effectiveness in handling complex blood vessel segmentation tasks. This study contributes to the medical image analysis field and provides insights into handling limited datasets in machine learning applications.},
+booktitle = {Proceedings of the 2024 9th International Conference on Multimedia and Image Processing},
+pages = {146–151},
+numpages = {6},
+keywords = {Image segmentation, Res-UNet, U-Net architecture, deep learning, medical imaging, retinal images},
+location = {Osaka, Japan},
+series = {ICMIP '24}
+}
