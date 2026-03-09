@@ -70,4 +70,40 @@
       }
     ]
   },
+  {
+    "type": "journal",
+    "year": "2026",
+    "title": "MammoClean: Toward Reproducible and Bias-Aware AI in Mammography through Dataset Harmonization",
+    "badge": "2026 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "Y. Zafari, H. Pan, G. Durak, U. Bagci, E. A. Rashed, M. Mabrok. <em>IEEE Access</em>, 000, 000000.",
+    "keywords": [
+      "mammography", 
+      "breast cancer", 
+      "data harmonization", 
+      "dataset bias", 
+      "deep learning"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "Open access",
+        "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "#"
+      },
+      {
+        "label": "Dataset",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/TBA.bib"
+      }
+    ]    
+  }
 ]
