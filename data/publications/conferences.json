@@ -505,7 +505,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/36kihms5h36cwp2/Fisal2022Rev.pdf?dl=0"
+        "url": "assets/publications/pdf/Fisal2022Rev.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Fisal2022Rev.bib"
       }
     ]
   },
@@ -520,6 +524,14 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1109/NSS/MIC44867.2021.9875897"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Mona2021MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mona2021MIC.bib"
       }
     ]
   },
@@ -537,7 +549,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/umt61obfzslwox4/Rashed_2019_ICIP.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2019MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2019MIC.bib"
       }
     ]
   },
@@ -555,7 +571,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/vuubger18tsbcwv/Gomez_2019_EMC.pdf?dl=0"
+        "url": "assets/publications/pdf/Gomez2019EMC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Gomez2019EMC.bib"
       }
     ]
   },
@@ -573,7 +593,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/r14ziu2k9sw03v2/Rashed_2019_ICSIE.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2019ICSIE.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2019ICSIE.bib"
       }
     ]
   },
@@ -591,7 +615,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/lvx384xs10kar53/Mona_CIBEC2018.pdf?dl=0"
+        "url": "assets/publications/pdf/Mona2018CIBEC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mona2018CIBEC.bib"
       }
     ]
   },
@@ -609,7 +637,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/r4vo91sp8rnykll/Rashed_MIC2018.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2018MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2018MIC.bib"
       }
     ]
   },
