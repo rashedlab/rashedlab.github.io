@@ -26,5 +26,47 @@
         "url": "#"
       }
     ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Physics-Informed Slot Attention for Robust Four-View Mammography Classification",
+    "badge": "2026 • MICCAI",
+    "meta": "M. Mabrok, Y. Zafari, E. A. Rashed. The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI2026), Abu Dhabi, UAE, 4*8 oct. 2026.",
+    "keywords": "Physics-Informed Slot Attention for Robust Four-View Mammography Classification",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Energy-Mamba: A Physics-Constrained State-Space Model for Medical Image Analysis",
+    "badge": "2026 • MICCAI",
+    "meta": "M. Mabrok, Y. Zafari, E. A. Rashed. The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI2026), Abu Dhabi, UAE, 4*8 oct. 2026.",
+    "keywords": "Energy-Mamba: A Physics-Constrained State-Space Model for Medical Image Analysis",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "AutoPrompt-MedSAM2: Automatic Box Prompting for Brain Tumor Segmentation in MRI",
+    "badge": "2026 • MICCAI",
+    "meta": "Z. Elshaer, A. T. Elboardy, G. Khoriba, M. Mabrok, E. A. Rashed. The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI2026), Abu Dhabi, UAE, 4*8 oct. 2026.",
+    "keywords": "AutoPrompt-MedSAM2: Automatic Box Prompting for Brain Tumor Segmentation in MRI",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
   }
 ]
