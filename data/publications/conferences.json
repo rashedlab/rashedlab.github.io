@@ -217,6 +217,10 @@
       {
         "label": "PDF",
         "url": "assets/publications/pdf/Rashed2025ISBI.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2025ISBI.bib"
       }
     ]
   },
@@ -235,6 +239,10 @@
       {
         "label": "PDF",
         "url": "assets/publications/pdf/Nouman2025ISBI.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Nouman2025ISBI.bib"
       }
     ]
   },
@@ -249,6 +257,10 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1109/LT64002.2025.10941308"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Elboardy2025LS.bib"
       }
     ]
   },
@@ -396,6 +408,14 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1145/3665026.3665049"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Nouman2024ICMIP.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Nouman2024ICMIP.bib"
       }
     ]
   },
@@ -410,6 +430,14 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1145/3665026.3665048"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Ahmed2024ICMIP.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Ahmed2024ICMIP.bib"
       }
     ]
   },
@@ -424,6 +452,14 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1145/3665026.3665045"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Soliman2024ICMIP.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Soliman2024ICMIP.bib"
       }
     ]
   },
