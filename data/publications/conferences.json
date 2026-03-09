@@ -26,7 +26,7 @@
         "url": "https://proceedings.mlr.press/v317/jia26a.html"
       },
       {
-        "label": "PDF",
+        "label": "Open access",
         "url": "https://raw.githubusercontent.com/mlresearch/v317/main/assets/jia26a/jia26a.pdf"
       },
       {
@@ -48,7 +48,7 @@
         "url": "https://proceedings.mlr.press/v317/zafari26a.html"
       },
       {
-        "label": "PDF",
+        "label": "Open access",
         "url": "https://raw.githubusercontent.com/mlresearch/v317/main/assets/zafari26a/zafari26a.pdf"
       },
       {
@@ -71,7 +71,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/scl/fi/c4ux0crvaokd1hsy002zv/IWAIT2026.pdf?rlkey=7w2wa5oq42np27uz1e3s3jhgd&st=o8ty4n6b&dl=0"
+        "url": "assets/publications/pdf/Ziad2026iwait.pdf"
       },
       {
         "label": "BibTex",
@@ -103,7 +103,7 @@
     "links": [
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/scl/fi/rahqb84fcjk1mct53bvvt/FMLDS2025_Salma.pdf?rlkey=8s76dfroyhowb49o7l668i5fp&st=a3jhsphg&dl=0"
+        "url": "assets/publications/pdf/Salma2025FMLDS.pdf"
       }
     ]
   },
@@ -166,7 +166,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/scl/fi/0skd6hpw5lwbuaj6rspwl/Yalda_ACDSA2025.pdf?rlkey=nfntxt2sof2fpweii31pnsull&st=2rc6fwls&dl=0"
+        "url": "assets/publications/pdf/Yalda2025ACDSA.pdf"
       },
       {
         "label": "BibTex",
@@ -198,7 +198,7 @@
     "links": [
       {
         "label": "DOI",
-        "url": "#https://doi.org/10.11239/jsmbe.Annual63.445"
+        "url": "https://doi.org/10.11239/jsmbe.Annual63.445"
       }
     ]
   },
@@ -216,7 +216,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://drive.google.com/file/d/1AYqpeRnUOhaDuLkJz3ZF6dWS5pvGZrjT/view?usp=sharing"
+        "url": "assets/publications/pdf/Rashed2025ISBI.pdf"
       }
     ]
   },
@@ -234,7 +234,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://drive.google.com/file/d/10BKZWloXZkB7naYfct8NHNPIxfe8NSXy/view?usp=sharing"
+        "url": "assets/publications/pdf/Nouman2025ISBI.pdf"
       }
     ]
   },
@@ -280,7 +280,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/scl/fi/3njpeeydv4i2yu6wvvf2l/FMLDS24_Nouman.pdf?rlkey=vn22p3dnmjalqx7z1girmzpa2&st=pilx5x1k&dl=0"
+        "url": "assets/publications/pdf/Nouman2024FMLDS.pdf"
       }
     ]
   },
@@ -298,7 +298,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/scl/fi/ggo6o0632go5cgd9fow2f/FMLDS25_Heidi.pdf?rlkey=xw18fqjobrw7f2t5cp0c5api5&st=j8q1t7bj&dl=0"
+        "url": "assets/publications/pdf/Heidi2024FMLDS.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Heidi2024FMLDS.bib"
       }
     ]
   },
@@ -316,7 +320,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/scl/fi/s0mnpf6oth0orzbqxu3dm/FMLDS25_Mabrok.pdf?rlkey=x72d1fjwgc0c58mmuzys2z78n&st=wo0lni12&dl=0"
+        "url": "assets/publications/pdf/Mabrok2024FMLDS.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mabrok2024FMLDS.bib"
       }
     ]
   },
@@ -334,7 +342,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/scl/fi/nbnffur19rly835f55tol/FMLDS25_Rashed.pdf?rlkey=pmvh6x5rjx15ea5irvqvzcucu&st=3mj250dd&dl=0"
+        "url": "assets/publications/pdf/Rashed2024FMLDS.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2024FMLDS.bib"
       }
     ]
   },
@@ -352,7 +364,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/scl/fi/02eugoai9i286u3qdj5os/FMLDS25_Mina.pdf?rlkey=v06x7llc0kuqz8txvrnfnllq2&st=52runqgg&dl=0"
+        "url": "assets/publications/pdf/Mina2024FMLDS.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mina2024FMLDS.bib"
       }
     ]
   },
