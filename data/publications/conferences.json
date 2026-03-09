@@ -281,6 +281,10 @@
       {
         "label": "PDF",
         "url": "assets/publications/pdf/Nouman2024FMLDS.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Nouman2024FMLDS.bib"
       }
     ]
   },
