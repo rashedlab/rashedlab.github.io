@@ -583,8 +583,8 @@
     "type": "conference",
     "year": 2019,
     "title": "Deep Learning approach for breast cancer diagnosis",
-    "badge": "2019 • CIBEC",
-    "meta": "E. A. Rashed, S. El-Seoud. Cairo International Biomedical Engineering Conference 2018 (CIBEC'18), Cairo, Egypt, Apr. 2019.",
+    "badge": "2019 • ICSIE",
+    "meta": "E. A. Rashed, S. El-Seoud. Proceedings of the 8th International Conference on Software and Information Engineering 2019 (ICSIE'19), Cairo, Egypt, Apr. 2019.",
     "keywords": "cibec breast cancer diagnosis deep learning",
     "links": [
       {
@@ -606,7 +606,7 @@
     "year": 2018,
     "title": "Image Reconstruction using Self Prior Information for Sparse-View Computed Tomography",
     "badge": "2018 • CIBEC • 🏆 Best Student Paper Award",
-    "meta": "M. Selim, E. A. Rashed, M. A. Atiea, H. Kudo. CIBEC'18, Cairo, Egypt, Dec. 2018.",
+    "meta": "M. Selim, E. A. Rashed, M. A. Atiea, H. Kudo. Cairo International Biomedical Engineering Conference 2018 (CIBEC'18), Cairo, Egypt, Dec. 2018.",
     "keywords": "cibec sparse-view ct reconstruction self prior information best student paper award",
     "links": [
       {
@@ -649,8 +649,8 @@
     "type": "conference",
     "year": 2018,
     "title": "An interactive mixed reality imaging system for minimally invasive surgeries",
-    "badge": "2018 • IEEE ICSIE",
-    "meta": "S. El-Seoud, A. S. Mady, E. A. Rashed. 7th IEEE International Conference on Software and Information Engineering (ICSIE 2018), Cairo, Egypt, May 2018.",
+    "badge": "2018 • ICSIE",
+    "meta": "S. El-Seoud, A. S. Mady, E. A. Rashed. Proceedings of the 7th International Conference on Software and Information Engineering (ICSIE 2018), Cairo, Egypt, May 2018.",
     "keywords": "icsie mixed reality imaging system minimally invasive surgeries",
     "links": [
       {
@@ -659,7 +659,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/onzg4qp3jo0qf0t/Amr_ICSIE2018.pdf?dl=0"
+        "url": "assets/publications/pdf/Amr2018ICSIE.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Amr2018ICSIE.bib"
       }
     ]
   },
@@ -667,8 +671,8 @@
     "type": "conference",
     "year": 2018,
     "title": "Computer Aided Diagnosis System for Liver Cirrhosis Based on Ultrasound images",
-    "badge": "2018 • IEEE ICSIE",
-    "meta": "R. Rabie, M. M. Eltoukhy, M. al-Shatouri, E. A. Rashed. IEEE ICSIE 2018, Cairo, Egypt, May 2018.",
+    "badge": "2018 • ICSIE",
+    "meta": "R. Rabie, M. M. Eltoukhy, M. al-Shatouri, E. A. Rashed. Proceedings of the 7th International Conference on Software and Information Engineering (ICSIE 2018), Cairo, Egypt, May 2018.",
     "keywords": "icsie liver cirrhosis ultrasound cad system",
     "links": [
       {
@@ -677,7 +681,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/v3869guxc859tp4/Reham_ICSIE2018.pdf?dl=0"
+        "url": "assets/publications/pdf/Reham2018ICSIE.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Reham2018ICSIE.bib"
       }
     ]
   },
@@ -685,8 +693,8 @@
     "type": "conference",
     "year": 2018,
     "title": "Image denoising technique for CT dose modulation",
-    "badge": "2018 • IEEE ICSIE",
-    "meta": "H. A. Elyamani, S. El-Seoud, E. A. Rashed. IEEE ICSIE 2018, Cairo, Egypt, May 2018.",
+    "badge": "2018 • ICSIE",
+    "meta": "H. A. Elyamani, S. El-Seoud, E. A. Rashed. Proceedings of the 7th International Conference on Software and Information Engineering (ICSIE 2018), Cairo, Egypt, May 2018.",
     "keywords": "icsie image denoising ct dose modulation",
     "links": [
       {
@@ -695,7 +703,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/6pf7xpo4h27uazh/Hanin_ICSIE2018.pdf?dl=0"
+        "url": "assets/publications/pdf/Hanin2018ICSIE.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Hanin2018ICSIE.bib"
       }
     ]
   },
