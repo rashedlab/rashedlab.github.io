@@ -688,11 +688,11 @@
       },
       {
         "label": "Open access",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/38306964/"
+        "url": "https://iopscience.iop.org/article/10.1088/1361-6560/ad25c3/pdf"
       },
       {
         "label": "PubMed",
-        "url": "https://iopscience.iop.org/article/10.1088/1361-6560/ad25c3/pdf"
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38306964/"
       },
       {
         "label": "BibTex",
@@ -812,11 +812,11 @@
       },
       {
         "label": "Open access",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/36445638/"
+        "url": "https://link.springer.com/article/10.1007/s11524-022-00697-5"
       },
       {
         "label": "PubMed",
-        "url": "https://link.springer.com/article/10.1007/s11524-022-00697-5"
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36445638/"
       },
       {
         "label": "BibTex",
@@ -848,11 +848,11 @@
       },
       {
         "label": "Open access",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/36366329/"
+        "url": "https://www.mdpi.com/2076-393X/10/11/1820/htm"
       },
       {
         "label": "PubMed",
-        "url": "https://www.mdpi.com/2076-393X/10/11/1820/htm"
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36366329/"
       },
       {
         "label": "BibTex",
@@ -882,11 +882,11 @@
       },
       {
         "label": "Open access",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/36269756/"
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276523"
       },
       {
         "label": "PubMed",
-        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276523"
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36269756/"
       },
       {
         "label": "BibTex",
@@ -914,7 +914,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/ogcvw72gxw6ehj5/Diao2022TEMC.pdf?dl=0"
+        "url": "assets/publications/pdf/Diao2022TEMC.pdf"
       },
       {
         "label": "BibTex",
@@ -948,7 +948,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/j8a7bmpihvbywdh/Rashed2022PMB.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2022CBM.pdf"
       },
       {
         "label": "BibTex",
@@ -1049,7 +1049,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/htwp13d3lohcxs5/Hirata2022CBM.pdf?dl=0"
+        "url": "assets/publications/pdf/Hirata2022CBM.pdf"
       },
       {
         "label": "BibTex",
@@ -1200,7 +1200,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/vlybafhfigm0hhm/Hirata2021TEMC.pdf?dl=0"
+        "url": "assets/publications/pdf/Hirata2021TEMC.pdf"
       },
       {
         "label": "BibTex",
@@ -1255,7 +1255,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/2t9bpvgts6w1qj3/Nishimura2021.pdf?dl=0"
+        "url": "assets/publications/bibtex/Nishimura2021SCS.bib"
       },
       {
         "label": "BibTex",
@@ -1379,7 +1379,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/6tma0gj1ionbhw7/Rashed2021JBE.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2021JBI.pdf"
       },
       {
         "label": "Software",
@@ -1453,7 +1453,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/t3ylufn057dnz1n/Rashed2021PMB.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2021PMB.pdf"
       },
       {
         "label": "BibTex",
@@ -1517,7 +1517,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/54agf09vswxcl8o/Reda2021IJOSSP.pdf?dl=0"
+        "url": "assets/publications/pdf/Nagwa2021oss.pdf"
       },
       {
         "label": "BibTex",
@@ -1581,7 +1581,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/8doww08glyt12m3/Diao2020PMB.pdf?dl=0"
+        "url": "assets/publications/pdf/Diao2020PMB.pdf"
       },
       {
         "label": "BibTex",
@@ -1610,7 +1610,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/kom7tcyd1mi6tlh/Rashed2020TEMC.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2020TEMC.pdf"
       },
       {
         "label": "BibTex",
@@ -1644,7 +1644,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/8jw2gvak5y0bmm3/Kodera2020CBM.pdf?dl=0"
+        "url": "assets/publications/pdf/Kodera2020CBM.pdf"
       },
       {
         "label": "BibTex",
@@ -1743,7 +1743,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/8e34pb3t6uxnmx0/Rashed2020NN.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2020NN.pdf"
       },
       {
         "label": "BibTex",
@@ -1814,7 +1814,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/tbckels1w4c0w92/Rashed2020PMB.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2020PMB.pdf"
       },
       {
         "label": "BibTex",
@@ -1848,7 +1848,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/q0r2pjudx7f9svz/Rashed2020TMI.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2020TMI.pdf"
       },
       {
         "label": "BibTex",
@@ -1911,7 +1911,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/j3yh5gkdvbc7as8/Rashed2019NI.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2019NI.pdf"
       },
       {
         "label": "BibTex",
@@ -2033,7 +2033,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/81cbyewm9fiyyj8/Torieh2019EG.pdf?dl=0"
+        "url": "assets/publications/pdf/Torieh2019EG.pdf"
       },
       {
         "label": "BibTex",
@@ -2091,7 +2091,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/ln41o6xgr9zu983/Rashed2017CG.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2017CG.pdf"
       },
       {
         "label": "BibTex",
@@ -2123,7 +2123,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/zdao13cydz3we2u/Rashed2016CMPB.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2016CMPB.pdf"
       },
       {
         "label": "BibTex",
@@ -2183,7 +2183,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/2b2gtdmqqde8wka/Rashed2015CBM.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2015CBM.pdf"
       },
       {
         "label": "BibTex",
@@ -2252,7 +2252,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/z6ppp9099qizpod/Rashed2013JSR.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2013JSR.pdf"
       },
       {
         "label": "BibTex",
@@ -2280,7 +2280,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/8gn1sfsvtmqesko/Rashed2013MIT.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2013MIT.pdf"
       },
       {
         "label": "BibTex",
@@ -2313,7 +2313,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/zo3legb0e1mxodv/Rashed2012PMB.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2012PMB.pdf"
       },
       {
         "label": "BibTex",
@@ -2341,7 +2341,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/aio2h7egfgpxsl7/Rashed2009MITb.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2009MITb.pdf"
       },
       {
         "label": "BibTex",
@@ -2369,7 +2369,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/u6k8opf3rioye52/Rashed2009MITa.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2009MITa.pdf"
       },
       {
         "label": "BibTex",
@@ -2396,7 +2396,7 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/lsqxnyeufqglwwt/Rashed2007PRL.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2007PRL.pdf"
       },
       {
         "label": "BibTex",
