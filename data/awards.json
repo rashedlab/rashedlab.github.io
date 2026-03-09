@@ -238,6 +238,19 @@
       ]
     },
     {
+      "meta": "2020 • News paper's front page",
+      "title": "🏅 Chunishi News paper 中日新聞",
+      "desc": "Our research work in predecting new COVID-19 cases is highlighted in the first page isse of 12 Dec 2020",
+      "image": "assets/awards/chunichi2020.jpg",
+      "alt": "News paper",
+      "links": [
+        {
+          "label": "Journal page",
+          "url": "https://www.nitech.ac.jp/news/press/2021/9068.html"
+        }
+      ]
+    },
+    {
       "meta": "2020 • IEEE Access",
       "title": "🏅 Associate Editor",
       "desc": "E. Rashed is Associate Editor of IEEE Access for term 2020-",
