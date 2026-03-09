@@ -28,6 +28,10 @@
       {
         "label": "PDF",
         "url": "https://raw.githubusercontent.com/mlresearch/v317/main/assets/jia26a/jia26a.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Yiming2026AAAI.bib"
       }
     ]
   },
@@ -46,6 +50,10 @@
       {
         "label": "PDF",
         "url": "https://raw.githubusercontent.com/mlresearch/v317/main/assets/zafari26a/zafari26a.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Yalda2026AAAI.bib"
       }
     ]
   },
