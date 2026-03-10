@@ -941,7 +941,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/ikfekqu62sk4e7t/Mona_MIC2015.pdf?dl=0"
+        "url": "assets/publications/pdf/Mona2015MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mona2015MIC.bib"
       }
     ]
   },
@@ -959,7 +963,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/msn7hmq96ns9jlw/Amr_MIC2015.pdf?dl=0"
+        "url": "assets/publications/pdf/Amr2015MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Amr2015MIC.bib"
       }
     ]
   },
@@ -977,7 +985,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/8zgnequmkh3ofka/Mona_CIBEC2014.pdf?dl=0"
+        "url": "assets/publications/pdf/Mona2014CIBEC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mona2014CIBEC.bib"
       }
     ]
   },
@@ -995,7 +1007,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/bvawgs0qkywd9iu/Rashed_MIC2013.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2013MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2013MIC.bib"
       }
     ]
   },
@@ -1019,6 +1035,14 @@
       {
         "label": "DOI",
         "url": "http://dx.doi.org/10.1117/12.911205"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Wang2012SPIE.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Wang2012SPIE.bib"
       }
     ]
   },
@@ -1036,7 +1060,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/h0esjebbgcdya1g/Rashed_MIC2011_a.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2011MICa.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2011MICa.bib"
       }
     ]
   },
@@ -1054,7 +1082,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/5kawnr6rum6nvn2/Rashed_MIC2011_b.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2011MICb.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2011MICb.bib"
       }
     ]
   },
@@ -1072,7 +1104,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/6bvjqx6cnykp879/Rashed_MIC2011_c.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2011MICc.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2011MICc.bib"
       }
     ]
   },
@@ -1090,7 +1126,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/46riou9odrtqn59/Rashed_MIC2011_d.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2011MICd.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2011MICd.bib"
       }
     ]
   },
@@ -1108,7 +1148,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/20mds89kdh9lc0i/Rashed_MIC2008.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2008MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2008MIC.bib"
       }
     ]
   },
@@ -1126,7 +1170,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/q3dvnagqixmaaba/Rashed_MIC2007.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2007MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2007MIC.bib"
       }
     ]
   },
