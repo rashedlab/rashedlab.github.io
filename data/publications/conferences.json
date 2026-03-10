@@ -725,7 +725,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/pht9o8038g0qehv/Hanin_ICCES2017.pdf?dl=0"
+        "url": "assets/publications/pdf/Hanin2017ICCES.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Hanin2017ICCES.bib"
       }
     ]
   },
@@ -743,7 +747,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/t3t0rvqmw2ho562/Rashed_ICKEA2017.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2017ICKEA.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2017ICKEA.bib"
       }
     ]
   },
@@ -761,7 +769,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/ff9l3c80kgxbp9f/Dong_SPIE2017.pdf?dl=0"
+        "url": "assets/publications/pdf/Dong2017SPIE.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Dong2017SPIE.bib"
       }
     ]
   },
@@ -779,7 +791,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/cug7b39qyb3wfi8/Esraa_CIBEC2016.pdf?dl=0"
+        "url": "assets/publications/pdf/Esraa2016CIBEC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Esraa2016CIBEC.bib"
       }
     ]
   },
@@ -797,7 +813,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/vmc1r2dat90qwme/Rashed_MIC2016.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2016MICa.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2016MICa.bib"
       }
     ]
   },
@@ -815,7 +835,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/3jm4otnavtlpjqb/Rashed_MIC2016_b.pdf?dl=0"
+        "url": "assets/publications/pdf/Rashed2016MICb.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Rashed2016MICb.bib"
       }
     ]
   },
@@ -833,7 +857,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/a7meddfo6wptxah/Mona_MIC2016.pdf?dl=0"
+        "url": "assets/publications/pdf/Mona2016MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mona2016MIC.bib"
       }
     ]
   },
@@ -851,7 +879,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/hvvp11ikvo3989c/Esraa_MIC2016.pdf?dl=0"
+        "url": "assets/publications/pdf/Esraa2016MIC.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Esraa2016MIC.bib"
       }
     ]
   },
@@ -866,6 +898,10 @@
       {
         "label": "DOI",
         "url": "http://dx.doi.org/10.1117/12.2237110"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Mona2016SPIE.bib"
       }
     ]
   },
@@ -883,7 +919,11 @@
       },
       {
         "label": "PDF",
-        "url": "https://www.dropbox.com/s/w8cakl5pyyra3yq/Dina_HCI2016.pdf?dl=0"
+        "url": "assets/publications/pdf/Dina2016HCI.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Dina2016HCI.bib"
       }
     ]
   },
