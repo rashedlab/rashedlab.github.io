@@ -2,7 +2,7 @@
   {
     "type": "other",
     "year": 2024,
-    "title": "脳腫瘍患者に対するTMS刺激を用いた脳機能診断における頭部モデル構築手法の影響 ",
+    "title": "脳腫瘍患者に対するTMS刺激を用いた脳機能診断における頭部モデル構築手法の影響",
     "badge": "2024",
     "meta": "盛山隆聖、 小寺紗千子、 Essam A. Rashed、田村学、 平田晃正、電子情報通信学会技術研究報告(Web) 124(210(EMCJ2024 36-69))",
     "keywords": "",
@@ -10,6 +10,62 @@
       {
         "label": "Link",
         "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202402285142180899"
+      }
+    ]
+  },
+  {
+    "type": "other",
+    "year": 2024,
+    "title": "脳腫瘍患者TMS刺激による脳機能診断における頭部モデル構築手法の影響",
+    "badge": "2024",
+    "meta": "盛山隆聖、小寺紗千子、Essam A. Rashed、田村学、平田晃正、電子情報通信学会大会講演論文集(CD-ROM)",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202502240015631633"
+      }
+    ]
+  },
+  {
+    "type": "other",
+    "year": 2022,
+    "title": "パンデミック感染症COVID-19を経験して-危機管理の視点からの考察 深層学習(AI)に基づく新型コロナウイルス感染症流行の予測",
+    "badge": "2022",
+    "meta": "平田晃正、小寺紗千子、Essam A. Rashed、臨床と微生物 49(3) 2022年",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202202219673495807"
+      }
+    ]
+  },
+  {
+    "type": "other",
+    "year": 2021,
+    "title": "リードフィールド行列に基づいた脳波源の位置推定に関する特性評価",
+    "badge": "2021",
+    "meta": "森寺峻義、Essam A. Rashed、平田晃正、電子情報通信学会技術研究報告(Web) 120(328(EST2020 53-78)) 2021年",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202102233793154283"
+      }
+    ]
+  },
+  {
+    "type": "other",
+    "year": 2021,
+    "title": "接触電流による局所SARと温度上昇の数値解析",
+    "badge": "2021",
+    "meta": "村川太希, Yinliang Diao, Essam Rashed, 上村佳嗣, 平田晃正、電子情報通信学会技術研究報告(Web) 120(328(EST2020 53-78)) 2021年",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202102254840810479"
       }
     ]
   },
