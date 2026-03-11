@@ -1,6 +1,20 @@
 [
   {
     "type": "other",
+    "year": 2024,
+    "title": "脳腫瘍患者に対するTMS刺激を用いた脳機能診断における頭部モデル構築手法の影響 ",
+    "badge": "2024",
+    "meta": "盛山隆聖、 小寺紗千子、 Essam A. Rashed、田村学、 平田晃正、電子情報通信学会技術研究報告(Web) 124(210(EMCJ2024 36-69))",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202402285142180899"
+      }
+    ]
+  },
+  {
+    "type": "other",
     "year": 2022,
     "title": "深層学習(AI)に基づく新型コロナウイルス感染症流行の予測",
     "badge": "2022",
