@@ -43,6 +43,20 @@
   },
   {
     "type": "other",
+    "year": 2022,
+    "title": "深層学習(AI)に基づく新型コロナウイルス感染症流行の予測",
+    "badge": "2022",
+    "meta": "平田 晃正、小寺 紗千子、ラシド イサム、臨床と微生物 49巻3号 2022-5 (近代出版、ISBN: 978-4874022818)",
+    "keywords": "patent medical imaging software",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://www.amazon.co.jp/s?k=%E8%87%A8%E5%BA%8A%E3%81%A8%E5%BE%AE%E7%94%9F%E7%89%A9+49%E5%B7%BB3%E5%8F%B7&crid=10Z3AUEGBVSCU&sprefix=%E8%87%A8%E5%BA%8A%E3%81%A8%E5%BE%AE%E7%94%9F%E7%89%A9+49%E5%B7%BB3%E5%8F%B7%2Caps%2C158&ref=nb_sb_noss"
+      }
+    ]
+  },
+  {
+    "type": "other",
     "year": 2021,
     "title": "リードフィールド行列に基づいた脳波源の位置推定に関する特性評価",
     "badge": "2021",
@@ -71,15 +85,57 @@
   },
   {
     "type": "other",
-    "year": 2022,
-    "title": "深層学習(AI)に基づく新型コロナウイルス感染症流行の予測",
-    "badge": "2022",
-    "meta": "平田 晃正、小寺 紗千子、ラシド イサム、臨床と微生物 49巻3号 2022-5 (近代出版、ISBN: 978-4874022818)",
-    "keywords": "patent medical imaging software",
+    "year": 2021,
+    "title": "名古屋市における熱中症搬送者予測-ニューラルネットワークと非線形回帰によるアプローチ-",
+    "badge": "2021",
+    "meta": "平田晃正, 小寺紗千子, RASHED Essam, 電子情報通信学会大会講演論文集(CD-ROM) 2021年",
+    "keywords": "",
     "links": [
       {
         "label": "Link",
-        "url": "https://www.amazon.co.jp/s?k=%E8%87%A8%E5%BA%8A%E3%81%A8%E5%BE%AE%E7%94%9F%E7%89%A9+49%E5%B7%BB3%E5%8F%B7&crid=10Z3AUEGBVSCU&sprefix=%E8%87%A8%E5%BA%8A%E3%81%A8%E5%BE%AE%E7%94%9F%E7%89%A9+49%E5%B7%BB3%E5%8F%B7%2Caps%2C158&ref=nb_sb_noss"
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202102254768294666"
+      }
+    ]
+  },
+  {
+    "type": "other",
+    "year": 2021,
+    "title": "Segmentation-free頭部モデルを用いた脳波源の分布推定に関する数値的・実験的評価",
+    "badge": "2021",
+    "meta": "水谷笙吾, RASHED Essam, GOMEZ-TAMES Jose, 和坂俊昭, 木田哲夫, 木田哲夫, 平田晃正, 電子情報通信学会大会講演論文集(CD-ROM) 2021年 ",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202102240503193511"
+      }
+    ]
+  },
+  {
+    "type": "other",
+    "year": 2019,
+    "title": "物理解析に基づく高齢者の熱中症搬送人員数予測に関する検討",
+    "badge": "2019",
+    "meta": "西村卓, 小寺紗千子, RASHED Essam, 竹内一郎, 江川隆輔, 平田晃正, 電子情報通信学会大会講演論文集(CD-ROM) 2019年",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201902288809924062"
+      }
+    ]
+  },
+  {
+    "type": "other",
+    "year": 2019,
+    "title": "畳込みニューラルネットワークを用いたMRIからの個人化頭部モデル",
+    "badge": "2019",
+    "meta": "RASHED Essam A., GOMEZ-TAMES Jose, HIRATA Akimasa, 電子情報通信学会技術研究報告 119(42(EST2019 1-7)) 2019年",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201902211715159489"
       }
     ]
   },
