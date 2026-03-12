@@ -186,7 +186,7 @@
       "meta": "2010 • University of Tsukuba",
       "title": "🏆 Best Project Award 表彰状",
       "desc": "E. Rashed received the Best Research Project, Program for Development of ICT Solution Architect",
-      "image": "assets/awards/project2010tsukuba.jpg",
+      "image": "assets/awards/CS_Tsukuba_Award.jpg",
       "alt": "Best Project Award",
       "links": []
     },
@@ -343,6 +343,14 @@
           "url": "http://dx.doi.org/10.3978/j.issn.2223-4292.2013.06.01"
         }
       ]
+    },
+        {
+      "meta": "2010 • University of Tsukuba",
+      "title": "🏅 Certificate of Completion 修了証",
+      "desc": "E. Rashed received the certificate of Completion, Program for Development of ICT Solution Architect",
+      "image": "assets/awards/project2010tsukuba.jpg",
+      "alt": "修了証",
+      "links": []
     }
   ]
 }
