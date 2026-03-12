@@ -16,6 +16,7 @@ const SITE_CONFIG = {
   NeuroImgIF: "4.5",
   BDCCIF: "4.4",
   CompGeoIF: "4.4",
+  IJMIIF: "4.1",
   JUHIF: "4.1",
   BioEIF: "3.7",
   AccessIF: "3.6",
