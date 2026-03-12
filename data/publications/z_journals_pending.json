@@ -105,5 +105,40 @@
         "url": "assets/publications/bibtex/TBA.bib"
       }
     ]    
+  },
+  {
+    "type": "journal",
+    "year": "2026",
+    "title": "MedAgentNet: Federated Multi-Agent AI for Privacy-Preserving Cross-Departmental Clinical Intelligence",
+    "badge": "2026 • Journal • IF{{IFYear}}={{IJMIIF}}",
+    "meta": "M. Mabrok, Y. Zafari, Y. Cao, N. Yanai, E. A. Rashed. <em>International Journal of Medical Informatics</em>, 000, 000000.",
+    "keywords": [
+      "MedAgentNet", 
+      "Federated learning", 
+      "Multi-Agent AI", 
+      "Privacy-Preserving"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "Open access",
+        "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "#"
+      },
+      {
+        "label": "Dataset",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/TBA.bib"
+      }
+    ]    
   }
 ]
