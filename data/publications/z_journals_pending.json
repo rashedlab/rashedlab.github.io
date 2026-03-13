@@ -140,5 +140,40 @@
         "url": "assets/publications/bibtex/TBA.bib"
       }
     ]    
+  },
+  {
+    "type": "journal",
+    "year": "2026",
+    "title": "MaxVQA: A Large-Scale Multi-Source Dataset for Explanatory Visual Question Answering in Mammography",
+    "badge": "2026 • Journal • IF{{IFYear}}={{JBHIIF}}",
+    "meta": "M. Mabrok, Y. Zafari, R. Elsheikh, R. Mohamed, E. A. Rashed. <em>Journal of Biomedical and Health Informatics</em>, 000, 000000.",
+    "keywords": [
+      "MaxVQA", 
+      "Multi-Source Dataset", 
+      "Visual Question Answering", 
+      "Mammography"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "Open access",
+        "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "#"
+      },
+      {
+        "label": "Dataset",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/TBA.bib"
+      }
+    ]    
   }
 ]
