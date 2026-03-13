@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Full list of publications: books, journal papers, conference papers, presentations, others." />
+  <title>Rashed Lab | Publications</title>
+
+  <style>
+    :root{
+      --bg: #242e42;
+      --panel:#101827;
+      --panel2:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a3aab8;
+      --brand:#60a5fa;
+      --brand2:#34d399;
+      --border:#1f2a44;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 1100px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(96,165,250,.20), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(52,211,153,.14), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+
+    a{color:inherit; text-decoration:none}
+    a:hover{color:var(--brand)}
+
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+
+    header{
+      position:sticky; top:0;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,23,.70);
+      border-bottom: 1px solid rgba(31,42,68,.6);
+      z-index:50;
+    }
+
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0; gap:14px;
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:900; letter-spacing:.2px; white-space:nowrap;
+    }
+
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(96,165,250,.95), rgba(52,211,153,.9));
+      box-shadow: 0 10px 24px rgba(96,165,250,.25);
+      position:relative;
+    }
+
+    .logo:after{
+      content:"";
+      position:absolute; inset:9px;
+      border-radius:10px;
+      background: rgba(11,15,23,.55);
+      border:1px solid rgba(255,255,255,.12);
+    }
+
+    nav a{
+      padding:10px 10px;
+      border-radius:12px;
+      color:var(--muted);
+      font-weight:700;
+      font-size:14px;
+    }
+
+    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:800;
+      font-size:14px;
+      cursor:pointer;
+    }
+
+    .btn:hover{
+      border-color:rgba(96,165,250,.5);
+      box-shadow: 0 0 0 3px rgba(96,165,250,.18);
+    }
+
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(96,165,250,.9), rgba(52,211,153,.85));
+      border-color: transparent;
+      color:#071018;
+    }
+
+    .hero{padding:32px 0 10px}
+
+    .card{
+      background: rgba(16,24,39,.75);
+      border: 1px solid rgba(31,42,68,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .heroBox{padding:22px}
+
+    h1{
+      margin:10px 0 6px;
+      font-size:34px;
+      letter-spacing:-0.6px;
+      line-height:1.1;
+    }
+
+    .lead{margin:0; color:var(--muted); max-width:70ch}
+
+    .controls{
+      margin-top:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .input{
+      flex:1 1 320px;
+      display:flex; align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+    }
+
+    .input input{
+      width:100%;
+      border:none; outline:none;
+      background: transparent;
+      color: var(--text);
+      font-size:14px;
+    }
+
+    .select{
+      flex:0 0 auto;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      font-weight:800;
+      font-size:14px;
+      outline:none;
+      min-width:140px;
+    }
+
+    .chips{
+      display:flex; flex-wrap:wrap; gap:8px;
+      margin-top:12px;
+    }
+
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-weight:800;
+      font-size:13px;
+      cursor:pointer;
+      user-select:none;
+    }
+
+    .chip.active{
+      color: var(--text);
+      border-color: rgba(96,165,250,.5);
+      box-shadow: 0 0 0 3px rgba(96,165,250,.15);
+    }
+
+    main{padding:10px 0 40px}
+    section{padding:18px 0}
+
+    .sectionTitle{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:12px; margin-bottom:10px; flex-wrap:wrap;
+    }
+
+    h2{margin:0; font-size:20px; letter-spacing:-.2px}
+    .hint{margin:0; color:var(--muted); font-size:13px}
+
+    .pubList{display:grid; gap:12px}
+
+    .pub{
+      padding:14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31,42,68,.9);
+      background: rgba(150,150,150,.12);
+    }
+
+    .pubTop{
+      display:flex; justify-content:space-between; align-items:flex-start;
+      gap:12px; flex-wrap:wrap;
+      margin-bottom:6px;
+    }
+
+    .badge{
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.2px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      white-space:nowrap;
+    }
+
+    .title{margin:0; font-weight:900}
+    .meta{margin:6px 0 0; color:var(--muted); font-size:13px}
+    .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+
+    .linkBtn{
+      font-size:13px;
+      font-weight:900;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .empty{
+      padding:14px;
+      border-radius: var(--radius);
+      border: 1px dashed rgba(255,255,255,.18);
+      color: var(--muted);
+      background: rgba(255,255,255,.02);
+    }
+
+    footer{
+      padding:26px 0 38px;
+      border-top: 1px solid rgba(31,42,68,.6);
+      color: rgba(163,170,184,.9);
+    }
+
+    .footerRow{
+      display:flex; justify-content:space-between;
+      gap:14px; flex-wrap:wrap; align-items:center;
+    }
+
+    .small{font-size:13px}
+    #themeToggle{min-width:120px}
+
+    body.light{
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --panel2: #eef3f9;
+      --text: #162033;
+      --muted: #5f6b7a;
+      --brand: #2563eb;
+      --brand2: #10b981;
+      --border: #d7e0ea;
+      --shadow: 0 10px 30px rgba(15,23,42,.08);
+
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(37,99,235,.12), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(16,185,129,.10), transparent 55%),
+        var(--bg);
+      color: var(--text);
+    }
+
+    body.light header{
+      background: rgba(255,255,255,.82);
+      border-bottom: 1px solid rgba(215,224,234,.95);
+    }
+
+    body.light .card,
+    body.light .pub{
+      background: rgba(255,255,255,.88);
+      border-color: var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    body.light .chip,
+    body.light .input,
+    body.light .select{
+      background: rgba(239,244,250,.85);
+      border-color: rgba(215,224,234,1);
+      color: var(--text);
+    }
+
+    body.light nav a{color: var(--muted)}
+    body.light nav a:hover{
+      background: rgba(37,99,235,.08);
+      color: var(--text);
+    }
+
+    body.light .btn,
+    body.light .linkBtn{
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(215,224,234,1);
+      color: var(--text);
+    }
+
+    body.light .btn:hover{
+      border-color: rgba(37,99,235,.45);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+    }
+
+    body.light .btn.primary{
+      background: linear-gradient(135deg, rgba(37,99,235,.95), rgba(16,185,129,.85));
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    body.light .logo:after{
+      background: rgba(255,255,255,.65);
+      border: 1px solid rgba(22,32,51,.08);
+    }
+
+    body.light .lead,
+    body.light .meta,
+    body.light .hint,
+    body.light footer,
+    body.light .small,
+    body.light .empty{
+      color: var(--muted);
+    }
+
+    body.light footer{
+      border-top: 1px solid rgba(215,224,234,.95);
+    }
+
+    @media (max-width: 720px){
+      h1{font-size:28px}
+      nav{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Back to home">
+          <span class="logo" aria-hidden="true"></span>
+          <span>RASHED LAB</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <!-- <a href="index.html#research">Research</a> -->
+          <!-- <a href="index.html#people">People</a> -->
+          <a href="publications.html" style="color:var(--text); background:rgba(255,255,255,.06);">Publications</a>
+          <!-- <a href="grants.html">Grants</a> -->
+          <!-- <a href="awards.html">Awards</a> -->
+          <!-- <a href="index.html#contact">Contact</a> -->
+        </nav>
+
+        <div class="cta" style="display:flex; gap:10px; align-items:center;">
+          <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
+          <a class="btn primary" href="#top">Search</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero" id="top">
+    <div class="container">
+      <div class="card heroBox">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:flex-start;">
+          <div>
+            <h1>Publications</h1>
+            <p class="lead">
+              Full list grouped by type. Use search + filters to quickly find papers, books, and conference publications.
+            </p>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn" href="https://scholar.google.com/citations?user=ihTTcfkAAAAJ">Google Scholar</a>
+            <a class="btn" href="https://orcid.org/0000-0001-6571-9807">ORCID</a>
+            <a class="btn" href="https://www.researchgate.net/profile/Essam-Rashed">ResearchGate</a>
+            <a class="btn" href="https://researchmap.jp/erashed">Research Map</a>
+            <a class="btn" href="https://www.scopus.com/authid/detail.uri?authorId=24484116300">Scopus</a>
+            <a class="btn" href="https://dblp.org/pid/64/3400.html">DBLP</a>
+          </div>
+        </div>
+
+        <div class="controls" aria-label="Search and filters">
+          <div class="input" title="Search by title, authors, venue, keywords">
+            <span aria-hidden="true">🔎</span>
+            <input id="q" type="search" placeholder="Search publications (title, authors, venue, keywords)..." />
+          </div>
+
+          <select id="year" class="select" aria-label="Filter by year">
+            <option value="">All years</option>
+          </select>
+
+          <button class="btn" id="clearBtn" type="button">Clear</button>
+        </div>
+
+        <div class="chips" aria-label="Type filters">
+          <div class="chip active" data-type="all">All</div>
+          <div class="chip" data-type="book">Books & Chapters</div>
+          <div class="chip" data-type="journal">Journal Papers</div>
+          <div class="chip" data-type="conference">Conference Papers</div>
+          <div class="chip" data-type="presentation">Presentations</div>
+          <div class="chip" data-type="other">Others</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <section id="books">
+        <div class="sectionTitle">
+          <h2>Books & Book Chapters (<span id="countBK">0</span>)</h2>
+          <p class="hint">Monographs, edited volumes, and chapters.</p>
+        </div>
+        <div id="booksList" class="pubList" data-section="book">
+          <div class="empty">Loading books...</div>
+        </div>
+      </section>
+
+      <section id="journals">
+        <div class="sectionTitle">
+          <h2>Journal Papers (<span id="countJR">0</span>)</h2>
+          <p class="hint">Peer-reviewed journal articles</p>
+        </div>
+        <div id="journalsList" class="pubList" data-section="journal">
+          <div class="empty">Loading journals...</div>
+        </div>
+      </section>
+
+      <section id="conferences">
+        <div class="sectionTitle">
+          <h2>Conference Papers (<span id="countCF">0</span>)</h2>
+          <p class="hint">Peer-reviewed conferences, workshops, and posters</p>
+        </div>
+        <div id="conferencesList" class="pubList" data-section="conference">
+          <div class="empty">Loading conferences...</div>
+        </div>
+      </section>
+
+      <section id="presentations">
+        <div class="sectionTitle">
+          <h2>Presentations (<span id="countPR">0</span>)</h2>
+          <p class="hint">Invited talks, oral/poster presentations, seminars, and workshops</p>
+        </div>
+        <div id="presentationsList" class="pubList" data-section="presentation">
+          <div class="empty">Loading presentations...</div>
+        </div>
+      </section>
+
+      <section id="others">
+        <div class="sectionTitle">
+          <h2>Others (<span id="countOT">0</span>)</h2>
+          <p class="hint">Other publications</p>
+        </div>
+        <div id="othersList" class="pubList" data-section="other">
+          <div class="empty">Loading others...</div>
+        </div>
+      </section>
+
+      <div id="noResults" class="empty" style="display:none; margin-top:10px;">
+        No publications match your current filters.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footerRow">
+        <div class="brand" style="gap:10px;">
+          <span class="logo" aria-hidden="true" style="width:34px;height:34px;border-radius:12px;"></span>
+          <div>
+            <div style="font-weight:900;">RASHED LAB</div>
+            <div class="small">Publications • Updated regularly</div>
+          </div>
+        </div>
+        <div class="small">© <span id="yearText"></span> Rashed Lab.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+
+  <script>
+    document.getElementById('yearText').textContent = new Date().getFullYear();
+
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'light') {
+      document.body.classList.add('light');
+      themeToggle.textContent = '🌙 Dark Mode';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const isLight = document.body.classList.toggle('light');
+      if (isLight) {
+        themeToggle.textContent = '🌙 Dark Mode';
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeToggle.textContent = '☀ Light Mode';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    const sectionMap = {
+      book: {
+        path: 'data/publications/books.json',
+        containerId: 'booksList',
+        countId: 'countBK'
+      },
+      journal: {
+        path: 'data/publications/journals.json',
+        containerId: 'journalsList',
+        countId: 'countJR'
+      },
+      conference: {
+        path: 'data/publications/conferences.json',
+        containerId: 'conferencesList',
+        countId: 'countCF'
+      },
+      presentation: {
+        path: 'data/publications/presentations.json',
+        containerId: 'presentationsList',
+        countId: 'countPR'
+      },
+      other: {
+        path: 'data/publications/others.json',
+        containerId: 'othersList',
+        countId: 'countOT'
+      }
+    };
+
+    const q = document.getElementById('q');
+    const yearSel = document.getElementById('year');
+    const chips = Array.from(document.querySelectorAll('.chip'));
+    const noResults = document.getElementById('noResults');
+    const clearBtn = document.getElementById('clearBtn');
+
+    let allPublications = [];
+    let activeType = 'all';
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function templateValue(key) {
+      if (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG[key] !== undefined) return SITE_CONFIG[key];
+      if (typeof SITE_COUNT !== 'undefined' && SITE_COUNT[key] !== undefined) return SITE_COUNT[key];
+      return `{{${key}}}`;
+    }
+
+    function applyTemplateVars(str) {
+      return String(str || '').replace(/\{\{(.*?)\}\}/g, (_, key) => templateValue(key.trim()));
+    }
+
+    function normalize(str) {
+      return String(str || '').toLowerCase().trim();
+    }
+
+    function toArrayLinks(links) {
+      return Array.isArray(links) ? links.filter(link => link && link.label && link.url) : [];
+    }
+
+    function renderLinks(links) {
+      const validLinks = toArrayLinks(links);
+      if (!validLinks.length) return '';
+
+      return `
+        <div class="links">
+          ${validLinks.map(link => `
+            <a class="linkBtn" href="${escapeHtml(link.url)}"${link.url === '#' ? ' onclick="return false;"' : ''}>
+              ${escapeHtml(applyTemplateVars(link.label))}
+            </a>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function publicationKeywords(item) {
+      if (Array.isArray(item.keywords)) return item.keywords.join(' ');
+      return item.keywords || '';
+    }
+
+    function renderPublication(item) {
+      const keywords = publicationKeywords(item);
+      const badge = applyTemplateVars(item.badge || '');
+      const title = applyTemplateVars(item.title || '');
+      const meta = applyTemplateVars(item.meta || '');
+
+      return `
+        <article class="pub"
+          data-type="${escapeHtml(item.type || '')}"
+          data-year="${escapeHtml(item.year || '')}"
+          data-keywords="${escapeHtml(applyTemplateVars(keywords))}">
+          <div class="pubTop">
+            <p class="title">${escapeHtml(title)}</p>
+            <span class="badge">${escapeHtml(badge)}</span>
+          </div>
+          <p class="meta">${meta}</p>
+          ${renderLinks(item.links)}
+        </article>
+      `;
+    }
+
+    function setCount(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value;
+    }
+
+    function updateYearOptions(items) {
+      const years = [...new Set(items.map(item => String(item.year || '').trim()).filter(Boolean))]
+        .sort((a, b) => Number(b) - Number(a) || b.localeCompare(a));
+
+      yearSel.innerHTML = '<option value="">All years</option>' +
+        years.map(year => `<option value="${escapeHtml(year)}">${escapeHtml(year)}</option>`).join('');
+    }
+
+    function renderSection(type, items, emptyText) {
+      const info = sectionMap[type];
+      const container = document.getElementById(info.containerId);
+      setCount(info.countId, items.length);
+
+      if (!items.length) {
+        container.innerHTML = `<div class="empty">${escapeHtml(emptyText)}</div>`;
+        return;
+      }
+
+      container.innerHTML = items.map(renderPublication).join('');
+    }
+
+    function getAllPubElements() {
+      return Array.from(document.querySelectorAll('.pub'));
+    }
+
+    function applyFilters() {
+      const query = normalize(q.value);
+      const year = yearSel.value;
+      const pubs = getAllPubElements();
+      let shown = 0;
+
+      pubs.forEach(p => {
+        const type = p.dataset.type || '';
+        const pubYear = p.dataset.year || '';
+        const hay = normalize(
+          (p.querySelector('.title')?.textContent || '') + ' ' +
+          (p.querySelector('.meta')?.textContent || '') + ' ' +
+          (p.dataset.keywords || '')
+        );
+
+        const typeOk = (activeType === 'all') || (type === activeType);
+        const yearOk = (!year) || (pubYear === year);
+        const qOk = (!query) || hay.includes(query);
+
+        const ok = typeOk && yearOk && qOk;
+        p.style.display = ok ? 'block' : 'none';
+        if (ok) shown++;
+      });
+
+      Array.from(document.querySelectorAll('.pubList')).forEach(list => {
+        const items = Array.from(list.querySelectorAll('.pub'));
+        const anyVisible = items.some(item => item.style.display !== 'none');
+        const section = list.closest('section');
+        if (section) section.style.display = anyVisible ? 'block' : 'none';
+      });
+
+      noResults.style.display = shown === 0 ? 'block' : 'none';
+    }
+
+    async function loadJsonArray(path) {
+      const response = await fetch(path, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`Failed to load ${path} (${response.status})`);
+      }
+      const data = await response.json();
+
+      if (Array.isArray(data)) return data;
+      if (Array.isArray(data.items)) return data.items;
+      if (Array.isArray(data.publications)) return data.publications;
+
+      return [];
+    }
+
+    async function loadAllSections() {
+      try {
+        const results = await Promise.all(
+          Object.entries(sectionMap).map(async ([type, info]) => {
+            const items = await loadJsonArray(info.path);
+            return [type, items.map(item => ({ ...item, type: item.type || type }))];
+          })
+        );
+
+        allPublications = [];
+        for (const [type, items] of results) {
+          allPublications.push(...items);
+          renderSection(type, items, `No ${type} publications found.`);
+        }
+
+        updateYearOptions(allPublications);
+        applyFilters();
+      } catch (error) {
+        console.error(error);
+        Object.values(sectionMap).forEach(info => {
+          const container = document.getElementById(info.containerId);
+          container.innerHTML = `<div class="empty">Failed to load publication data.</div>`;
+        });
+      }
+    }
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeType = chip.dataset.type;
+        applyFilters();
+      });
+    });
+
+    q.addEventListener('input', applyFilters);
+    yearSel.addEventListener('change', applyFilters);
+
+    clearBtn.addEventListener('click', () => {
+      q.value = '';
+      yearSel.value = '';
+      activeType = 'all';
+      chips.forEach(c => c.classList.remove('active'));
+      chips.find(c => c.dataset.type === 'all')?.classList.add('active');
+      applyFilters();
+    });
+
+    loadAllSections();
+  </script>
+</body>
+</html>
