@@ -1,5 +1,13 @@
 [
   {
+    "meta": "Mar 2026 • Presentation",
+    "title": "E. Rashed will give a talk at the Japan Medical AI Society Meeting 第8回日本メディカルAI学会学術集会",
+    "desc": "@ Tokyo, Japan, 5-6 June 2026",
+    "image": "assets/news/jmai26.jpg",
+    "imageAlt": "JMAI 2026",
+    "url": "https://www.jmai2026.jp/"
+  },
+  {
     "meta": "Feb 2026 • Conference",
     "title": "E. Rashed & M. Mabork are Co-Chairs of the 2026 IEEE International Conference on Future Machine Learning and Data Science",
     "desc": "@ Kobe, Japan, 20-23 Nov. 2026",
@@ -11,7 +19,7 @@
     "meta": "Feb 2026 • Paper",
     "title": "A paper is accepted for the 23rd IEEE International Conference on Learning and Technology (L&S26) @ KSA",
     "desc": "Twin Minds in Cyber-Defense: A Dual-Agent Framework for Safe Automated Assessment in Security Education",
-    "image": "assets/news/ieee.jpg",
+    "image": "assets/news/newslogo.jpg",
     "imageAlt": "IEEE",
     "url": ""
   },
