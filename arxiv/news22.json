@@ -1,10 +1,26 @@
 [
   {
-    "meta": "Nov 2023 • Software",
+    "meta": "Nov 2022 • Software",
     "title": "A python version of our software CondNet is developed by R. S. Wabina and is now available.",
     "desc": "",
     "image": "assets/news/newslogo.jpg",
     "imageAlt": "",
-    "url": "https://github.com/rrwabina/ConductorNetwork"
-  }  
+    "url": "https://jcbr.journals.ekb.eg/"
+  },
+  {
+    "meta": "Nov 2022 • Advisory Board Member",
+    "title": "​E. Rashed is Advisory Board Member of International Journal of Cancer and Biomedical Research (ISSN Print: 2682-261X)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://jcbr.journals.ekb.eg/"
+  },
+  {
+    "meta": "Nov 2022 • Book",
+    "title": "​A book entitled "COVID-19 and Environment: Impacts of a Global Pandemic" is published by MDPI (Eds. Kodera and Rashed)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://www.mdpi.com/books/reprint/6382-covid-19-and-environment-impacts-of-a-global-pandemic"
+  }   
 ]
