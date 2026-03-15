@@ -1,3 +1,10 @@
 [
-  
+  {
+    "meta": "Nov 2023 • Software",
+    "title": "A python version of our software CondNet is developed by R. S. Wabina and is now available.",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://github.com/rrwabina/ConductorNetwork"
+  }  
 ]
