@@ -925,8 +925,8 @@
 
    <script>
     async function loadNews() {
-      const newsList2025 = document.getElementById('newsList2023');
-      if (!newsList2025) return;
+      const newsList2023 = document.getElementById('newsList2023');
+      if (!newsList2023) return;
 
       try {
         const response = await fetch('arxiv/news23.json');
@@ -935,7 +935,7 @@
         const newsItems = await response.json();
 
         if (!Array.isArray(newsItems) || newsItems.length === 0) {
-          newsList2025.innerHTML = `
+          newsList2023.innerHTML = `
             <div class="item">
               <div class="newsBody">
                 <div class="meta">No news available</div>
@@ -946,7 +946,7 @@
           return;
         }
 
-        newsList2025.innerHTML = newsItems.map(item => {
+        newsList2023.innerHTML = newsItems.map(item => {
           const imageHtml = item.image
             ? `
               <div class="newsThumb">
@@ -973,7 +973,7 @@
           `;
         }).join('');
       } catch (error) {
-        newsList2025.innerHTML = `
+        newsList2023.innerHTML = `
           <div class="item">
             <div class="newsBody">
               <div class="meta">Error</div>
