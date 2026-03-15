@@ -17,10 +17,130 @@
   },
   {
     "meta": "Nov 2022 • Book",
-    "title": "​A book entitled "COVID-19 and Environment: Impacts of a Global Pandemic" is published by MDPI (Eds. Kodera and Rashed)",
+    "title": "​A book entitled (COVID-19 and Environment: Impacts of a Global Pandemic) is published by MDPI (Eds. Kodera and Rashed)",
     "desc": "",
     "image": "assets/news/newslogo.jpg",
     "imageAlt": "",
     "url": "https://www.mdpi.com/books/reprint/6382-covid-19-and-environment-impacts-of-a-global-pandemic"
-  }   
+  }, 
+  {
+    "meta": "Oct 2022 • Paper",
+    "title": "​A paper [open access] is published in Journal of Urban Health (IF2021=5.801)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://link.springer.com/article/10.1007/s11524-022-00697-5"
+  }, 
+  {
+    "meta": "Oct 2022 • Paper",
+    "title": "​A paper [open access] is published in Vaccines (IF2021=4.961)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://www.mdpi.com/2076-393X/10/11/1820"
+  }, 
+  {
+    "meta": "Oct 2022 • Invited Talk",
+    "title": "​E. Rashed is invited speaker at the Egypt-Japan Multidisciplinary Science Forum, 18 Feb. 2023, Cairo, Egypt",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }, 
+  {
+    "meta": "Oct 2022 • Paper",
+    "title": "​A paper [open access] is published in PLOS One (F2021=3.752)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276523"
+  }, 
+  {
+    "meta": "Oct 2022 • Paper",
+    "title": "​A paper [pdf] is published in IEEE Transactions on Electromagnetic Compatibility (IF2021=2.036)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://ieeexplore.ieee.org/document/9925056"
+  }, 
+  {
+    "meta": "Oct 2022 • New Member",
+    "title": "​A new master student will join the lab from Apr. 2023",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }, 
+  {
+    "meta": "Sept 2022 • Preprint",
+    "title": "​A preprint is published in medRxiv",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://www.medrxiv.org/content/10.1101/2022.09.15.22280010v1"
+  }, 
+  {
+    "meta": "Sept 2022 • Session Convener",
+    "title": "​E. Rashed is Session Convener of session titled (Advances in computational modeling for Bioelectromagnetics), URSI GASS 2023 (19-26 Aug. 2023, Sapporo, Japan)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }, 
+  {
+    "meta": "Aug 2022 • Distinguished Reviewer",
+    "title": "E. Rashed received the certificate of Silver Distinguished Reviewer from IEEE Trans. Med. Imaging (Q1, IF2021=11.037)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }, 
+  {
+    "meta": "Aug 2022 • Paper",
+    "title": "A paper is published in Computers in Biology and Medicine (F2021=6.698)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0010482522007107?via%3Dihub"
+  }, 
+  {
+    "meta": "June 2022 • Poster",
+    "title": "A poster will be presented at the Knowledge Exchange Symposium, University of Hyogo, Japan, Sept. 2022 「兵庫県立大学 知の交流シンポジウム」",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }, 
+  {
+    "meta": "June 2022 • Paper",
+    "title": "A paper [topical review, open access] is published in Physics in Medicine and Biology (F2021=4.174)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://iopscience.iop.org/article/10.1088/1361-6560/ac7b64"
+  }, 
+  {
+    "meta": "Apr 2022 • Paper",
+    "title": "A paper [open access] is published in PLOS ONE (F2021=3.752)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0268410"
+  }, 
+  {
+    "meta": "Apr 2022 • Paper",
+    "title": "A paper is published in Computers in Biology and Medicine (F2021=6.698)",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": "linkinghub.elsevier.com/retrieve/pii/S0010482522003407"
+  }, 
+  {
+    "meta": "Apr 2022 • Presentation",
+    "title": "Two papers are accepted for BioEM2022 (Nagoya, Japan) as poster presentations",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }               
 ]
