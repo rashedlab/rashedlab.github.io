@@ -142,5 +142,21 @@
     "image": "assets/news/newslogo.jpg",
     "imageAlt": "",
     "url": ""
-  }               
+  }, 
+  {
+    "meta": "Apr 2022 • Committee Member",
+    "title": "E. Rashed is a Scientific Committee Member of MICCAI 2022 MLMIR Workshop",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }, 
+  {
+    "meta": "Apr 2022 • Call for students",
+    "title": "Laboratory is established at University of Hyogo and open call for new students",
+    "desc": "",
+    "image": "assets/news/newslogo.jpg",
+    "imageAlt": "",
+    "url": ""
+  }      
 ]
