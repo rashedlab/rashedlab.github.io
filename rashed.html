@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Personal page of Prof. Essam Rashed — AI for Medical Imaging, Multimodal Systems, and Trustworthy Clinical AI." />
+  <title>Prof. Essam Rashed | Personal Page</title>
+  <style>
+    :root{
+      --bg:#242e42;
+      --panel:#101827;
+      --panel2:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a3aab8;
+      --brand:#60a5fa;
+      --brand2:#34d399;
+      --border:#1f2a44;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:16px;
+      --max:1100px;
+    }
+
+    body.light{
+      --bg:#f4f7fb;
+      --panel:#ffffff;
+      --panel2:#eef4fb;
+      --text:#122033;
+      --muted:#5a6b7f;
+      --brand:#2563eb;
+      --brand2:#059669;
+      --border:#d9e4f2;
+      --shadow:0 10px 26px rgba(15,23,42,.08);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:radial-gradient(circle at top, rgba(96,165,250,.12), transparent 26%), var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:100%; display:block}
+    .container{width:min(calc(100% - 32px), var(--max)); margin:0 auto}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:40;
+      backdrop-filter:blur(14px);
+      background:color-mix(in oklab, var(--bg) 82%, transparent);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      min-height:74px;
+    }
+    .brand{
+      font-weight:800;
+      letter-spacing:.16em;
+      color:var(--text);
+      white-space:nowrap;
+    }
+    .nav-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:16px;
+      align-items:center;
+      justify-content:flex-end;
+    }
+    .nav-links a{
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .nav-links a:hover,
+    .nav-links a.active{color:var(--text); text-decoration:none}
+    .mode-toggle{
+      border:1px solid var(--border);
+      background:var(--panel);
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:999px;
+      cursor:pointer;
+      box-shadow:var(--shadow);
+      font:inherit;
+    }
+
+    .hero{padding:44px 0 24px}
+    .hero-card,
+    .card,
+    .timeline-item,
+    .pub-item,
+    .contact-card{
+      background:linear-gradient(180deg, color-mix(in oklab, var(--panel) 92%, white 8%), var(--panel));
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-card{
+      padding:28px;
+      display:grid;
+      grid-template-columns:300px 1fr;
+      gap:28px;
+      align-items:center;
+    }
+    .portrait{
+      min-height:360px;
+      border-radius:22px;
+      border:1px solid color-mix(in oklab, var(--brand) 35%, var(--border));
+      background:
+        radial-gradient(circle at 30% 20%, rgba(96,165,250,.30), transparent 28%),
+        radial-gradient(circle at 70% 80%, rgba(52,211,153,.22), transparent 22%),
+        linear-gradient(145deg, color-mix(in oklab, var(--panel2) 82%, var(--brand) 18%), color-mix(in oklab, var(--panel) 88%, black 12%));
+      display:grid;
+      place-items:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .portrait::before{
+      content:"";
+      position:absolute;
+      inset:18px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+    }
+    .portrait-badge{
+      width:128px;
+      height:128px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      font-size:2.4rem;
+      font-weight:800;
+      letter-spacing:.08em;
+      color:white;
+      border:1px solid rgba(255,255,255,.18);
+      background:linear-gradient(135deg, rgba(96,165,250,.95), rgba(52,211,153,.82));
+      box-shadow:0 18px 42px rgba(0,0,0,.28);
+    }
+    .portrait-note{
+      position:absolute;
+      bottom:18px;
+      left:18px;
+      right:18px;
+      font-size:.88rem;
+      color:rgba(255,255,255,.86);
+      text-align:center;
+      padding:8px 10px;
+      border-radius:999px;
+      background:rgba(15,23,42,.38);
+      backdrop-filter:blur(6px);
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:var(--panel2);
+      color:var(--muted);
+      font-size:.88rem;
+      margin-bottom:14px;
+    }
+    h1,h2,h3{line-height:1.2; margin:0 0 12px}
+    h1{font-size:clamp(2rem, 4vw, 3.25rem)}
+    h2{font-size:1.55rem; margin-bottom:10px}
+    h3{font-size:1.1rem}
+    p{margin:0 0 14px}
+    .lead{font-size:1.05rem; color:var(--muted); max-width:62ch}
+    .subhead{font-size:1.06rem; color:var(--text); opacity:.95}
+    .chips{display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 22px}
+    .chip{
+      padding:9px 12px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:var(--panel2);
+      color:var(--text);
+      font-size:.92rem;
+    }
+    .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:var(--panel2);
+      color:var(--text);
+      text-decoration:none;
+      font-weight:600;
+    }
+    .btn.primary{
+      background:linear-gradient(135deg, color-mix(in oklab, var(--brand) 74%, white 8%), color-mix(in oklab, var(--brand2) 62%, var(--brand) 38%));
+      color:white;
+      border-color:transparent;
+    }
+    .btn:hover{text-decoration:none; transform:translateY(-1px)}
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:16px;
+      margin:22px 0 8px;
+    }
+    .card{padding:18px}
+    .stat-num{font-size:1.8rem; font-weight:800; margin-bottom:4px}
+    .stat-label{color:var(--muted); font-size:.94rem}
+
+    .section{padding:16px 0 12px}
+    .section-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:20px;
+      align-items:start;
+    }
+    .stack{display:grid; gap:18px}
+    .list{display:grid; gap:12px; margin:0; padding:0; list-style:none}
+    .list li{
+      padding:14px 16px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:var(--panel2);
+    }
+    .timeline{display:grid; gap:14px}
+    .timeline-item{padding:18px}
+    .muted{color:var(--muted)}
+    .split{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:16px;
+    }
+    .pubs{display:grid; gap:14px}
+    .pub-item{padding:18px}
+    .pub-meta{color:var(--muted); font-size:.94rem; margin-bottom:8px}
+    .pub-links{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
+    .kicker{
+      color:var(--brand2);
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-weight:700;
+      font-size:.78rem;
+      margin-bottom:8px;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      margin-top:10px;
+    }
+    .contact-card{padding:20px}
+    .contact-card p:last-child{margin-bottom:0}
+    .footer{
+      border-top:1px solid var(--border);
+      margin-top:30px;
+      padding:28px 0 36px;
+      color:var(--muted);
+    }
+    .footer strong{color:var(--text); display:block; letter-spacing:.14em; margin-bottom:8px}
+
+    @media (max-width: 920px){
+      .hero-card,
+      .section-grid,
+      .contact-grid{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2, 1fr)}
+      .split{grid-template-columns:1fr}
+      .portrait{min-height:300px}
+    }
+    @media (max-width: 640px){
+      .nav{padding:12px 0; align-items:flex-start}
+      .nav-links{gap:12px}
+      .stats{grid-template-columns:1fr}
+      .hero{padding-top:24px}
+      .hero-card{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">RASHED LAB</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="awards.html">Awards</a>
+        <a href="rashed.html" class="active">PI Page</a>
+        <button class="mode-toggle" id="modeToggle" type="button">☀ Light Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="portrait" aria-label="Portrait placeholder for Prof. Essam Rashed">
+            <!-- <div class="portrait-badge">ER</div> -->
+            <img src="assets/people/pi.jpg" alt="Prof. Essam Rashed" loading="lazy">
+            <!-- <div class="portrait-note">Replace this placeholder with the PI portrait if desired.</div> -->
+          </div>
+
+          <div>
+            <!-- <div class="eyebrow">Principal Investigator • AI for Medical Imaging • Multimodal Systems</div> -->
+            <h1>Essam Rashed</h1>
+            <p class="subhead">Professor and Principal Investigator, leading research at the intersection of medical imaging, foundation models, uncertainty-aware AI, and clinically grounded multimodal intelligence.</p>
+            <p class="lead">This page follows the same visual language as the main laboratory website and can serve as a dedicated professional profile for the PI, including biography, research themes, publications, awards, and contact details.</p>
+
+            <!-- <div class="chips">
+              <span class="chip">Medical Image Analysis</span>
+              <span class="chip">Multimodal LLM/VLM</span>
+              <span class="chip">Trustworthy AI</span>
+              <span class="chip">Agentic Clinical Systems</span>
+              <span class="chip">Federated AI</span>
+              <span class="chip">Regulatory-Ready Evaluation</span>
+            </div> -->
+
+            <div class="cta-row">
+              <a class="btn primary" href="publications.html">View Publications</a>
+              <a class="btn" href="index.html#contact">Contact</a>
+              <a class="btn" href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+              <a class="btn" href="https://www.scopus.com" target="_blank" rel="noopener">Scopus</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="card">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">Years across engineering, biomedical modeling, and AI research</div>
+          </div>
+          <div class="card">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Core research pillars spanning imaging, multimodal AI, privacy, and safety</div>
+          </div>
+          <div class="card">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Representative focus areas: segmentation, multimodal reasoning, and clinical deployment</div>
+          </div>
+          <div class="card">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Mission: build trustworthy AI that supports real clinical practice</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="stack">
+          <div class="card">
+            <div class="kicker">Biography</div>
+            <h2>About</h2>
+            <p>Prof. Essam Rashed leads the Rashed Lab and develops AI systems for medical imaging and clinical decision support. His work spans segmentation, diagnosis, uncertainty estimation, report generation, multimodal reasoning, and privacy-preserving collaborative intelligence. He is particularly interested in designing clinically meaningful AI pipelines that are not only accurate, but also transparent, robust, and deployable in real-world healthcare settings.</p>
+            <p>His research combines imaging data, clinical text, domain knowledge, and modern foundation models to support problems ranging from lesion analysis and radiological reporting to agentic workflows and regulatory-aware evaluation. The overarching goal is to bridge advanced machine learning with practical medical impact.</p>
+          </div>
+
+          <div class="card">
+            <div class="kicker">Research Themes</div>
+            <h2>Current Interests</h2>
+            <div class="split">
+              <ul class="list">
+                <li><strong>Medical image segmentation and detection</strong><br><span class="muted">Clinically relevant evaluation, foundation-model adaptation, and robust pipelines.</span></li>
+                <li><strong>Multimodal LLM/VLM systems</strong><br><span class="muted">Image-text reasoning, report generation, and retrieval-enhanced clinical understanding.</span></li>
+                <li><strong>Uncertainty and safety</strong><br><span class="muted">Calibration, abstention, trust estimation, and high-stakes decision support.</span></li>
+              </ul>
+              <ul class="list">
+                <li><strong>Federated and privacy-preserving AI</strong><br><span class="muted">Cross-institution learning and governance-aware collaboration.</span></li>
+                <li><strong>Agentic clinical intelligence</strong><br><span class="muted">Multi-agent orchestration for longitudinal reasoning and transparent synthesis.</span></li>
+                <li><strong>Translational evaluation</strong><br><span class="muted">Benchmarking, documentation, and clinically aligned software design.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack">
+          <div class="card">
+            <div class="kicker">Quick Info</div>
+            <h2>Professional Snapshot</h2>
+            <ul class="list">
+              <li><strong>Role</strong><br><span class="muted">Principal Investigator, Rashed Lab</span></li>
+              <li><strong>Focus</strong><br><span class="muted">Trustworthy AI for medical imaging and clinical decision support</span></li>
+              <li><strong>Methods</strong><br><span class="muted">Deep learning, multimodal foundation models, agentic AI, uncertainty estimation</span></li>
+              <li><strong>Application domains</strong><br><span class="muted">Radiology, diagnostic support, biomedical imaging analysis, privacy-aware collaboration</span></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="kicker">Links</div>
+            <h2>Profiles</h2>
+            <ul class="list">
+              <li><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a></li>
+              <li><a href="https://www.scopus.com" target="_blank" rel="noopener">Scopus</a></li>
+              <li><a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a></li>
+              <li><a href="publications.html">Full publications page</a></li>
+              <li><a href="index.html#people">Lab members</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <div class="kicker">Highlights</div>
+          <h2>Selected Contributions</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <strong>Trustworthy AI for medical imaging</strong>
+              <p class="muted">Developing models and evaluation strategies that emphasize robustness, explainability, calibration, and safe deployment in clinical environments.</p>
+            </div>
+            <div class="timeline-item">
+              <strong>Multimodal foundation models in healthcare</strong>
+              <p class="muted">Designing systems that integrate images, reports, metadata, and external knowledge for richer medical understanding and decision support.</p>
+            </div>
+            <div class="timeline-item">
+              <strong>Privacy-preserving and agentic intelligence</strong>
+              <p class="muted">Exploring federated and multi-agent architectures for distributed, department-aware, and clinically coordinated AI reasoning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="card">
+          <div class="kicker">Publications</div>
+          <h2>Selected Publications</h2>
+          <div class="pubs">
+            <article class="pub-item">
+              <div class="pub-meta">2025 • Computers in Biology and Medicine</div>
+              <h3>Advances in Medical Image Segmentation: A Comprehensive Review with a Focus on Lumbar Spine Applications</h3>
+              <p class="muted">A representative review article highlighting evolving segmentation strategies and clinically grounded perspectives in medical image analysis.</p>
+              <div class="pub-links">
+                <a href="publications.html">View details</a>
+              </div>
+            </article>
+            <article class="pub-item">
+              <div class="pub-meta">2025 • Biomedical Signal Processing and Control</div>
+              <h3>SHARM: Segmented Head Anatomical Reference Models</h3>
+              <p class="muted">A contribution combining anatomical modeling and biomedical engineering, supporting simulation-driven research and downstream analysis.</p>
+              <div class="pub-links">
+                <a href="publications.html">View details</a>
+              </div>
+            </article>
+            <article class="pub-item">
+              <div class="pub-meta">2020 • IEEE Transactions on Medical Imaging</div>
+              <h3>Deep learning-based development of personalized human head model with non-uniform conductivity for brain stimulation</h3>
+              <p class="muted">A representative earlier work illustrating the PI’s strong background in computational modeling and clinically relevant biomedical AI.</p>
+              <div class="pub-links">
+                <a href="publications.html">View details</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="stack">
+          <div class="card">
+            <div class="kicker">Awards</div>
+            <h2>Selected Recognition</h2>
+            <ul class="list">
+              <li><strong>The Motohisa Kanda Award</strong><br><span class="muted">IEEE EMC Society • 2025</span></li>
+              <li><strong>MEXT Science and Technology Award (Development Category)</strong><br><span class="muted">Japan • 2024</span></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="kicker">Leadership</div>
+            <h2>Academic Activities</h2>
+            <ul class="list">
+              <li><strong>Conference organization</strong><br><span class="muted">Leadership and service in international conferences, workshops, and symposia.</span></li>
+              <li><strong>Research supervision</strong><br><span class="muted">Mentoring students and visiting researchers in AI, medical imaging, and multimodal systems.</span></li>
+              <li><strong>Grant-driven innovation</strong><br><span class="muted">Building research programs around trustworthy clinical AI and translational impact.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="kicker">Contact</div>
+        <h2>Get in touch</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Office / Lab</h3>
+            <p>Rashed Lab</p>
+            <p>Graduate School of Information Science, University of Hyogo</p>
+            <p>7-1-28 Minatojima-minamimachi, Chuo-ku, Kobe, Hyogo 650-0047, Japan</p>
+            <p>Lab. number 601 (6th floor)</p>
+          </div>
+          <div class="contact-card">
+            <h3>Useful links</h3>
+            <p><a href="index.html">Laboratory home page</a></p>
+            <p><a href="publications.html">Publications</a></p>
+            <p><a href="https://maps.app.goo.gl" target="_blank" rel="noopener">Google Maps</a></p>
+            <p><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <strong>RASHED LAB</strong>
+      <div>Personal page • Prof. Essam Rashed</div>
+      <div>© Rashed Lab. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const body = document.body;
+      const toggle = document.getElementById('modeToggle');
+      const saved = localStorage.getItem('rashed-theme');
+      if(saved === 'light'){
+        body.classList.add('light');
+        toggle.textContent = '🌙 Dark Mode';
+      }
+      toggle.addEventListener('click', function(){
+        body.classList.toggle('light');
+        const light = body.classList.contains('light');
+        localStorage.setItem('rashed-theme', light ? 'light' : 'dark');
+        toggle.textContent = light ? '🌙 Dark Mode' : '☀ Light Mode';
+      });
+    })();
+  </script>
+</body>
+</html>
