@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Light Animated Medical AI Style</title>
+<title>Animated Medical AI Style</title>
 <style>
   body {
     margin: 0;
-    background: #f5f7fb;
+    background: #0b1320;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +19,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    background: radial-gradient(circle at center, #ffffff, #e9eef6);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    background: radial-gradient(circle at center, #0f1a2f, #050a14);
   }
 
   canvas {
@@ -39,8 +38,8 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = 300;
-canvas.height = 300;
+canvas.width = 400;
+canvas.height = 400;
 
 const particles = [];
 const numParticles = 60;
@@ -58,7 +57,7 @@ for (let i = 0; i < numParticles; i++) {
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Connections (lighter)
+  // Draw connections
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
       let dx = particles[i].x - particles[j].x;
@@ -66,7 +65,7 @@ function draw() {
       let dist = Math.sqrt(dx * dx + dy * dy);
 
       if (dist < 80) {
-        ctx.strokeStyle = "rgba(80, 140, 255," + (1 - dist / 80) * 0.25 + ")";
+        ctx.strokeStyle = "rgba(100, 200, 255," + (1 - dist / 80) * 0.4 + ")";
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(particles[i].x, particles[i].y);
@@ -76,11 +75,11 @@ function draw() {
     }
   }
 
-  // Particles (soft blue)
+  // Draw particles
   particles.forEach(p => {
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-    ctx.fillStyle = "#4a90e2";
+    ctx.fillStyle = "#6ec1ff";
     ctx.fill();
   });
 }
