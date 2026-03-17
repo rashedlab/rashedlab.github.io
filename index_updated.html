@@ -398,7 +398,7 @@
     }
     .bannerCard{
       position:relative;
-      height:260px;
+      height:130px;
       overflow:hidden;
       border-radius: var(--radius);
       border: 1px solid rgba(31,42,68,.9);
@@ -429,7 +429,7 @@
 
     /* Responsive */
     @media (max-width: 980px){
-      .bannerCard{height:220px}
+      .bannerCard{height:110px}
       .heroGrid{grid-template-columns:1fr}
       .grid3{grid-template-columns:1fr}
       .twoCol{grid-template-columns:1fr}
@@ -438,7 +438,7 @@
     }
     @media (max-width: 720px){
       .bannerSection{padding:16px 0 0}
-      .bannerCard{height:180px}
+      .bannerCard{height:96px}
       nav ul{display:none}
       .menuBtn{display:inline-flex}
       .peopleGrid{grid-template-columns:1fr}
@@ -1095,6 +1095,24 @@
       const ctx = canvas.getContext('2d');
       const particles = [];
       const particleCount = 90;
+      const connectionDistance = 120;
+
+      function getThemePalette() {
+        const isLight = document.body.classList.contains('light');
+        return isLight
+          ? {
+              bgStart: '#ffffff',
+              bgEnd: '#e9eef6',
+              particle: '#2563eb',
+              lineRgb: '37, 99, 235'
+            }
+          : {
+              bgStart: '#13213b',
+              bgEnd: '#050a14',
+              particle: '#6ec1ff',
+              lineRgb: '110, 193, 255'
+            };
+      }
 
       function resizeCanvas() {
         const rect = banner.getBoundingClientRect();
@@ -1112,17 +1130,17 @@
           particles.push({
             x: Math.random() * w,
             y: Math.random() * h,
-            vx: (Math.random() - 0.5) * 0.42,
-            vy: (Math.random() - 0.5) * 0.42,
-            radius: Math.random() * 1.8 + 0.8
+            vx: (Math.random() - 0.5) * 1.2,
+            vy: (Math.random() - 0.5) * 1.2,
+            radius: Math.random() * 1.4 + 1.2
           });
         }
       }
 
-      function drawBackground(w, h) {
+      function drawBackground(w, h, palette) {
         const g = ctx.createRadialGradient(w * 0.35, h * 0.2, 10, w * 0.5, h * 0.5, Math.max(w, h));
-        g.addColorStop(0, '#13213b');
-        g.addColorStop(1, '#050a14');
+        g.addColorStop(0, palette.bgStart);
+        g.addColorStop(1, palette.bgEnd);
         ctx.fillStyle = g;
         ctx.fillRect(0, 0, w, h);
       }
@@ -1130,16 +1148,17 @@
       function draw() {
         const w = banner.clientWidth;
         const h = banner.clientHeight;
+        const palette = getThemePalette();
         ctx.clearRect(0, 0, w, h);
-        drawBackground(w, h);
+        drawBackground(w, h, palette);
 
         for (let i = 0; i < particles.length; i++) {
           for (let j = i + 1; j < particles.length; j++) {
             const dx = particles[i].x - particles[j].x;
             const dy = particles[i].y - particles[j].y;
             const dist = Math.hypot(dx, dy);
-            if (dist < 120) {
-              ctx.strokeStyle = `rgba(110, 193, 255, ${(1 - dist / 120) * 0.28})`;
+            if (dist < connectionDistance) {
+              ctx.strokeStyle = `rgba(${palette.lineRgb}, ${Math.max(0.14, (1 - dist / connectionDistance) * 0.4)})`;
               ctx.lineWidth = 1;
               ctx.beginPath();
               ctx.moveTo(particles[i].x, particles[i].y);
@@ -1149,16 +1168,8 @@
           }
         }
 
+        ctx.fillStyle = palette.particle;
         particles.forEach((p) => {
-          const glow = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius * 5);
-          glow.addColorStop(0, 'rgba(110, 193, 255, 0.9)');
-          glow.addColorStop(1, 'rgba(110, 193, 255, 0)');
-          ctx.fillStyle = glow;
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.radius * 5, 0, Math.PI * 2);
-          ctx.fill();
-
-          ctx.fillStyle = '#6ec1ff';
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
           ctx.fill();
@@ -1171,8 +1182,10 @@
         particles.forEach((p) => {
           p.x += p.vx;
           p.y += p.vy;
-          if (p.x < 0 || p.x > w) p.vx *= -1;
-          if (p.y < 0 || p.y > h) p.vy *= -1;
+          if (p.x < p.radius || p.x > w - p.radius) p.vx *= -1;
+          if (p.y < p.radius || p.y > h - p.radius) p.vy *= -1;
+          p.x = Math.max(p.radius, Math.min(w - p.radius, p.x));
+          p.y = Math.max(p.radius, Math.min(h - p.radius, p.y));
         });
       }
 
@@ -1272,18 +1285,6 @@
     gtag('config', 'G-TSP2C209C6');
   </script>
 
-
-<script>
-function toggleTheme() {
-  const root = document.documentElement;
-  const current = getComputedStyle(root).getPropertyValue('--banner-bg').trim();
-  if (current.includes('#0f1a2f')) {
-    root.style.setProperty('--banner-bg', getComputedStyle(root).getPropertyValue('--banner-bg-light'));
-  } else {
-    root.style.setProperty('--banner-bg', getComputedStyle(root).getPropertyValue('--banner-bg-dark'));
-  }
-}
-</script>
 
 </body>
 </html>
