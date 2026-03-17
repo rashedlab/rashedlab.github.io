@@ -547,7 +547,6 @@
 
         <div class="cta">
           <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
-          <a class="btn primary" href="#join">Join Us</a>
           <button class="btn menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
         </div>
       </div>
@@ -559,7 +558,7 @@
   <main id="main">
    
 
-    <!-- PEOPLE -->
+    <!-- **** -->
     <section id="people">
       <div class="container">
 
@@ -632,80 +631,7 @@
     }
   </script>
 
-  <script>
-    async function loadNews() {
-      const newsList = document.getElementById('newsList');
-      if (!newsList) return;
-
-      try {
-        const response = await fetch('data/news.json');
-        if (!response.ok) throw new Error('Failed to load news...');
-
-        const newsItems = await response.json();
-
-        if (!Array.isArray(newsItems) || newsItems.length === 0) {
-          newsList.innerHTML = `
-            <div class="item">
-              <div class="newsBody">
-                <div class="meta">No news available</div>
-                <p class="title">No news items were found in the JSON file.</p>
-              </div>
-            </div>
-          `;
-          return;
-        }
-
-        newsList.innerHTML = newsItems.map(item => {
-          const imageHtml = item.image
-            ? `
-              <div class="newsThumb">
-                <img src="${item.image}" alt="${item.imageAlt || item.title || 'News image'}" loading="lazy" />
-              </div>
-            `
-            : '';
-
-          const titleHtml = item.url && item.url.trim() !== ''
-            ? `<p class="title"><a href="${item.url}">${item.title || ''}</a></p>`
-            : `<p class="title">${item.title || ''}</p>`;
-
-          const descHtml = item.desc ? `<p class="desc">${item.desc}</p>` : '';
-
-          return `
-            <div class="item">
-              ${imageHtml}
-              <div class="newsBody">
-                <div class="meta">${item.meta || ''}</div>
-                ${titleHtml}
-                ${descHtml}
-              </div>
-            </div>
-          `;
-        }).join('');
-      } catch (error) {
-        newsList.innerHTML = `
-          <div class="item">
-            <div class="newsBody">
-              <div class="meta">Error</div>
-              <p class="title">Could not load news items...</p>
-              <p class="desc">${error.message}</p>
-            </div>
-          </div>
-        `;
-        console.error('News loading error:', error);
-      }
-    }
-
-    loadNews();
-  </script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TSP2C209C6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TSP2C209C6');
-  </script>
+  
 
 </body>
 </html>
