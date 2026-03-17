@@ -7,6 +7,10 @@
   <title>Rashed Lab | Home</title>
   <style>
     :root{
+      --banner-bg-dark: radial-gradient(circle at center, #0f1a2f, #050a14);
+      --banner-bg-light: radial-gradient(circle at center, #ffffff, #e9eef6);
+      --banner-bg: var(--banner-bg-dark);
+
        --bg: #242e42; /*#0b0f17; */
       --panel:#101827;
       --panel2:#0f172a;
@@ -398,7 +402,7 @@
       overflow:hidden;
       border-radius: var(--radius);
       border: 1px solid rgba(31,42,68,.9);
-      background: radial-gradient(circle at center, #0f1a2f, #050a14);
+      background: var(--banner-bg);
       box-shadow: var(--shadow);
       isolation:isolate;
     }
@@ -418,7 +422,7 @@
       z-index:1;
     }
     body.light .bannerCard{
-      background: radial-gradient(circle at center, #0f1a2f, #050a14);
+      background: var(--banner-bg);
       border-color: rgba(31,42,68,.9);
       box-shadow: var(--shadow);
     }
@@ -445,6 +449,10 @@
 
   <style>
     :root{
+      --banner-bg-dark: radial-gradient(circle at center, #0f1a2f, #050a14);
+      --banner-bg-light: radial-gradient(circle at center, #ffffff, #e9eef6);
+      --banner-bg: var(--banner-bg-dark);
+
       --bg: #242e42;
       --panel:#101827;
       --panel2:#0f172a;
@@ -1263,6 +1271,19 @@
     gtag('js', new Date());
     gtag('config', 'G-TSP2C209C6');
   </script>
+
+
+<script>
+function toggleTheme() {
+  const root = document.documentElement;
+  const current = getComputedStyle(root).getPropertyValue('--banner-bg').trim();
+  if (current.includes('#0f1a2f')) {
+    root.style.setProperty('--banner-bg', getComputedStyle(root).getPropertyValue('--banner-bg-light'));
+  } else {
+    root.style.setProperty('--banner-bg', getComputedStyle(root).getPropertyValue('--banner-bg-dark'));
+  }
+}
+</script>
 
 </body>
 </html>
