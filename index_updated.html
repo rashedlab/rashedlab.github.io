@@ -644,7 +644,7 @@
         <div class="heroGrid">
           <div class="card heroMain">
             <span class="kicker"><span class="dot"></span> AI • Medical Imaging • Multimodal Systems</span>
-            <h1>2Building trustworthy AI for medical imaging and clinical decision support.</h1>
+            <h1>Building trustworthy AI for medical imaging and clinical decision support.</h1>
             <p class="lead">
               We develop segmentation, detection, report-generation, and agentic AI systems that integrate imaging, clinical text,
               and external knowledge - emphasizing robustness, uncertainty, explainability, and real-world deployment.
@@ -1101,20 +1101,20 @@
       const connectionDistance = 120;
 
       function getThemePalette() {
-        // const isLight = document.body.classList.contains('light');
-        // return isLight
-        //   ? {
-        //       bgStart: '#ffffff',
-        //       bgEnd: '#f1f3f7', 
-        //       particle: '#2563eb',
-        //       lineRgb: '37, 99, 235'
-        //     }
-        //   : {
-               bgStart: '#13213b';
-               bgEnd: '#050a14';
-               particle: '#6ec1ff';
-               lineRgb: '110, 193, 255';
-            // };
+         const isLight = document.body.classList.contains('light');
+         return isLight
+           ? {
+               bgStart: '#ffffff',
+               bgEnd: '#f1f3f7', 
+               particle: '#2563eb',
+              lineRgb: '37, 99, 235'
+            }
+           : {
+               bgStart: '#13213b',
+               bgEnd: '#050a14',
+               particle: '#6ec1ff',
+               lineRgb: '110, 193, 255'
+             };
       }
 
       function resizeCanvas() {
