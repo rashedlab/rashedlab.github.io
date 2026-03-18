@@ -1,0 +1,1482 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Rashed Lab — AI for Medical Imaging, Multimodal LLMs, Federated Learning" />
+  <title>Rashed Lab | Home</title>
+  <style>
+    :root{
+       --bg: #242e42; /*#0b0f17; */
+      --panel:#101827;
+      --panel2:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a3aab8;
+      --brand:#60a5fa;
+      --brand2:#34d399;
+      --border:#1f2a44;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(96,165,250,.25), transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(52,211,153,.18), transparent 55%),
+                  var(--bg); 
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    a:hover{color:var(--brand)}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+    .skip{position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden}
+    .skip:focus{left:20px; top:20px; width:auto; height:auto; background:#000; padding:10px 12px; border-radius:10px; z-index:999}
+
+    /* Header */
+    header{
+      position:sticky; top:0;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,23,.65);
+      border-bottom: 1px solid rgba(31,42,68,.6);
+      z-index:50;
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700;
+      letter-spacing:.2px;
+      white-space:nowrap;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(96,165,250,.95), rgba(52,211,153,.9));
+      box-shadow: 0 10px 24px rgba(96,165,250,.25);
+      position:relative;
+    }
+    .logo:after{
+      content:"";
+      position:absolute; inset:9px;
+      border-radius:10px;
+      background: rgba(11,15,23,.55);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    nav ul{
+      display:flex; gap:16px;
+      list-style:none; margin:0; padding:0;
+      align-items:center;
+    }
+    nav a{
+      padding:10px 10px;
+      border-radius:12px;
+      color:var(--muted);
+      font-weight:600;
+      font-size:14px;
+    }
+    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .cta{
+      display:flex; gap:10px; align-items:center;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:700;
+      font-size:14px;
+      cursor:pointer;
+    }
+    .btn:hover{border-color:rgba(96,165,250,.5); box-shadow: 0 0 0 3px rgba(96,165,250,.18)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(96,165,250,.9), rgba(52,211,153,.85));
+      border-color: transparent;
+      color:#071018;
+    }
+    .btn.primary:hover{box-shadow: 0 0 0 3px rgba(52,211,153,.18)}
+    .menuBtn{display:none}
+
+
+
+    /* Animated banner */
+    .bannerWrap{
+      padding: 0 0 18px;
+    }
+    .bannerCard{
+      position: relative;
+      height: 160px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31,42,68,.9);
+      box-shadow: var(--shadow);
+      background: transparent;
+      isolation: isolate;
+    }
+    .bannerCard::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background:
+        radial-gradient(420px 180px at 10% 25%, rgba(96,165,250,.10), transparent 62%),
+        radial-gradient(360px 160px at 85% 70%, rgba(52,211,153,.08), transparent 62%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bannerInner{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    #tmiBanner{
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    .bannerOverlay{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:14px;
+      padding:16px 18px;
+      pointer-events:none;
+      z-index:2;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(7,16,24,.12) 100%);
+    }
+    .bannerCopy{
+      max-width: 520px;
+    }
+    .bannerLabel{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(16,24,39,.32);
+      backdrop-filter: blur(8px);
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+      margin-bottom:10px;
+    }
+    .bannerTitle{
+      margin:0;
+      font-size: 22px;
+      line-height: 1.15;
+      letter-spacing: -.3px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.14);
+    }
+    .bannerHint{
+      margin:0;
+      color: var(--muted);
+      font-size:13px;
+      font-weight:700;
+      text-align:right;
+      align-self:flex-end;
+      padding-bottom:2px;
+    }
+
+    /* Hero */
+    .hero{
+      padding:46px 0 18px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .card{
+      background: rgba(16,24,39,.75); 
+      border: 1px solid rgba(31,42,68,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .heroMain{
+      padding:28px;
+      position:relative;
+      overflow:hidden;
+    }
+    .heroMain:before{
+      content:"";
+      position:absolute; inset:-80px -120px auto auto;
+      width:320px; height:320px;
+      background: radial-gradient(circle at 30% 30%, rgba(96,165,250,.35), transparent 60%);
+      transform: rotate(10deg);
+      pointer-events:none;
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      color: var(--muted);
+      font-weight:700;
+      font-size:13px;
+      letter-spacing:.4px;
+      text-transform:uppercase;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.10);
+      padding:8px 10px;
+      border-radius:999px;
+    }
+    .dot{
+      width:8px; height:8px; border-radius:50%;
+      background: var(--brand2);
+      box-shadow: 0 0 0 4px rgba(52,211,153,.12);
+    }
+    h1{
+      margin:16px 0 10px;
+      font-size: 40px;
+      line-height: 1.08;
+      letter-spacing: -0.6px;
+    }
+    .lead{
+      color: var(--muted);
+      font-size:16px;
+      margin:0 0 18px;
+      max-width: 62ch;
+    }
+    .pillRow{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin:16px 0 18px;
+    }
+    .pill{
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      padding:8px 10px;
+      border-radius: 999px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    .heroSide{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .sideItem{
+      padding:14px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+    }
+    .sideItem h3{
+      margin:0 0 6px;
+      font-size:14px;
+      letter-spacing:.2px;
+    }
+    .sideItem p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .miniGrid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:12px;
+    }
+
+    /* Sections */
+    section{padding:24px 0}
+    .sectionTitle{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:12px;
+      margin-bottom: 12px;
+    }
+    .sectionTitle h2{
+      margin:0;
+      font-size:22px;
+      letter-spacing:-.2px;
+    }
+    .sectionTitle p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+      max-width: 62ch;
+    }
+    .grid3{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap:14px;
+    }
+    .feature{
+      padding:16px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31,42,68,.9);
+      background: rgba(15,23,42,.65);
+      box-shadow: 0 10px 26px rgba(0,0,0,.22);
+    }
+    .feature .icon{
+      width:40px; height:40px; border-radius: 14px;
+      background: rgba(96,165,250,.12);
+      border: 1px solid rgba(96,165,250,.25);
+      display:flex; align-items:center; justify-content:center;
+      margin-bottom:10px;
+      font-weight:900;
+      color: var(--brand);
+    }
+    .feature h3{margin:0 0 6px; font-size:16px}
+    .feature p{margin:0; color:var(--muted); font-size:14px}
+
+    /* News / Highlights */
+    .twoCol{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    .list{
+      padding:16px;
+    }
+    .item{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding:12px;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      margin-bottom:10px;
+    }
+    .item:last-child{margin-bottom:0}
+    .newsThumb{
+      width:75px;
+      height:75px;
+      flex:0 0 75px;
+      border-radius:12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+    }
+    .newsThumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .newsBody{
+      min-width:0;
+      flex:1;
+    }
+    .item .meta{color:var(--muted); font-size:12px; margin-bottom:4px}
+    .item .title{font-weight:800; margin:0 0 4px; font-size:14px}
+    .item .desc{margin:0; color:var(--muted); font-size:13px}
+
+    /* People */
+    .peopleGrid{
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap:14px;
+    }
+    .person{
+      padding:14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31,42,68,.9);
+      background: rgba(16,24,39,.65);
+      overflow:hidden;
+    }
+    .avatar{
+      width:auto;
+      height:auto;
+      border-radius:14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+    }
+    .avatar img{
+      width:100% !important;
+      height:100% !important;
+      object-fit: contain;
+      object-position: center;
+      display:block;
+      line-height:0;
+    }
+    .person h3{margin:0 0 2px; font-size:15px}
+    .role{color:var(--muted); font-size:13px; margin:0 0 10px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px}
+    .tag{
+      font-size:12px;
+      color: var(--muted);
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.02);
+      padding:6px 8px;
+      border-radius: 999px;
+    }
+
+    /* Publications */
+    .pub{
+      padding:14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31,42,68,.9);
+      background: rgba(15,23,42,.6);
+    }
+    .pub .title{font-weight:900; margin:0 0 6px}
+    .pub .authors{color:var(--muted); margin:0 0 8px; font-size:13px}
+    .pub .links{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{
+      font-size:13px;
+      font-weight:800;
+      padding:8px 10px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+    }
+
+    /* Contact */
+    .contactGrid{
+      display:block;
+    }
+    .contactBox{padding:16px}
+    label{display:block; margin:10px 0 6px; color:var(--muted); font-size:13px; font-weight:700}
+    input, textarea{
+      width:100%;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius: 14px;
+      padding:12px 12px;
+      color: var(--text);
+      outline:none;
+      font-size:14px;
+    }
+    textarea{min-height:120px; resize:vertical}
+    input:focus, textarea:focus{border-color: rgba(96,165,250,.6); box-shadow: 0 0 0 3px rgba(96,165,250,.15)}
+    .note{color:var(--muted); font-size:13px; margin:10px 0 0}
+    footer{
+      padding:28px 0 40px;
+      color: rgba(163,170,184,.9);
+      border-top: 1px solid rgba(31,42,68,.6);
+      margin-top: 20px;
+    }
+    .footerRow{
+      display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;
+      align-items:center;
+    }
+    .small{font-size:13px}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns:1fr}
+      .grid3{grid-template-columns:1fr}
+      .twoCol{grid-template-columns:1fr}
+      .peopleGrid{grid-template-columns: repeat(2, minmax(0,1fr))}
+      .contactGrid{grid-template-columns:1fr}
+    }
+    @media (max-width: 720px){
+      nav ul{display:none}
+      .menuBtn{display:inline-flex}
+      .peopleGrid{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .newsThumb{width:40px; height:40px; flex:0 0 40px}
+    }
+  
+/* Sakura Decoration */
+.heroMain::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    url("data:image/svg+xml;utf8,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'>
+      <g fill='%23f9a8d4' opacity='0.35'>
+        <circle cx='20' cy='20' r='3'/>
+        <circle cx='40' cy='35' r='2.5'/>
+        <circle cx='70' cy='25' r='2'/>
+        <circle cx='160' cy='30' r='3'/>
+        <circle cx='180' cy='60' r='2.5'/>
+        <circle cx='150' cy='80' r='2'/>
+        <circle cx='30' cy='150' r='3'/>
+        <circle cx='60' cy='170' r='2.5'/>
+        <circle cx='90' cy='160' r='2'/>
+        <circle cx='170' cy='170' r='3'/>
+      </g>
+    </svg>") repeat;
+  background-size: 220px 220px;
+  z-index:0;
+}
+
+/* Sakura Glow Corners */
+.heroMain{
+  position:relative;
+}
+
+.heroMain .sakura-corner{
+  position:absolute;
+  width:120px;
+  height:120px;
+  pointer-events:none;
+  opacity:0.25;
+  background: radial-gradient(circle, #f9a8d4 0%, transparent 70%);
+  filter: blur(8px);
+}
+
+.heroMain .top-left{ top:-30px; left:-30px; }
+.heroMain .top-right{ top:-30px; right:-30px; }
+.heroMain .bottom-left{ bottom:-30px; left:-30px; }
+.heroMain .bottom-right{ bottom:-30px; right:-30px; }
+
+</style>
+
+  <style>
+    :root{
+      --bg: #242e42;
+      --panel:#101827;
+      --panel2:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a3aab8;
+      --brand:#60a5fa;
+      --brand2:#34d399;
+      --border:#1f2a44;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 1100px;
+    }
+
+    #themeToggle{
+      min-width: 120px;
+    }
+
+    /* LIGHT THEME */
+    body.light{
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --panel2: #eef3f9;
+      --text: #162033;
+      --muted: #5f6b7a;
+      --brand: #2563eb;
+      --brand2: #10b981;
+      --border: #d7e0ea;
+      --shadow: 0 10px 30px rgba(15,23,42,.08);
+
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(37,99,235,.12), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(16,185,129,.10), transparent 55%),
+        var(--bg);
+      color: var(--text);
+    }
+
+    body.light header{
+      background: rgba(255,255,255,.82);
+      border-bottom: 1px solid rgba(215,224,234,.95);
+    }
+
+    body.light .card,
+    body.light .person,
+    body.light .pub,
+    body.light .feature{
+      background: rgba(255,255,255,.88);
+      border-color: var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    body.light .feature{
+      background: rgba(255,255,255,.92);
+    }
+
+    body.light .sideItem,
+    body.light .item,
+    body.light .pill,
+    body.light .tag,
+    body.light .chip,
+    body.light input,
+    body.light textarea,
+    body.light .newsThumb,
+    body.light .avatar,
+    body.light .kicker,
+    body.light #mobileNav .card{
+      background: rgba(239,244,250,.85);
+      border-color: rgba(215,224,234,1);
+      color: var(--text);
+    }
+
+    body.light nav a{
+      color: var(--muted);
+    }
+
+    body.light nav a:hover{
+      background: rgba(37,99,235,.08);
+      color: var(--text);
+    }
+
+    body.light .btn{
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(215,224,234,1);
+      color: var(--text);
+    }
+
+    body.light .btn:hover{
+      border-color: rgba(37,99,235,.45);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+    }
+
+    body.light .btn.primary{
+      background: linear-gradient(135deg, rgba(37,99,235,.95), rgba(16,185,129,.85));
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    body.light .logo:after{
+      background: rgba(255,255,255,.65);
+      border: 1px solid rgba(22,32,51,.08);
+    }
+
+    body.light .lead,
+    body.light .role,
+    body.light .authors,
+    body.light .item .meta,
+    body.light .item .desc,
+    body.light .note,
+    body.light label,
+    body.light .sectionTitle p,
+    body.light footer,
+    body.light .small,
+    body.light .sideItem p{
+      color: var(--muted);
+    }
+
+    body.light input:focus,
+    body.light textarea:focus{
+      border-color: rgba(37,99,235,.55);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+    }
+
+    body.light footer{
+      border-top: 1px solid rgba(215,224,234,.95);
+    }
+
+    body.light .bannerCard{
+      border-color: var(--border);
+      background: transparent;
+      box-shadow: var(--shadow);
+    }
+
+    body.light .bannerCard::before{
+      background:
+        radial-gradient(420px 180px at 10% 25%, rgba(37,99,235,.08), transparent 62%),
+        radial-gradient(360px 160px at 85% 70%, rgba(16,185,129,.06), transparent 62%);
+    }
+
+    body.light .bannerOverlay{
+      background: linear-gradient(180deg, rgba(255,255,255,0) 25%, rgba(255,255,255,.18) 100%);
+    }
+
+    body.light .bannerLabel{
+      background: rgba(255,255,255,.54);
+      border-color: rgba(215,224,234,.95);
+      color: var(--text);
+    }
+
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Lab home">
+          <span class="logo" aria-hidden="true"></span>
+          <span>RASHED LAB</span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul id="navList">
+            <li><a href="#news">News</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="grants.html">Grants</a></li>
+            <li><a href="awards.html">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="cta">
+          <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
+          <a class="btn primary" href="#join">Join Us</a>
+          <button class="btn menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+        </div>
+      </div>
+
+      <!-- Mobile nav (hidden by default) -->
+      <div id="mobileNav" style="display:none; padding:0 0 14px;">
+        <div class="card" style="padding:10px; border-radius:14px;">
+          <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <a class="btn" href="#research">Research</a>
+            <a class="btn" href="#people">People</a>
+            <a class="btn" href="publications.html">Publications</a>
+            <a class="btn" href="grants.html">Grants</a>
+            <a class="btn" href="awards.html">Awards</a>
+            <a class="btn" href="#news">News</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <div class="hero" id="top">
+      <div class="container">
+      <div class="bannerWrap">
+        <div class="bannerCard" aria-label="Animated network banner inspired by the IEEE TMI homepage">
+          <div class="bannerInner">
+            <svg id="tmiBanner" viewBox="0 0 1100 200" preserveAspectRatio="none" role="img" aria-label="Animated network of dots and connecting lines"></svg>
+            <!-- <div class="bannerOverlay">
+              <div class="bannerCopy">
+                <div class="bannerLabel"><span class="dot"></span> Dynamic network banner</div>
+                <p class="bannerTitle">Animated dots and links styled to match the site and adapt to Light/Dark Mode.</p>
+              </div>
+              <p class="bannerHint">Transparent background • 200px height</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+        <div class="heroGrid">
+          <div class="card heroMain">
+  <div class="sakura-corner top-left"></div>
+  <div class="sakura-corner top-right"></div>
+  <div class="sakura-corner bottom-left"></div>
+  <div class="sakura-corner bottom-right"></div>
+            <span class="kicker"><span class="dot"></span> AI • Medical Imaging • Multimodal Systems</span>
+            <h1>Building trustworthy AI for medical imaging and clinical decision support.</h1>
+            <p class="lead">
+              We develop segmentation, detection, report-generation, and agentic AI systems that integrate imaging, clinical text,
+              and external knowledge - emphasizing robustness, uncertainty, explainability, and real-world deployment.
+            </p>
+
+            <div class="pillRow" aria-label="Key topics">
+              <span class="pill">Agentic AI</span>
+              <span class="pill">Multimodal LLM/VLM</span>
+              <span class="pill">Medical Image Segmentation</span>
+              <span class="pill">Federated Learning</span>
+              <span class="pill">Uncertainty & Safety</span>
+              <span class="pill">Regulatory-ready Evaluation</span>             
+            </div>
+
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+              <a class="btn primary" href="#research">Explore Research</a>
+              <a class="btn" href="#publications">See Publications</a>
+              <a class="btn" href="#contact">Contact</a>
+            </div>
+          </div>
+
+          <aside class="card heroSide" aria-label="Highlights">
+            <div class="sideItem">
+              <span class="kicker"><span class="dot"></span> Call: Open Positions</span>
+              <p>PhD / MSc / Visiting scholars — see topics and how to apply.</p>
+              <p style="margin-top:8px;"><a class="btn" href="#join">Application info →</a></p>
+            </div>
+
+            <div class="sideItem">
+              <span class="kicker"><span class="dot"></span> Latest Release: Software</span>
+              <p>CondNet (Dielectric property estimation in human head models).</p>
+              <p style="margin-top:8px;">
+                <a class="btn" href="https://github.com/erashed/CondNet">Software →</a>
+                <a class="btn" href="https://doi.org/10.1088/1361-6560/ab7308">Paper →</a>
+                <a class="btn" href="assets/publications/pdf/Rashed2020PMB.pdf">PDF →</a>
+              </p>
+            </div>
+            
+            <div class="sideItem">
+              <span class="kicker"><span class="dot"></span> Latest Release: Dataset</span>
+              <p>SHARM (Segmented Head Anatomical Reference Models).</p>
+              <p style="margin-top:8px;">
+                <a class="btn" href="https://figshare.com/s/a4d9ba6f18a6b7f7ba2c">Dataset →</a>
+                <a class="btn" href="https://doi.org/10.1016/j.bspc.2024.107481">Paper →</a>
+                <a class="btn" href="assets/publications/pdf/Rashed2025BSPC.pdf">PDF →</a>
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS -->
+    <section id="news">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>News & Highlights</h2>
+        </div>
+
+        <div class="contactGrid">
+          <div class="card list" id="newsList">
+            <div class="item">
+              <div class="newsBody">
+                <div class="meta">Loading news...</div>
+                <p class="title">Please wait while the news items are loaded.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <a class="btn" href="newsarxiv.html">News archive → </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Research Areas</h2>
+        </div>
+
+        <div class="grid3">
+          <div class="feature">
+            <div class="icon" aria-hidden="true">S</div>
+            <h3>Segmentation & Detection</h3>
+            <p>nnU-Net style pipelines, foundation-model adaptation, and clinically meaningful evaluation protocols.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon" aria-hidden="true">M</div>
+            <h3>Multimodal LLM/VLM</h3>
+            <p>Radiology report generation, VQA, and structured reasoning over images + text with retrieval.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon" aria-hidden="true">F</div>
+            <h3>Federated & Privacy-Preserving AI</h3>
+            <p>Cross-institution learning with domain shift handling, robust aggregation, and governance-aware workflows.</p>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="grid3">
+          <div class="feature">
+            <div class="icon" aria-hidden="true">U</div>
+            <h3>Uncertainty & Safety</h3>
+            <p>Calibration, abstention, and uncertainty-aware decision support for high-stakes deployment.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon" aria-hidden="true">A</div>
+            <h3>Agentic AI Systems</h3>
+            <p>Multi-agent orchestration for iterative analysis, conflict resolution, and transparent synthesis.</p>
+          </div>
+
+          <div class="feature">
+            <div class="icon" aria-hidden="true">R</div>
+            <h3>Regulatory-Ready Evaluation</h3>
+            <p>Quality management, documentation, and reproducible benchmarks aligned with clinical practice.</p>
+          </div>
+        </div>
+        <div style="margin-top:12px;">
+          <a class="btn" href="grants.html">View all funded projects → </a>
+        </div>
+      </div>
+    </section>
+
+     <!-- PEOPLE -->
+    <section id="people">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>People</h2>
+        </div>
+
+        <div class="peopleGrid">
+          <article class="person">
+            <div class="avatar">
+              <img src="assets/people/pi.jpg" alt="Prof. Essam Rashed" loading="lazy">
+            </div>
+            <h3>Prof. Essam Rashed</h3>
+            <p class="role">Principal Investigator</p>
+            <div class="links">
+              <a class="chip" href="rashed.html">Personal page</a>
+              <!-- <a class="chip" href="https://www.scopus.com/authid/detail.uri?authorId=24484116300">Scopus</a> -->
+              <!-- <a class="chip" href="https://scholar.google.com/citations?user=ihTTcfkAAAAJ&hl=en">Google Scholar</a> -->
+            </div>
+          </article>
+
+          <article class="person">
+            <div class="avatar">
+              <img src="assets/people/ghada_nu.jpg" alt="Prof. Ghada Khoriba" loading="lazy">
+            </div>
+            <h3>Prof. Ghada Khoriba</h3>
+            <p class="role">Visiting Professor (Nile University)</p>
+            <div class="links">
+              <a class="chip" href="https://nu.edu.eg/academic-staff/dr-ghada-khoriba">Personal page</a>
+              <!-- <a class="chip" href="https://www.scopus.com/authid/detail.uri?authorId=23396428200">Scopus</a> -->
+              <!-- <a class="chip" href="https://scholar.google.com/citations?user=jwTBsIIAAAAJ&hl=en&oi=ao">Google Scholar</a> -->
+            </div>
+          </article>
+
+          <article class="person">
+            <div class="avatar">
+              <img src="assets/people/mabrok_qu.jpg" alt="Prof. Mohamed Mabrok" loading="lazy">
+            </div>
+            <h3>Prof. Mohamed Mabrok</h3>
+            <p class="role">Visiting Professor (Qatar University)</p>
+            <div class="links">
+              <a class="chip" href="http://qufaculty.qu.edu.qa/mamabrok/">Personal page</a>              
+              <!-- <a class="chip" href="https://www.scopus.com/authid/detail.uri?authorId=45761302500">Scopus</a> -->
+              <!-- <a class="chip" href="https://scholar.google.com/citations?user=DW4268EAAAAJ&hl=en&oi=ao">Google Scholar</a> -->
+            </div>
+          </article>
+          
+          <article class="person">
+            <div class="avatar">
+              <img src="assets/people/ahmed1.jpg" alt="Ahmed Elboardy" loading="lazy">
+            </div>
+            <h3>Ahmed Elboardy</h3>
+            <p class="role">PhD Student (D2)</p>
+            <div class="tags">
+              <span class="tag">MEXT Scholarship</span>
+            </div>
+          </article>
+
+          <article class="person">
+            <div class="avatar">
+              <img src="assets/people/yiming.jpg" alt="Yiming Jia" loading="lazy">
+            </div>
+            <h3>Yiming Jia</h3>
+            <p class="role">PhD Student (D1)</p>
+            <div class="tags">
+              <span class="tag">Senshu Scholarship</span>
+            </div>
+          </article>
+
+          <article class="person">
+            <div class="avatar">
+              <img src="assets/people/mina.jpg" alt="Mina Yousef" loading="lazy">
+            </div>
+            <h3>Mina Yousef</h3>
+            <p class="role">PhD Student (D1)</p>
+            <div class="tags">
+              <span class="tag">MEXT Scholarship</span>
+            </div>
+          </article>
+
+          <article class="person">
+            <div class="avatar">
+              <img src="assets/people/makoto.jpg" alt="Makoto Kanehira" loading="lazy">
+            </div>
+            <h3>Makoto Kanehira</h3>
+            <p class="role">MSc Student (M2)</p>
+          </article>
+
+          <article class="person">
+            <div class="avatar">
+              <img src="assets/people/student1.jpg" alt="Joining soon..." loading="lazy">
+            </div>
+            <h3>Joining soon...</h3>
+            <p class="role">Research Student</p>
+          </article>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <!-- <div class="card" style="padding:16px;">
+          <h3 style="margin:0 0 8px;">Alumni</h3>
+          <p style="margin:0; color:var(--muted); font-size:14px;">
+            [2025] Hiroyuki Seshimo 
+          </p>
+        </div> -->
+       <div style="margin-top:12px;">
+          <a class="btn" href="alumni.html">View alumni → </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Selected Publications</h2>
+        </div>
+
+        <div class="grid3">
+          <div class="pub">
+            <p class="title">📝 REVIEW: Advances in Medical Image Segmentation: A Comprehensive Review with a Focus on Lumbar Spine Applications (2025)</p>
+            <p class="authors">Computers in Biology and Medicine</p>
+            <p class="authors">A. Kabil, G. Khoriba, M. Yousef and E. A. Rashed</p>
+            <div class="links">
+              <a class="chip" href="assets/publications/pdf/Kabil2025CBM.pdf">PDF</a>
+              <a class="chip" href="https://doi.org/10.1016/j.compbiomed.2025.111171">DOI</a>
+            </div>
+          </div>
+
+          <div class="pub">
+            <p class="title">📝 SHARM: Segmented Head Anatomical Reference Models (2025)</p>
+            <p class="authors">Biomedical Signal Processing and Control</p>
+            <p class="authors">E. A. Rashed, M. al-Shatouri, I. Laakso, S. Kodera and A. Hirata</p>
+            <div class="links">
+              <a class="chip" href="assets/publications/pdf/Rashed2025BSPC.pdf">PDF</a>
+              <a class="chip" href="https://doi.org/10.1016/j.bspc.2024.107481">DOI</a>
+              <a class="chip" href="https://figshare.com/s/a4d9ba6f18a6b7f7ba2c">Dataset</a>
+            </div>
+          </div>
+
+          <div class="pub">
+            <p class="title">📝 Deep learning-based development of personalized human head model with non-uniform conductivity for brain stimulation (2020)</p>
+            <p class="authors">IEEE Transactions on Medical Imaging</p>
+            <p class="authors">E. A. Rashed, J. Gomez-Tames and A. Hirata</p>
+            <div class="links">
+              <a class="chip" href="assets/publications/pdf/Rashed2020TMI.pdf">PDF</a>
+              <a class="chip" href="https://doi.org/10.1109/TMI.2020.2969682">DOI</a>
+              <a class="chip" href="https://github.com/erashed/CondNet">Software</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <a class="btn" href="publications.html">View all publications → </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Selected Awards</h2>
+        </div>
+
+        <div class="grid3">
+          <div class="pub">
+            <p class="title">🏆 The Motohisa Kanda Award</p>
+            <p class="authors">Essam Rashed • 2025</p>
+            <p class="authors">IEEE EMC Society</p>
+            <div class="links">
+              <a class="chip" href="https://ieeexplore.ieee.org/document/9557785">DOI</a>
+              <a class="chip" href="https://u-hyogo-gsis.org/topics/%E3%83%A9%E3%82%B7%E3%83%89%E5%85%88%E7%94%9F%E5%8F%97%E8%B3%9E%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/">Link</a>
+            </div>
+          </div>
+
+          <div class="pub">
+            <p class="title">🏆 MEXT Science and Technology Award (Development Category)</p>
+            <p class="authors">Essam Rashed • 2024</p>
+            <p class="authors">Minister of Education, Culture, Sports, Science and Technology (MEXT), Japan</p>
+            <div class="links">
+              <a class="chip" href="https://www.u-hyogo.ac.jp/news/news/202404017daijin-award.html">Link</a>
+            </div>
+          </div>
+
+          <div class="pub">
+            <p class="title">🏆 Best Poster Award</p>
+            <p class="authors">Ahmed Elboardy • 2025</p>
+            <p class="authors">International Forum on Medical Imaging in Asia (IFMIA 2025), Takamatsu, Japan</p>
+            <div class="links">
+              <a class="chip" href="https://u-hyogo-gsis.org/topics/%e7%a0%94%e7%a9%b6%e7%94%9f%e3%82%a8%e3%83%ab%e3%83%9c%e3%83%bc%e3%83%87%e3%82%a3%e3%81%95%e3%82%93%e5%8f%97%e8%b3%9e%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/">Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <a class="btn" href="awards.html">View all award → </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- JOIN -->
+    <section id="join">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Join the Lab</h2>
+        </div>
+
+        <div class="twoCol">
+          <div class="card" style="padding:16px;">
+            <h3 style="margin:0 0 8px;">We’re looking for</h3>
+            <ul style="margin:0; padding-left:18px; color:var(--muted);">
+              <li>We are seeking highly motivated and intellectually curious students with a strong foundation in mathematics, programming (e.g., Python), and machine learning, who are passionate about advancing AI-driven medical imaging research and are eager to engage in rigorous, collaborative, and publication-oriented research within an international environment.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="padding:16px;">
+            <h3 style="margin:0 0 8px;">How to apply</h3>
+            <ol style="margin:0; padding-left:18px; color:var(--muted);">
+              <li>Email your CV + short research statement</li>
+              <li>Include links to papers / code (if available)</li>
+              <li>Write 2–3 topics you want to work on</li>
+            </ol>
+            <p class="note">Tip: If you’re applying for scholarships (JSPS/MEXT/etc.), mention the program and deadline.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contactGrid">
+          <div class="card contactBox">
+            <h3 style="margin:0 0 10px;">Lab Information</h3>
+            <p style="margin:0; color:var(--muted);">
+              <strong style="color:var(--text);">Affiliation:</strong> Graduate School of Information Science, University of Hyogo<br/>
+              <strong style="color:var(--text);">Address:</strong> 7-1-28 Minatojima-minamimachi, Chuo-ku, Kobe, Hyogo 650-0047, Japan<br/>
+              <strong style="color:var(--text);">Room:</strong> Lab. number 601 (6th floor)
+            </p>
+
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn" href="https://maps.app.goo.gl/xYMS379Z2mtMxjoo7">Google Maps</a>
+              <a class="btn" href="https://www.u-hyogo.ac.jp/about/access/">Access</a>
+              <a class="btn" href="https://github.com/erashed">GitHub</a>
+              <a class="btn" href="mailto: rashed@gsis.u-hyogo.ac.jp">Email PI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footerRow">
+        <div class="brand" style="gap:10px;">
+          <span class="logo" aria-hidden="true" style="width:34px;height:34px;border-radius:12px;"></span>
+          <div>
+            <div style="font-weight:900;">RASHED LAB</div>
+            <div class="small">AI • Medical Imaging • Multimodal Systems</div>
+          </div>
+        </div>
+        <div class="small">© <span id="year"></span> Rashed Lab. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    // animated banner inspired by the IEEE TMI landing-page network motif
+    function initTMIBanner() {
+      const svg = document.getElementById('tmiBanner');
+      if (!svg) return;
+
+      const NS = 'http://www.w3.org/2000/svg';
+      const totalDots = 100;
+      const nodes = [];
+      const links = [];
+      const dotEls = [];
+      let width = 1100;
+      let height = 200;
+      let rafId = null;
+      let lineLayer = null;
+      let haloLayer = null;
+      let dotLayer = null;
+      let lastTime = 0;
+
+      function themeColors() {
+        const isLight = document.body.classList.contains('light');
+        return {
+          line: isLight ? 'rgba(37,99,235,0.28)' : 'rgba(96,165,250,0.32)',
+          lineStrong: isLight ? 'rgba(16,185,129,0.32)' : 'rgba(52,211,153,0.38)',
+          dot: isLight ? '#2563eb' : '#60a5fa',
+          dotAlt: isLight ? '#10b981' : '#34d399',
+          halo: isLight ? 'rgba(37,99,235,0.08)' : 'rgba(96,165,250,0.12)'
+        };
+      }
+
+      function clearSvg() {
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+      }
+
+      function resize() {
+        const rect = svg.getBoundingClientRect();
+        width = Math.max(320, rect.width || 1100);
+        height = Math.max(160, rect.height || 200);
+        svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+      }
+
+      function randomNode(i) {
+        const margin = 10;
+        const speed = 16 + Math.random() * 22;
+        const angle = Math.random() * Math.PI * 2;
+        return {
+          x: margin + Math.random() * (width - margin * 2),
+          y: margin + Math.random() * (height - margin * 2),
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          r: i % 7 === 0 ? 3.2 : 2.8,
+          haloR: i % 7 === 0 ? 8.5 : 7.5,
+          alt: i % 5 === 0
+        };
+      }
+
+      function createLinkEl() {
+        const line = document.createElementNS(NS, 'line');
+        line.setAttribute('stroke-linecap', 'round');
+        lineLayer.appendChild(line);
+        links.push(line);
+      }
+
+      function build() {
+        cancelAnimationFrame(rafId);
+        resize();
+        clearSvg();
+        nodes.length = 0;
+        links.length = 0;
+        dotEls.length = 0;
+
+        const defs = document.createElementNS(NS, 'defs');
+        const filter = document.createElementNS(NS, 'filter');
+        filter.setAttribute('id', 'bannerGlow');
+        filter.innerHTML = '<feGaussianBlur stdDeviation="2.1" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>';
+        defs.appendChild(filter);
+        svg.appendChild(defs);
+
+        haloLayer = document.createElementNS(NS, 'g');
+        lineLayer = document.createElementNS(NS, 'g');
+        dotLayer = document.createElementNS(NS, 'g');
+        lineLayer.setAttribute('fill', 'none');
+        svg.appendChild(haloLayer);
+        svg.appendChild(lineLayer);
+        svg.appendChild(dotLayer);
+
+        for (let i = 0; i < totalDots; i++) nodes.push(randomNode(i));
+        for (let i = 0; i < totalDots * 4; i++) createLinkEl();
+
+        nodes.forEach((node) => {
+          const halo = document.createElementNS(NS, 'circle');
+          halo.setAttribute('filter', 'url(#bannerGlow)');
+          haloLayer.appendChild(halo);
+
+          const dot = document.createElementNS(NS, 'circle');
+          dotLayer.appendChild(dot);
+          dotEls.push({ halo, dot, alt: node.alt });
+        });
+
+        lastTime = performance.now();
+        render(lastTime);
+      }
+
+      function stepNodes(dt) {
+        const margin = 6;
+        for (const node of nodes) {
+          node.x += node.vx * dt;
+          node.y += node.vy * dt;
+
+          if (node.x <= margin) {
+            node.x = margin;
+            node.vx = Math.abs(node.vx);
+          } else if (node.x >= width - margin) {
+            node.x = width - margin;
+            node.vx = -Math.abs(node.vx);
+          }
+
+          if (node.y <= margin) {
+            node.y = margin;
+            node.vy = Math.abs(node.vy);
+          } else if (node.y >= height - margin) {
+            node.y = height - margin;
+            node.vy = -Math.abs(node.vy);
+          }
+        }
+      }
+
+      function render(now) {
+        const colors = themeColors();
+        const dt = Math.min(0.033, Math.max(0.008, (now - lastTime) / 1000));
+        lastTime = now;
+        stepNodes(dt);
+
+        nodes.forEach((node, i) => {
+          const d = dotEls[i];
+          d.halo.setAttribute('cx', node.x.toFixed(2));
+          d.halo.setAttribute('cy', node.y.toFixed(2));
+          d.halo.setAttribute('r', node.haloR);
+          d.halo.setAttribute('fill', colors.halo);
+
+          d.dot.setAttribute('cx', node.x.toFixed(2));
+          d.dot.setAttribute('cy', node.y.toFixed(2));
+          d.dot.setAttribute('r', node.r);
+          d.dot.setAttribute('fill', d.alt ? colors.dotAlt : colors.dot);
+        });
+
+        const maxDistance = Math.min(145, width * 0.12 + 44);
+        const maxDistanceSq = maxDistance * maxDistance;
+        let linkIndex = 0;
+
+        for (let i = 0; i < nodes.length; i++) {
+          const a = nodes[i];
+          for (let j = i + 1; j < nodes.length; j++) {
+            const b = nodes[j];
+            const dx = a.x - b.x;
+            const dy = a.y - b.y;
+            const distSq = dx * dx + dy * dy;
+            if (distSq > maxDistanceSq) continue;
+            if (linkIndex >= links.length) createLinkEl();
+
+            const dist = Math.sqrt(distSq);
+            const closeness = 1 - dist / maxDistance;
+            const line = links[linkIndex++];
+            line.setAttribute('x1', a.x.toFixed(2));
+            line.setAttribute('y1', a.y.toFixed(2));
+            line.setAttribute('x2', b.x.toFixed(2));
+            line.setAttribute('y2', b.y.toFixed(2));
+            line.setAttribute('stroke', (a.alt || b.alt) ? colors.lineStrong : colors.line);
+            line.setAttribute('stroke-width', (0.55 + closeness * 1.25).toFixed(2));
+            line.setAttribute('opacity', Math.max(0.12, closeness * 0.95).toFixed(2));
+            line.style.display = 'block';
+          }
+        }
+
+        for (let i = linkIndex; i < links.length; i++) {
+          links[i].style.display = 'none';
+        }
+
+        rafId = requestAnimationFrame(render);
+      }
+
+      build();
+      window.addEventListener('resize', build, { passive: true });
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+          cancelAnimationFrame(rafId);
+        } else {
+          lastTime = performance.now();
+          rafId = requestAnimationFrame(render);
+        }
+      });
+      return { rebuild: build };
+    }
+
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const isOpen = mobileNav.style.display === 'block';
+        mobileNav.style.display = isOpen ? 'none' : 'block';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    }
+
+    // theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'light') {
+      document.body.classList.add('light');
+      if (themeToggle) themeToggle.textContent = '🌙 Dark Mode';
+    }
+
+    const bannerAnimation = initTMIBanner();
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const isLight = document.body.classList.toggle('light');
+
+        if (isLight) {
+          themeToggle.textContent = '🌙 Dark Mode';
+          localStorage.setItem('theme', 'light');
+        } else {
+          themeToggle.textContent = '☀ Light Mode';
+          localStorage.setItem('theme', 'dark');
+        }
+
+        if (bannerAnimation && typeof bannerAnimation.rebuild === 'function') {
+          bannerAnimation.rebuild();
+        }
+      });
+    }
+  </script>
+
+  <script>
+    async function loadNews() {
+      const newsList = document.getElementById('newsList');
+      if (!newsList) return;
+
+      try {
+        const response = await fetch('data/news.json');
+        if (!response.ok) throw new Error('Failed to load news...');
+
+        const newsItems = await response.json();
+
+        if (!Array.isArray(newsItems) || newsItems.length === 0) {
+          newsList.innerHTML = `
+            <div class="item">
+              <div class="newsBody">
+                <div class="meta">No news available</div>
+                <p class="title">No news items were found in the JSON file.</p>
+              </div>
+            </div>
+          `;
+          return;
+        }
+
+        newsList.innerHTML = newsItems.map(item => {
+          const imageHtml = item.image
+            ? `
+              <div class="newsThumb">
+                <img src="${item.image}" alt="${item.imageAlt || item.title || 'News image'}" loading="lazy" />
+              </div>
+            `
+            : '';
+
+          const titleHtml = item.url && item.url.trim() !== ''
+            ? `<p class="title"><a href="${item.url}">${item.title || ''}</a></p>`
+            : `<p class="title">${item.title || ''}</p>`;
+
+          const descHtml = item.desc ? `<p class="desc">${item.desc}</p>` : '';
+
+          return `
+            <div class="item">
+              ${imageHtml}
+              <div class="newsBody">
+                <div class="meta">${item.meta || ''}</div>
+                ${titleHtml}
+                ${descHtml}
+              </div>
+            </div>
+          `;
+        }).join('');
+      } catch (error) {
+        newsList.innerHTML = `
+          <div class="item">
+            <div class="newsBody">
+              <div class="meta">Error</div>
+              <p class="title">Could not load news items...</p>
+              <p class="desc">${error.message}</p>
+            </div>
+          </div>
+        `;
+        console.error('News loading error:', error);
+      }
+    }
+
+    loadNews();
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TSP2C209C6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TSP2C209C6');
+  </script>
+
+</body>
+</html>
