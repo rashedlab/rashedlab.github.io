@@ -18,7 +18,7 @@
       --muted:#a3aab8;
       --brand:#60a5fa;
       --brand2:#34d399;
-      --border:#1f2a44;
+      --
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 16px;
       --max: 1100px;
@@ -63,7 +63,7 @@
     .logo{
       width:38px; height:38px; border-radius:12px;
       background: linear-gradient(135deg, rgba(96,165,250,.95), rgba(52,211,153,.9));
-      box-shadow: 0 10px 24px rgba(96,165,250,.25);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
       position:relative;
     }
     .logo:after{
@@ -71,7 +71,7 @@
       position:absolute; inset:9px;
       border-radius:10px;
       background: rgba(11,15,23,.55);
-      border:1px solid rgba(255,255,255,.12);
+      
     }
     nav ul{
       display:flex; gap:16px;
@@ -94,25 +94,18 @@
       gap:8px;
       padding:10px 12px;
       border-radius:14px;
-      border: 1px solid rgba(255,255,255,.12);
+      
       background: rgba(255,255,255,.04);
       color:var(--text);
       font-weight:700;
       font-size:14px;
       cursor:pointer;
     }
-    .btn:hover{border-color:rgba(96,165,250,.5); box-shadow: 0 0 0 3px rgba(96,165,250,.18)}
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(96,165,250,.9), rgba(52,211,153,.85));
+    .btn:hover{border-color:rgba(96,165,250,.5); box-shadow: 0 4px 12px rgba(0,0,0,0.06);
       border-color: transparent;
       color:#071018;
     }
-    .btn.primary:hover{box-shadow: 0 0 0 3px rgba(52,211,153,.18)}
-    .menuBtn{display:none}
-
-    /* Hero */
-    .hero{
-      padding:46px 0 18px;
+    .btn.primary:hover{box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
     .heroGrid{
       display:grid;
@@ -122,9 +115,9 @@
     }
     .card{
       background: rgba(16,24,39,.75); 
-      border: 1px solid rgba(31,42,68,.9);
+      
       border-radius: var(--radius);
-      box-shadow: var(--shadow);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
     .heroMain{
       padding:28px;
@@ -147,14 +140,14 @@
       letter-spacing:.4px;
       text-transform:uppercase;
       background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.10);
+      
       padding:8px 10px;
       border-radius:999px;
     }
     .dot{
       width:8px; height:8px; border-radius:50%;
       background: var(--brand2);
-      box-shadow: 0 0 0 4px rgba(52,211,153,.12);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
     h1{
       margin:16px 0 10px;
@@ -173,7 +166,7 @@
       margin:16px 0 18px;
     }
     .pill{
-      border: 1px solid rgba(255,255,255,.12);
+      
       background: rgba(255,255,255,.03);
       padding:8px 10px;
       border-radius: 999px;
@@ -191,7 +184,7 @@
     .sideItem{
       padding:14px;
       border-radius: 14px;
-      border:1px solid rgba(255,255,255,.10);
+      
       background: rgba(255,255,255,.03);
     }
     .sideItem h3{
@@ -236,14 +229,14 @@
     .feature{
       padding:16px;
       border-radius: var(--radius);
-      border: 1px solid rgba(31,42,68,.9);
+      
       background: rgba(15,23,42,.65);
-      box-shadow: 0 10px 26px rgba(0,0,0,.22);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
     .feature .icon{
       width:40px; height:40px; border-radius: 14px;
       background: rgba(96,165,250,.12);
-      border: 1px solid rgba(96,165,250,.25);
+      
       display:flex; align-items:center; justify-content:center;
       margin-bottom:10px;
       font-weight:900;
@@ -267,7 +260,7 @@
       align-items:flex-start;
       padding:12px;
       border-radius:14px;
-      border: 1px solid rgba(255,255,255,.10);
+      
       background: rgba(255,255,255,.03);
       margin-bottom:10px;
     }
@@ -277,7 +270,7 @@
       height:75px;
       flex:0 0 75px;
       border-radius:12px;
-      border: 1px solid rgba(255,255,255,.12);
+      
       background: rgba(255,255,255,.04);
       overflow:hidden;
       display:grid;
@@ -306,7 +299,7 @@
     .person{
       padding:14px;
       border-radius: var(--radius);
-      border: 1px solid rgba(31,42,68,.9);
+      
       background: rgba(16,24,39,.65);
       overflow:hidden;
     }
@@ -314,7 +307,7 @@
       width:auto;
       height:auto;
       border-radius:14px;
-      border: 1px solid rgba(255,255,255,.10);
+      
       background: rgba(255,255,255,.04);
       overflow:hidden;
       display:grid;
@@ -334,7 +327,7 @@
     .tag{
       font-size:12px;
       color: var(--muted);
-      border: 1px solid rgba(255,255,255,.10);
+      
       background: rgba(255,255,255,.02);
       padding:6px 8px;
       border-radius: 999px;
@@ -344,7 +337,7 @@
     .pub{
       padding:14px;
       border-radius: var(--radius);
-      border: 1px solid rgba(31,42,68,.9);
+      
       background: rgba(15,23,42,.6);
     }
     .pub .title{font-weight:900; margin:0 0 6px}
@@ -355,7 +348,7 @@
       font-weight:800;
       padding:8px 10px;
       border-radius: 999px;
-      border:1px solid rgba(255,255,255,.10);
+      
       background: rgba(255,255,255,.03);
     }
 
@@ -368,7 +361,7 @@
     input, textarea{
       width:100%;
       background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.12);
+      
       border-radius: 14px;
       padding:12px 12px;
       color: var(--text);
@@ -376,8 +369,7 @@
       font-size:14px;
     }
     textarea{min-height:120px; resize:vertical}
-    input:focus, textarea:focus{border-color: rgba(96,165,250,.6); box-shadow: 0 0 0 3px rgba(96,165,250,.15)}
-    .note{color:var(--muted); font-size:13px; margin:10px 0 0}
+    input:focus, textarea:focus{border-color: rgba(96,165,250,.6); box-shadow: 0 4px 12px rgba(0,0,0,0.06); font-size:13px; margin:10px 0 0}
     footer{
       padding:28px 0 40px;
       color: rgba(163,170,184,.9);
@@ -401,9 +393,9 @@
       height:130px;
       overflow:hidden;
       border-radius: var(--radius);
-      border: 1px solid rgba(31,42,68,.9);
+      
       background: var(--banner-bg);
-      box-shadow: var(--shadow);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
       isolation:isolate;
     }
     .bannerCard canvas{
@@ -422,9 +414,9 @@
       z-index:1;
     }
     body.light .bannerCard{
-      background: var(--banner-bg); 
+      background: var(--banner-bg);
       border-color: rgba(31,42,68,.9);
-      box-shadow: var(--shadow);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
     /* Responsive */
@@ -460,7 +452,7 @@
       --muted:#a3aab8;
       --brand:#60a5fa;
       --brand2:#34d399;
-      --border:#1f2a44;
+      --
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 16px;
       --max: 1100px;
@@ -479,7 +471,7 @@
       --muted: #5f6b7a;
       --brand: #2563eb;
       --brand2: #10b981;
-      --border: #d7e0ea;
+      --
       --shadow: 0 10px 30px rgba(15,23,42,.08);
 
       background:
@@ -500,7 +492,7 @@
     body.light .feature{
       background: rgba(255,255,255,.88);
       border-color: var(--border);
-      box-shadow: var(--shadow);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
     body.light .feature{
@@ -534,13 +526,13 @@
 
     body.light .btn{
       background: rgba(255,255,255,.9);
-      border: 1px solid rgba(215,224,234,1);
+      
       color: var(--text);
     }
 
     body.light .btn:hover{
       border-color: rgba(37,99,235,.45);
-      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
     body.light .btn.primary{
@@ -551,7 +543,7 @@
 
     body.light .logo:after{
       background: rgba(255,255,255,.65);
-      border: 1px solid rgba(22,32,51,.08);
+      
     }
 
     body.light .lead,
@@ -571,7 +563,7 @@
     body.light input:focus,
     body.light textarea:focus{
       border-color: rgba(37,99,235,.55);
-      box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
     body.light footer{
@@ -629,7 +621,7 @@
 
   <main id="main">
 
-        <section class="bannerSection" aria-label="Animated banner">
+    <section class="bannerSection" aria-label="Animated banner">
       <div class="container">
         <div class="bannerCard">
           <canvas id="topBannerCanvas" aria-hidden="true"></canvas>
@@ -1030,9 +1022,6 @@
         </div>
       </div>
     </section>
-
-
-    
   </main>
 
   <footer>
@@ -1101,20 +1090,20 @@
       const connectionDistance = 120;
 
       function getThemePalette() {
-         const isLight = document.body.classList.contains('light');
-         return isLight
-           ? {
-               bgStart: '#ffffff',
-               bgEnd: '#f1f3f7', 
-               particle: '#2563eb',
+        const isLight = document.body.classList.contains('light');
+        return isLight
+          ? {
+              bgStart: '#ffffff',
+              bgEnd: '#e9eef6',
+              particle: '#2563eb',
               lineRgb: '37, 99, 235'
             }
-           : {
-               bgStart: '#13213b',
-               bgEnd: '#050a14',
-               particle: '#6ec1ff',
-               lineRgb: '110, 193, 255'
-             };
+          : {
+              bgStart: '#13213b',
+              bgEnd: '#050a14',
+              particle: '#6ec1ff',
+              lineRgb: '110, 193, 255'
+            };
       }
 
       function resizeCanvas() {
