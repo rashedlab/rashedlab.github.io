@@ -252,12 +252,25 @@
       "meta": "2025 • IEEE FMLDS",
       "title": "🏅 Plenary Speaker",
       "desc": "E. Rashed is recognized by IEEE FMLDS 2025 as Plenary Speaker",
-      "image": "assets/awards//fmlds25plenary.jpg",
+      "image": "assets/awards/fmlds25plenary.jpg",
       "alt": "Plenary Speaker",
       "links": [
         {
           "label": "Conference page",
           "url": "https://fmlds.org/2025/"
+        }
+      ]
+    },
+    {
+      "meta": "2024 • IOP Trusted Reviewer",
+      "title": "🏅 Trusted Reviewer",
+      "desc": "E. Rashed achieved the IOP Trusted Reviewer Status",
+      "image": "assets/awards/ioptrusted24.jpg",
+      "alt": "IOP Trusted Reviewer",
+      "links": [
+        {
+          "label": "View credential",
+          "url": "https://accreditations.ioppublishing.org/4b0a0f76-94ed-41b9-ae4a-548a08dc3cce#acc.z7GMBli5"
         }
       ]
     },
