@@ -87,7 +87,11 @@
       "desc": "S. Kodera and E. Rashed awarded by MDPI Publisher",
       "image": "assets/awards/IJERPH2024si.jpg",
       "alt": "IJERPH Special Issue Award",
-      "links": []
+      "links": [
+        {
+          "label": "Link",
+          "url": "https://www.mdpi.com/journal/ijerph/awards/2614"
+        }
     },
     {
       "meta": "2024 • ICMIP2024",
