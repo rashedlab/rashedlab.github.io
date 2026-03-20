@@ -275,6 +275,10 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1016/j.brs.2024.12.221"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Hirata2025BS.bib"
       }
     ]
   },
