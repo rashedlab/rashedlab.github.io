@@ -299,7 +299,7 @@
     },
     {
       "meta": "2020 • News paper's front page",
-      "title": "🏅 Chunishi News paper 中日新聞",
+      "title": "🏅 Chunichi News paper 中日新聞",
       "desc": "Our research work in predecting new COVID-19 cases is highlighted in the first page isse of 12 Dec 2020",
       "image": "assets/awards/chunichi2020.jpg",
       "alt": "News paper",
@@ -307,6 +307,10 @@
         {
           "label": "Press release",
           "url": "https://www.nitech.ac.jp/news/press/2021/9068.html"
+        },
+        {
+          "label": "Link",
+          "url": "https://www.chunichi.co.jp/article/168959"
         }
       ]
     },
