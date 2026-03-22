@@ -1,5 +1,13 @@
 [
   {
+    "meta": "Mar 2026 • Book Chapter",
+    "title": "A book chapter is published in Elsevier",
+    "desc": "Book: Deep Learning Applications in Neuroinformatics",
+    "image": "assets/news/dlbook26.jpg",
+    "imageAlt": "Book Chapter 2026",
+    "url": "https://doi.org/10.1016/B978-0-443-41459-6.00001-8"
+  },
+  {
     "meta": "Mar 2026 • Conference",
     "title": "E. Rashed is a Programm Committee Member of International Workshop on Learning from Small Data @ ECML-PKDD2626",
     "desc": "@ Naples, Italy, Sept 2026",
