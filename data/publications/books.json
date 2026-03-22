@@ -13,8 +13,12 @@
     ],
     "links": [
       {
-        "label": "In press",
-        "url": "#"
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/B978-0-443-41459-6.00001-8"
+      },
+      {
+        "label": "Link",
+        "url": "https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780443414596000018"
       }
     ]
   },
