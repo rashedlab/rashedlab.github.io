@@ -19,6 +19,10 @@
       {
         "label": "Link",
         "url": "https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780443414596000018"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Yalda2026book.bib"
       }
     ]
   },
