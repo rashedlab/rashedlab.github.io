@@ -1,6 +1,26 @@
 [
   {
     "type": "book",
+    "year": "2025",
+    "title": "Multimodal Foundation Models for Radiological Understanding and Report Generation",
+    "badge": "2025 • Book Chapter",
+    "meta": "S. E. Rashed, G. Khoriba, E. A. Rashed. In: <em>Large Language Models in Healthcare: Opportunities, Applications, and Challenges</em>. CRC Press.",
+    "keywords": [
+      "multimodal foundation models",
+      "radiology report generation",
+      "large language models",
+      "healthcare",
+      "crc press"
+    ],
+    "links": [
+      {
+        "label": "In press",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "book",
     "year": "2026",
     "title": "Deep learning in stroke care",
     "badge": "2026 • Book Chapter",
@@ -23,26 +43,6 @@
       {
         "label": "BibTex",
         "url": "assets/publications/bibtex/Yalda2026book.bib"
-      }
-    ]
-  },
-  {
-    "type": "book",
-    "year": "2025",
-    "title": "Multimodal Foundation Models for Radiological Understanding and Report Generation",
-    "badge": "2025 • Book Chapter",
-    "meta": "S. E. Rashed, G. Khoriba, E. A. Rashed. In: <em>Large Language Models in Healthcare: Opportunities, Applications, and Challenges</em>. CRC Press.",
-    "keywords": [
-      "multimodal foundation models",
-      "radiology report generation",
-      "large language models",
-      "healthcare",
-      "crc press"
-    ],
-    "links": [
-      {
-        "label": "In press",
-        "url": "#"
       }
     ]
   },
