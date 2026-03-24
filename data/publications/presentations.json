@@ -153,7 +153,7 @@
     "year": 2025,
     "title": "Deep Learning-Based Head Models for Thermal Dosimetry: Comparison Between Segmentation-Based and Segmentation-Free Approaches",
     "badge": "2025 • BioEM • Poster",
-    "meta": "S. Kodera, R. Yoshida, E. A. Rashed, Y. Diao, H. Takizawa, A. Hirata. BioEM2025, Rennes, France, 22–27 Jun. 2025. (Poster presentation)",
+    "meta": "S. Kodera, R. Yoshida, E. A. Rashed, Y. Diao, H. Takizawa, A. Hirata. BioEM2025, Rennes, France, 22–27 Jun. 2025.",
     "keywords": "bioem thermal dosimetry head models segmentation-based segmentation-free poster",
     "links": []
   },
@@ -234,7 +234,7 @@
     "year": 2022,
     "title": "Development of human head models from anatomical medical images using deep learning",
     "badge": "2022 • MIST • Invited",
-    "meta": "E. A. Rashed. 2nd International Conference on Medical Imaging Science and Technology (MIST 2022), 15–18 Nov. 2022. (Invited Talk)",
+    "meta": "E. A. Rashed. 2nd International Conference on Medical Imaging Science and Technology (MIST 2022), 15–18 Nov. 2022.",
     "keywords": "mist human head models anatomical medical images deep learning invited talk",
     "links": []
   },
@@ -242,8 +242,8 @@
     "type": "presentation",
     "year": 2022,
     "title": "Deep learning models for efficient electromagnetic neuromodulation",
-    "badge": "2022 • 兵庫県立大学 知の交流シンポジウム",
-    "meta": "E. A. Rashed. 兵庫県立大学 知の交流シンポジウム, 姫路市文化コンベンションセンター, 姫路市, 27 Sept. 2022. (Poster presentation)",
+    "badge": "2022 • 兵庫県立大学 知の交流シンポジウム Poster",
+    "meta": "E. A. Rashed. 兵庫県立大学 知の交流シンポジウム, 姫路市文化コンベンションセンター, 姫路市, 27 Sept. 2022.",
     "keywords": "hyogo symposium electromagnetic neuromodulation deep learning poster himeji",
     "links": []
   },
@@ -260,8 +260,8 @@
     "type": "presentation",
     "year": 2022,
     "title": "Individual variation of cardiac potential based on electric field analysis",
-    "badge": "2022 • BioEM",
-    "meta": "K. Sanjo, E. A. Rashed, A. Hirata. BioEM2022, Nagoya, Japan, 19–24 Jun. 2022. (Poster presentation)",
+    "badge": "2022 • BioEM • Poster",
+    "meta": "K. Sanjo, E. A. Rashed, A. Hirata. BioEM2022, Nagoya, Japan, 19–24 Jun. 2022.",
     "keywords": "bioem cardiac potential electric field analysis poster",
     "links": []
   },
@@ -269,8 +269,8 @@
     "type": "presentation",
     "year": 2022,
     "title": "Evaluation of temperature rise using the human models with non-uniform thermal parameters",
-    "badge": "2022 • BioEM",
-    "meta": "S. Kodera, E. A. Rashed, A. Hirata. BioEM2022, Nagoya, Japan, 19–24 Jun. 2022. (Poster presentation)",
+    "badge": "2022 • BioEM • Poster",
+    "meta": "S. Kodera, E. A. Rashed, A. Hirata. BioEM2022, Nagoya, Japan, 19–24 Jun. 2022.",
     "keywords": "bioem temperature rise human models non-uniform thermal parameters poster",
     "links": []
   },
@@ -291,7 +291,10 @@
     "meta": "E. A. Rashed. Online seminar at Pattern Recognition Lab, University of Erlangen-Nuremberg, 25 Feb. 2021. (Invited Talk)",
     "keywords": "fau seminar dielectric properties deep learning head models invited talk video",
     "links": [
-      { "label": "Video", "url": "https://www.fau.tv/clip/id/29967" }
+      { 
+         "label": "Video", 
+         "url": "https://www.fau.tv/clip/id/29967" 
+      }
     ]
   },
   {
@@ -362,9 +365,14 @@
     "year": 2020,
     "title": "End-to-end semantic segmentation of personalized deep brain structures for non-invasive brain stimulation",
     "badge": "2020 • NYC Neuromodulation",
-    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. NYC Neuromodulation 2020, Apr. 22, 2020. (Session video record available)",
+    "meta": "E. A. Rashed, J. Gomez-Tames, A. Hirata. NYC Neuromodulation 2020, Apr. 22, 2020.",
     "keywords": "nyc neuromodulation semantic segmentation deep brain structures non-invasive brain stimulation video",
-    "links": []
+    "links": [
+       {
+        "label": "Video",
+        "url": "https://youtu.be/_jqB3Dx0w6Q"
+       }
+    ]
   },
   {
     "type": "presentation",
@@ -389,7 +397,7 @@
     "year": 2019,
     "title": "Machine Learning in Cancer Research",
     "badge": "2019 • Invited Talk",
-    "meta": "E. A. Rashed, M. G. Awad. Cancer Bioinformatics: Genomics and Transcriptomics Approach (ICGEB Course), Suez Canal University, Ismailia, Egypt, 5–7 Mar. 2019. (Invited Talk)",
+    "meta": "E. A. Rashed, M. G. Awad. Cancer Bioinformatics: Genomics and Transcriptomics Approach (ICGEB Course), Suez Canal University, Ismailia, Egypt, 5–7 Mar. 2019.",
     "keywords": "cancer bioinformatics machine learning cancer research invited talk icgeb course",
     "links": []
   },
@@ -416,7 +424,7 @@
     "year": 2018,
     "title": "Tomography: from analytical methods to machine learning",
     "badge": "2018 • ACCI • Invited Talk",
-    "meta": "E. A. Rashed. ACCI2018, Ismailia, Egypt, May 2018. (Invited Talk)",
+    "meta": "E. A. Rashed. ACCI2018, Ismailia, Egypt, May 2018.",
     "keywords": "acci2018 tomography analytical methods machine learning invited talk",
     "links": []
   },
@@ -425,7 +433,7 @@
     "year": 2018,
     "title": "Egyptian Precision Medicine Era",
     "badge": "2018 • Keynote",
-    "meta": "E. A. Rashed, H. Yousry. Keynote Lecture, Fifth Young Researchers Conference @ Suez Canal University, 7–8 Apr. 2018. (Invited Talk)",
+    "meta": "E. A. Rashed, H. Yousry. Keynote Lecture, Fifth Young Researchers Conference @ Suez Canal University, 7–8 Apr. 2018.",
     "keywords": "keynote egyptian precision medicine era young researchers conference invited talk",
     "links": []
   },
@@ -452,7 +460,7 @@
     "year": 2016,
     "title": "Towards efficient low-dose tomographic imaging system",
     "badge": "2016 • Keynote",
-    "meta": "E. A. Rashed. Keynote Lecture, Workshop in Computer Science Approaches and Their Applications, Zagazig University, 16 Jul. 2016. (Invited Talk)",
+    "meta": "E. A. Rashed. Keynote Lecture, Workshop in Computer Science Approaches and Their Applications, Zagazig University, 16 Jul. 2016.",
     "keywords": "keynote low-dose tomographic imaging system zagazig university invited talk",
     "links": []
   },
@@ -461,7 +469,7 @@
     "year": 2016,
     "title": "Multidisciplinary Collaborative Research: an example from SCU",
     "badge": "2016 • Keynote",
-    "meta": "E. A. Rashed. Keynote Lecture, Third Young Researchers Conference @ Suez Canal University, 7–8 May 2016. (Invited Talk)",
+    "meta": "E. A. Rashed. Keynote Lecture, Third Young Researchers Conference @ Suez Canal University, 7–8 May 2016.",
     "keywords": "keynote multidisciplinary collaborative research example from scu invited talk",
     "links": []
   },
