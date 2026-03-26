@@ -102,8 +102,16 @@
     "keywords": "fmlds mitotic figure classification glioma hybrid vision transformer",
     "links": [
       {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/FMLDS67896.2025.00030"
+      },
+      {
         "label": "PDF",
         "url": "assets/publications/pdf/Salma2025FMLDS.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Salma2025FMLDS.bib"
       }
     ]
   },
