@@ -107,7 +107,6 @@
     .menuBtn{display:none}
 
 
-
     /* Animated banner */
     .bannerWrap{
       padding: 0 0 18px;
@@ -334,7 +333,7 @@
     .feature h3{margin:0 0 6px; font-size:16px}
     .feature p{margin:0; color:var(--muted); font-size:14px}
 
-    /* News / Highlights */
+    /* News & Highlights */
     .twoCol{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -489,6 +488,7 @@
     }
   </style>
 
+  
   <style>
     :root{
       --bg: #242e42;
@@ -508,7 +508,7 @@
       min-width: 120px;
     }
 
-    /* LIGHT THEME */
+    /* Light Theme */
     body.light{
       --bg: #f5f7fb;
       --panel: #ffffff;
@@ -640,9 +640,8 @@
 
   </style>
 
-
+  /* JP section layout */
   <style>
-    /* JP section layout */
     .jpItem{
       display:flex;
       gap:16px;
@@ -674,7 +673,6 @@
       min-width:0;
     }
 
-    /* Smartphone fix for 入学生募集 only */
     @media (max-width: 720px){
       .jpItem{
         flex-direction:column;
@@ -735,6 +733,7 @@
       </div>
 
       <!-- Mobile nav (hidden by default) -->
+      
       <div id="mobileNav" style="display:none; padding:0 0 14px;">
         <div class="card" style="padding:10px; border-radius:14px;">
           <div style="display:flex; flex-wrap:wrap; gap:8px;">
@@ -759,13 +758,6 @@
         <div class="bannerCard" aria-label="Animated network banner inspired by the IEEE TMI homepage">
           <div class="bannerInner">
             <svg id="tmiBanner" viewBox="0 0 1100 200" preserveAspectRatio="none" role="img" aria-label="Animated network of dots and connecting lines"></svg>
-            <!-- <div class="bannerOverlay">
-              <div class="bannerCopy">
-                <div class="bannerLabel"><span class="dot"></span> Dynamic network banner</div>
-                <p class="bannerTitle">Animated dots and links styled to match the site and adapt to Light/Dark Mode.</p>
-              </div>
-              <p class="bannerHint">Transparent background • 200px height</p>
-            </div> -->
           </div>
         </div>
       </div>
@@ -826,9 +818,7 @@
       </div>
     </div>
 
-
-
-     <!-- JP -->
+    <!-- JP -->
     <section id="JP">
         <div class="container">
             <div class="sectionTitle">
@@ -863,7 +853,6 @@
         <div class="sectionTitle">
           <h2>News & Highlights</h2>
         </div>
-
         <div class="contactGrid">
           <div class="card list" id="newsList">
             <div class="item">
@@ -874,21 +863,21 @@
             </div>
           </div>
         </div>
-
         <div style="margin-top:12px;">
           <a class="btn" href="newsarxiv.html">News archive → </a>
         </div>
       </div>
     </section>
 
+    
     <!-- RESEARCH -->
     <section id="research">
       <div class="container">
         <div class="sectionTitle">
           <h2>Research Areas</h2>
         </div>
-
         <div class="grid3">
+          
           <div class="feature">
             <div class="icon" aria-hidden="true">S</div>
             <h3>Segmentation & Detection</h3>
@@ -902,32 +891,35 @@
           </div>
 
           <div class="feature">
-            <div class="icon" aria-hidden="true">F</div>
-            <h3>Federated & Privacy-Preserving AI</h3>
-            <p>Cross-institution learning with domain shift handling, robust aggregation, and governance-aware workflows.</p>
+            <div class="icon" aria-hidden="true">A</div>
+            <h3>Agentic AI Systems</h3>
+            <p>Multi-agent orchestration for iterative analysis, conflict resolution, and transparent synthesis.</p>
           </div>
+          
         </div>
 
         <div style="height:14px"></div>
 
         <div class="grid3">
-          <div class="feature">
-            <div class="icon" aria-hidden="true">U</div>
-            <h3>Uncertainty & Safety</h3>
-            <p>Calibration, abstention, and uncertainty-aware decision support for high-stakes deployment.</p>
-          </div>
-
-          <div class="feature">
-            <div class="icon" aria-hidden="true">A</div>
-            <h3>Agentic AI Systems</h3>
-            <p>Multi-agent orchestration for iterative analysis, conflict resolution, and transparent synthesis.</p>
-          </div>
-
+   
           <div class="feature">
             <div class="icon" aria-hidden="true">R</div>
             <h3>Regulatory-Ready Evaluation</h3>
             <p>Quality management, documentation, and reproducible benchmarks aligned with clinical practice.</p>
           </div>
+          
+          <div class="feature">
+            <div class="icon" aria-hidden="true">U</div>
+            <h3>Uncertainty & Safety</h3>
+            <p>Calibration, abstention, and uncertainty-aware decision support for high-stakes deployment.</p>
+          </div>
+          
+          <div class="feature">
+            <div class="icon" aria-hidden="true">F</div>
+            <h3>Federated & Privacy-Preserving AI</h3>
+            <p>Cross-institution learning with domain shift handling, robust aggregation, and governance-aware workflows.</p>
+          </div>
+          
         </div>
         <div style="margin-top:12px;">
           <a class="btn" href="grants.html">View all funded projects → </a>
@@ -935,6 +927,7 @@
       </div>
     </section>
 
+    
      <!-- PEOPLE -->
     <section id="people">
       <div class="container">
