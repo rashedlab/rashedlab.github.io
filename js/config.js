@@ -41,10 +41,10 @@ const SITE_CONFIG = {
   PulseIF: "0.4"
 };
 
-const SITE_COUNT = {
-  CountBK: "5",
-  CountJR: "76",
-  CountCF: "60",
-  CountPR: "60",
-  CountOT: "3"
-}
+// const SITE_COUNT = {
+//   CountBK: "5",
+//   CountJR: "76",
+//   CountCF: "60",
+//   CountPR: "60",
+//   CountOT: "3"
+// }
