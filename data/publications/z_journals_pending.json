@@ -2,6 +2,35 @@
   {
     "type": "journal",
     "year": "2026",
+    "title": "TomoMamba: A Two-Stage Model with State-Space Cross-Slice Propagation for Breast Cancer Diagnosis in Digital Breast Tomosynthesis",
+    "badge": "2026 • Journal • IF{{IFYear}}={{PMBIF}}",
+    "meta": "S. Soliman, Y. Zafaria, E. A. Rashedb, M. Mabrok <em>Journal</em>, 000, 000000.",
+    "keywords": [
+      "", 
+      ""
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "#"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://doi.org/10.7937/e4wt-cd02"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/TBA.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2026",
     "title": "ROI-Aware Uncertainty Fusion for Label-Efficient Brain Tumour Segmentation",
     "badge": "2026 • Journal • IF{{IFYear}}={{PMBIF}}",
     "meta": "S. Mohamed, G. Khoriba, E. A. Rashed, A. Tharwat. <em>Physics in Medicine and Biology</em>, 000, 000000.",
