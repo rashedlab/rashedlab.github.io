@@ -10,7 +10,11 @@
       {
         "label": "Scheduled",
         "url": "#"
-      }
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Bekhit2026LS.pdf"
+      },
     ]
   },
   {
