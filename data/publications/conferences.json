@@ -94,6 +94,10 @@
       {
         "label": "DOI",
         "url": "https://arxiv.org/abs/2509.17353"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Elboardy2025NIPS.bib"
       }
     ]
   },
