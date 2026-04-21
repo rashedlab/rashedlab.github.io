@@ -39,8 +39,12 @@
     "links": [
       {
         "label": "Project page",
+        "url": "https://rashedlab.github.io/JPMJPR23P7.html"
+      },
+      {
+        "label": "JST DB",
         "url": "https://projectdb.jst.go.jp/grant/JST-PROJECT-23814957/"
-      }   
+      }
     ]
   },
   {
