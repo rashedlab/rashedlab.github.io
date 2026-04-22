@@ -1,6 +1,14 @@
 [
     {
     "meta": "Apr 2026 • MedNext",
+    "title": "AI Radiology Platform is now open for public - trial version",
+    "desc": "Trial use show examples of automatic AI radiology reports generated for brain cancer patients",
+    "image": "assets/news/AIRad_trial.jpg",
+    "imageAlt": "FOCUS",
+    "url": "http://www.mednextsolutions.com/trial"
+  },
+  {
+    "meta": "Apr 2026 • MedNext",
     "title": "AI Radiology Platform is lanuched",
     "desc": "A comprehensive platform for medical image diagnosis using AI solutions (authentication is required)",
     "image": "assets/news/AIRad.jpg",
