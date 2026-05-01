@@ -2,6 +2,31 @@
   {
     "type": "journal",
     "year": "2026",
+    "title": "Binary Improved Giant Armadillo Optimization Algorithm for Feature Selection in High-Dimensional Dataset",
+    "badge": "2026 • Journal • IF{{IFYear}}={{JBDIF}}",
+    "meta": "D. Elmanakhly, E. A. Rashedb <em> Journal of Big Data</em>, 000, 000000.",
+    "keywords": [
+      "", 
+      ""
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/TBA.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2026",
     "title": "TomoMamba: A Two-Stage Model with State-Space Cross-Slice Propagation for Breast Cancer Diagnosis in Digital Breast Tomosynthesis",
     "badge": "2026 • Journal • IF{{IFYear}}={{BSPCIF}}",
     "meta": "S. Soliman, Y. Zafaria, E. A. Rashedb, M. Mabrok <em>Biomedical Signal Processing and Control</em>, 000, 000000.",
