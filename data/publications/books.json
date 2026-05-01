@@ -4,7 +4,7 @@
     "year": "2026",
     "title": "Multimodal Foundation Models for Radiological Understanding and Report Generation",
     "badge": "2026 • Book Chapter",
-    "meta": "S. E. Rashed, G. Khoriba, E. A. Rashed. In: <em>Large Language Models in Healthcare: Opportunities, Applications, and Challenges</em>. CRC Press.",
+    "meta": "S. E. Rashed, G. Khoriba, E. A. Rashed. In: <em>Large Language Models in Healthcare: Opportunities, Applications, and Challenges</em>. CRC Press. ISBN 978-104-10-8301-6",
     "keywords": [
       "multimodal foundation models",
       "radiology report generation",
@@ -14,8 +14,12 @@
     ],
     "links": [
       {
-        "label": "In press",
-        "url": "#"
+        "label": "Link",
+        "url": "https://www.routledge.com/Large-Language-Models-in-Healthcare-Opportunities-Applications-and-Challenges/Ali-Rehmani/p/book/9781041083016"
+      },
+      {
+        "label": "Amazon",
+        "url": "https://www.amazon.com/Large-Language-Models-Healt"
       }
     ]
   },
