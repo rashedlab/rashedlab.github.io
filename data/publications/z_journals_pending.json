@@ -2,9 +2,34 @@
   {
     "type": "journal",
     "year": "2026",
+    "title": "Bayesian Error-Driven Active Learning for Prompt-Guided Medical Foundation Models",
+    "badge": "2026 • Journal • IF{{IFYear}}={{JBDIF}}",
+    "meta": "S. Mohamed, E. A. Rashed, G. Khoriba, A. Tharwat <em> Journal of ...</em>, 000, 000000.",
+    "keywords": [
+      "", 
+      ""
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/TBA.bib"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2026",
     "title": "Binary Improved Giant Armadillo Optimization Algorithm for Feature Selection in High-Dimensional Dataset",
     "badge": "2026 • Journal • IF{{IFYear}}={{JBDIF}}",
-    "meta": "D. Elmanakhly, E. A. Rashedb <em> Journal of Big Data</em>, 000, 000000.",
+    "meta": "D. Elmanakhly, E. A. Rashed <em> Journal of Big Data</em>, 000, 000000.",
     "keywords": [
       "", 
       ""
