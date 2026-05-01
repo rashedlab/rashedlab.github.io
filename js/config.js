@@ -7,6 +7,7 @@ const SITE_CONFIG = {
   TMIIF: "9.8",
   EnvIntIF: "9.7",
   JBHIIF: "6.8",
+  JBDIF: "6.4",
   NNIF: "6.3",
   CBMIF: "6.3",
   BioSIF: "5.6",
