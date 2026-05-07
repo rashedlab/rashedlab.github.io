@@ -16,7 +16,7 @@
   {
     "type": "conference",
     "year": 2026,
-    "title": "VERITAS: Volumetric Error Reduction by Integrated Teacher Annotation Stabilization in Medical Image Segmentation",
+    "title": "VERITAS: Volumetric Error Reduction via Inter-slice Total-variation Artifact Suppression in Medical Image Segmentation",
     "badge": "2026 • NeurIPS",
     "meta": "M. Yousef, E. A. Rashed. The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS2026), Sydney, Australia, 9-13 Dec. 2026.",
     "keywords": "",
