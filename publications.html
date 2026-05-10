@@ -370,7 +370,7 @@
         </nav>
 
         <div class="cta" style="display:flex; gap:10px; align-items:center;">
-          <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀</button>
+          <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
           <a class="btn primary" href="#top">Search</a>
         </div>
       </div>
@@ -506,16 +506,16 @@
 
     if (savedTheme === 'light') {
       document.body.classList.add('light');
-      themeToggle.textContent = '🌙';
+      themeToggle.textContent = '🌙 Dark Mode';
     }
 
     themeToggle.addEventListener('click', () => {
       const isLight = document.body.classList.toggle('light');
       if (isLight) {
-        themeToggle.textContent = '🌙';
+        themeToggle.textContent = '🌙 Dark Mode';
         localStorage.setItem('theme', 'light');
       } else {
-        themeToggle.textContent = '☀';
+        themeToggle.textContent = '☀ Light Mode';
         localStorage.setItem('theme', 'dark');
       }
     });
