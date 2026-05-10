@@ -1,21 +1,5 @@
 [
   {
-    "meta": "M08 • Mar 2026 • Master Course • University of Hyogo",
-    "title": "Jia Yiming",
-    "desc": "A deep learning–driven framework for pneumothorax detection and automated reporting in chest X-rays",
-    "image": "assets/people/yiming.jpg",
-    "imageAlt": "Jia Yiming",
-    "url": "https://www.scopus.com/authid/detail.uri?authorId=59961125700"
-  },
-  {
-    "meta": "M07 • Mar 2025 • Master Course • University of Hyogo",
-    "title": "Hiroyuki Seshimo",
-    "desc": "Segmentation of low-grade brain tumors using mutual attention multimodal MRI",
-    "image": "assets/people/seshimo.jpg",
-    "imageAlt": "Hiroyuki Seshimo",
-    "url": "https://www.scopus.com/authid/detail.uri?authorId=59469723900"
-  },
-  {
     "meta": "D06 • 2023 • Doctor Course • Suez Canal University",
     "title": "Noha Aboelenin",
     "desc": "",
