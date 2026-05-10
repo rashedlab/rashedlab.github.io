@@ -725,7 +725,7 @@
         </nav>
 
         <div class="cta">
-          <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀ Light Mode</button>
+          <button class="btn" id="themeToggle" type="button" aria-label="Toggle color theme">☀</button>
           <a class="btn primary" href="#join">Join Us</a>
           <button class="btn menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
         </div>
@@ -1425,7 +1425,7 @@
 
     if (savedTheme === 'light') {
       document.body.classList.add('light');
-      if (themeToggle) themeToggle.textContent = '🌙 Dark Mode';
+      if (themeToggle) themeToggle.textContent = '🌙';
     }
 
     const bannerAnimation = initTMIBanner();
@@ -1435,10 +1435,10 @@
         const isLight = document.body.classList.toggle('light');
 
         if (isLight) {
-          themeToggle.textContent = '🌙 Dark Mode';
+          themeToggle.textContent = '🌙';
           localStorage.setItem('theme', 'light');
         } else {
-          themeToggle.textContent = '☀ Light Mode';
+          themeToggle.textContent = '☀';
           localStorage.setItem('theme', 'dark');
         }
 
