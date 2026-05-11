@@ -1,5 +1,13 @@
 [
-    {
+  {
+    "meta": "May 2026 • Paper",
+    "title": "A paper is accepted for 2026 IEEE COMPSAC @ Madrid, Spain (PRE Track)",
+    "desc": "Interactive Medical Image Diagnosis with Chatbot Assistance",
+    "image": "assets/news/compsaco.jpg",
+    "imageAlt": "IEEE",
+    "url": ""
+  },
+  {
     "meta": "Apr 2026 • MedNext",
     "title": "AI Radiology Platform is now open for public - trial version",
     "desc": "The trial use shows examples of automatically generated AI radiology reports for brain cancer patients",
