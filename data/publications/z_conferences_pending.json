@@ -58,20 +58,6 @@
   {
     "type": "conference",
     "year": 2026,
-    "title": "Interactive Medical Image Diagnosis with Chatbot Assistance: A JST PRESTO Research Project",
-    "badge": "2026 • COMPSAC",
-    "meta": "E. A. Rashed, A. Elboardy, Y. Jia, M. Yousef, Z. Elshaer, G. Khoriba.  IEEE Computer Society Signature Conference on Computers, Software and Applications (COMPSAC2026), Madrid, Spain, 7-10 July 2026.",
-    "keywords": "",
-    "links": [
-      {
-        "label": "Scheduled",
-        "url": "#"
-      }
-    ]
-  },
-  {
-    "type": "conference",
-    "year": 2026,
     "title": "Automated Reinforcement Learning-Driven and Segmentation-Guided Approaches for Pneumothorax Detection and Diagnosis in Chest X-Rays",
     "badge": "2026 • FMLDS",
     "meta": "Y. Jia, A. Elboardy, E. A. Rashed. The IEEE International Conference on Future Machine Laeraning and Data Science (FMLDS2026), Kobe, Japan, 20-23 Nov. 2026.",
