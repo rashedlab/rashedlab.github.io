@@ -8,16 +8,12 @@
     "keywords": "",
     "links": [
       {
-        "label": "Scheduled",
-        "url": "#"
-      },
-      {
-        "label": "Preprint",
-        "url": "assets/publications/pdf/Rashed2026COMPSAC.pdf"
-      },
-      {
         "label": "Link",
         "url": "#"
+      },
+      {
+        "label": "Open access",
+        "url": "assets/publications/pdf/Rashed2026COMPSAC.pdf"
       },
       {
         "label": "BibTex",
@@ -33,9 +29,17 @@
     "meta": "M. Bekhit, E. A. Rashed, W. Othman, W. Hussain. The 23rd IEEE International Conference on Learning and Technology (L&S26), Jeddah, KSA, 22–23 Apr. 2026.",
     "keywords": "cyber-defense dual-agent security education ieee learning technology ls26",
     "links": [
+     {
+        "label": "Link",
+        "url": "#"
+      },
       {
-        "label": "PDF",
+        "label": "Open access",
         "url": "assets/publications/pdf/Bekhit2026LS.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "#"
       }
     ]
   },
