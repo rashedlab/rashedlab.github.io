@@ -10,6 +10,18 @@
       {
         "label": "Scheduled",
         "url": "#"
+      },
+      {
+        "label": "Preprint",
+        "url": "assets/publications/pdf/Rashed2026COMPSAC.pdf"
+      },
+      {
+        "label": "Link",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "#"
       }
     ]
   },
