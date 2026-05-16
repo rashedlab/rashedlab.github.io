@@ -23,6 +23,7 @@ const SITE_CONFIG = {
   JUHIF: "4.1",
   BioEIF: "3.7",
   AccessIF: "3.6",
+  AIIF: "3.5",
   SenIF: "3.5",
   PMBIF: "3.4",
   VacIF: "3.4",
