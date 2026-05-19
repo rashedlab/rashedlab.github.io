@@ -142,5 +142,22 @@
     "image": "assets/news/cvpr.jpg",
     "imageAlt": "CVPR Workshop",
     "url": "https://sites.google.com/view/svc-cvpr26"
+  },
+  {
+    "meta": "Jan 2026 • Invited Talk",
+    "title": "E. Rashed is Keynote Speaker at the Second Subtle Visual Computing Workshop @ CVPR",
+    "desc": "@ Denver, Colorado, USA, 3-7 June 2026",
+    "image": "assets/news/cronos.jpg",
+    "imageAlt": "CVPR Workshop",
+    "url": "https://sites.google.com/view/svc-cvpr26"
+  },
+  {
+    "meta": "Jan 2026 • Invited Talk",
+    "title": "E. Rashed is Keynote Speaker at the Second Subtle Visual Computing Workshop @ CVPR",
+    "desc": "@ Denver, Colorado, USA, 3-7 June 2026",
+    "image": "assets/news/arise.jpg",
+    "imageAlt": "CVPR Workshop",
+    "url": "https://sites.google.com/view/svc-cvpr26"
   }
+  
 ]
