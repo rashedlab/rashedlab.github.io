@@ -1,5 +1,25 @@
 [
- 
+  {
+    "title": "Developing of organ-specific medical report generation models using LLMs",
+    "badge": "JST SPRING",
+    "sponsor": "JST",
+    "role": "Principal Investigator",
+    "category": "Doctoral Fellowship Program",
+    "start": 2026,
+    "end": 2028,
+    "year_range": "2026–2028",
+    "meta": "Support for Pioneering Research Initiated by the Next Generation (Mina Yousef) (次世代研究者挑戦的研究プログラム)",
+    "keywords": [
+      "",
+      ""
+    ],
+    "links": [
+      {
+         "label": "Program Details",
+        "url": "https://www.jst.go.jp/jisedai/spring/index.html"
+      }
+    ]
+  },   
   {
     "title": "Interpretable multimodal AI for enhanced breast cancer diagnosis",
     "badge": "IRCC",
