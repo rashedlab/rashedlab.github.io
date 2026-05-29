@@ -1221,13 +1221,19 @@
 
   <script>
 
-    // animated banner inspired by the IEEE TMI landing-page network motif
+    // animated banner 
     function initTMIBanner() {
       const svg = document.getElementById('tmiBanner');
       if (!svg) return;
 
       const NS = 'http://www.w3.org/2000/svg';
-      const totalDots = 100;
+      //const totalDots = 100;
+
+      // Change number of dots daily based on the day of the month
+      const today = new Date();
+      const dayOfMonth = today.getDate(); // 1–31
+      const totalDots = 1 + dayOfMonth; // range: 71–101 dots
+      
       const nodes = [];
       const links = [];
       const dotEls = [];
