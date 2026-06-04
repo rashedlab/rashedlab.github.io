@@ -2,6 +2,39 @@
   {
     "type": "journal",
     "year": "2026",
+    "title": "ROI-Aware Uncertainty Fusion for Label-Efficient Glioma MRI Segmentation",
+    "badge": "2026 • Journal • IF{{IFYear}}={{PMBIF}})",
+    "meta": "S. Mohamed, G. Khoriba, E. A. Rashed, A. Tharwat. <em>Physics in Medicine and Biology</em>, 00, 000000.",
+    "keywords": [
+      "Active learning", 
+      "Glioma MRI segmentation", 
+      "Uncertainty estimation", 
+      "Borda count", 
+      "ROI-aware acquisition"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "#"
+      },
+      {
+        "label": "PubMed",
+        "url": """
+      },
+      {
+        "label": "BibTex",
+        "url": """
+      }
+    ]
+  },
+  
+  {
+    "type": "journal",
+    "year": "2026",
     "title": "Synthetic Histopathology with Controllable Class Distribution: A Dual-GAN Framework for Melanoma Segmentation",
     "badge": "2026 • Journal • IF{{IFYear}}={{BSPCIF}}",
     "meta": "Z. Elshaer, A. Jamal, E. A. Rashed. <em>Biomedical Signal Processing and Control</em>, 119, 109741.",
