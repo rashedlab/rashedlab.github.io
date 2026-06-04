@@ -23,15 +23,14 @@
       },
       {
         "label": "PubMed",
-        "url": """
+        "url": "#"
       },
       {
         "label": "BibTex",
-        "url": """
+        "url": "#"
       }
     ]
   },
-  
   {
     "type": "journal",
     "year": "2026",
