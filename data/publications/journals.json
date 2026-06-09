@@ -2,6 +2,38 @@
   {
     "type": "journal",
     "year": "2026",
+    "title": "MammoClean: Toward Reproducible and Bias-Aware AI in Mammography through Dataset Harmonization",
+    "badge": "2026 • Journal • IF{{IFYear}}={{AccessIF}}",
+    "meta": "Y. Zafari, H. Pan, G. Durak, U. Bagci, E. A. Rashed, M. Mabrok. <em>IEEEE Access</em>, 00, 000000. (in press)",
+    "keywords": [
+      "mammography", 
+      "breast cancer", 
+      "data harmonization", 
+      "dataset bias", 
+      "deep learning"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "Open Access",
+        "url": "#"
+      },
+      {
+        "label": "PubMed",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "journal",
+    "year": "2026",
     "title": "ROI-Aware Uncertainty Fusion for Label-Efficient Glioma MRI Segmentation",
     "badge": "2026 • Journal • IF{{IFYear}}={{PMBIF}}",
     "meta": "S. Mohamed, G. Khoriba, E. A. Rashed, A. Tharwat. <em>Physics in Medicine and Biology</em>, 00, 000000. (in press)",
