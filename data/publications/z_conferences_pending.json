@@ -2,6 +2,20 @@
   {
     "type": "conference",
     "year": 2026,
+    "title": "A Lightweight Confidence-Aware Decision-Support Framework for Plant Disease Classification Using Deep Learning",
+    "badge": "2026 • FMLDS",
+    "meta": "A. K. Saha, W. Hussain, M. Bekhit, E. A. Rashed. The IEEE International Conference on Future Machine Learning and Data Science (FMLDS2026), Kobe, Japan, 20-32 Nov. 2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
     "title": "When Agents Lie to Each Other: Adversarial Robustness of Hierarchical Multi-Agent Medical Consensus for Brain MRI Reporting",
     "badge": "2026 • NeurIPS",
     "meta": "A. Elboardy, G. Khoriba, E. A. Rashed. The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS2026), Sydney, Australia, 9-13 Dec. 2026.",
