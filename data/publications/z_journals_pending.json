@@ -81,39 +81,6 @@
   {
     "type": "journal",
     "year": "2026",
-    "title": "ROI-Aware Uncertainty Fusion for Label-Efficient Brain Tumour Segmentation",
-    "badge": "2026 • Journal • IF{{IFYear}}={{PMBIF}}",
-    "meta": "S. Mohamed, G. Khoriba, E. A. Rashed, A. Tharwat. <em>Physics in Medicine and Biology</em>, 000, 000000.",
-    "keywords": [
-      "Active learning", 
-      "Brain tumour MRI segmentation", 
-      "Uncertainty estimation", 
-      "Borda count", 
-      "ROI-aware acquisition", 
-      "Rank-level fusion"
-    ],
-    "links": [
-      {
-        "label": "DOI",
-        "url": "#"
-      },
-      {
-        "label": "PDF",
-        "url": "#"
-      },
-      {
-        "label": "Dataset",
-        "url": "https://www.cancerimagingarchive.net/collection/ucsf-pdgm/"
-      },
-      {
-        "label": "BibTex",
-        "url": "assets/publications/bibtex/TBA.bib"
-      }
-    ]
-  },
-  {
-    "type": "journal",
-    "year": "2026",
     "title": "The Circular Dependency Between Clinical Guidelines and Artificial Intelligence in Healthcare",
     "badge": "2026 • Journal • IF{{IFYear}}={{LDHIF}}",
     "meta": "Y. Zafari, A. Al-Obaidli, H. Al-Merekhi, A. Darweesh, R. Elsheikh, R. Mohamed, E. A. Rashed, M. Mabrok. <em>The Lancet Digital Health</em>, 000, 000000.",
@@ -148,42 +115,6 @@
         "url": "assets/publications/bibtex/TBA.bib"
       }
     ]
-  },
-  {
-    "type": "journal",
-    "year": "2026",
-    "title": "MammoClean: Toward Reproducible and Bias-Aware AI in Mammography through Dataset Harmonization",
-    "badge": "2026 • Journal • IF{{IFYear}}={{AccessIF}}",
-    "meta": "Y. Zafari, H. Pan, G. Durak, U. Bagci, E. A. Rashed, M. Mabrok. <em>IEEE Access</em>, 000, 000000.",
-    "keywords": [
-      "mammography", 
-      "breast cancer", 
-      "data harmonization", 
-      "dataset bias", 
-      "deep learning"
-    ],
-    "links": [
-      {
-        "label": "DOI",
-        "url": "#"
-      },
-      {
-        "label": "Open access",
-        "url": "#"
-      },
-      {
-        "label": "PDF",
-        "url": "#"
-      },
-      {
-        "label": "Dataset",
-        "url": "#"
-      },
-      {
-        "label": "BibTex",
-        "url": "assets/publications/bibtex/TBA.bib"
-      }
-    ]    
   },
   {
     "type": "journal",
