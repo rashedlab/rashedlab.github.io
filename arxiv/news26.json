@@ -1,5 +1,13 @@
 [
-{
+  {
+    "meta": "June 2026 • Visit",
+    "title": "E. Rashed visited Sakura Internet Ishikari data center @ Ishikari, Hokkaido",
+    "desc": "さくらインターネット・石狩データセンター",
+    "image": "assets/news/ds.jpg",
+    "imageAlt": "IEEE Acccess",
+    "url": "https://datacenter.sakura.ad.jp/location/ishikari/"
+  },
+  {
     "meta": "June 2026 • Paper",
     "title": "A paper is accepted for IEEE Access (IF24=3.6)",
     "desc": "MammoClean: Toward Reproducible and Bias-Aware AI in Mammography through Dataset Harmonization",
