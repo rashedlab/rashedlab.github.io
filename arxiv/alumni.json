@@ -1,5 +1,13 @@
 [
   {
+    "meta": "M09 • June 2026 • Master • NU",
+    "title": "Ahmed Darwish",
+    "desc": "Mitigating LLM halucination using a multi-agent framework",
+    "image": "assets/people/darwish.jpg",
+    "imageAlt": "Ahmed Darwish",
+    "url": "https://orcid.org/0009-0008-6524-247X"
+  },
+  {
     "meta": "M08 • Mar 2026 • Master • UH",
     "title": "Jia Yiming",
     "desc": "A deep learning–driven framework for pneumothorax detection and automated reporting in chest X-rays",
