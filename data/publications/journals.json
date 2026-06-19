@@ -194,7 +194,7 @@
     "type": "journal",
     "year": "2025",
     "title": "Benchmarking Vision-Language Models for Brain Cancer Diagnosis Using Multisequence MRI",
-    "badge": "2025 • Journal",
+    "badge": "2025 • Journal• CiteScore{{CSYear}}={{IMUCS}}",
     "meta": "A. T. Elboardy, G. Khoriba, M. al-Shatouri, M. Mousa, E. A. Rashed. <em>Informatics in Medicine Unlocked</em>, 58, 101692.",
     "keywords": [
       "benchmarking vision-language models",
