@@ -451,7 +451,7 @@
     "type": "journal",
     "year": "2025",
     "title": "MiSC: A hybrid multi-modal deep learning approach for accurate skin cancer detection",
-    "badge": "2025 • Journal • IF{{IFYear}}={{MTAIF}}",
+    "badge": "2025 • Journal • CiteScore{{CSYear}}={{MTACS}}",
     "meta": "E. H. Mohamed, N. Abdu, M. Khalil, H. Kamal, E. A. Rashed. <em>Multimedia Tools and Applications</em>, 2025.",
     "keywords": [
       "misc",
@@ -764,7 +764,7 @@
     "type": "journal",
     "year": "2023",
     "title": "Assessment of artificial intelligence-aided computed tomography in lung cancer screening",
-    "badge": "2023 • Journal • IF{{IFYear}}={{EJRNMIF}}",
+    "badge": "2023 • Journal • CiteScore{{CSYear}}={{EJRNMCS}}",
     "meta": "N. A. Aboelenin, A. Elserafi, N. Zaki, E. A. Rashed, M. al-Shatouri. <em>Egyptian Journal of Radiology and Nuclear Medicine</em>, 54, Article 74.",
     "keywords": [
       "ai-aided computed tomography",
@@ -986,7 +986,7 @@
     "type": "journal",
     "year": "2022",
     "title": "COVID-19 forecasting using new viral variants and vaccination effectiveness models",
-    "badge": "2022 • Journal • IF{{IFYear}}={{CBMIF}}",
+    "badge": "2022 • Journal • CiteScore{{CSYear}}={{CBMCS}}",
     "meta": "E. A. Rashed, S. Kodera, A. Hirata. <em>Computers in Biology and Medicine</em>, 149, 105986.",
     "keywords": [
       "covid-19 forecasting",
@@ -1087,7 +1087,7 @@
     "type": "journal",
     "year": "2022",
     "title": "Did the Tokyo Olympic games enhance the transmission of COVID-19? Interpretation with machine learning",
-    "badge": "2022 • Journal • IF{{IFYear}}={{CBMIF}}",
+    "badge": "2022 • Journal • CiteScore{{CSYear}}={{CBMCS}}",
     "meta": "A. Hirata, S. Kodera, Y. Diao, E. A. Rashed. <em>Computers in Biology and Medicine</em>, 146, 105548.",
     "keywords": [
       "tokyo olympic games",
@@ -1682,7 +1682,7 @@
     "type": "journal",
     "year": "2020",
     "title": "Model-based approach for analyzing prevalence of nuclear cataracts in elderly residents",
-    "badge": "2020 • Journal • IF{{IFYear}}={{CBMIF}}",
+    "badge": "2020 • Journal • CiteScore{{CSYear}}={{CBMCS}}",
     "meta": "S. Kodera, A. Hirata, F. Miura, E. A. Rashed, N. Hatsusaka, N. Yamamoto, E. Kubo, H. Sasaki. <em>Computers in Biology and Medicine</em>, 126, 104009.",
     "keywords": [
       "nuclear cataracts",
@@ -2072,7 +2072,7 @@
     "type": "journal",
     "year": "2019",
     "title": "Comprehensive data analysis for development of custom qRT-PCR miRNA assay for glioblastoma: a prevalidation study",
-    "badge": "2019 • Journal • IF{{IFYear}}={{EpiGenIF}}",
+    "badge": "2019 • Journal • CiteScore{{CSYear}}={{EpiGenCS}}",
     "meta": "E. A. Toraih, H. Y. Abdallah, E. A. Rashed, A. El-Wazir, M. A. Tantawy, M. S. Fawzy. <em>Epigenomics</em>, 11, 367–380.",
     "keywords": [
       "qRT-PCR",
@@ -2222,7 +2222,7 @@
     "type": "journal",
     "year": "2015",
     "title": "Sparsity-constrained three-dimensional image reconstruction for C-arm angiography",
-    "badge": "2015 • Journal • IF{{IFYear}}={{CBMIF}}",
+    "badge": "2015 • Journal • CiteScore{{CSYear}}={{CBMCS}}",
     "meta": "E. A. Rashed, M. al-Shatouri, H. Kudo. <em>Computers in Biology and Medicine</em>, 62, 141–154.",
     "keywords": [
       "sparsity-constrained",
