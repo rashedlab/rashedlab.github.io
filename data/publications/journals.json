@@ -19,15 +19,11 @@
       },
       {
         "label": "Open Access",
-        "url": "#"
-      },
-      {
-        "label": "PubMed",
-        "url": "#"
+        "url": "https://ieeexplore.ieee.org/document/11569500"
       },
       {
         "label": "BibTex",
-        "url": "#"
+        "url": "assets/publications/bibtex/Yalda2026Access.bib"
       }
     ]
   },
