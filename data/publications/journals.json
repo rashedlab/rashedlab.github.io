@@ -160,7 +160,7 @@
     "type": "journal",
     "year": "2025",
     "title": "Advances in Medical Image Segmentation: A Comprehensive Review with a Focus on Lumbar Spine Applications",
-    "badge": "2025 • Journal • IF{{IFYear}}={{NNIF}}",
+    "badge": "2025 • Journal • CiteScore{{CSYear}}={{CBMCS}}",
     "meta": "A. Kabil, G. Khoriba, M. Yousef, E. A. Rashed. <em>Computers in Biology and Medicine</em>, 198(A), 111171.",
     "keywords": [
       "medical image segmentation",
