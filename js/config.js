@@ -32,6 +32,7 @@ const SITE_CONFIG = {
   QIMSIF: "2.8",
   JGEIF: "2.0",
   PulseIF: "1.2",
+  IMUCS:"10.5",
   CBMICS: "6.3",
   MTACS: "3.0",
   EpiGenCS: "2.6",
