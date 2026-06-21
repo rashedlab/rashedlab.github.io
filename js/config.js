@@ -5,6 +5,7 @@ const SITE_CONFIG = {
   SCSIF: "13.3",
   TMIIF: "12.4",
   EnvIntIF: "10.2",
+  ESWAIF:"9.4",
   NNIF: "7.2",
   CMPBIF: "6.4",
   BioSIF: "6.2",
