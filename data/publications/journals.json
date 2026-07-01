@@ -15,7 +15,7 @@
     "links": [
       {
         "label": "DOI",
-        "url": "https://doi.org/10.1109/ACCESS.2026.370474"
+        "url": "https://doi.org/10.1109/ACCESS.2026.3704749"
       },
       {
         "label": "Open Access",
@@ -47,7 +47,7 @@
       },
       {
         "label": "PDF",
-        "url": "#"
+        "url": "assets/publications/pdf/Saher2026PMB.pdf"
       },
       {
         "label": "PubMed",
@@ -55,7 +55,7 @@
       },
       {
         "label": "BibTex",
-        "url": "#"
+        "url": "assets/publications/bibtex/Saher2026PMB.bib"
       }
     ]
   },
