@@ -1,0 +1,14 @@
+@article{Mohamed_2026,
+doi = {10.1088/1361-6560/ae7bac},
+url = {https://doi.org/10.1088/1361-6560/ae7bac},
+year = {2026},
+month = {jun},
+publisher = {IOP Publishing},
+volume = {71},
+number = {12},
+pages = {125020},
+author = {Mohamed, Saher and Khoriba, Ghada and Rashed, Essam A and Tharwat, Alaa},
+title = {ROI-aware uncertainty fusion for label-efficient glioma MRI segmentation},
+journal = {Physics in Medicine & Biology},
+abstract = {Accurate glioma MRI segmentation is critical for clinical decision-making, yet voxel-wise annotation of volumetric MR images is expensive and time-consuming. We aim to maximize segmentation quality while reducing annotation cost through selective labeling. We develop a tumor-focused active learning AL framework that mirrors real-world annotation workflows and combines three complementary techniques: (i) a patient-specific, tumor-focused 40-slice window to preserve context while reducing computational requirements; (ii) a diverse uncertainty committee spanning softmax entropy, margin, least confidence, variation ratio, and Bayesian AL by disagreement (BALD), where variation ratio and BALD are estimated via lightweight Monte Carlo dropout to capture epistemic uncertainty; and (iii) multi-criteria rank-level fusion via Borda count to robustly aggregate uncertainty signals. In particular, we compute uncertainty both at the slice level and at the region-of-interest (ROI) level by summarizing pixel-wise uncertainty within tumor ROIs, then fuse all techniques and granularities with Borda rank to form a single acquisition order. A segmentation network is trained on an initial small labeled subset and then iteratively selects additional slices for annotation. Evaluation on UCSF–PDGM and BraTS 2019 under realistic annotation budgets shows strong label efficiency and robustness: on UCSF–PDGM, near-full performance is achieved with only  of the training data; on BraTS 2019, using  of the data yields performance comparable to models trained on all data, even surpassing the full-data model. Overall, the proposed framework combines the tumor-focused window with MC-dropout-enhanced, ROI-aware uncertainty and Borda fusion to achieve accurate segmentation while aligning with real-world curation workflows.}
+}
