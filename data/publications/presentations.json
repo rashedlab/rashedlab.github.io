@@ -2,6 +2,16 @@
    {
     "type": "presentation",
     "year": 2026,
+    "title": "Reducing Volumetric Segmentation Errors through Inter-Slice Total Variation–Based Artifact Suppression",
+    "badge": "2026 • 兵庫県立大学・価値共創シンポジウム2026",
+    "meta": "M. Yousef, E. A. Rashed. University of Hyogo Value Co-Creation Symposium, Himeji, Japan, 18 Sept 2026",
+    "keywords": "Reducing Volumetric Segmentation Errors through Inter-Slice Total Variation–Based Artifact Suppression",
+    "links": [
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
     "title": "Trustworthy brain cancer diagnosis with multi-agent foundation models",
     "badge": "2026 • Invited Talk • 第8回日本メディカルAI学会学術集会",
     "meta": "E. A. Rashed, A. Elboardy, Y. Jia, M. Yousef, M. Kanehira. Symposium on Next-Generation Clinical Reporting Enabled by Vision–Language Models and Medical AI Agents, Tokyo, Japan, 5 June 2026.",
