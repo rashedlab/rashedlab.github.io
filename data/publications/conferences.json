@@ -30,8 +30,12 @@
     "keywords": "cyber-defense dual-agent security education ieee learning technology ls26",
     "links": [
      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/LT68265.2026.11592534"
+      },
+     {
         "label": "Link",
-        "url": "#"
+        "url": "https://ieeexplore.ieee.org/document/11592534"
       },
       {
         "label": "Open access",
@@ -39,7 +43,7 @@
       },
       {
         "label": "BibTex",
-        "url": "#"
+        "url": "assets/publications/bibtex/bekhit2026LT.bib"
       }
     ]
   },
