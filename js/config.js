@@ -35,6 +35,7 @@ const SITE_CONFIG = {
   QIMSIF: "2.8",
   JGEIF: "2.0",
   PulseIF: "1.2",
+  JournalofBigDataIF: "10.8",
   IMUCS: "10.5",
   MultimediaToolsandApplicationsCS: "9.6",
   CBMCS: "6.3",
