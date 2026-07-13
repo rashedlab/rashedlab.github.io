@@ -17,6 +17,7 @@ const SITE_CONFIG = {
   OneHIF: "5.3",
   NeuroImgIF: "5.3",
   BDCCIF: "5.3",
+  TMTTIF: "5.2",
   BioEIF: "4.4",
   InfoIF: "4.3",
   AccessIF: "4.2",
