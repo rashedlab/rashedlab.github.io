@@ -2,6 +2,28 @@
  {
     "type": "conference",
     "year": 2026,
+    "title": "Automated Reinforcement Learning-Driven and Segmentation-Guided Approach for Pneumothorax Detection and Diagnosis in Chest X-Rays",
+    "badge": "2026 • COMPSAC",
+    "meta": "Y. Jia, E. A. Rashed. 2026 IEEE Future Machine Learning and Data Science (FMLDS), Kobe, Japan, 20-23 Nov. 2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Link",
+        "url": "#"
+      },
+      {
+        "label": "Open access",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "#"
+      }
+    ]
+  },
+ {
+    "type": "conference",
+    "year": 2026,
     "title": "Interactive Medical Image Diagnosis with Chatbot Assistance",
     "badge": "2026 • COMPSAC",
     "meta": "E. A. Rashed, A. Elboardy, Y. Jia, M. Yousef, Z. Elshaer, G. Khoriba.  2026 IEEE 50th Annual Computers, Software, and Applications Conference (COMPSAC), Madrid, Spain, 7-10 July 2026.",
