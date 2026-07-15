@@ -1,5 +1,13 @@
 [
-    {
+  {
+    "meta": "July 2026 • Paper",
+    "title": "A paper by Y. Jia (D1) is accepted for IEEE FMLDS 2026",
+    "desc": "Automated Reinforcement Learning-Driven and Segmentation-Guided Approach for Pneumothorax Detection and Diagnosis in Chest X-Rays",
+    "image": "assets/news/ieeeaccess.jpg",
+    "imageAlt": "IEEE FMLDS",
+    "url": "https://www.fmlds.org/2026/"
+  },
+  {
     "meta": "July 2026 • Conference",
     "title": "E. Rashed is a Technical Committee Member of The Asia Symposium on AI-Driven Sensing and Edge Intelligent Systems (AISEIS 2027)",
     "desc": "April 16-18, 2027 in Hangzhou, China",
