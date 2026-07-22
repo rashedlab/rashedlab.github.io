@@ -4,7 +4,7 @@
     "year": 2027,
     "title": "VERITAS: Annotator-Aware Cross-Planar Consistency for Volumetric Medical Image Segmentation",
     "badge": "2027 • AAAI",
-    "meta": "M. Yousef, E. A. Rashed. The The 41st Annual AAAI Conference on Artificial Intelligence (AAAI27), Monterial, Canada, 16-23 Feb. 2027.",
+    "meta": "M. Yousef, E. A. Rashed. The 41st Annual AAAI Conference on Artificial Intelligence (AAAI27), Monterial, Canada, 16-23 Feb. 2027.",
     "keywords": "",
     "links": [
       {
@@ -18,7 +18,7 @@
     "year": 2027,
     "title": "To KAN or Not to KAN? Weighing Accuracy Against Computational Cost in MRI Segmentation",
     "badge": "2027 • AAAI",
-    "meta": "M. Yousef, E. A. Rashed. The The 41st Annual AAAI Conference on Artificial Intelligence (AAAI27), Monterial, Canada, 16-23 Feb. 2027.",
+    "meta": "M. Yousef, E. A. Rashed. The 41st Annual AAAI Conference on Artificial Intelligence (AAAI27), Monterial, Canada, 16-23 Feb. 2027.",
     "keywords": "",
     "links": [
       {
@@ -32,7 +32,21 @@
     "year": 2027,
     "title": "Causal Attribution of Pneumothorax Diagnosis Bias in Medical Vision Language Models",
     "badge": "2027 • AAAI",
-    "meta": "Y. Jia, E. A. Rashed. The The 41st Annual AAAI Conference on Artificial Intelligence (AAAI27), Monterial, Canada, 16-23 Feb. 2027.",
+    "meta": "Y. Jia, E. A. Rashed. The 41st Annual AAAI Conference on Artificial Intelligence (AAAI27), Monterial, Canada, 16-23 Feb. 2027.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Population-Level Atlas Priors for Vision–Language Pneumothorax Report Generation",
+    "badge": "2026 • BHI",
+    "meta": "Y. Jia, E. A. Rashed. The IEEE EMBS International Conference on Biomedical and Health Informatics (BHI26), Hong Kong, China, 12-15 Dec. 2026.",
     "keywords": "",
     "links": [
       {
