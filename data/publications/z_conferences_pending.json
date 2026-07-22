@@ -44,6 +44,48 @@
   {
     "type": "conference",
     "year": 2026,
+    "title": "A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation",
+    "badge": "2026 • MICCAI Workshop",
+    "meta": "A. T. Elboardy, Z. Elshaer, S. Ahmed, I. Elshehabi, A. S. E. Raslan, M. Mabrok, G. Khoriba, E. A. Rashed. MICCAI 2026 Agentic AI for Medicine Workshop, Strasburg, France, 27 Sept - 1 Oct.  2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+    {
+    "type": "conference",
+    "year": 2026,
+    "title": "ContextFusion: Learnable Cross-Slice Similarity for Robust Spine MRI Segmentation",
+    "badge": "2026 • MICCAI Workshop",
+    "meta": "M. Yousef, E. A. Rashed. MICCAI 2026 The Fifth Workshop on Applications of Medical AI (AMAI), Strasburg, France, 27 Sept - 1 Oct.  2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+      {
+    "type": "conference",
+    "year": 2026,
+    "title": "Energy-Mamba: A Physics-Constrained State-Space Model for Medical Image Classification",
+    "badge": "2026 • MICCAI Workshop",
+    "meta": "M. Mabrok, Y. Zafari, E. A. Rashed. MICCAI 2026 17th International Conference on Machine Learning in Medical Imaging (MLMI 2026), Strasburg, France, 27 Sept - 1 Oct.  2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
     "title": "Population-Level Atlas Priors for Vision–Language Pneumothorax Report Generation",
     "badge": "2026 • BHI",
     "meta": "Y. Jia, E. A. Rashed. The IEEE EMBS International Conference on Biomedical and Health Informatics (BHI26), Hong Kong, China, 12-15 Dec. 2026.",
