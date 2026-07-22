@@ -44,34 +44,6 @@
   {
     "type": "conference",
     "year": 2026,
-    "title": "Cross-Population Transfer of Foundation Models for Breast Density Classification",
-    "badge": "2026 • FMLDS",
-    "meta": "S. Soliman, Y. Zafari, E. A. Rashed, A. Bani-Mustafa, M Mabrok. The IEEE International Conference on Future Machine Learning and Data Science (FMLDS2026), Kobe, Japan, 20-32 Nov. 2026.",
-    "keywords": "",
-    "links": [
-      {
-        "label": "Scheduled",
-        "url": "#"
-      }
-    ]
-  },
-  {
-    "type": "conference",
-    "year": 2026,
-    "title": "Fairness of Deep Learning Models Across Breast Density Groups in Mammography",
-    "badge": "2026 • FMLDS",
-    "meta": "Y. Zafari, S. Soliman, E. A. Rashed, A. Bani-Mustafa, M Mabrok. The IEEE International Conference on Future Machine Learning and Data Science (FMLDS2026), Kobe, Japan, 20-32 Nov. 2026.",
-    "keywords": "",
-    "links": [
-      {
-        "label": "Scheduled",
-        "url": "#"
-      }
-    ]
-  },
-  {
-    "type": "conference",
-    "year": 2026,
     "title": "A Lightweight Confidence-Aware Decision-Support Framework for Plant Disease Classification Using Deep Learning",
     "badge": "2026 • FMLDS",
     "meta": "A. K. Saha, W. Hussain, M. Bekhit, E. A. Rashed. The IEEE International Conference on Future Machine Learning and Data Science (FMLDS2026), Kobe, Japan, 20-32 Nov. 2026.",
@@ -131,6 +103,62 @@
     "title": "Automated Reinforcement Learning-Driven and Segmentation-Guided Approaches for Pneumothorax Detection and Diagnosis in Chest X-Rays",
     "badge": "2026 • FMLDS",
     "meta": "Y. Jia, A. Elboardy, E. A. Rashed. The IEEE International Conference on Future Machine Laeraning and Data Science (FMLDS2026), Kobe, Japan, 20-23 Nov. 2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "AI-Powered IoMT Security System Using Multi-Model Fusion and Zero Trust Architecture for Near-Real-Time Threat Detection",
+    "badge": "2026 • FMLDS",
+    "meta": "Y. Kamal, Y. Samy, F. M. Ali, M. Hisham, D. Faried, M. Ayman, Essam A. Rashed, T. Gaber, S. Elsagheer. The IEEE International Conference on Future Machine Laeraning and Data Science (FMLDS2026), Kobe, Japan, 20-23 Nov. 2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Design Patterns for Reliable Multi-Agent LLMs: A Brief Scoping Survey",
+    "badge": "2026 • FMLDS",
+    "meta": "M. Yousef, E. A. Rashed. The IEEE International Conference on Future Machine Laeraning and Data Science (FMLDS2026), Kobe, Japan, 20-23 Nov. 2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Cross-Population Transfer of Foundation Models for Breast Density Classification",
+    "badge": "2026 • FMLDS",
+    "meta": "S. Soliman, Y. Zafari, E. A. Rashed, A. Bani-Mustafa, M Mabrok. The IEEE International Conference on Future Machine Learning and Data Science (FMLDS2026), Kobe, Japan, 20-32 Nov. 2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Fairness of Deep Learning Models Across Breast Density Groups in Mammography",
+    "badge": "2026 • FMLDS",
+    "meta": "Y. Zafari, S. Soliman, E. A. Rashed, A. Bani-Mustafa, M Mabrok. The IEEE International Conference on Future Machine Learning and Data Science (FMLDS2026), Kobe, Japan, 20-32 Nov. 2026.",
     "keywords": "",
     "links": [
       {
