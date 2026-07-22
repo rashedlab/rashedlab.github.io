@@ -2,6 +2,20 @@
   {
     "type": "conference",
     "year": 2027,
+    "title": "Deception in the Ranks: Defending Hierarchical Multi-Agent Consensus in Brain MRI Reporting",
+    "badge": "2027 • AAAI",
+    "meta": "A. T. Elboardy, G. Khoriba, E. A. Rashed. The 41st Annual AAAI Conference on Artificial Intelligence (AAAI27), Monterial, Canada, 16-23 Feb. 2027.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2027,
     "title": "VERITAS: Annotator-Aware Cross-Planar Consistency for Volumetric Medical Image Segmentation",
     "badge": "2027 • AAAI",
     "meta": "M. Yousef, E. A. Rashed. The 41st Annual AAAI Conference on Artificial Intelligence (AAAI27), Monterial, Canada, 16-23 Feb. 2027.",
