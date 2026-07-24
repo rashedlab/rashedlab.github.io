@@ -2,9 +2,9 @@
   {
     "type": "journal",
     "year": "2026",
-    "title": "BrainAgent: A Multi-Agent Framework for End-to-End Automated Radiology Report Generation in Glioma from Multi-Sequence MRI",
-    "badge": "2026 • Journal • IF{{IFYear}}={{npiDigitalMedicineIF}}",
-    "meta": "A. T. Elboardy, Z. Mohamed, S. Ahmed, I. Shehaby, A. S. E. Raslan, K. K. Elfatairy, N. A. Tawfik, M. Al-Shatouri, G. Khoriba, M. A. Mabrok, E. A. Rashed <em> npj Digital Medicine</em>, 000, 000000.",
+    "title": "BrainAgent: Multi-Agent Fusion for Glioma Report Generation from Multi-Sequence MRI",
+    "badge": "2026 • Journal • IF{{IFYear}}={{InformationFusionIF}}",
+    "meta": "A. T. Elboardy, Z. Mohamed, S. Ahmed, I. Shehaby, A. S. E. Raslan, K. K. Elfatairy, N. A. Tawfik, M. Al-Shatouri, G. Khoriba, M. A. Mabrok, E. A. Rashed <em> Information Fusion</em>, 000, 000000.",
     "keywords": [
       "", 
       ""
