@@ -3,6 +3,7 @@ const SITE_CONFIG = {
   CSYear: "25",
   AIRIF: "18.8",
   npiDigitalMedicineIF: "18.0",
+  InformationFusionIF: "17.4",
   SCSIF: "13.3",
   TMIIF: "12.4",
   JBDIF: "10.8",
