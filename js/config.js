@@ -1,6 +1,7 @@
 const SITE_CONFIG = {
   IFYear: "25",
   CSYear: "25",
+  TheLancetDigitalHealthIF: "25.5",
   AIRIF: "18.8",
   npiDigitalMedicineIF: "18.0",
   InformationFusionIF: "17.4",
