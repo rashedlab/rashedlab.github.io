@@ -27,31 +27,6 @@
   {
     "type": "journal",
     "year": "2026",
-    "title": "Inter-Individual Variability in Temperature Rise from Localized Exposure at 1–80 GHz Using 131 Anatomical Head Model",
-    "badge": "2026 • Journal • IF{{IFYear}}={{TMTTIF}}",
-    "meta": "I. Komine, E. A. Rashed, S. Kodera <em> IEEE Transactions of Microwave Theory and Technology</em>, 000, 000000.",
-    "keywords": [
-      "", 
-      ""
-    ],
-    "links": [
-      {
-        "label": "DOI",
-        "url": "#"
-      },
-      {
-        "label": "PDF",
-        "url": "#"
-      },
-      {
-        "label": "BibTex",
-        "url": "assets/publications/bibtex/TBA.bib"
-      }
-    ]
-  }, 
-  {
-    "type": "journal",
-    "year": "2026",
     "title": "Bayesian Error-Driven Active Learning for Prompt-Guided Medical Foundation Models",
     "badge": "2026 • Journal • IF{{IFYear}}={{ESWAIF}}",
     "meta": "S. Mohamed, G. Khoriba, E. A. Rashed, A. Tharwat <em> Expert Systems with Applications</em>, 000, 000000.",
