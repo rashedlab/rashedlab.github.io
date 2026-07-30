@@ -2,6 +2,23 @@
   {
     "type": "journal",
     "year": "2026",
+    "title": "Inter-Individual Variability in Temperature Rise from Localized Exposure at 1–80 GHz Using 131 Anatomical Head Models",
+    "badge": "2026 • Journal • IF{{IFYear}}={{TMTTIF}}",
+    "meta": "I. Komine, E. A. Rashed, S. Kodera <em> IEEE Transactions of Microwave Theory and Technology</em>, 000, 000000.",
+    "keywords": [
+      "", 
+      ""
+    ],
+    "links": [
+      {
+        "label": "in press",
+        "url": "#"
+      }
+    ]
+  }, 
+  {
+    "type": "journal",
+    "year": "2026",
     "title": "MammoClean: Toward Reproducible and Bias-Aware AI in Mammography through Dataset Harmonization",
     "badge": "2026 • Journal • IF{{IFYear}}={{AccessIF}}",
     "meta": "Y. Zafari, H. Pan, G. Durak, U. Bagci, E. A. Rashed, M. Mabrok. <em>IEEEE Access</em>, 00, 000000. (in press)",
