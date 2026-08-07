@@ -1,5 +1,29 @@
 [
  {
+    "meta": "Aug 2026 • EXPO",
+    "title": "E. Rashed will participate in InnoWeek2026 @ Tashkent, Uzbekistan",
+    "desc": "The International Week of Innovative Ideas (27-29 Oct 2026)",
+    "image": "assets/news/innoweek26.jpg",
+    "imageAlt": "InnoWeek2026",
+    "url": "https://innoweek.uz/en"
+  },
+  {
+    "meta": "July 2026 • Workshop",
+    "title": "We are co-organizing a workshop within ACCV2026 (14 Dec. 2026)",
+    "desc": "International Workshop on Learning from Small Data in Computer Vision",
+    "image": "assets/news/accv2026.jpg",
+    "imageAlt": "ACCV2026",
+    "url": "https://sites.google.com/view/smalldata-cv-2026/home"
+  },
+  {
+    "meta": "July 2026 • Workshop",
+    "title": "We are co-organizing a workshop within ACCV2026 (14 Dec. 2026)",
+    "desc": "Trustworthy Foundation Models in Medical Imaging (TrustFMI)",
+    "image": "assets/news/trustfmiws.jpg",
+    "imageAlt": "ACCV2026",
+    "url": "https://rashedlab.github.io/TrustFMI"
+  },
+ {
      "meta": "July 2026 • Paper",
     "title": "A paper by Y. Jia (D1) is accepted for 2026 IEEE FMLDS @ Kobe, Japan",
     "desc": "Automated Reinforcement Learning-Driven and Segmentation-Guided Approach for Pneumothorax Detection and Diagnosis in Chest X-Rays",
