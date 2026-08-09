@@ -83,20 +83,6 @@
       }
     ]
   },
-      {
-    "type": "conference",
-    "year": 2026,
-    "title": "Energy-Mamba: A Physics-Constrained State-Space Model for Medical Image Classification",
-    "badge": "2026 • MICCAI Workshop",
-    "meta": "M. Mabrok, Y. Zafari, E. A. Rashed. MICCAI 2026 17th International Conference on Machine Learning in Medical Imaging (MLMI 2026), Strasburg, France, 27 Sept - 1 Oct.  2026.",
-    "keywords": "",
-    "links": [
-      {
-        "label": "Scheduled",
-        "url": "#"
-      }
-    ]
-  },
   {
     "type": "conference",
     "year": 2026,
