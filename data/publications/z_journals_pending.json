@@ -2,6 +2,31 @@
   {
     "type": "journal",
     "year": "2026",
+    "title": "A Hybrid CNN-VSSM model for Multi-View, Multi-Task Mammography Analysis: Robust Diagnosis with Attention-Based Fusion",
+    "badge": "2026 • Journal • IF{{IFYear}}={{IntelligentMedicineIF}}",
+    "meta": "Y. Zafari, R. Elalfy, M. Mabrok, S. Al-Maadeed, T. Khattab, E. A. Rashed <em> Intelligent Medicine </em>, 000, 000000.",
+    "keywords": [
+      "", 
+      ""
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "#"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/TBA.bib"
+      }
+    ]
+  }, 
+  {
+    "type": "journal",
+    "year": "2026",
     "title": "BrainAgent: Multi-Agent Fusion for Glioma Report Generation from Multi-Sequence MRI",
     "badge": "2026 • Journal • IF{{IFYear}}={{InformationFusionIF}}",
     "meta": "A. T. Elboardy, Z. Mohamed, S. Ahmed, I. Shehaby, A. S. E. Raslan, K. K. Elfatairy, N. A. Tawfik, M. Al-Shatouri, G. Khoriba, M. A. Mabrok, E. A. Rashed <em> Information Fusion</em>, 000, 000000.",
