@@ -28,8 +28,8 @@
     "type": "journal",
     "year": "2026",
     "title": "BrainAgent: Multi-Agent Fusion for Glioma Report Generation from Multi-Sequence MRI",
-    "badge": "2026 • Journal • IF{{IFYear}}={{InformationFusionIF}}",
-    "meta": "A. T. Elboardy, Z. Mohamed, S. Ahmed, I. Shehaby, A. S. E. Raslan, K. K. Elfatairy, N. A. Tawfik, M. Al-Shatouri, G. Khoriba, M. A. Mabrok, E. A. Rashed <em> Information Fusion</em>, 000, 000000.",
+    "badge": "2026 • Journal • IF{{IFYear}}={{MedicalImageAnalysisIF}}",
+    "meta": "A. T. Elboardy, Z. Mohamed, S. Ahmed, I. Shehaby, A. S. E. Raslan, K. K. Elfatairy, N. A. Tawfik, M. Al-Shatouri, G. Khoriba, M. A. Mabrok, E. A. Rashed <em> Medical Image Analysis</em>, 000, 000000.",
     "keywords": [
       "", 
       ""
