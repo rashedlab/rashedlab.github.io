@@ -1,3 +1,44 @@
 [  
-
+  {
+    "type": "presentation",
+    "year": 2027,
+    "title": "Causal Attribution of Pneumothorax Bias in Medical VLMs",
+    "badge": "2027 • IWAIT",
+    "meta": "Y. Jia, E. A. Rashed. International Workshop on Advanced Image Technology, Seoul, Korea, 10-12 Jan. 2027.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+    {
+    "type": "presentation",
+    "year": 2027,
+    "title": "BrainAgent: Multi-Agent Radiology Reporting for Glioma MRI",
+    "badge": "2027 • IWAIT",
+    "meta": "A. T. Elboardy, E. A. Rashed. International Workshop on Advanced Image Technology, Seoul, Korea, 10-12 Jan. 2027.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+    {
+    "type": "presentation",
+    "year": 2027,
+    "title": "Seeing in 3D, Reasoning as Agents: How Agentic AI Extracts Knowledge from 3D Medical Images",
+    "badge": "2027 • IWAIT",
+    "meta": "E. A. Rashed. International Workshop on Advanced Image Technology, Seoul, Korea, 10-12 Jan. 2027.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  }
 ]
