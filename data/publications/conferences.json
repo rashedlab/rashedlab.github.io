@@ -1,4 +1,18 @@
 [
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation",
+    "badge": "2026 • MICCAI Workshop",
+    "meta": "A. T. Elboardy, Z. Elshaer, S. Ahmed, I. Elshehabi, A. S. E. Raslan, M. Mabrok, G. Khoriba, E. A. Rashed. MICCAI 2026 Agentic AI for Medicine Workshop, Strasburg, France, 1 Oct.  2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
  {
     "type": "conference",
     "year": 2026,
