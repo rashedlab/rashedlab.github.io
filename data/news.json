@@ -1,6 +1,14 @@
 [
   {
     "meta": "Aug 2026 • Paper",
+    "title": "A paper by A. Elboardy (D2) is accepted for MICCAI 2026 - The 2nd Agentic AI for Medicine Workshop at MICCAI 2026 @ Starsburg, France",
+    "desc": "A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation",
+    "image": "assets/news/miccai26.jpg",
+    "imageAlt": "MICCAI 2026",
+    "url": "https://agentic-ai-for-medicine.github.io/agentic-ai-for-medicine/"
+  },
+  {
+    "meta": "Aug 2026 • Paper",
     "title": "Three papers by A. Elboardy (D2), Y. Jia (D1) and E. Rashed will be presented at Special Sessions @ IWAIT2027",
     "desc": "International Workshop on Advanced Image Technology, Seoul, Korea, 10-12 Jan. 2027",
     "image": "assets/news/iwait27.jpg",
