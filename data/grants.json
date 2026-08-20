@@ -1,5 +1,25 @@
 [
-
+  {
+    "title": "A lifestyle-oriented multi-agent AI platform that supports a secure life after hospital discharge.",
+    "badge": "ノーリツぬくもり財団",
+    "sponsor": "Noritz Foundation",
+    "role": "Principal Investigator",
+    "category": "Public Foundation",
+    "start": 2026,
+    "end": 2027,
+    "year_range": "2026–2027",
+    "meta": "退院後の安全な生活を支援する、ライフスタイル重視型のマルチエージェントAIプラットフォーム",
+    "keywords": [
+      "",
+      ""
+    ],
+    "links": [
+      {
+         "label": "Foundation Webpage",
+        "url": "https://noritz-nukumori.or.jp/"
+      }
+    ]
+  },  
   {
     "title": "Developing of organ-specific medical report generation models using LLMs",
     "badge": "JST SPRING",
