@@ -1,5 +1,13 @@
 [
   {
+    "meta": "Aug 2026 • Grant",
+    "title": "A research grant is awarded by Noritz Nukumori Foundation is awarded",
+    "desc": "一般財団法人ノーリツぬくもり財団",
+    "image": "assets/news/noritz.jpg",
+    "imageAlt": "NORITZ2026",
+    "url": "https://noritz-nukumori.or.jp/"
+  },
+  {
     "meta": "Aug 2026 • Paper",
     "title": "A paper by A. Elboardy (D2) is accepted for MICCAI 2026 - The 2nd Agentic AI for Medicine Workshop @ Starsburg, France",
     "desc": "A Multi-Agent Framework for Automated MRI Reporting in Glioma: A Real-World Clinical Validation",
