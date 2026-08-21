@@ -10,6 +10,10 @@
       {
         "label": "Scheduled",
         "url": "#"
+      },
+      {
+        "label": "ArXiv",
+        "url": "http://arxiv.org/abs/2608.19813"
       }
     ]
   },
