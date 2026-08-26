@@ -62,8 +62,12 @@
     "keywords": "",
     "links": [
       {
+        "label": "DOi",
+        "url": "https://doi.org/10.1109/COMPSAC69091.2026.00220"
+      },
+      {
         "label": "Link",
-        "url": "#"
+        "url": "https://ieeexplore.ieee.org/abstract/document/11645467"
       },
       {
         "label": "Open access",
@@ -71,7 +75,7 @@
       },
       {
         "label": "BibTex",
-        "url": "#"
+        "url": "assets/publications/bibtex/rashed2026compsac.bib"
       }
     ]
   },
