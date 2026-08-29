@@ -53,6 +53,34 @@
       }
     ]
   },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Cross-Population Transfer of Foundation Models for Breast Density Classification",
+    "badge": "2026 • IEEE FMLDS",
+    "meta": "S. Soliman, Y. Zafari, E. A. Rashed, A. Bani-Mustafa, M Mabrok. The IEEE International Conference on Future Machine Learning and Data Science (FMLDS2026), Kobe, Japan, 20-23 Nov. 2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Fairness of Deep Learning Models Across Breast Density Groups in Mammography",
+    "badge": "2026 • IEEE FMLDS",
+    "meta": "Y. Zafari, S. Soliman, E. A. Rashed, A. Bani-Mustafa, M Mabrok. The IEEE International Conference on Future Machine Learning and Data Science (FMLDS2026), Kobe, Japan, 20-23 Nov. 2026.",
+    "keywords": "",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  }, 
  {
     "type": "conference",
     "year": 2026,
