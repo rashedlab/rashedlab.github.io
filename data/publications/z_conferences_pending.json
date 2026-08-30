@@ -156,20 +156,6 @@
   {
     "type": "conference",
     "year": 2026,
-    "title": "AI-Powered IoMT Security System Using Multi-Model Fusion and Zero Trust Architecture for Near-Real-Time Threat Detection",
-    "badge": "2026 • IEEE FMLDS",
-    "meta": "Y. Kamal, Y. Samy, F. M. Ali, M. Hisham, D. Faried, M. Ayman, Essam A. Rashed, T. Gaber, S. Elsagheer. The IEEE International Conference on Future Machine Laeraning and Data Science (FMLDS2026), Kobe, Japan, 20-23 Nov. 2026.",
-    "keywords": "",
-    "links": [
-      {
-        "label": "Scheduled",
-        "url": "#"
-      }
-    ]
-  },
-  {
-    "type": "conference",
-    "year": 2026,
     "title": "Design Patterns for Reliable Multi-Agent LLMs: A Brief Scoping Survey",
     "badge": "2026 • IEEE FMLDS",
     "meta": "M. Yousef, E. A. Rashed. The IEEE International Conference on Future Machine Laeraning and Data Science (FMLDS2026), Kobe, Japan, 20-23 Nov. 2026.",
