@@ -1,7 +1,20 @@
 {
   "awards": [
     {
-      "meta": "2025 • IEEE EMC Society.",
+      "meta": "2025 • Student Award",
+      "title": "🏆 The University of Hyogo's Top Achievment Award",
+      "desc": "Y. Jia received the 2026 University of Hyogo 「兵庫県立大学・令和8年度（2026年度）成績最優秀者奨学金」",
+      "image": "assets/news/uhawards2026.jpg",
+      "alt": "Motohisa Kanda Award",
+      "links": [
+        {
+          "label": "Link",
+          "url": "https://www.u-hyogo.ac.jp/campuslife/enforcement/"
+        }
+      ]
+    },
+    {
+      "meta": "2025 • IEEE EMC Society",
       "title": "🏆 The 2025 Motohisa Kanda Award",
       "desc": "E. A. Rashed (and co-authors) received the 2025 Motohisa Kanda Award from IEEE Electromagnetic Compatibility Society",
       "image": "assets/awards/kanda.jpg",
