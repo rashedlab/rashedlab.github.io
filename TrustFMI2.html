@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrustFMI2026</title>
+  <link rel="stylesheet" href="/ACCV/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    .people-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin: 20px 0 32px;
+    }
+    .person-card {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 32px;
+      align-items: start;
+      padding: 22px 24px;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 14px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.07);
+    }
+    .speaker-profile {
+      text-align: center;
+    }
+    .person-photo {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 3px #2f6fa8, 0 6px 16px rgba(0,0,0,.18);
+      margin-bottom: 14px;
+      background: #eef3f7;
+    }
+    .person-card h4 { margin: 4px 0 7px; font-size: 1.08rem; }
+    .speaker-profile p { margin: 0 0 10px; line-height: 1.45; }
+    .person-card a { font-weight: 500; }
+    .speaker-talk {
+      text-align: left;
+      padding: 4px 4px 4px 0;
+    }
+    .speaker-talk h3 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+      color: #2f6fa8;
+    }
+    .speaker-talk p {
+      margin: 0;
+      line-height: 1.6;
+    }
+    .talk-label {
+      font-weight: 700;
+    }
+    @media (max-width: 700px) {
+      .person-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .speaker-talk {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aims">Aim and Scope</a></li>
+          <li><a href="#topics">Call for Papers</a></li>
+          <li><a href="#committee">Committee</a></li>
+          <li><a href="#Invited">Invited Speakers</a></li>
+          <li><a href="#format">Program</a></li>
+          <li><a href="#format">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section with Kinkaku-ji Temple Image -->
+  <section id="home">
+    <div class="hero-image">
+      <img src="/ACCV/osaka.jpg" alt="Osaka, Japan" />
+      <div class="hero-text">
+        <h1> Trustworthy Foundation Models in Medical Imaging (TrustFMI)</h1>
+        <p>International workshop associated with the Asian Conference on Computer Vision (ACCV 2026), Osaka, Japan, 14 Dec. 2026</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Aims and Scope Section -->
+  <section id="aims">
+    <div class="container">
+      <h2>Aim and Scope</h2>
+      <p>
+        Foundation models are rapidly transforming computer vision by enabling general-purpose representation learning, multimodal reasoning, promptable segmentation, image–text understanding, and flexible adaptation to downstream tasks. In medical imaging, these capabilities have strong potential to support diagnosis, treatment planning, disease monitoring, radiology report generation, and surgical guidance. However, translating foundation models into clinical practice raises critical questions of trustworthiness, safety, reliability, privacy, robustness, interpretability, fairness, and clinical validity. Medical imaging differs fundamentally from natural-image analysis: clinical decisions often hinge on subtle findings, rare pathologies, scanner/site variability, missing modalities, and uncertain labels, so a model that performs well on benchmarks may fail under domain shift, demographic imbalance, or incomplete clinical context. Moreover, medical data are highly sensitive, making privacy-preserving learning, federated evaluation, secure deployment, and responsible data governance central to progress. This workshop provides a focused forum on how foundation models can be developed, evaluated, adapted, and deployed responsibly in medical imaging, bringing together researchers from computer vision, medical image analysis, trustworthy AI, data privacy, radiology, and clinical AI to address both algorithmic advances and practical barriers to clinical translation.
+    </div>
+  </section>
+
+  <!-- Workshop Topics Section -->
+  <section id="topics">
+    <div class="container">
+      <h2>Call for Papers</h2>
+      <p>Foundation models are rapidly reshaping medical imaging by enabling adaptable and general-purpose solutions across diverse imaging modalities, anatomical regions, and clinical tasks. However, their translation into real-world healthcare remains limited by critical concerns regarding reliability, robustness, explainability, fairness, privacy, safety, and clinical validity.</p>
+      <p>The TrustFMI Workshop invites original research contributions that advance the development, evaluation, and responsible deployment of foundation models in medical imaging. The workshop aims to bring together researchers, clinicians, engineers, and industry practitioners to examine not only what foundation models can achieve, but also how their outputs can be made dependable, transparent, equitable, and clinically meaningful.</p>
+      <p>We welcome methodological, empirical, clinical, and position papers addressing trustworthy foundation models across radiology, pathology, ophthalmology, dermatology, ultrasound, endoscopy, and other biomedical imaging domains. Contributions involving vision, vision–language, multimodal, generative, and agentic foundation models are particularly encouraged.</p>
+      
+      <p>Topics of interest include, but are not limited to:</p>
+      <ul>
+        <li>Foundation models for medical image analysis</li>
+        <li>Vision–language and multimodal medical foundation models</li>
+        <li>Trustworthy radiology report generation</li>
+        <li>Robustness and generalization</li>
+        <li>Uncertainty quantification and calibration</li>
+        <li>Privacy-preserving and federated foundation models</li>
+        <li>Fairness, bias, and responsible evaluation</li>
+        <li>Interpretability and explainability</li>
+        <li>Promptable and interactive medical image analysis</li>
+        <li>Benchmarking and evaluation protocols</li>
+        <li>Clinical deployment and safety</li>
+      </ul>
+
+      <p>We particularly encourage submissions that move beyond performance on conventional benchmarks and provide rigorous evidence of reliability under realistic clinical conditions. Studies involving external validation, multi-institutional evaluation, clinically relevant failure analysis, prospective assessment, or collaboration with healthcare professionals are highly welcomed.</p>
+      <p>All submissions will undergo peer review. Accepted contributions will be presented during the workshop as oral or poster presentations, providing opportunities for scientific exchange and interdisciplinary discussion. Submission instructions, formatting requirements, and important dates are provided below.</p>
+    </div>
+  </section>
+
+  
+  
+  <!-- Committee Section -->
+  <section id="committee">
+    <div class="container">
+      <h2>Committee</h2>
+      <h3>Organizing Committee</h3>
+      <div class="people-grid">
+        <article class="person-card">
+          <img class="person-photo" src="https://rashedlab.github.io/assets/people/pi.jpg" alt="Essam A. Rashed" onerror="this.src='https://ui-avatars.com/api/?name=Essam+A.+Rashed&size=256&background=2f6fa8&color=fff'">
+          <h4>Essam A. Rashed</h4><p>University of Hyogo, Japan</p>
+          <a href="https://rashedlab.github.io/rashed" target="_blank" rel="noopener">Homepage</a>
+        </article>
+        <article class="person-card">
+          <img class="person-photo" src="https://cao-lab.org/images/teampic/yang_pro.jpg" alt="Yang Cao" onerror="this.src='https://ui-avatars.com/api/?name=Yang+Cao&size=256&background=2f6fa8&color=fff'">
+          <h4>Yang Cao</h4><p>Institute of Science Tokyo, Japan</p>
+          <a href="https://cao-lab.org/cao/" target="_blank" rel="noopener">Homepage</a>
+        </article>
+        <article class="person-card">
+          <img class="person-photo" src="https://www.jst.go.jp/kisoken/presto/project/1112101/photo/23829479_Yanai.jpg" alt="Naoto Yanai">
+          <h4>Naoto Yanai</h4><p>Panasonic Holdings Corporation, Japan</p>
+          <a href="https://researchmap.jp/naotoyanai" target="_blank" rel="noopener">Homepage</a>
+        </article>
+      </div>
+      <h3>Technical Program Committee (in progress)</h3>
+      <ul>
+        <li> Mohamed Mabrok, Qatar University, Qatar </li>
+        <li> Ghada Khoriba, Nile University, Egypt </li>
+        <li> Zahraa Abdallah, University of Bristol, UK </li>
+        <li> Tarek Gaber, University of Salford, UK </li>
+        <li> Walayat Hussain, Australian Catholic University, Australia </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- Invited Section -->
+  <section id="Invited">
+    <div class="container">
+      <h2>Invited Speakers</h2>
+      <div class="people-grid">
+        <article class="person-card">
+          <div class="speaker-profile">
+            <img class="person-photo" src="https://lme.tf.fau.de/wp-content/uploads/2019/11/Andreas-Maier3_1MB-scaled-e1773673687830-300x300.jpg" alt="Andreas Maier" onerror="this.src='https://ui-avatars.com/api/?name=Andreas+Maier&size=256&background=2f6fa8&color=fff'">
+            <h4>Andreas Maier</h4><p>FAU, Germany</p>
+            <a href="https://lme.tf.fau.de/persons/andreas-maier/" target="_blank" rel="noopener">Homepage</a>
+          </div>
+          <div class="speaker-talk">
+            <h3><span class="talk-label">Talk:</span> Talk title to be announced</h3>
+            <p><span class="talk-label">Abstract:</span> Abstract to be announced.</p>
+          </div>
+        </article>
+        <article class="person-card">
+          <div class="speaker-profile">
+            <img class="person-photo" src="https://scst.sysu.edu.cn/sites/default/files/styles/image_style_2/public/%E6%93%8D%E6%99%93%E6%98%A5.jpg?itok=GqS-QQwV" alt="Xiaochun Cao" onerror="this.src='https://ui-avatars.com/api/?name=Xiaochun+Cao&size=256&background=2f6fa8&color=fff'">
+            <h4>Xiaochun Cao</h4><p>Sun Yat-Sen University, China</p>
+            <a href="https://scst.sysu.edu.cn/teacher/CaoXiaochun" target="_blank" rel="noopener">Homepage</a>
+          </div>
+          <div class="speaker-talk">
+            <h3><span class="talk-label">Talk:</span> Talk title to be announced</h3>
+            <p><span class="talk-label">Abstract:</span> Abstract to be announced.</p>
+          </div>
+        </article>
+        <article class="person-card">
+          <div class="speaker-profile">
+            <img class="person-photo" src="https://www.eng.u-hyogo.ac.jp/faculty/chinou_professor/syoji_kobashi/img/img01.jpg" alt="Syoji Kobashi">
+            <h4>Syoji Kobashi</h4><p>University of Hyogo, Japan</p>
+            <a href="https://www.eng.u-hyogo.ac.jp/en/faculty/chinou_professor/syoji_kobashi/index.html" target="_blank" rel="noopener">Homepage</a>
+          </div>
+          <div class="speaker-talk">
+            <h3><span class="talk-label">Talk:</span> Talk title to be announced</h3>
+            <p><span class="talk-label">Abstract:</span> Abstract to be announced.</p>
+          </div>
+        </article>
+        <article class="person-card">
+          <div class="speaker-profile">
+            <img class="person-photo" src="https://sociocom.naist.jp/radnlp-2024/wp-content/uploads/sites/11/2024/04/radnlp_profile_hanaoka.png" alt="Shouhei Hanaoka">
+            <h4>Shouhei Hanaoka</h4><p>University of Tokyo, Japan</p>
+            <a href="https://www.u-tokyo.ac.jp/focus/en/people/people002897.html" target="_blank" rel="noopener">Homepage</a>
+          </div>
+          <div class="speaker-talk">
+            <h3><span class="talk-label">Talk:</span> Talk title to be announced</h3>
+            <p><span class="talk-label">Abstract:</span> Abstract to be announced.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Workshop Format Section -->
+  <section id="format">
+    <div class="container">
+      <h2>Program</h2>
+      <p>
+     This is a half-day in-person workshop. The program combines several short invited talks, peer-reviewed oral presentations, a dedicated poster session, and a panel on clinical translation and trustworthiness (tentative).     
+      </p>
+      <p>
+       Tentative program is as follows:<br>
+        13:00 – 13:10: Opening Remarks<br>
+        13:10 – 13:45: Invited Talk 1<br>
+        13:45 – 14:20: Invited Talk 2<br>
+        14:20 – 15:20: Coffee break & Poster Session<br>
+        15:20 – 15:55: Invited Talk 3<br>
+        15:55 – 16:25: Oral Session 1<br>
+        16:25 – 17:00: Invited Talk 4<br>
+        17:00 – 17:30: Oral Session 2<br>
+        17:30 – 17:55: Panel Discussion<br>
+        17:55 – 18:00: Closing Remarks<br>
+      </p>
+      <p style="color: red;">Venue: Osaka International Convention Center (<a href="https://www.gco.co.jp/" target="_blank" rel="noopener">Grand Cube Osaka</a>), 10th Floor, Room 1004 (<a href="https://www.gco.co.jp/facilities/10f/" target="_blank" rel="noopener">floor map</a>)</p>
+    </div>
+  </section>
+
+  <!-- Submssion -->
+  <section id="format">
+    <div class="container">
+      <h2>Timeline</h2>
+      <p>
+     The workshop will solicit original research, short, and position papers (full papers 6–8 pages, short papers 4 pages, excluding references). All submissions will undergo <strong>double-blind</strong> peer review by at least two reviewers, assessed on technical quality, novelty, relevance, clarity, reproducibility, and potential impact on trustworthy medical foundation models.      
+      </p>
+      <p>
+        The timeline will be aligned with the <a href="https://accv2026.org/">ACCV 2026</a> publication schedule. 
+        <ul>
+  <li>Submission deadline: 25 September 2026</li> 
+<li>Author notification: 16 October 2026</li> 
+  <li>Camera-ready: 23 October 2026</li> 
+    <li>Final program: 27 November 2026</li> 
+      <li>Workshop: 14 December 2026</li>
+        </ul>
+      </p>
+     <p>Papers must be prepared using the official LNCS style files. Authors must download and use the official LaTeX template for the main paper (<a href="https://accv2026.org/wp-content/uploads/2026/04/ACCV_2026_template.zip">ACCV_2026_template.zip</a>).</p>
+      <p style="color: red;">Submit your paper from here: <a href="https://openreview.net/group?id=afcv.org/ACCV/2026/Workshop/TrustFMI">OpenReview</a> </p>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        For further details, please contact the organizing committee at: "trustfmi2026@gmail.com".
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Workshop on Trustworthy Foundation Models in Medical Imaging. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
