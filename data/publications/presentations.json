@@ -2,6 +2,16 @@
   {
     "type": "presentation",
     "year": 2026,
+    "title": "Reducing Volumetric Segmentation Errors through Inter-Slice Total Variation–Based Artifact Suppression",
+    "badge": "2026 • 兵庫県立大学・価値共創シンポジウム2026",
+    "meta": "M. Yousef, E. A. Rashed. 価値共創シンポジウム2026, Himeji, Japan, 18 Sept 2026",
+    "keywords": "",
+    "links": [
+    ]
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
     "title": "Filtering and Data Injection Analysis of Diffusion-Generated images in Federated Learning",
     "badge": "2026 • 兵庫県立大学・先端医療工学シンポジウム2026",
     "meta": "M. Kanehira, E. A. Rashed. 先端医療工学シンポジウム2026, Himeji, Japan, 8 Sept 2026",
