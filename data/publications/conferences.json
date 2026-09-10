@@ -7,7 +7,11 @@
     "meta": "H. Holiel, E. A. Rashed, N. M. Salem, R. Hossam Elden. IEEE Novel Intelligent and Leading Emerging Sciences Conference (NILES2026), Giza, Egypt, 22-24 Oct. 2026.",
     "keywords": "",
     "links": [
-            {
+     {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Heidi_Niles2026.pdf"
+      },       
+      {
         "label": "Scheduled",
         "url": "#"
       }
