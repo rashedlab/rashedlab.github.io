@@ -1,6 +1,14 @@
 [
   {
     "meta": "Sept 2026 • Paper",
+    "title": "A paper is accepted for Multimedia Tools and Applications (CiteScore25=9.6)",
+    "desc": "TomoMamba: A Two-Stage Model with State-Space Cross-Slice Propagation for Breast Cancer Diagnosis in Digital Breast Tomosynthesis",
+    "image": "assets/news/mta.jpg",
+    "imageAlt": "Springer MTA",
+    "url": "https://link.springer.com/journal/11042"
+  },
+  {
+    "meta": "Sept 2026 • Paper",
     "title": "A paper is accepted for the 2026 IEEE International Conference on Novel Intelligent and Leading Emerging Sciences (NILES) @ Giza, Egypt",
     "desc": "LoRA-Adapted CLIP for Zero-Shot Multi-Label Finding Classification in Four-View Mammography",
     "image": "assets/news/niles26.jpg",
