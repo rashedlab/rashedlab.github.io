@@ -11,21 +11,9 @@
     ],
     "links": [
       {
-        "label": "DOI",
+        "label": "in press",
         "url": "#"
       },
-      {
-        "label": "PDF",
-        "url": "#"
-      },
-      {
-        "label": "Dataset",
-        "url": "https://doi.org/10.7937/e4wt-cd02"
-      },
-      {
-        "label": "BibTex",
-        "url": "assets/publications/bibtex/TBA.bib"
-      }
     ]
   },
   {
