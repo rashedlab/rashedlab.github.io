@@ -60,6 +60,10 @@
       {
         "label": "Scheduled",
         "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Jia2026FMLDS.pdf"
       }
     ]
   },
