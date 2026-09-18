@@ -106,6 +106,10 @@
       {
         "label": "Scheduled",
         "url": "#"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Mina2026FMLDS.pdf"
       }
     ]
   }, 
