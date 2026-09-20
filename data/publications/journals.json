@@ -2,6 +2,25 @@
   {
     "type": "journal",
     "year": "2026",
+    "title": "MaxVQA: A Large-Scale Multi-Source Dataset for Explanatory Visual Question Answering in Mammography",
+    "badge": "2026 • Journal • IF{{IFYear}}={{JBHIIF}}",
+    "meta": "M. Mabrok, Y. Zafari, R. Elsheikh, R. Mohamed, E. A. Rashed. <em>IEEE Journal of Biomedical and Health Informatics</em>, 000, 000000.",
+    "keywords": [
+      "MaxVQA", 
+      "Multi-Source Dataset", 
+      "Visual Question Answering", 
+      "Mammography"
+    ],
+    "links": [
+      {
+        "label": "in press",
+        "url": "#"
+      }
+    ]   
+  },  
+  {
+    "type": "journal",
+    "year": "2026",
     "title": "TomoMamba: A Two-Stage Model with State-Space Cross-Slice Propagation for Breast Cancer Diagnosis in Digital Breast Tomosynthesis",
     "badge": "2026 • Journal • CiteScore{{CSYear}}={{MultimediaToolsandApplicationsCS}}",
     "meta": "S. Soliman, Y. Zafaria, E. A. Rashedb, M. Mabrok <em>Multimedia Tools and Applications</em>, 000, 000000.",
