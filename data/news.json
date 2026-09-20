@@ -1,6 +1,14 @@
 [
   {
     "meta": "Sept 2026 • Paper",
+    "title": "A paper is accepted for IEEE Journal of Biomedical and Health Informatics (IF25=7.7)",
+    "desc": "MaxVQA: A Large-Scale Multi-Source Dataset for Explanatory Visual Question Answering in Mammography",
+    "image": "assets/news/jbhi.jpg",
+    "imageAlt": "IEEE JBHI",
+    "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020"
+  },
+  {
+    "meta": "Sept 2026 • Paper",
     "title": "A paper is accepted for Multimedia Tools and Applications (CiteScore25=9.6)",
     "desc": "TomoMamba: A Two-Stage Model with State-Space Cross-Slice Propagation for Breast Cancer Diagnosis in Digital Breast Tomosynthesis",
     "image": "assets/news/mta.jpg",
