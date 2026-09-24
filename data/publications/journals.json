@@ -23,6 +23,10 @@
       {
         "label": "PDF",
         "url": "assets/publications/pdf/MaxVQA.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/MaxVQA.bib"
       }
     ]   
   },  
@@ -69,6 +73,14 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1109/TMTT.2026.3731163"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/Komine2026TMTT.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/Komine2026TMTT.bib"
       }
     ]
   }, 
