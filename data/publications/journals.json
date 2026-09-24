@@ -38,8 +38,16 @@
     ],
     "links": [
       {
-        "label": "in press",
-        "url": "#"
+        "label": "DOI",
+        "url": "https://doi.org/10.1007/s11042-026-21943-x"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/TomoMamba.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/TomoMamba.bib"
       }
     ]
   },
@@ -87,8 +95,8 @@
         "url": "https://ieeexplore.ieee.org/document/11569500"
       },
       {
-        "label": "BibTex",
-        "url": "assets/publications/bibtex/Yalda2026Access.bib"
+        "label": "PDF",
+        "url": "assets/publications/pdf/TomoMamba.pdf"
       }
     ]
   },
