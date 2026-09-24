@@ -108,7 +108,11 @@
       },
       {
         "label": "PDF",
-        "url": "assets/publications/pdf/TomoMamba.pdf"
+        "url": "assets/publications/pdf/MammoClean.pdf"
+      },
+      {
+        "label": "BibTex",
+        "url": "assets/publications/bibtex/MammoCleanT.bib"
       }
     ]
   },
