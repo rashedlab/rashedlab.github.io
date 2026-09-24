@@ -1,0 +1,12 @@
+@article{TomoMamba,
+doi = {10.1007/s11042-026-21943-x},
+url = {https://doi.org/10.1007/s11042-026-21943-x,
+year = {2026},
+month = {Sep},
+volume = {85},
+number = {776},
+author = {Soliman, Shahd and Zafari, Yalda and Rashed, Essam A. and Mabrok, Mohamed},
+title = {TomoMamba: a two-stage model with state-space cross-slice propagation for breast cancer diagnosis in digital breast tomosynthesis},
+journal = { Multimedia Tools and Applications},
+abstract = {ADigital breast tomosynthesis (DBT) provides volumetric image stacks that improve lesion conspicuity compared with two-dimensional (2D) mammography, yet most automated methods process slices independently and discard the depth-wise continuity that underpins this advantage. We introduce TomoMamba, a two-stage deep learning framework for DBT screening and diagnosis. A dual-branch 2.5D network with multi-view fusion first triages each breast study as normal or suspicious, reaching a breast-level area under the receiver operating characteristic curve (AUC) of 0.97. Selective state-space (Mamba) models then propagate features along the depth axis at each spatial position through input-dependent state transitions; lesions are localized by an anchor-free CenterNet detector and classified from features cropped at the detected centers. On the public BCS-DBT dataset the cascade reaches a breast-level AUC of 0.93 (95\% CI 0.85–0.99) on validation and 0.92 (95\% CI 0.86–0.97) on the held-out test partition. On validation it loses two of 20 cancers at screening while forwarding 14\% of breasts, so this cascade figure reflects the screening stage rather than benign-versus-cancer discrimination. In isolation, Stage 2 attains a patient-level AUC of 0.80 on validation and 0.62 on test, with lesion detection of 72.0\% and 62.5\% respectively; as the test classification interval spans chance, we present lesion localization as Stage 2’s demonstrated contribution. The gated cross-slice residual is the only component whose removal produces a significant change (0.25 AUC, $$p = 0.009$$). To the best of the authors’ knowledge, this is the first application of selective state-space models to inter-slice feature propagation in DBT.}
+}
