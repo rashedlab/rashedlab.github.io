@@ -19,6 +19,10 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1109/JBHI.2026.3736729"
+      },
+      {
+        "label": "PDF",
+        "url": "assets/publications/pdf/MaxVQA.pdf"
       }
     ]   
   },  
