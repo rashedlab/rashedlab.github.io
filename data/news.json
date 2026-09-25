@@ -1,5 +1,13 @@
 [
   {
+    "meta": "Sept 2026 • Grant",
+    "title": "Tateisi Science and Technology Foundation Grant for Hosting International Conference is awarded",
+    "desc": "立石科学技術振興財団・2026年度 国際会議開催助成",
+    "image": "assets/news/tateisi.jpg",
+    "imageAlt": "TATEISI2026",
+    "url": "https://www.tateisi-f.org/"
+  },
+  {
     "meta": "Sept 2026 • Paper",
     "title": "A paper is accepted for IEEE Journal of Biomedical and Health Informatics (IF25=7.7)",
     "desc": "MaxVQA: A Large-Scale Multi-Source Dataset for Explanatory Visual Question Answering in Mammography",
