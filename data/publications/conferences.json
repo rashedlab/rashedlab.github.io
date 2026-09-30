@@ -1,6 +1,20 @@
 [
   {
     "type": "conference",
+    "year": 2027,
+    "title": "Seeing in 3D, Reasoning as Agents: How Agentic AI Extracts Knowledge from 3D Medical Images",
+    "badge": "2027 • IWAIT",
+    "meta": "E. A. Rashed. The 2027 International Workshop on Advanced Image Technology (IWAIT2027), Seoul, South Korea, 10–12 Jan. 2027.",
+    "keywords": "iwait histopathology class-controlled image synthesis til segmentation",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
     "year": 2026,
     "title": "LoRA-Adapted CLIP for Prompt-Based Multi-Label Finding Classification in Four-View Mammography",
     "badge": "2026 • IEEE NILES",
