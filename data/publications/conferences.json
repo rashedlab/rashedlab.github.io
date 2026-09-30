@@ -5,7 +5,49 @@
     "title": "Seeing in 3D, Reasoning as Agents: How Agentic AI Extracts Knowledge from 3D Medical Images",
     "badge": "2027 • IWAIT",
     "meta": "E. A. Rashed. The 2027 International Workshop on Advanced Image Technology (IWAIT2027), Seoul, South Korea, 10–12 Jan. 2027.",
-    "keywords": "iwait histopathology class-controlled image synthesis til segmentation",
+    "keywords": "iwait",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2027,
+    "title": "BrainAgent: Multi-Agent Radiology Reporting for Glioma MRI",
+    "badge": "2027 • IWAIT",
+    "meta": "A. Elboardy, E. A. Rashed. The 2027 International Workshop on Advanced Image Technology (IWAIT2027), Seoul, South Korea, 10–12 Jan. 2027.",
+    "keywords": "iwait",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+    {
+    "type": "conference",
+    "year": 2027,
+    "title": "Causal Attribution of Pneumothorax Bias in Medical VLMs",
+    "badge": "2027 • IWAIT",
+    "meta": "Y. Jia, E. A. Rashed. The 2027 International Workshop on Advanced Image Technology (IWAIT2027), Seoul, South Korea, 10–12 Jan. 2027.",
+    "keywords": "iwait",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2027,
+    "title": "ContextFusion: Learnable Cross-Slice Similarity for Robust Spine MRI Segmentation",
+    "badge": "2027 • IWAIT",
+    "meta": "M. Yousef, E. A. Rashed. The 2027 International Workshop on Advanced Image Technology (IWAIT2027), Seoul, South Korea, 10–12 Jan. 2027.",
+    "keywords": "iwait",
     "links": [
       {
         "label": "Scheduled",
