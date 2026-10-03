@@ -1,5 +1,26 @@
 [
   {
+    "title": "Support for 2026 IEEE FMLDS (Kobe, Japan)",
+    "badge": "立石科学技術振興財団・国際会議開催助成",
+    "sponsor": "Tateisi Seicne and Technology Foundation",
+    "role": "Conference General Chair",
+    "category": "Public Foundation",
+    "start": 2026,
+    "end": 2026,
+    "year_range": "2026",
+    "meta": "RS2607",
+    "keywords": [
+      "",
+      ""
+    ],
+    "links": [
+      {
+         "label": "List of awardees",
+        "url": "https://www.tateisi-f.org/documents/research/list/2026grantlist.html#kaigi"
+      }
+    ]
+  },
+  {
     "title": "A lifestyle-oriented multi-agent AI platform that supports a secure life after hospital discharge",
     "badge": "ノーリツぬくもり財団",
     "sponsor": "Noritz Nukumori Foundation",
