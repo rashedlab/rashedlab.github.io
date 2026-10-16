@@ -58,6 +58,20 @@
   {
     "type": "conference",
     "year": 2026,
+    "title": "VERITAS: Annotator-Aware Cross-Planar Consistency for Volumetric Medical Image Segmentation",
+    "badge": "2027 • TrustFMI Workshop",
+    "meta": "M. Yousef, E. A. Rashed. The International Workshop on Trustworthy Foundation Models in Medical Imaging (TrustFMI) @ ACCV2026, Osaka, Japan, 14 Dec. 2026.",
+    "keywords": "TrustFMI",
+    "links": [
+      {
+        "label": "Scheduled",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "type": "conference",
+    "year": 2026,
     "title": "LoRA-Adapted CLIP for Prompt-Based Multi-Label Finding Classification in Four-View Mammography",
     "badge": "2026 • IEEE NILES",
     "meta": "H. Holiel, E. A. Rashed, N. M. Salem, R. Hossam Elden. IEEE Novel Intelligent and Leading Emerging Sciences Conference (NILES2026), Giza, Egypt, 22-24 Oct. 2026.",
