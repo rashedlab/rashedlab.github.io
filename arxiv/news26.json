@@ -1,10 +1,18 @@
 [
   {
+    "meta": "Nov 2026 • Grant",
+    "title": "A research grant by OpenMind is awarded",
+    "desc": "Ensembles & Routing Grant",
+    "image": "assets/news/openmind.jpg",
+    "imageAlt": "OpenMind",
+    "url": "https://openmined.org/"
+  },
+  {
     "meta": "Oct 2026 • Conference",
     "title": "A. Elboardy (D2) and M. Yousef (D1) will give talks at the NEXUS Japan–Singapore Workshop on Trustworthy Multimodal AI, held in conjunction with ICICS 2026",
     "desc": "@ Fukui, Japan, 28-29 Oct. 2026",
     "image": "assets/news/icicis26.jpg",
-    "imageAlt": "MICCAI 2026",
+    "imageAlt": "ICICS 2026",
     "url": "https://sulab-sever.u-aizu.ac.jp/icics2026/"
   },
   {
