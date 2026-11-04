@@ -2,6 +2,33 @@
   {
     "type": "presentation",
     "year": 2026,
+    "title": "Teaching a 2D Network to See in 3D: Robust Spine MRI Segmentation",
+    "badge": "2026 • 医用画像研究会 (MI)",
+    "meta": "M. Yousef, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2024.",
+    "keywords": "",
+    "links": []
+  },
+    {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Improving Medical Question Answering through Confidence-Guided Model Collaboration",
+    "badge": "2026 • 医用画像研究会 (MI)",
+    "meta": "Z. Elshaer, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2024.",
+    "keywords": "",
+    "links": []
+  },
+    {
+    "type": "presentation",
+    "year": 2026,
+    "title": "Sequences Analysis with Agentic Framework for Brain MRI Report generation",
+    "badge": "2026 • 医用画像研究会 (MI)",
+    "meta": "A. T. Elboardy, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2024.",
+    "keywords": "",
+    "links": []
+  },
+  {
+    "type": "presentation",
+    "year": 2026,
     "title": "Reducing Volumetric Segmentation Errors through Inter-Slice Total Variation–Based Artifact Suppression",
     "badge": "2026 • 兵庫県立大学・価値共創シンポジウム2026",
     "meta": "M. Yousef, E. A. Rashed. 価値共創シンポジウム2026, Himeji, Japan, 18 Sept 2026",
