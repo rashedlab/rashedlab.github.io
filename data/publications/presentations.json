@@ -1,10 +1,19 @@
 [
   {
     "type": "presentation",
+    "year": 2027,
+    "title": "AI-driven dielectric property mapping: what have we achieved, and what lies ahead?",
+    "badge": "IEEE ICES Workshop",
+    "meta": "E. A. Rashed. IEEE ICES Workshop on Tissue Dielectric Properties (online), 4-5 Mar. 2027.",
+    "keywords": "",
+    "links": []
+  },
+  {
+    "type": "presentation",
     "year": 2026,
     "title": "Teaching a 2D Network to See in 3D: Robust Spine MRI Segmentation",
     "badge": "2026 • 医用画像研究会 (MI)",
-    "meta": "M. Yousef, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2024.",
+    "meta": "M. Yousef, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2026.",
     "keywords": "",
     "links": []
   },
@@ -13,7 +22,7 @@
     "year": 2026,
     "title": "Improving Medical Question Answering through Confidence-Guided Model Collaboration",
     "badge": "2026 • 医用画像研究会 (MI)",
-    "meta": "Z. Elshaer, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2024.",
+    "meta": "Z. Elshaer, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2026.",
     "keywords": "",
     "links": []
   },
@@ -22,7 +31,7 @@
     "year": 2026,
     "title": "Sequences Analysis with Agentic Framework for Brain MRI Report generation",
     "badge": "2026 • 医用画像研究会 (MI)",
-    "meta": "A. T. Elboardy, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2024.",
+    "meta": "A. T. Elboardy, E. A. Rashed. 医用画像研究会 (MI), Osaka, Japan, 3 Dec. 2026.",
     "keywords": "",
     "links": []
   },
